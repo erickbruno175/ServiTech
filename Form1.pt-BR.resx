@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cadastrosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cadastros</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Text" xml:space="preserve">
+    <value>Finaceiro</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ordem de Serviço (OS)</value>
+  </data>
+  <data name="fiscalTributariaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fiscal/Tributaria</value>
+  </data>
+  <data name="relatorioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatorio</value>
+  </data>
+  <data name="integraçõesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="sairToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 24</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="produtosServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="produtosServiçosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos/Serviços</value>
+  </data>
+  <data name="serviçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="serviçosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Serviços</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 22</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="fornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="fornecedorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fornecedores</value>
+  </data>
+  <data name="clienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="clienteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="transportadoraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="transportadoraToolStripMenuItem.Text" xml:space="preserve">
+    <value>Transportadoras</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Localidade</value>
+  </data>
+  <data name="paisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="paisToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pais</value>
+  </data>
+  <data name="estadoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="estadoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="cidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="cidadeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="bairroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 22</value>
+  </data>
+  <data name="bairroToolStripMenuItem.Text" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 6</value>
+  </data>
+  <data name="funcionarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="funcionarioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Usaurios/Permissoes</value>
+  </data>
+  <data name="formaPagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="formaPagamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Formas de  Pagamento</value>
+  </data>
+  <data name="caixaTerminalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="caixaTerminalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Caixa/Terminal</value>
+  </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Unidade de Medida</value>
+  </data>
+  <data name="bancoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="bancoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Banco</value>
+  </data>
+  <data name="tabelasFiscaistributáriasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tabelas fiscais/tributárias</value>
+  </data>
+  <data name="fluxoDeCaixadiáriomensalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fluxo de caixa (diário/mensal)</value>
+  </data>
+  <data name="relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatórios financeiros e exportação para Excel</value>
+  </data>
+  <data name="integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Integração com conciliação bancária (opcional)</value>
+  </data>
+  <data name="lançamentoDeContasAPagarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento de Contas a Pagar</value>
+  </data>
+  <data name="lançamentoDeTituloToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento de Titulo</value>
+  </data>
+  <data name="lançamentoParçeladoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento Parçelado</value>
+  </data>
+  <data name="lançamentoDeContasAReceberToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento de Contas a Receber</value>
+  </data>
+  <data name="lançamentoDeTituloToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Lançamento de Titulo</value>
+  </data>
+  <data name="lançamentoParçeladoToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Lançamento Parçelado</value>
+  </data>
+  <data name="registrarEquipamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Registrar equipamento</value>
+  </data>
+  <data name="diagnósticoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Diagnóstico</value>
+  </data>
+  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Aprovação do orçamento</value>
+  </data>
+  <data name="envioDeOrçamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Envio de orçamento:</value>
+  </data>
+  <data name="execuçãoEPeçasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Execução e peças</value>
+  </data>
+  <data name="entregaFinalizaçãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Entrega / Finalização</value>
+  </data>
+  <data name="históricoERastreioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Histórico e rastreio</value>
+  </data>
+  <data name="configuraçãoDoRegimeTributárioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuração do regime tributário</value>
+  </data>
+  <data name="emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Emissão de documentos fiscais (NF-e, NFS-e, NFC-e)</value>
+  </data>
+  <data name="geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Geração de livros fiscais e relatórios de vendas/impostos</value>
+  </data>
+  <data name="relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatórios contábeis (SPED Fiscal/Contribuições)</value>
+  </data>
+  <data name="vendasDiáriasSemanaisMensaisToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vendas diárias, semanais, mensais</value>
+  </data>
+  <data name="faturamentoPorProdutoserviçoclienteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Faturamento por produto/serviço/cliente</value>
+  </data>
+  <data name="relatóriosTributáriosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatórios tributários</value>
+  </data>
+  <data name="empresaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 22</value>
+  </data>
+  <data name="empresaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="impressorastérmicasFiscaisToolStripMenuItem.Text" xml:space="preserve">
+    <value>Impressoras (térmicas, fiscais)</value>
+  </data>
+  <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Leitores de código de barras</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 86</value>
+  </data>
+  <data name="btnVenda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnVenda.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnVenda.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnVenda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>707, 3</value>
+  </data>
+  <data name="btnVenda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 77</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnVenda.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnVenda.Text" xml:space="preserve">
+    <value>Vendas- F7</value>
+  </data>
+  <data name="btnVenda.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnTransportadora.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnTransportadora.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnTransportadora.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnTransportadora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>570, 3</value>
+  </data>
+  <data name="btnTransportadora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 77</value>
+  </data>
+  <data name="btnTransportadora.Text" xml:space="preserve">
+    <value>Transportadora- F6</value>
+  </data>
+  <data name="btnTransportadora.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnFornecedor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnFornecedor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnFornecedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnFornecedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 3</value>
+  </data>
+  <data name="btnFornecedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 77</value>
+  </data>
+  <data name="btnFornecedor.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnFornecedor.Text" xml:space="preserve">
+    <value>Fornecedor-  F5</value>
+  </data>
+  <data name="btnFornecedor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnCliente.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCliente.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnCliente.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 3</value>
+  </data>
+  <data name="btnCliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 77</value>
+  </data>
+  <data name="btnCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnCliente.Text" xml:space="preserve">
+    <value>Clientes- F4</value>
+  </data>
+  <data name="btnCliente.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnProdu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnProdu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnProdu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProdu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 77</value>
+  </data>
+  <data name="btnProdu.Text" xml:space="preserve">
+    <value>Produtos- F3</value>
+  </data>
+  <data name="btnProdu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnServiço.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnServiço.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnServiço.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnServiço.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 77</value>
+  </data>
+  <data name="btnServiço.Text" xml:space="preserve">
+    <value>Serviços- F2</value>
+  </data>
+  <data name="btnServiço.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnOs.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnOs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnOs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 3</value>
+  </data>
+  <data name="btnOs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 77</value>
+  </data>
+  <data name="btnOs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnOs.Text" xml:space="preserve">
+    <value>Ordem Serviços- F1</value>
+  </data>
+  <data name="btnOs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 110</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 421</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 531</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAANgBAADYAQAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAcAAABwAAAAswAAANwAAADvAAAA7gAAANkAAACtAAAAZwAAABYAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAEQAAAC3AAAA6wAAAP8AAAD/AAAA/wwJBv8kGRP/PCof/1U7LP9tTDj/dFE8/3RR
+        PP90UTz/dFE8/3RRPP90UTz/AAAA/wAAAP90UTz/dFE8/3RRPP90UTz/dFE8/3RRPP9rSzf/Uzor/zop
+        Hv8iGBL/CgcF/wAAAP8AAAD/AAAA/wAAAPIAAAC8AAAASgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
+        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAABwAAAA/wAA
+        AMkAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwAAANQAAAD/bnBw/8XH
+        x//Fx8f/xcfH/wAAAP8AAAD/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
+        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/ncH0/5Cy
+        4f+Eos3/dpK4/2mCpP9dc5H/UWR+/0VVbP84RVj/KzZE/x8mMP8SFhz/AAAA/wAAAP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAsAAAAP8AAAD/AAAAywAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAABZAAAA/0NERP/Fx8f/xcfH/8XHx/8AAAD/AAAA/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
+        /v+jyf7/o8n+/6PJ/v+jyf7/ncH0/5Cy4f+Eos3/dpK4/2qDpf9dc5H/UWR+/0VVbP84RVj/KzZE/x8m
+        MP8SFhz/BgcJ/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+        AP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAOEAAAD/ExMT/wAAAP8AAADMAAAAEQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAlQAAAP9XV1f/xcfH/8XHx//Fx8f/AAAA/wAAAP+jyf7/o8n+/6PJ
+        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/5zA8/9ieZj/HSQu/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8bJTT/Lj9Y/zdNa/9CW37/TGmR/1V2
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA//////////////////////+AHwAAAAAP/4AGAAAAAAf/gAAAAAAAA//AAAAAAAAD/+AAAAAA
+        AAP/8AAAAAAAA//4AAAAAAADx/wAAAAAAAPD/gAAAAAAA8H/AAAAAAADwP8AAAAAAAPAfgAAAAAAA8A8
+        AAAAAAADwBgAAAAAAAPAAAAAAAAAA8AAAAAAAAADwAAAAAAAAAPgAAAAAAAAA+AAAAAAAAAD8AAAAAAA
+        AAP4AAAAAAAAA/wAAAAAAAAD/gAEAAAAAAP/AAwAAAAAA/8ADgAAAAAD/wAPAAAAAAf/AA+AAAAAD/8A
+        D+AAAAAf/wAP/wAAA///AA//wAA///8AD//wAP///wAP//AA////AA//wAA///8AD//AAD///wAP/4AA
+        H///AA//AAAP//8AD/8AAA///gAH/wAAD//8AAP/AAAP//gAAfgAAAH/8AAA8AAAAP/gAABwAAAA/+AA
+        AHAAAAD/wAAAMAAAAP/AAAAwAAAA/8AAADAAAAD/wAGAOAAAAf/AA8A8AAAD/8AH4DwAAAP/wA/wPAAA
+        A//AD/g+AAAH/8AH/D4AAAf/wAP+PgAAB//gAf/+AAAH/+AA//4AAAf/8AB//gAAB//4AD/+AAAH//wA
+        H/8AAA///gAf/4AAH///gB//wAA///////////////////////8=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+</root>
