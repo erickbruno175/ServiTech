@@ -23,4 +23,9 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Componentes\" />
+    <Folder Include="DbContext\" />
+  </ItemGroup>
+
 </Project>

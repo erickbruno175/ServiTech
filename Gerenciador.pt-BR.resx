@@ -117,224 +117,401 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cadastrosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cadastros</value>
-  </data>
-  <data name="finaceiroToolStripMenuItem.Text" xml:space="preserve">
-    <value>Finaceiro</value>
-  </data>
-  <data name="ordemDeServiçoOSToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ordem de Serviço (OS)</value>
-  </data>
-  <data name="fiscalTributariaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fiscal/Tributaria</value>
-  </data>
-  <data name="relatorioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Relatorio</value>
-  </data>
-  <data name="integraçõesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Configurações</value>
-  </data>
-  <data name="sairToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sair</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1120, 24</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="produtosServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="produtosServiçosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Produtos/Serviços</value>
-  </data>
   <data name="serviçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="serviçosToolStripMenuItem.Text" xml:space="preserve">
     <value>Serviços</value>
   </data>
   <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 22</value>
+    <value>129, 22</value>
   </data>
   <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
     <value>Produtos</value>
   </data>
+  <data name="produtosServiçosToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="produtosServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 22</value>
+  </data>
+  <data name="produtosServiçosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos/Serviços</value>
+  </data>
+  <data name="fornecedorToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="fornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="fornecedorToolStripMenuItem.Text" xml:space="preserve">
     <value>Fornecedores</value>
   </data>
+  <data name="clienteToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="clienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="clienteToolStripMenuItem.Text" xml:space="preserve">
     <value>Clientes</value>
   </data>
+  <data name="transportadoraToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="transportadoraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="transportadoraToolStripMenuItem.Text" xml:space="preserve">
     <value>Transportadoras</value>
   </data>
-  <data name="localidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="localidadeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Localidade</value>
-  </data>
   <data name="paisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="paisToolStripMenuItem.Text" xml:space="preserve">
     <value>Pais</value>
   </data>
   <data name="estadoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="estadoToolStripMenuItem.Text" xml:space="preserve">
     <value>Estado</value>
   </data>
   <data name="cidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="cidadeToolStripMenuItem.Text" xml:space="preserve">
     <value>Cidade</value>
   </data>
   <data name="bairroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 22</value>
+    <value>117, 22</value>
   </data>
   <data name="bairroToolStripMenuItem.Text" xml:space="preserve">
     <value>Bairro</value>
   </data>
+  <data name="localidadeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 22</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Localidade</value>
+  </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 6</value>
+    <value>220, 6</value>
+  </data>
+  <data name="cargoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="cargoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Usaurio</value>
+  </data>
+  <data name="pemissõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="pemissõesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pemissões</value>
+  </data>
+  <data name="funcionarioToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="funcionarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="funcionarioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Usaurios/Permissoes</value>
+    <value>Usuarios/Permissoes</value>
+  </data>
+  <data name="formaPagamentoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="formaPagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="formaPagamentoToolStripMenuItem.Text" xml:space="preserve">
     <value>Formas de  Pagamento</value>
   </data>
+  <data name="caixaTerminalToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="caixaTerminalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="caixaTerminalToolStripMenuItem.Text" xml:space="preserve">
     <value>Caixa/Terminal</value>
   </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="unidadeDeMedidaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="unidadeDeMedidaToolStripMenuItem.Text" xml:space="preserve">
     <value>Unidade de Medida</value>
   </data>
+  <data name="bancoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="bancoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
+    <value>223, 22</value>
   </data>
   <data name="bancoToolStripMenuItem.Text" xml:space="preserve">
     <value>Banco</value>
   </data>
+  <data name="tabelasFiscaistributáriasToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="tabelasFiscaistributáriasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 22</value>
+  </data>
   <data name="tabelasFiscaistributáriasToolStripMenuItem.Text" xml:space="preserve">
     <value>Tabelas fiscais/tributárias</value>
+  </data>
+  <data name="tecnicoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="tecnicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 22</value>
+  </data>
+  <data name="tecnicoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tecnico</value>
+  </data>
+  <data name="cargoToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="cadastrosToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="cadastrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 21</value>
+  </data>
+  <data name="cadastrosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cadastros</value>
+  </data>
+  <data name="fluxoDeCaixadiáriomensalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 22</value>
   </data>
   <data name="fluxoDeCaixadiáriomensalToolStripMenuItem.Text" xml:space="preserve">
     <value>Fluxo de caixa (diário/mensal)</value>
   </data>
+  <data name="relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 22</value>
+  </data>
   <data name="relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Text" xml:space="preserve">
     <value>Relatórios financeiros e exportação para Excel</value>
+  </data>
+  <data name="integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 22</value>
   </data>
   <data name="integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Text" xml:space="preserve">
     <value>Integração com conciliação bancária (opcional)</value>
   </data>
-  <data name="lançamentoDeContasAPagarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Lançamento de Contas a Pagar</value>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 6</value>
+  </data>
+  <data name="lançamentoDeTituloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
   </data>
   <data name="lançamentoDeTituloToolStripMenuItem.Text" xml:space="preserve">
     <value>Lançamento de Titulo</value>
   </data>
+  <data name="lançamentoParçeladoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
   <data name="lançamentoParçeladoToolStripMenuItem.Text" xml:space="preserve">
     <value>Lançamento Parçelado</value>
   </data>
-  <data name="lançamentoDeContasAReceberToolStripMenuItem.Text" xml:space="preserve">
-    <value>Lançamento de Contas a Receber</value>
+  <data name="lançamentoDeContasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 22</value>
+  </data>
+  <data name="lançamentoDeContasAPagarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento de Contas a Pagar</value>
+  </data>
+  <data name="lançamentoDeTituloToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
   </data>
   <data name="lançamentoDeTituloToolStripMenuItem1.Text" xml:space="preserve">
     <value>Lançamento de Titulo</value>
   </data>
+  <data name="lançamentoParçeladoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
   <data name="lançamentoParçeladoToolStripMenuItem1.Text" xml:space="preserve">
     <value>Lançamento Parçelado</value>
+  </data>
+  <data name="lançamentoDeContasAReceberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 22</value>
+  </data>
+  <data name="lançamentoDeContasAReceberToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento de Contas a Receber</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Text" xml:space="preserve">
+    <value>Finaceiro</value>
+  </data>
+  <data name="registrarEquipamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
   </data>
   <data name="registrarEquipamentoToolStripMenuItem.Text" xml:space="preserve">
     <value>Registrar equipamento</value>
   </data>
+  <data name="diagnósticoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
   <data name="diagnósticoToolStripMenuItem.Text" xml:space="preserve">
     <value>Diagnóstico</value>
   </data>
-  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Aprovação do orçamento</value>
+  <data name="envioDeOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
   </data>
   <data name="envioDeOrçamentoToolStripMenuItem.Text" xml:space="preserve">
     <value>Envio de orçamento:</value>
   </data>
+  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
+  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Aprovação do orçamento</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 6</value>
+  </data>
+  <data name="execuçãoEPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
   <data name="execuçãoEPeçasToolStripMenuItem.Text" xml:space="preserve">
     <value>Execução e peças</value>
+  </data>
+  <data name="entregaFinalizaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
   </data>
   <data name="entregaFinalizaçãoToolStripMenuItem.Text" xml:space="preserve">
     <value>Entrega / Finalização</value>
   </data>
+  <data name="históricoERastreioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
   <data name="históricoERastreioToolStripMenuItem.Text" xml:space="preserve">
     <value>Histórico e rastreio</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 21</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ordem de Serviço (OS)</value>
+  </data>
+  <data name="configuraçãoDoRegimeTributárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 22</value>
   </data>
   <data name="configuraçãoDoRegimeTributárioToolStripMenuItem.Text" xml:space="preserve">
     <value>Configuração do regime tributário</value>
   </data>
+  <data name="emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 22</value>
+  </data>
   <data name="emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Text" xml:space="preserve">
     <value>Emissão de documentos fiscais (NF-e, NFS-e, NFC-e)</value>
+  </data>
+  <data name="geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 22</value>
   </data>
   <data name="geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Text" xml:space="preserve">
     <value>Geração de livros fiscais e relatórios de vendas/impostos</value>
   </data>
+  <data name="relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 22</value>
+  </data>
   <data name="relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Text" xml:space="preserve">
     <value>Relatórios contábeis (SPED Fiscal/Contribuições)</value>
+  </data>
+  <data name="fiscalTributariaToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="fiscalTributariaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 21</value>
+  </data>
+  <data name="fiscalTributariaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fiscal/Tributaria</value>
+  </data>
+  <data name="vendasDiáriasSemanaisMensaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
   </data>
   <data name="vendasDiáriasSemanaisMensaisToolStripMenuItem.Text" xml:space="preserve">
     <value>Vendas diárias, semanais, mensais</value>
   </data>
+  <data name="faturamentoPorProdutoserviçoclienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
   <data name="faturamentoPorProdutoserviçoclienteToolStripMenuItem.Text" xml:space="preserve">
     <value>Faturamento por produto/serviço/cliente</value>
+  </data>
+  <data name="relatóriosTributáriosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
   </data>
   <data name="relatóriosTributáriosToolStripMenuItem.Text" xml:space="preserve">
     <value>Relatórios tributários</value>
   </data>
+  <data name="relatorioToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="relatorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 21</value>
+  </data>
+  <data name="relatorioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatorio</value>
+  </data>
   <data name="empresaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
+    <value>251, 22</value>
   </data>
   <data name="empresaToolStripMenuItem.Text" xml:space="preserve">
     <value>Empresa</value>
   </data>
+  <data name="impressorastérmicasFiscaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
   <data name="impressorastérmicasFiscaisToolStripMenuItem.Text" xml:space="preserve">
     <value>Impressoras (térmicas, fiscais)</value>
+  </data>
+  <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
   </data>
   <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Text" xml:space="preserve">
     <value>Leitores de código de barras</value>
   </data>
+  <data name="integraçõesToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="integraçõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 21</value>
+  </data>
+  <data name="integraçõesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="sairToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="sairToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 21</value>
+  </data>
+  <data name="sairToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 25</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1120, 86</value>
-  </data>
   <data name="btnVenda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -486,14 +663,23 @@
   <data name="btnOs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 86</value>
+  </data>
   <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 110</value>
+    <value>0, 111</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1120, 421</value>
+    <value>1120, 420</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>

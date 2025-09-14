@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 namespace ServiTech
 {
-    public partial class Form1 : Form
+    public partial class Gerenciador : Form
     {
-        public Form1()
+        public Gerenciador()
         {
             InitializeComponent();
         }
@@ -18,9 +18,5 @@ namespace ServiTech
             cadastrarCliente.ShowDialog();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

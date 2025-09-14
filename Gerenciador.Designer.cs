@@ -1,6 +1,6 @@
 ﻿namespace ServiTech
 {
-    partial class Form1
+    partial class Gerenciador
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gerenciador));
             menuStrip1 = new MenuStrip();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
             produtosServiçosToolStripMenuItem = new ToolStripMenuItem();
@@ -44,11 +44,15 @@
             bairroToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
             funcionarioToolStripMenuItem = new ToolStripMenuItem();
+            cargoToolStripMenuItem = new ToolStripMenuItem();
+            pemissõesToolStripMenuItem = new ToolStripMenuItem();
             formaPagamentoToolStripMenuItem = new ToolStripMenuItem();
             caixaTerminalToolStripMenuItem = new ToolStripMenuItem();
             unidadeDeMedidaToolStripMenuItem = new ToolStripMenuItem();
             bancoToolStripMenuItem = new ToolStripMenuItem();
             tabelasFiscaistributáriasToolStripMenuItem = new ToolStripMenuItem();
+            tecnicoToolStripMenuItem = new ToolStripMenuItem();
+            cargoToolStripMenuItem1 = new ToolStripMenuItem();
             finaceiroToolStripMenuItem = new ToolStripMenuItem();
             fluxoDeCaixadiáriomensalToolStripMenuItem = new ToolStripMenuItem();
             relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem = new ToolStripMenuItem();
@@ -106,7 +110,7 @@
             // cadastrosToolStripMenuItem
             // 
             resources.ApplyResources(cadastrosToolStripMenuItem, "cadastrosToolStripMenuItem");
-            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtosServiçosToolStripMenuItem, fornecedorToolStripMenuItem, clienteToolStripMenuItem, transportadoraToolStripMenuItem, localidadeToolStripMenuItem, toolStripSeparator1, funcionarioToolStripMenuItem, formaPagamentoToolStripMenuItem, caixaTerminalToolStripMenuItem, unidadeDeMedidaToolStripMenuItem, bancoToolStripMenuItem, tabelasFiscaistributáriasToolStripMenuItem });
+            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtosServiçosToolStripMenuItem, fornecedorToolStripMenuItem, clienteToolStripMenuItem, transportadoraToolStripMenuItem, localidadeToolStripMenuItem, toolStripSeparator1, funcionarioToolStripMenuItem, formaPagamentoToolStripMenuItem, caixaTerminalToolStripMenuItem, unidadeDeMedidaToolStripMenuItem, bancoToolStripMenuItem, tabelasFiscaistributáriasToolStripMenuItem, tecnicoToolStripMenuItem, cargoToolStripMenuItem1 });
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             // 
             // produtosServiçosToolStripMenuItem
@@ -175,7 +179,18 @@
             // funcionarioToolStripMenuItem
             // 
             resources.ApplyResources(funcionarioToolStripMenuItem, "funcionarioToolStripMenuItem");
+            funcionarioToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cargoToolStripMenuItem, pemissõesToolStripMenuItem });
             funcionarioToolStripMenuItem.Name = "funcionarioToolStripMenuItem";
+            // 
+            // cargoToolStripMenuItem
+            // 
+            resources.ApplyResources(cargoToolStripMenuItem, "cargoToolStripMenuItem");
+            cargoToolStripMenuItem.Name = "cargoToolStripMenuItem";
+            // 
+            // pemissõesToolStripMenuItem
+            // 
+            resources.ApplyResources(pemissõesToolStripMenuItem, "pemissõesToolStripMenuItem");
+            pemissõesToolStripMenuItem.Name = "pemissõesToolStripMenuItem";
             // 
             // formaPagamentoToolStripMenuItem
             // 
@@ -201,6 +216,16 @@
             // 
             resources.ApplyResources(tabelasFiscaistributáriasToolStripMenuItem, "tabelasFiscaistributáriasToolStripMenuItem");
             tabelasFiscaistributáriasToolStripMenuItem.Name = "tabelasFiscaistributáriasToolStripMenuItem";
+            // 
+            // tecnicoToolStripMenuItem
+            // 
+            resources.ApplyResources(tecnicoToolStripMenuItem, "tecnicoToolStripMenuItem");
+            tecnicoToolStripMenuItem.Name = "tecnicoToolStripMenuItem";
+            // 
+            // cargoToolStripMenuItem1
+            // 
+            resources.ApplyResources(cargoToolStripMenuItem1, "cargoToolStripMenuItem1");
+            cargoToolStripMenuItem1.Name = "cargoToolStripMenuItem1";
             // 
             // finaceiroToolStripMenuItem
             // 
@@ -473,10 +498,9 @@
             // pictureBox1
             // 
             resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Image = Properties.Resources.logo2;
+            pictureBox1.Image = Properties.Resources.banner;
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // Form1
             // 
@@ -562,5 +586,9 @@
         private ToolStripMenuItem lançamentoDeContasAReceberToolStripMenuItem;
         private ToolStripMenuItem lançamentoDeTituloToolStripMenuItem1;
         private ToolStripMenuItem lançamentoParçeladoToolStripMenuItem1;
+        private ToolStripMenuItem tecnicoToolStripMenuItem;
+        private ToolStripMenuItem cargoToolStripMenuItem;
+        private ToolStripMenuItem pemissõesToolStripMenuItem;
+        private ToolStripMenuItem cargoToolStripMenuItem1;
     }
 }
