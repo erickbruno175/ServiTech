@@ -34,12 +34,13 @@
             produtosServiçosToolStripMenuItem = new ToolStripMenuItem();
             serviçosToolStripMenuItem = new ToolStripMenuItem();
             produtosToolStripMenuItem = new ToolStripMenuItem();
+            peçasToolStripMenuItem = new ToolStripMenuItem();
+            mãoDeObraToolStripMenuItem = new ToolStripMenuItem();
             fornecedorToolStripMenuItem = new ToolStripMenuItem();
             clienteToolStripMenuItem = new ToolStripMenuItem();
             transportadoraToolStripMenuItem = new ToolStripMenuItem();
             localidadeToolStripMenuItem = new ToolStripMenuItem();
             paisToolStripMenuItem = new ToolStripMenuItem();
-            estadoToolStripMenuItem = new ToolStripMenuItem();
             cidadeToolStripMenuItem = new ToolStripMenuItem();
             bairroToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator1 = new ToolStripSeparator();
@@ -65,14 +66,11 @@
             lançamentoDeTituloToolStripMenuItem1 = new ToolStripMenuItem();
             lançamentoParçeladoToolStripMenuItem1 = new ToolStripMenuItem();
             ordemDeServiçoOSToolStripMenuItem = new ToolStripMenuItem();
-            registrarEquipamentoToolStripMenuItem = new ToolStripMenuItem();
-            diagnósticoToolStripMenuItem = new ToolStripMenuItem();
-            aprovaçãoDoOrçamentoToolStripMenuItem = new ToolStripMenuItem();
-            envioDeOrçamentoToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator2 = new ToolStripSeparator();
-            execuçãoEPeçasToolStripMenuItem = new ToolStripMenuItem();
-            entregaFinalizaçãoToolStripMenuItem = new ToolStripMenuItem();
-            históricoERastreioToolStripMenuItem = new ToolStripMenuItem();
+            abrirNovaOrdemDeServiçoToolStripMenuItem = new ToolStripMenuItem();
+            históricoDeOSToolStripMenuItem = new ToolStripMenuItem();
+            relatóriosDeOSToolStripMenuItem = new ToolStripMenuItem();
+            orçamentoToolStripMenuItem = new ToolStripMenuItem();
             fiscalTributariaToolStripMenuItem = new ToolStripMenuItem();
             configuraçãoDoRegimeTributárioToolStripMenuItem = new ToolStripMenuItem();
             emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem = new ToolStripMenuItem();
@@ -86,16 +84,18 @@
             empresaToolStripMenuItem = new ToolStripMenuItem();
             impressorastérmicasFiscaisToolStripMenuItem = new ToolStripMenuItem();
             leitoresDeCódigoDeBarrasToolStripMenuItem = new ToolStripMenuItem();
+            trocarSenhaToolStripMenuItem = new ToolStripMenuItem();
             sairToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
+            button1 = new Button();
             btnVenda = new Button();
             btnTransportadora = new Button();
             btnFornecedor = new Button();
             btnCliente = new Button();
             btnProdu = new Button();
             btnServiço = new Button();
-            btnOs = new Button();
             pictureBox1 = new PictureBox();
+            categoriaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -116,18 +116,29 @@
             // produtosServiçosToolStripMenuItem
             // 
             resources.ApplyResources(produtosServiçosToolStripMenuItem, "produtosServiçosToolStripMenuItem");
-            produtosServiçosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { serviçosToolStripMenuItem, produtosToolStripMenuItem });
+            produtosServiçosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { serviçosToolStripMenuItem, produtosToolStripMenuItem, peçasToolStripMenuItem, mãoDeObraToolStripMenuItem, categoriaToolStripMenuItem });
             produtosServiçosToolStripMenuItem.Name = "produtosServiçosToolStripMenuItem";
             // 
             // serviçosToolStripMenuItem
             // 
             resources.ApplyResources(serviçosToolStripMenuItem, "serviçosToolStripMenuItem");
             serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
+            serviçosToolStripMenuItem.Click += FormCadastrarServico_Click;
             // 
             // produtosToolStripMenuItem
             // 
             resources.ApplyResources(produtosToolStripMenuItem, "produtosToolStripMenuItem");
             produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            // 
+            // peçasToolStripMenuItem
+            // 
+            resources.ApplyResources(peçasToolStripMenuItem, "peçasToolStripMenuItem");
+            peçasToolStripMenuItem.Name = "peçasToolStripMenuItem";
+            // 
+            // mãoDeObraToolStripMenuItem
+            // 
+            resources.ApplyResources(mãoDeObraToolStripMenuItem, "mãoDeObraToolStripMenuItem");
+            mãoDeObraToolStripMenuItem.Name = "mãoDeObraToolStripMenuItem";
             // 
             // fornecedorToolStripMenuItem
             // 
@@ -148,28 +159,26 @@
             // localidadeToolStripMenuItem
             // 
             resources.ApplyResources(localidadeToolStripMenuItem, "localidadeToolStripMenuItem");
-            localidadeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { paisToolStripMenuItem, estadoToolStripMenuItem, cidadeToolStripMenuItem, bairroToolStripMenuItem });
+            localidadeToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { paisToolStripMenuItem, cidadeToolStripMenuItem, bairroToolStripMenuItem });
             localidadeToolStripMenuItem.Name = "localidadeToolStripMenuItem";
             // 
             // paisToolStripMenuItem
             // 
             resources.ApplyResources(paisToolStripMenuItem, "paisToolStripMenuItem");
             paisToolStripMenuItem.Name = "paisToolStripMenuItem";
-            // 
-            // estadoToolStripMenuItem
-            // 
-            resources.ApplyResources(estadoToolStripMenuItem, "estadoToolStripMenuItem");
-            estadoToolStripMenuItem.Name = "estadoToolStripMenuItem";
+            paisToolStripMenuItem.Click += FormCadastrarPais_Click;
             // 
             // cidadeToolStripMenuItem
             // 
             resources.ApplyResources(cidadeToolStripMenuItem, "cidadeToolStripMenuItem");
             cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
+            cidadeToolStripMenuItem.Click += FormCadastrarCidade_Click;
             // 
             // bairroToolStripMenuItem
             // 
             resources.ApplyResources(bairroToolStripMenuItem, "bairroToolStripMenuItem");
             bairroToolStripMenuItem.Name = "bairroToolStripMenuItem";
+            bairroToolStripMenuItem.Click += FormCadastrarBairro_Click;
             // 
             // toolStripSeparator1
             // 
@@ -226,6 +235,7 @@
             // 
             resources.ApplyResources(cargoToolStripMenuItem1, "cargoToolStripMenuItem1");
             cargoToolStripMenuItem1.Name = "cargoToolStripMenuItem1";
+            cargoToolStripMenuItem1.Click += FormCadastrarCargo_Click;
             // 
             // finaceiroToolStripMenuItem
             // 
@@ -288,49 +298,33 @@
             // ordemDeServiçoOSToolStripMenuItem
             // 
             resources.ApplyResources(ordemDeServiçoOSToolStripMenuItem, "ordemDeServiçoOSToolStripMenuItem");
-            ordemDeServiçoOSToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registrarEquipamentoToolStripMenuItem, diagnósticoToolStripMenuItem, aprovaçãoDoOrçamentoToolStripMenuItem, toolStripSeparator2, execuçãoEPeçasToolStripMenuItem, entregaFinalizaçãoToolStripMenuItem, históricoERastreioToolStripMenuItem });
+            ordemDeServiçoOSToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { toolStripSeparator2, abrirNovaOrdemDeServiçoToolStripMenuItem, históricoDeOSToolStripMenuItem, relatóriosDeOSToolStripMenuItem, orçamentoToolStripMenuItem });
             ordemDeServiçoOSToolStripMenuItem.Name = "ordemDeServiçoOSToolStripMenuItem";
-            // 
-            // registrarEquipamentoToolStripMenuItem
-            // 
-            resources.ApplyResources(registrarEquipamentoToolStripMenuItem, "registrarEquipamentoToolStripMenuItem");
-            registrarEquipamentoToolStripMenuItem.Name = "registrarEquipamentoToolStripMenuItem";
-            // 
-            // diagnósticoToolStripMenuItem
-            // 
-            resources.ApplyResources(diagnósticoToolStripMenuItem, "diagnósticoToolStripMenuItem");
-            diagnósticoToolStripMenuItem.Name = "diagnósticoToolStripMenuItem";
-            // 
-            // aprovaçãoDoOrçamentoToolStripMenuItem
-            // 
-            resources.ApplyResources(aprovaçãoDoOrçamentoToolStripMenuItem, "aprovaçãoDoOrçamentoToolStripMenuItem");
-            aprovaçãoDoOrçamentoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { envioDeOrçamentoToolStripMenuItem });
-            aprovaçãoDoOrçamentoToolStripMenuItem.Name = "aprovaçãoDoOrçamentoToolStripMenuItem";
-            // 
-            // envioDeOrçamentoToolStripMenuItem
-            // 
-            resources.ApplyResources(envioDeOrçamentoToolStripMenuItem, "envioDeOrçamentoToolStripMenuItem");
-            envioDeOrçamentoToolStripMenuItem.Name = "envioDeOrçamentoToolStripMenuItem";
             // 
             // toolStripSeparator2
             // 
             resources.ApplyResources(toolStripSeparator2, "toolStripSeparator2");
             toolStripSeparator2.Name = "toolStripSeparator2";
             // 
-            // execuçãoEPeçasToolStripMenuItem
+            // abrirNovaOrdemDeServiçoToolStripMenuItem
             // 
-            resources.ApplyResources(execuçãoEPeçasToolStripMenuItem, "execuçãoEPeçasToolStripMenuItem");
-            execuçãoEPeçasToolStripMenuItem.Name = "execuçãoEPeçasToolStripMenuItem";
+            resources.ApplyResources(abrirNovaOrdemDeServiçoToolStripMenuItem, "abrirNovaOrdemDeServiçoToolStripMenuItem");
+            abrirNovaOrdemDeServiçoToolStripMenuItem.Name = "abrirNovaOrdemDeServiçoToolStripMenuItem";
             // 
-            // entregaFinalizaçãoToolStripMenuItem
+            // históricoDeOSToolStripMenuItem
             // 
-            resources.ApplyResources(entregaFinalizaçãoToolStripMenuItem, "entregaFinalizaçãoToolStripMenuItem");
-            entregaFinalizaçãoToolStripMenuItem.Name = "entregaFinalizaçãoToolStripMenuItem";
+            resources.ApplyResources(históricoDeOSToolStripMenuItem, "históricoDeOSToolStripMenuItem");
+            históricoDeOSToolStripMenuItem.Name = "históricoDeOSToolStripMenuItem";
             // 
-            // históricoERastreioToolStripMenuItem
+            // relatóriosDeOSToolStripMenuItem
             // 
-            resources.ApplyResources(históricoERastreioToolStripMenuItem, "históricoERastreioToolStripMenuItem");
-            históricoERastreioToolStripMenuItem.Name = "históricoERastreioToolStripMenuItem";
+            resources.ApplyResources(relatóriosDeOSToolStripMenuItem, "relatóriosDeOSToolStripMenuItem");
+            relatóriosDeOSToolStripMenuItem.Name = "relatóriosDeOSToolStripMenuItem";
+            // 
+            // orçamentoToolStripMenuItem
+            // 
+            resources.ApplyResources(orçamentoToolStripMenuItem, "orçamentoToolStripMenuItem");
+            orçamentoToolStripMenuItem.Name = "orçamentoToolStripMenuItem";
             // 
             // fiscalTributariaToolStripMenuItem
             // 
@@ -382,7 +376,7 @@
             // integraçõesToolStripMenuItem
             // 
             resources.ApplyResources(integraçõesToolStripMenuItem, "integraçõesToolStripMenuItem");
-            integraçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { empresaToolStripMenuItem, impressorastérmicasFiscaisToolStripMenuItem, leitoresDeCódigoDeBarrasToolStripMenuItem });
+            integraçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { empresaToolStripMenuItem, impressorastérmicasFiscaisToolStripMenuItem, leitoresDeCódigoDeBarrasToolStripMenuItem, trocarSenhaToolStripMenuItem });
             integraçõesToolStripMenuItem.Name = "integraçõesToolStripMenuItem";
             // 
             // empresaToolStripMenuItem
@@ -400,6 +394,11 @@
             resources.ApplyResources(leitoresDeCódigoDeBarrasToolStripMenuItem, "leitoresDeCódigoDeBarrasToolStripMenuItem");
             leitoresDeCódigoDeBarrasToolStripMenuItem.Name = "leitoresDeCódigoDeBarrasToolStripMenuItem";
             // 
+            // trocarSenhaToolStripMenuItem
+            // 
+            resources.ApplyResources(trocarSenhaToolStripMenuItem, "trocarSenhaToolStripMenuItem");
+            trocarSenhaToolStripMenuItem.Name = "trocarSenhaToolStripMenuItem";
+            // 
             // sairToolStripMenuItem
             // 
             resources.ApplyResources(sairToolStripMenuItem, "sairToolStripMenuItem");
@@ -409,14 +408,25 @@
             // 
             resources.ApplyResources(panel1, "panel1");
             panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(btnVenda);
             panel1.Controls.Add(btnTransportadora);
             panel1.Controls.Add(btnFornecedor);
             panel1.Controls.Add(btnCliente);
             panel1.Controls.Add(btnProdu);
             panel1.Controls.Add(btnServiço);
-            panel1.Controls.Add(btnOs);
             panel1.Name = "panel1";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(button1, "button1");
+            button1.BackColor = Color.Transparent;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, 128, 128, 128);
+            button1.Image = Properties.Resources.ferramenta;
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = false;
             // 
             // btnVenda
             // 
@@ -484,17 +494,6 @@
             btnServiço.Name = "btnServiço";
             btnServiço.UseVisualStyleBackColor = false;
             // 
-            // btnOs
-            // 
-            resources.ApplyResources(btnOs, "btnOs");
-            btnOs.BackColor = Color.Transparent;
-            btnOs.FlatAppearance.BorderSize = 0;
-            btnOs.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnOs.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, 128, 128, 128);
-            btnOs.Image = Properties.Resources.os;
-            btnOs.Name = "btnOs";
-            btnOs.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             resources.ApplyResources(pictureBox1, "pictureBox1");
@@ -502,7 +501,12 @@
             pictureBox1.Name = "pictureBox1";
             pictureBox1.TabStop = false;
             // 
-            // Form1
+            // categoriaToolStripMenuItem
+            // 
+            resources.ApplyResources(categoriaToolStripMenuItem, "categoriaToolStripMenuItem");
+            categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
+            // 
+            // Gerenciador
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
@@ -511,7 +515,7 @@
             Controls.Add(menuStrip1);
             KeyPreview = true;
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
+            Name = "Gerenciador";
             WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -531,7 +535,6 @@
         private ToolStripMenuItem transportadoraToolStripMenuItem;
         private ToolStripMenuItem localidadeToolStripMenuItem;
         private ToolStripMenuItem paisToolStripMenuItem;
-        private ToolStripMenuItem estadoToolStripMenuItem;
         private ToolStripMenuItem cidadeToolStripMenuItem;
         private ToolStripMenuItem bairroToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator1;
@@ -543,7 +546,6 @@
         private ToolStripMenuItem sairToolStripMenuItem;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private Button btnOs;
         private Button btnServiço;
         private Button btnCliente;
         private Button btnProdu;
@@ -555,14 +557,7 @@
         private ToolStripMenuItem formaPagamentoToolStripMenuItem;
         private ToolStripMenuItem caixaTerminalToolStripMenuItem;
         private ToolStripMenuItem unidadeDeMedidaToolStripMenuItem;
-        private ToolStripMenuItem registrarEquipamentoToolStripMenuItem;
-        private ToolStripMenuItem diagnósticoToolStripMenuItem;
-        private ToolStripMenuItem aprovaçãoDoOrçamentoToolStripMenuItem;
-        private ToolStripMenuItem envioDeOrçamentoToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator2;
-        private ToolStripMenuItem execuçãoEPeçasToolStripMenuItem;
-        private ToolStripMenuItem entregaFinalizaçãoToolStripMenuItem;
-        private ToolStripMenuItem históricoERastreioToolStripMenuItem;
         private ToolStripMenuItem bancoToolStripMenuItem;
         private ToolStripMenuItem fluxoDeCaixadiáriomensalToolStripMenuItem;
         private ToolStripMenuItem relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem;
@@ -590,5 +585,14 @@
         private ToolStripMenuItem cargoToolStripMenuItem;
         private ToolStripMenuItem pemissõesToolStripMenuItem;
         private ToolStripMenuItem cargoToolStripMenuItem1;
+        private Button button1;
+        private ToolStripMenuItem trocarSenhaToolStripMenuItem;
+        private ToolStripMenuItem peçasToolStripMenuItem;
+        private ToolStripMenuItem abrirNovaOrdemDeServiçoToolStripMenuItem;
+        private ToolStripMenuItem mãoDeObraToolStripMenuItem;
+        private ToolStripMenuItem históricoDeOSToolStripMenuItem;
+        private ToolStripMenuItem relatóriosDeOSToolStripMenuItem;
+        private ToolStripMenuItem orçamentoToolStripMenuItem;
+        private ToolStripMenuItem categoriaToolStripMenuItem;
     }
 }

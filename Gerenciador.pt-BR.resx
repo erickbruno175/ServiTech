@@ -117,18 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="serviçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
-  </data>
   <data name="serviçosToolStripMenuItem.Text" xml:space="preserve">
     <value>Serviços</value>
   </data>
-  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 22</value>
-  </data>
   <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
     <value>Produtos</value>
+  </data>
+  <data name="peçasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Peças</value>
+  </data>
+  <data name="mãoDeObraToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mão de Obra</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="categoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="categoriaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Categoria</value>
   </data>
   <data name="produtosServiçosToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
@@ -171,12 +177,6 @@
   </data>
   <data name="paisToolStripMenuItem.Text" xml:space="preserve">
     <value>Pais</value>
-  </data>
-  <data name="estadoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
-  </data>
-  <data name="estadoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Estado</value>
   </data>
   <data name="cidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 22</value>
@@ -355,50 +355,20 @@
   <data name="finaceiroToolStripMenuItem.Text" xml:space="preserve">
     <value>Finaceiro</value>
   </data>
-  <data name="registrarEquipamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 22</value>
-  </data>
-  <data name="registrarEquipamentoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Registrar equipamento</value>
-  </data>
-  <data name="diagnósticoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 22</value>
-  </data>
-  <data name="diagnósticoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Diagnóstico</value>
-  </data>
-  <data name="envioDeOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
-  </data>
-  <data name="envioDeOrçamentoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Envio de orçamento:</value>
-  </data>
-  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 22</value>
-  </data>
-  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Aprovação do orçamento</value>
-  </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 6</value>
+    <value>248, 6</value>
   </data>
-  <data name="execuçãoEPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 22</value>
+  <data name="abrirNovaOrdemDeServiçoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Abrir nova Ordem de Serviço </value>
   </data>
-  <data name="execuçãoEPeçasToolStripMenuItem.Text" xml:space="preserve">
-    <value>Execução e peças</value>
+  <data name="históricoDeOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Histórico de OS</value>
   </data>
-  <data name="entregaFinalizaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 22</value>
+  <data name="relatóriosDeOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatórios de OS</value>
   </data>
-  <data name="entregaFinalizaçãoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Entrega / Finalização</value>
-  </data>
-  <data name="históricoERastreioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 22</value>
-  </data>
-  <data name="históricoERastreioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Histórico e rastreio</value>
+  <data name="orçamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Orçamento</value>
   </data>
   <data name="ordemDeServiçoOSToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
@@ -487,6 +457,9 @@
   <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Text" xml:space="preserve">
     <value>Leitores de código de barras</value>
   </data>
+  <data name="trocarSenhaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Trocar Senha</value>
+  </data>
   <data name="integraçõesToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
@@ -512,6 +485,31 @@
     <value>menuStrip1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 1</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 77</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Ordem de Serviço- F8</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
   <data name="btnVenda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -522,12 +520,11 @@
     <value>NoControl</value>
   </data>
   <data name="btnVenda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 3</value>
+    <value>557, 1</value>
   </data>
   <data name="btnVenda.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 77</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnVenda.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -547,7 +544,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnTransportadora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 3</value>
+    <value>420, 1</value>
   </data>
   <data name="btnTransportadora.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 77</value>
@@ -568,7 +565,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnFornecedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 3</value>
+    <value>302, 1</value>
   </data>
   <data name="btnFornecedor.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 77</value>
@@ -592,7 +589,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnCliente.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 3</value>
+    <value>206, 1</value>
   </data>
   <data name="btnCliente.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 77</value>
@@ -615,6 +612,9 @@
   <data name="btnProdu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="btnProdu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 1</value>
+  </data>
   <data name="btnProdu.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 77</value>
   </data>
@@ -633,6 +633,9 @@
   <data name="btnServiço.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="btnServiço.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
   <data name="btnServiço.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 77</value>
   </data>
@@ -640,27 +643,6 @@
     <value>Serviços- F2</value>
   </data>
   <data name="btnServiço.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="btnOs.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnOs.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="btnOs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 3</value>
-  </data>
-  <data name="btnOs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 77</value>
-  </data>
-  <data name="btnOs.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnOs.Text" xml:space="preserve">
-    <value>Ordem Serviços- F1</value>
-  </data>
-  <data name="btnOs.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

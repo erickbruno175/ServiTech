@@ -143,6 +143,16 @@ namespace ServiTech.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ferramenta {
+            get {
+                object obj = ResourceManager.GetObject("ferramenta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap impressora {
             get {
                 object obj = ResourceManager.GetObject("impressora", resourceCulture);
@@ -286,6 +296,16 @@ namespace ServiTech.Properties {
         internal static System.Drawing.Bitmap venda {
             get {
                 object obj = ResourceManager.GetObject("venda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verifica {
+            get {
+                object obj = ResourceManager.GetObject("verifica", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
