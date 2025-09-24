@@ -153,16 +153,6 @@ namespace ServiTech.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChatGPT_Image_23_de_set__de_2025__22_10_46 {
-            get {
-                object obj = ResourceManager.GetObject("ChatGPT Image 23 de set. de 2025, 22_10_46", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap cliente {
             get {
                 object obj = ResourceManager.GetObject("cliente", resourceCulture);
@@ -336,16 +326,6 @@ namespace ServiTech.Properties {
         internal static System.Drawing.Bitmap Logo_UniPDV___Vendas_e_Serviços {
             get {
                 object obj = ResourceManager.GetObject("Logo UniPDV - Vendas e Serviços", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Logo_UniPDV__Vendas_e_Serviços {
-            get {
-                object obj = ResourceManager.GetObject("Logo UniPDV_ Vendas e Serviços", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

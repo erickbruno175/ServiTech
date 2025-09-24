@@ -31,6 +31,7 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pdv));
             header = new Panel();
             labelDataHora = new Label();
             label1InfoOperador = new Label();
@@ -202,9 +203,9 @@
             btnAbrirGaveta.ForeColor = Color.FromArgb(0, 66, 100);
             btnAbrirGaveta.Image = Properties.Resources.maquina__2_;
             btnAbrirGaveta.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirGaveta.Location = new Point(1363, 24);
+            btnAbrirGaveta.Location = new Point(1363, 51);
             btnAbrirGaveta.Name = "btnAbrirGaveta";
-            btnAbrirGaveta.Size = new Size(172, 73);
+            btnAbrirGaveta.Size = new Size(172, 46);
             btnAbrirGaveta.TabIndex = 5;
             btnAbrirGaveta.TabStop = false;
             btnAbrirGaveta.Text = "Abrir Gaveta F12";
@@ -392,7 +393,7 @@
             labelTituloStatusCaixa.BorderStyle = BorderStyle.Fixed3D;
             labelTituloStatusCaixa.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             labelTituloStatusCaixa.ForeColor = Color.White;
-            labelTituloStatusCaixa.Location = new Point(716, 636);
+            labelTituloStatusCaixa.Location = new Point(713, 635);
             labelTituloStatusCaixa.Name = "labelTituloStatusCaixa";
             labelTituloStatusCaixa.Size = new Size(827, 47);
             labelTituloStatusCaixa.TabIndex = 12;
@@ -670,6 +671,7 @@
             Controls.Add(content);
             Controls.Add(panel2);
             Controls.Add(header);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             MaximizeBox = false;
             Name = "Pdv";
