@@ -17,11 +17,7 @@ namespace ServiTech.Forms.Cadastros
             InitializeComponent();
         }
 
-        private void CadastrarPais_Resize(object sender, EventArgs e)
-        {
-            btnSair.Location = new Point(this.panel3.Width - btnSair.Width - 9, btnSair.Location.Y);
-        }
-
+      
         private void CadastrarPais_Load(object sender, EventArgs e)
         {
             comboFiltros.DropDownStyle = ComboBoxStyle.DropDownList;

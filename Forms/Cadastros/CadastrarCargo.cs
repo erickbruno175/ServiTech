@@ -18,10 +18,7 @@ namespace ServiTech.Forms.Cadastros
             InitializeComponent();
         }
 
-        private void CadastrarPais_Resize(object sender, EventArgs e)
-        {
-            btnSair.Location = new Point(this.panel3.Width - btnSair.Width - 9, btnSair.Location.Y);
-        }
+      
 
         private void CadastrarPais_Load(object sender, EventArgs e)
         {
@@ -41,7 +38,7 @@ namespace ServiTech.Forms.Cadastros
 
         private void groupBox2_Resize(object sender, EventArgs e)
         {
-            btnPesquisarPais.Location = new Point(this.groupBox2.Width - btnPesquisarPais.Width - 9, btnPesquisarPais.Location.Y);
+            btnPesquisar.Location = new Point(this.groupBox2.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
 
         }
 

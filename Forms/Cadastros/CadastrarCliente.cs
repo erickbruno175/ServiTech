@@ -72,86 +72,62 @@ namespace ServiTech.Forms.Cadastros
 
         private void LiberararCamposParaNovoCadastro_KeyDown(object sender, KeyEventArgs e)
         {
+
+
             if (e.KeyCode == Keys.F4)
             {
+                foreach (TabPage tab in tabControl1.TabPages)
+                {
+                    HabilitarControles(tab.Controls);
+                }
+            }
+        }
 
-                textBairro.ReadOnly = false;
-                textCep.ReadOnly = false;
-                textCidade.ReadOnly = false;
-                textUf.ReadOnly = false;
-                textRg.ReadOnly = false;
-                textNomeContato.ReadOnly = false;
-                textEmailContato.ReadOnly = false;
-                textTelFixoContato.ReadOnly = false;
-                textWhatsApp.ReadOnly = false;
-                textBairro.ReadOnly = false;
-                textWhatsAppContato.ReadOnly = false;
-                textCpfCnpj.ReadOnly = false;
-                textNomeCliente.ReadOnly = false;
-                textNumero.ReadOnly = false;
-                textNomeCliente.Focus();
-                textNomeCliente.Select();
-                textTelefoneFixo.ReadOnly = false;
-                comboBoxGralParentesco.Enabled = true;
-                comboBoxSexo.Enabled = true;
-                radioButtonAtivoNao.Enabled = true;
-                radioButtonAtivoNao.Enabled = true;
-                radioButtonPessaoJuridica.Enabled = true;
-                radioButtonPessoaFisica.Enabled = true;
-                textDataNascimento.ReadOnly = false;
-                textEmail.ReadOnly = false;
-                textCpfContato.ReadOnly = false;
-                textPais.ReadOnly = false;
-                textRgContato.ReadOnly = false;
-                btnBuscaBairro.Enabled = true;
-                btnBuscaCidade.Enabled = true;
-                btnBuscarPais.Enabled = true;
-                radioButtonAtivoSim.Enabled = true;
-                btnGravar.Enabled = true;
-                radioButtonPessaoJuridica.Checked = true;
+        private void HabilitarControles(Control.ControlCollection controls)
+        {
+            foreach (Control control in controls)
+            {
+                switch (control)
+                {
+                    case TextBox textBox:
+                        this.textCodigoCliente.ReadOnly = true; // seu campo específico
+                        this.textNomeCliente.Focus();
+                        radioButtonPessaoJuridica.Checked = true;
+                        textBox.ReadOnly = false;
+                        break;
 
+                    case ComboBox comboBox:
+                        comboBox.Enabled = true;
+                        break;
 
+                    case MaskedTextBox maskedTextBox:
+                        maskedTextBox.ReadOnly = false;
+                        break;
 
+                    case RadioButton radioButton:
+                        radioButton.Enabled = true;
+                        break;
+
+                    case Button button:
+                        button.Enabled = true;
+                        break;
+                }
+
+                // Se o controle tiver filhos (como GroupBox, Panel, etc.), chama de novo
+                if (control.HasChildren)
+                {
+                    HabilitarControles(control.Controls);
+                }
             }
         }
 
         private void LiberararCamposParaNovoCadastro_Click(object sender, EventArgs e)
         {
-            textBairro.ReadOnly = false;
-            textCep.ReadOnly = false;
-            textCidade.ReadOnly = false;
-            textUf.ReadOnly = false;
-            textRg.ReadOnly = false;
-            textNomeContato.ReadOnly = false;
-            textEmailContato.ReadOnly = false;
-            textTelFixoContato.ReadOnly = false;
-            textWhatsApp.ReadOnly = false;
-            textBairro.ReadOnly = false;
-            textWhatsAppContato.ReadOnly = false;
-            textCpfCnpj.ReadOnly = false;
-            textNomeCliente.ReadOnly = false;
-            textNumero.ReadOnly = false;
-            textNomeCliente.Focus();
-            textNomeCliente.Select();
-            textTelefoneFixo.ReadOnly = false;
-            comboBoxGralParentesco.Enabled = true;
-            comboBoxSexo.Enabled = true;
-            radioButtonAtivoNao.Enabled = true;
-            radioButtonAtivoNao.Enabled = true;
-            radioButtonPessaoJuridica.Enabled = true;
-            radioButtonPessoaFisica.Enabled = true;
-            textDataNascimento.ReadOnly = false;
-            textEmail.ReadOnly = false;
-            textCpfContato.ReadOnly = false;
-            textPais.ReadOnly = false;
-            textRgContato.ReadOnly = false;
-            btnBuscaBairro.Enabled = true;
-            btnBuscaCidade.Enabled = true;
-            btnBuscarPais.Enabled = true;
-            radioButtonAtivoSim.Enabled = true;
-            btnGravar.Enabled = true;
-            radioButtonPessaoJuridica.Checked = true;
 
+            foreach (TabPage tab in tabControl1.TabPages)
+            {
+                HabilitarControles(tab.Controls);
+            }
         }
 
         private void FeicharTelaCadastroCliente_Click(object sender, EventArgs e)
@@ -159,14 +135,10 @@ namespace ServiTech.Forms.Cadastros
             this.Close();
         }
 
-        private void panel1_Resize(object sender, EventArgs e)
-        {
-            btnSair.Location = new Point(panel1.Width - btnSair.Width - 9, btnSair.Location.Y);
-        }
-
+       
         private void groupBox5_Resize(object sender, EventArgs e)
         {
-            btnPesquisarCliente.Location = new Point(groupBox5.Width - btnPesquisarCliente.Width - 9, btnPesquisarCliente.Location.Y);
+            btnPesquisar.Location = new Point(groupBox5.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
             checkBoxCarregarTodos.Location = new Point(groupBox5.Width - checkBoxCarregarTodos.Width - 9, checkBoxCarregarTodos.Location.Y);
         }
     }

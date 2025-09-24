@@ -9,10 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Componentes\FormConsultas\PesquisaCategoriasPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Cadastros\CadastrarBairro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Cadastros\CadastrarCategoria.cs">
+    <Compile Update="Forms\Cadastros\CadastrarCategoriaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Cadastros\CadastrarCategoriaServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Cadastros\CadastrarSubGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Cadastros\CadastrarServico.cs">
@@ -40,6 +49,9 @@
 
   <ItemGroup>
     <Folder Include="DbContext\" />
+    <Folder Include="Financeiro\" />
+    <Folder Include="Models\" />
+    <Folder Include="Relatorios\" />
   </ItemGroup>
 
 </Project>

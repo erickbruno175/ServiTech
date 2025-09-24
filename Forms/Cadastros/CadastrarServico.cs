@@ -18,10 +18,7 @@ namespace ServiTech.Forms.Cadastros
             InitializeComponent();
         }
 
-        private void CadastrarPais_Resize(object sender, EventArgs e)
-        {
-            btnSair.Location = new Point(this.panel3.Width - btnSair.Width - 9, btnSair.Location.Y);
-        }
+      
 
         private void CadastrarPais_Load(object sender, EventArgs e)
         {
@@ -42,12 +39,12 @@ namespace ServiTech.Forms.Cadastros
         private void groupBox2_Resize(object sender, EventArgs e)
         {
             btnPesquisarPais.Location = new Point(this.groupBox2.Width - btnPesquisarPais.Width - 9, btnPesquisarPais.Location.Y);
+            checkBoxTodos.Location = new Point(this.groupBox2.Width - checkBoxTodos.Width - 9, checkBoxTodos.Location.Y);
 
         }
 
         private void LiberarCamposParaNovoCadastro_Click(object sender, EventArgs e)
         {
-            textCodigoServico.ReadOnly = false;
             textNomeServico.ReadOnly = false;
             textNomeServico.Focus();
             textCategoriaServico.ReadOnly = false;
@@ -65,7 +62,6 @@ namespace ServiTech.Forms.Cadastros
 
             if (e.KeyCode == Keys.F4)
             {
-                textCodigoServico.ReadOnly = false;
                 textNomeServico.ReadOnly = false;
                 textNomeServico.Focus();
                 textCategoriaServico.ReadOnly = false;
@@ -81,7 +77,7 @@ namespace ServiTech.Forms.Cadastros
 
             if (e.KeyCode == Keys.F1)
             {
-                PesquisaCategorias pesquisaCategorias = new PesquisaCategorias();
+                PesquisaCategoriasServiços pesquisaCategorias = new PesquisaCategoriasServiços();
 
                 pesquisaCategorias.ShowDialog();
             }
@@ -91,13 +87,14 @@ namespace ServiTech.Forms.Cadastros
 
         private void AbriFormPesquisaCategoria_Click(object sender, EventArgs e)
         {
-            PesquisaCategorias pesquisaCategorias = new PesquisaCategorias();
+            PesquisaCategoriasServiços pesquisaCategorias = new PesquisaCategoriasServiços();
 
             pesquisaCategorias.ShowDialog();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
-     
-       
+        }
     }
 }
