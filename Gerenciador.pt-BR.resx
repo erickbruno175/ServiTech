@@ -117,60 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="serviçosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Serviços</value>
-  </data>
-  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Produtos</value>
-  </data>
-  <data name="peçasToolStripMenuItem.Text" xml:space="preserve">
-    <value>Peças</value>
-  </data>
-  <data name="mãoDeObraToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mão de Obra</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="categoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="categoriaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Categoria</value>
-  </data>
-  <data name="produtosServiçosToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="produtosServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="produtosServiçosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Produtos/Serviços</value>
-  </data>
   <data name="fornecedorToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="fornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+    <value>224, 22</value>
   </data>
   <data name="fornecedorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fornecedores</value>
+    <value>Fornecedores                 </value>
   </data>
   <data name="clienteToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="clienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+    <value>224, 22</value>
   </data>
   <data name="clienteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clientes</value>
-  </data>
-  <data name="transportadoraToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="transportadoraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="transportadoraToolStripMenuItem.Text" xml:space="preserve">
-    <value>Transportadoras</value>
+    <value>Clientes </value>
   </data>
   <data name="paisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 22</value>
@@ -194,40 +158,25 @@
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="localidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+    <value>224, 22</value>
   </data>
   <data name="localidadeToolStripMenuItem.Text" xml:space="preserve">
     <value>Localidade</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 6</value>
+    <value>221, 6</value>
   </data>
-  <data name="cargoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
+  <data name="tipoDePagamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tipo de Pagamento</value>
   </data>
-  <data name="cargoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Usaurio</value>
-  </data>
-  <data name="pemissõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 22</value>
-  </data>
-  <data name="pemissõesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Pemissões</value>
-  </data>
-  <data name="funcionarioToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="funcionarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="funcionarioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Usuarios/Permissoes</value>
+  <data name="categoriaDePagamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Categoria de Pagamento</value>
   </data>
   <data name="formaPagamentoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="formaPagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+    <value>224, 22</value>
   </data>
   <data name="formaPagamentoToolStripMenuItem.Text" xml:space="preserve">
     <value>Formas de  Pagamento</value>
@@ -236,49 +185,94 @@
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="caixaTerminalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+    <value>224, 22</value>
   </data>
   <data name="caixaTerminalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Caixa/Terminal</value>
+    <value>Caixa/Balcão</value>
   </data>
-  <data name="unidadeDeMedidaToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
+  <data name="cFOPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
   </data>
-  <data name="unidadeDeMedidaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+  <data name="cFOPToolStripMenuItem.Text" xml:space="preserve">
+    <value>CFOP</value>
   </data>
-  <data name="unidadeDeMedidaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Unidade de Medida</value>
+  <data name="cSTCSOSNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
   </data>
-  <data name="bancoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
+  <data name="cSTCSOSNToolStripMenuItem.Text" xml:space="preserve">
+    <value>CST/CSOSN </value>
   </data>
-  <data name="bancoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+  <data name="iSSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
   </data>
-  <data name="bancoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Banco</value>
+  <data name="iSSToolStripMenuItem.Text" xml:space="preserve">
+    <value>ISS</value>
+  </data>
+  <data name="origemMercadoriaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Origem Mercadoria</value>
   </data>
   <data name="tabelasFiscaistributáriasToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="tabelasFiscaistributáriasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
+    <value>224, 22</value>
   </data>
   <data name="tabelasFiscaistributáriasToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tabelas fiscais/tributárias</value>
+    <value>Tributação</value>
   </data>
-  <data name="tecnicoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="tecnicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="tecnicoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tecnico</value>
+  <data name="cargoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
   </data>
   <data name="cargoToolStripMenuItem1.Text" xml:space="preserve">
     <value>Cargo</value>
+  </data>
+  <data name="usuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="usuarioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Funcionarios</value>
+  </data>
+  <data name="serviçosToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="serviçosToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Serviços</value>
+  </data>
+  <data name="serviçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="serviçosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Serviços</value>
+  </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Unidade De Medida</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="grupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="grupoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="subGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="subGrupoToolStripMenuItem.Text" xml:space="preserve">
+    <value>SubGrupo</value>
+  </data>
+  <data name="gruposSubGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="gruposSubGrupoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grupos/SubGrupo</value>
   </data>
   <data name="cadastrosToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
@@ -289,62 +283,26 @@
   <data name="cadastrosToolStripMenuItem.Text" xml:space="preserve">
     <value>Cadastros</value>
   </data>
-  <data name="fluxoDeCaixadiáriomensalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 22</value>
-  </data>
-  <data name="fluxoDeCaixadiáriomensalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fluxo de caixa (diário/mensal)</value>
-  </data>
-  <data name="relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 22</value>
-  </data>
-  <data name="relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Text" xml:space="preserve">
-    <value>Relatórios financeiros e exportação para Excel</value>
-  </data>
-  <data name="integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 22</value>
-  </data>
-  <data name="integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Integração com conciliação bancária (opcional)</value>
-  </data>
-  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 6</value>
-  </data>
-  <data name="lançamentoDeTituloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
-  </data>
-  <data name="lançamentoDeTituloToolStripMenuItem.Text" xml:space="preserve">
-    <value>Lançamento de Titulo</value>
-  </data>
-  <data name="lançamentoParçeladoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
-  </data>
-  <data name="lançamentoParçeladoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Lançamento Parçelado</value>
-  </data>
   <data name="lançamentoDeContasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 22</value>
+    <value>272, 22</value>
   </data>
   <data name="lançamentoDeContasAPagarToolStripMenuItem.Text" xml:space="preserve">
     <value>Lançamento de Contas a Pagar</value>
   </data>
-  <data name="lançamentoDeTituloToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
-  </data>
-  <data name="lançamentoDeTituloToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Lançamento de Titulo</value>
-  </data>
-  <data name="lançamentoParçeladoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
-  </data>
-  <data name="lançamentoParçeladoToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Lançamento Parçelado</value>
-  </data>
   <data name="lançamentoDeContasAReceberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 22</value>
+    <value>272, 22</value>
   </data>
   <data name="lançamentoDeContasAReceberToolStripMenuItem.Text" xml:space="preserve">
     <value>Lançamento de Contas a Receber</value>
+  </data>
+  <data name="laçamentoDeBoletosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Laçamento De Boletos</value>
+  </data>
+  <data name="despesasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Despesas</value>
+  </data>
+  <data name="fluxoDeCaixaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fluxo de Caixa</value>
   </data>
   <data name="finaceiroToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
@@ -356,19 +314,64 @@
     <value>Finaceiro</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 6</value>
+    <value>219, 6</value>
+  </data>
+  <data name="criarUmaNovaOrdemDeServiçoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Criar uma nova ordem de serviço</value>
+  </data>
+  <data name="registrarEquipamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="registrarEquipamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Registrar equipamento</value>
+  </data>
+  <data name="abrirNovaOrdemDeServiçoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
   </data>
   <data name="abrirNovaOrdemDeServiçoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Abrir nova Ordem de Serviço </value>
+    <value>Nova OS</value>
   </data>
-  <data name="históricoDeOSToolStripMenuItem.Text" xml:space="preserve">
-    <value>Histórico de OS</value>
+  <data name="inserirServiçosEPeçasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Inserir serviços e peças</value>
   </data>
-  <data name="relatóriosDeOSToolStripMenuItem.Text" xml:space="preserve">
-    <value>Relatórios de OS</value>
+  <data name="aprovarOrçamentoPeloClienteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Aprovar orçamento pelo cliente</value>
+  </data>
+  <data name="enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem.Text" xml:space="preserve">
+    <value>Enviar orçamento (opcional: PDF / SMS / WhatsApp)</value>
+  </data>
+  <data name="orçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
   </data>
   <data name="orçamentoToolStripMenuItem.Text" xml:space="preserve">
     <value>Orçamento</value>
+  </data>
+  <data name="registrarMãoDeObraToolStripMenuItem.Text" xml:space="preserve">
+    <value>Registrar mão de obra</value>
+  </data>
+  <data name="controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Controlar peças usadas (entrada/saída do estoque)</value>
+  </data>
+  <data name="execuçãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Execução</value>
+  </data>
+  <data name="emitirReciboOuNotaFiscalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Emitir recibo ou nota fiscal</value>
+  </data>
+  <data name="finalizaçãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Finalização / Entrega</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 6</value>
+  </data>
+  <data name="acompanharStatusDaOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Acompanhar status da OS</value>
+  </data>
+  <data name="consultarOSAnterioresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consultar OS anteriores</value>
+  </data>
+  <data name="históricoRastreamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Histórico / Rastreamento</value>
   </data>
   <data name="ordemDeServiçoOSToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
@@ -379,65 +382,53 @@
   <data name="ordemDeServiçoOSToolStripMenuItem.Text" xml:space="preserve">
     <value>Ordem de Serviço (OS)</value>
   </data>
-  <data name="configuraçãoDoRegimeTributárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 22</value>
+  <data name="entradasaídaManualToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 22</value>
   </data>
-  <data name="configuraçãoDoRegimeTributárioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Configuração do regime tributário</value>
+  <data name="entradasaídaManualToolStripMenuItem.Text" xml:space="preserve">
+    <value>Movimentação de Estoque</value>
   </data>
-  <data name="emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 22</value>
+  <data name="controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 22</value>
   </data>
-  <data name="emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Emissão de documentos fiscais (NF-e, NFS-e, NFC-e)</value>
+  <data name="controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consulta de Saldo / Inventário</value>
   </data>
-  <data name="geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 22</value>
+  <data name="inventárioconferênciaAjusteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 22</value>
   </data>
-  <data name="geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Geração de livros fiscais e relatórios de vendas/impostos</value>
+  <data name="inventárioconferênciaAjusteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ajuste de Estoque</value>
   </data>
-  <data name="relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 22</value>
+  <data name="estoqueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Estoque</value>
   </data>
-  <data name="relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Text" xml:space="preserve">
-    <value>Relatórios contábeis (SPED Fiscal/Contribuições)</value>
+  <data name="entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Text" xml:space="preserve">
+    <value>Entrada de Notas Fiscais (manual ou XML)</value>
   </data>
-  <data name="fiscalTributariaToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
+  <data name="pedidoDeCompraToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pedido de Compra</value>
   </data>
-  <data name="fiscalTributariaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 21</value>
+  <data name="consultaDeNotasRecebidasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consulta de Notas Recebidas</value>
   </data>
-  <data name="fiscalTributariaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fiscal/Tributaria</value>
+  <data name="comprasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Compras/Entradas</value>
   </data>
-  <data name="vendasDiáriasSemanaisMensaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 22</value>
+  <data name="pedidoDeVendaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pedido de Venda</value>
   </data>
-  <data name="vendasDiáriasSemanaisMensaisToolStripMenuItem.Text" xml:space="preserve">
-    <value>Vendas diárias, semanais, mensais</value>
+  <data name="emissãoDeNotaFiscalDeSaídaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Emissão de Nota Fiscal de Saída</value>
   </data>
-  <data name="faturamentoPorProdutoserviçoclienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 22</value>
+  <data name="consultaDeVendasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consulta de Vendas</value>
   </data>
-  <data name="faturamentoPorProdutoserviçoclienteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Faturamento por produto/serviço/cliente</value>
+  <data name="pdvCaixaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pdv/Caixa</value>
   </data>
-  <data name="relatóriosTributáriosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 22</value>
-  </data>
-  <data name="relatóriosTributáriosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Relatórios tributários</value>
-  </data>
-  <data name="relatorioToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="relatorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 21</value>
-  </data>
-  <data name="relatorioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Relatorio</value>
+  <data name="vendasSaidasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vendas/Saidas</value>
   </data>
   <data name="empresaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>251, 22</value>
@@ -460,6 +451,9 @@
   <data name="trocarSenhaToolStripMenuItem.Text" xml:space="preserve">
     <value>Trocar Senha</value>
   </data>
+  <data name="suaLogoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sua Logo</value>
+  </data>
   <data name="integraçõesToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
@@ -469,11 +463,8 @@
   <data name="integraçõesToolStripMenuItem.Text" xml:space="preserve">
     <value>Configurações</value>
   </data>
-  <data name="sairToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
   <data name="sairToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 21</value>
+    <value>38, 21</value>
   </data>
   <data name="sairToolStripMenuItem.Text" xml:space="preserve">
     <value>Sair</value>
@@ -485,6 +476,42 @@
     <value>menuStrip1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSair.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnSair.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnSair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSair.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 81</value>
+  </data>
+  <data name="btnSair.Text" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="btnSair.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnPdvCaixa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnPdvCaixa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnPdvCaixa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPdvCaixa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 81</value>
+  </data>
+  <data name="btnPdvCaixa.Text" xml:space="preserve">
+    <value>Pdv/Caixa- F9</value>
+  </data>
+  <data name="btnPdvCaixa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
   <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -495,10 +522,10 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>673, 1</value>
+    <value>536, 3</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 77</value>
+    <value>149, 81</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
@@ -520,10 +547,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnVenda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 1</value>
+    <value>420, 3</value>
   </data>
   <data name="btnVenda.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 77</value>
+    <value>110, 81</value>
   </data>
   <data name="btnVenda.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -532,27 +559,6 @@
     <value>Vendas- F7</value>
   </data>
   <data name="btnVenda.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="btnTransportadora.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnTransportadora.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
-  </data>
-  <data name="btnTransportadora.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnTransportadora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 1</value>
-  </data>
-  <data name="btnTransportadora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 77</value>
-  </data>
-  <data name="btnTransportadora.Text" xml:space="preserve">
-    <value>Transportadora- F6</value>
-  </data>
-  <data name="btnTransportadora.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
   <data name="btnFornecedor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -568,7 +574,7 @@
     <value>302, 1</value>
   </data>
   <data name="btnFornecedor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 77</value>
+    <value>112, 83</value>
   </data>
   <data name="btnFornecedor.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -592,7 +598,7 @@
     <value>206, 1</value>
   </data>
   <data name="btnCliente.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 77</value>
+    <value>90, 83</value>
   </data>
   <data name="btnCliente.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -616,7 +622,7 @@
     <value>107, 1</value>
   </data>
   <data name="btnProdu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 77</value>
+    <value>93, 83</value>
   </data>
   <data name="btnProdu.Text" xml:space="preserve">
     <value>Produtos- F3</value>
@@ -637,7 +643,7 @@
     <value>3, 1</value>
   </data>
   <data name="btnServiço.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 77</value>
+    <value>98, 83</value>
   </data>
   <data name="btnServiço.Text" xml:space="preserve">
     <value>Serviços- F2</value>
@@ -654,20 +660,41 @@
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1120, 86</value>
   </data>
+  <data name="labelDataHora.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="labelDataHora.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="labelDataHora.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelDataHora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 579</value>
+  </data>
+  <data name="labelDataHora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 49</value>
+  </data>
+  <data name="labelDataHora.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="pictureBox1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 111</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1120, 420</value>
+    <value>1120, 517</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+    <value>Zoom</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1120, 531</value>
+    <value>1120, 628</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -681,261 +708,6 @@
         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
-        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
-        AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAASAAAAzgAAAP8fHx//srS0/8XHx//Fx8f/xcfH/8XHx/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/HCMs/5W46P+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
-        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
-        /v+jyf7/o8n+/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAcAAABPAAAADAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAAADPAAAA/yQkJP/AwsL/xcfH/8XHx//Fx8f/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/ISk0/5W46P+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
-        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
-        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAABwAAAA/wAA
-        AMkAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwAAANQAAAD/bnBw/8XH
-        x//Fx8f/xcfH/wAAAP8AAAD/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ
-        /v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/o8n+/6PJ/v+jyf7/ncH0/5Cy
-        4f+Eos3/dpK4/2mCpP9dc5H/UWR+/0VVbP84RVj/KzZE/x8mMP8SFhz/AAAA/wAAAP8AAAAAAAAAAAAA
-        AAAAAAAAAAAAsAAAAP8AAAD/AAAAywAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        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
-        PP90UTz/AAAA/wAAAP90UTz/dFE8/3RRPP90UTz/dFE8/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAA
-        AB8AAAD8BQUF/6+wsP/Fx8f/xcfH/8XHx/+/wcH/bW5u/0JDQ/9WV1f/pKWl/8XHx//Fx8f/xcfH/8XH
-        x//Fx8f/xcfH/8XHx//Fx8f/AAAA/wAAAP+CW0L/gltC/4JbQv+CW0L/gltC/wAAAP8AAAD/gltC/4Jb
-        Qv+CW0L/gltC/4JbQv+CW0L/gltC/4JbQv9/WUD/CQYF/wAAAP8AAAD/CQYF/39ZQP+CW0L/gltC/4Jb
-        Qv+CW0L/gltC/4BaQv93Uz7/dFE8/wAAAP8AAAD/dFE8/3RRPP90UTz/dFE8/3RRPP8AAAD/AAAA/wAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAogAAAP9BQkL/xcfH/8XHx//Fx8f/xcfH/8XHx//Fx8f/xcfH/8XH
-        x//Fx8f/xcfH/8XHx//Fx8f/xcfH/8XHx//Fx8f/xcfH/wAAAP8AAAD/gltC/4JbQv+CW0L/gltC/4Jb
-        Qv8AAAD/AAAA/4JbQv+CW0L/JBkS/xsTDf9cQC//gltC/4JbQv+CW0L/Wj8u/wAAAP8qKir/Kioq/wAA
-        AP9aPy7/gltC/4JbQv+CW0L/XEAv/xYQC/8hFxH/glpB/3lUPv8AAAD/AAAA/3RRPP90UTz/dFE8/3RR
-        PP90UTz/AAAA/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8BAQHxAAAA/29wcP/Fx8f/xcfH/8XH
-        x//Fx8f/xcfH/8XHx//Fx8f/xcfH/8XHx//Fx8f/xcfH/8XHx//Fx8f/xcfH/2VmZv8AAAD/AAAA/4Jb
-        Qv+CW0L/gltC/4JbQv+CW0L/gltC/4JbQv+CW0L/fFc//wAAAP8AAAD/AAAA/yQZEv9tTDf/gltC/yse
-        Fv8AAAD/eXp6/3h5ef8AAAD/Kx4W/4JbQv9tTDf/JBkS/wAAAP8AAAD/AAAA/3xXP/+BW0L/eVQ//3RR
-        PP90UTz/dFE8/3RRPP90UTz/dFE8/wAAAP8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAA
-        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
-        AAAAAAAAAAAAAAAAAAAAAABVAAAA8gAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA8gAAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwAA
-        AHAAAAC2AAAA3QAAAPkAAADuAAAA4wAAAK4AAABvAAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYAAACEAAAAzwAAAPQAAAD/AAAA/wAA
-        AP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAPQAAADOAAAAgwAAABYAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -945,18 +717,276 @@
         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
-        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
+        AAAAAAAAAAAAAAAAAAAAAAAAs4hMTbKJSsCyiUvusolL7rKKTL2xikpIAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACzikxKs4lLvrKJS+6yiUvvsolLvLKISk8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4lKf7KJS/+yiUv/solL/7KJS/+yiUv/solL/rKJ
+        S3cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUt7solL/7KJS/+yiUv/solL/7KJS/+yiUv/s4lLjAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsItLRLKJS/6yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv9tIpLPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACzh0xAsolL/rKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+zikxKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        TLayiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS60AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsopKsrKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solMtgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiEvxsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUvnAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        S+2yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS+cAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsolL9rKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUvzsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUvoAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJS8OyiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7OIS7sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsolLwbKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solLtwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACzikxKsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+wi0tEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALSIS0eyiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KKSkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYlIJ7KJ
+        S62yiUvnsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS48AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAtYZKJrOJS/CyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+ziUvwsopMvbGJS1IAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAALOJS6qyiUv/solLrbGJThoAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyiUvqsolL/62FRxkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsolL6LKJ
+        S/+1jEofAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAALKJSp6yiUv/solLybOITTz//wABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2hkkVsolL3bKJS/+yiUv/solK4rKIS46zi0w5//8AAQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKqAVQyziUp/solL4bKJ
+        S/+yiUv/solL/7KJS+GyiEuOtIpLPaqqVQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AAGyiUk4sYlKjbKJS+GyiUv/solL/7KJS/+yiUvssopLo7GIS1ixiU4aAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wABs4pNRrKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS+GziUuns4lKf7KKSmCyh0lCsYlIJ7WMSh+0h0sRtIdLEQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKK
+        SkyyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/rKJSuKyiUuVsYlOGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUyRsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS+qwiEotAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsohL1bKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sopL17+A
+        QAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs45MG7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yikpMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALGJ
+        S1+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sopMhwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACxiUuksolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJSqgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wABs4lL5rKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUvJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYtOLrKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solM6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALGJ
+        S3OyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+qgFUMAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACxiUu4solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sohNKwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2kkkHsolL9bKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv9solLvLGJS3Owi0o3sYVOFwAAAAAAAAAAqoBVDLKH
+        TTWziUxosolMtrGJSkUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYlLQbKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/iziEqQtYxKHwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALOJ
+        SoayiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KKS7+yi00hAAAAAAAA
+        AADJqEomzKZJbc2mSazMpknMzKZI48ymSOPLpkjLzKZIq82nR2vPpUUlAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyikrKsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KI
+        S4GAgIACAAAAAMqmST/Mpki4zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/s2l
+        R7bMpkg8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4jkcSsolL/bKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/rKISmcAAAAAv59ACMylSJHMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/82lSKLMs00KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYpLVbKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7OKSnwAAAAAzKZNFMymSNLMpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI0MmhQxMAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALGJ
+        S5qyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KISrn//wABzLNNCs2mSMXMpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/MpkjJ0aJGCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUvesolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KIS/GthUcZAAAAAMyn
+        SJ/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSJsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACxh04ksolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiEuBAAAAAM2kSTjMpkj+zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZIPM2n
+        Rz3Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj9yqRINQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4lMaLKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv4uI5HEgAAAADNpkjAzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/wAAAAAAAAAAzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SL0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        S62yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sYhLrgAAAADIpEkczKZI/cymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP8AAAAAAAAAAMymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj9zqdFGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAKqqVQOyiUvusolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7OKSmQAAAAAy6dIccym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/AAAAAAAAAADMpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSW0AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwi0o3solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+1ikowAAAAAM2mSazMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/wAA
+        AAAAAAAAzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/MpkipAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4pKfLKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/qohEDwAAAADMpkjOzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP8AAAAAAAAAAMymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/y6ZIywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        SsCyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/f//AAEAAAAAzKZI7symSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZIPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM6n
+        SEPMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSO4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAALmLRguyiUv4solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzJkzBcul
+        SJTMpkj+zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/s2n
+        SZO/v0AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAzqdKNMymSL3Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zaZIxcqnRjoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAy6NIJ8ylSXfLpUi8zKZI18ym
+        SPTMpkj0zKZI182mSLvLpkd2y6NIJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////////////////////////8D///A/////gH//4B////8AP//A
+        D////wA//8AP////AD//wA////8AP//AD////wA//8AP////AD//wA///8AAAAAAH///gAAAAAA///+H
+        /////////4//////////j/////////+D/////////4B/////////wA/////////wAf////////4AAP//
+        /////wAAAAAP////AAAAAAf///8AAAAAA////gAAAAAD///+AAAAAAP///4AAAAAA////AAAAAAD///8
+        AAAAAAP///wAAAAAAf///AAAAAAB///4AAAAAMH///gAAAAP////+AAAADAD///4AAAAQAD///AAAAEA
+        AD//8AAAAgAAH//wAAAAAAAP//AAAAQAAA//4AAACAAAB//gAAAIAMAH/+AAABAAwAP/wAAAEADAA//A
+        AAAQAMAD/8AAABAAwAP/wAAAEB/+A/+AAAAQH/4D/4AAABAAwAP/j///8ADAA/+P///wAMAD/w////AA
+        wAP/H///+ADAB/4f///4AAAHwB////wAAA/AP////AAAD//////+AAAf//////8AAD///////8AA////
+        ////8AP///////////////////////////////////////////8=
 </value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>UniPDV  - Venda+Serviço</value>
   </data>
 </root>

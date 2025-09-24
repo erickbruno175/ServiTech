@@ -32,7 +32,6 @@
             tabPage1 = new TabPage();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnSair = new Button();
             btnCancelar = new Button();
             btnGravar = new Button();
             groupBox4 = new GroupBox();
@@ -58,8 +57,6 @@
             btnBuscaCidade = new Button();
             textNumero = new TextBox();
             label15 = new Label();
-            label14 = new Label();
-            textCep = new MaskedTextBox();
             textBairro = new TextBox();
             label13 = new Label();
             label12 = new Label();
@@ -110,7 +107,7 @@
             DataCriacao = new DataGridViewTextBoxColumn();
             UltimaAtualizacao = new DataGridViewTextBoxColumn();
             groupBox5 = new GroupBox();
-            btnPesquisarCliente = new Button();
+            btnPesquisar = new Button();
             label17 = new Label();
             comboModelo = new ComboBox();
             checkBoxCarregarTodos = new CheckBox();
@@ -134,13 +131,13 @@
             // 
             // tabControl1
             // 
-            tabControl1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(0, 1);
+            tabControl1.Dock = DockStyle.Fill;
+            tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1095, 592);
+            tabControl1.Size = new Size(1095, 593);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -152,7 +149,7 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1087, 564);
+            tabPage1.Size = new Size(1087, 565);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cadastro";
             tabPage1.UseVisualStyleBackColor = true;
@@ -161,58 +158,43 @@
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnSair);
             panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 489);
+            panel1.Location = new Point(3, 507);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1077, 68);
+            panel1.Size = new Size(1077, 51);
             panel1.TabIndex = 11;
-            panel1.Resize += panel1_Resize;
             // 
             // btnNovo
             // 
             btnNovo.Image = Properties.Resources.crio;
-            btnNovo.Location = new Point(10, 14);
+            btnNovo.Location = new Point(1, 8);
             btnNovo.Name = "btnNovo";
-            btnNovo.Size = new Size(129, 40);
-            btnNovo.TabIndex = 5;
-            btnNovo.Text = "Novo Cliente F4";
+            btnNovo.Size = new Size(88, 40);
+            btnNovo.TabIndex = 18;
+            btnNovo.Text = "Incluir F4";
             btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNovo.UseVisualStyleBackColor = true;
-            btnNovo.Click += LiberararCamposParaNovoCadastro_Click;
-            // 
-            // btnSair
-            // 
-            btnSair.Image = Properties.Resources.sair;
-            btnSair.Location = new Point(965, 14);
-            btnSair.Name = "btnSair";
-            btnSair.Size = new Size(107, 40);
-            btnSair.TabIndex = 9;
-            btnSair.Text = "Sair";
-            btnSair.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnSair.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
             btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(280, 14);
+            btnCancelar.Location = new Point(189, 8);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(129, 40);
-            btnCancelar.TabIndex = 7;
+            btnCancelar.Size = new Size(101, 40);
+            btnCancelar.TabIndex = 17;
             btnCancelar.Text = "Cancelar F6";
             btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnGravar
             // 
-            btnGravar.Enabled = false;
             btnGravar.Image = Properties.Resources.salvar;
-            btnGravar.Location = new Point(145, 14);
+            btnGravar.Location = new Point(95, 8);
             btnGravar.Name = "btnGravar";
-            btnGravar.Size = new Size(129, 40);
-            btnGravar.TabIndex = 6;
+            btnGravar.Size = new Size(88, 40);
+            btnGravar.TabIndex = 16;
             btnGravar.Text = "Gravar F5";
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
@@ -390,8 +372,6 @@
             groupBox1.Controls.Add(btnBuscaCidade);
             groupBox1.Controls.Add(textNumero);
             groupBox1.Controls.Add(label15);
-            groupBox1.Controls.Add(label14);
-            groupBox1.Controls.Add(textCep);
             groupBox1.Controls.Add(textBairro);
             groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(label12);
@@ -495,10 +475,10 @@
             // 
             // textNumero
             // 
-            textNumero.Location = new Point(846, 178);
+            textNumero.Location = new Point(698, 178);
             textNumero.Name = "textNumero";
             textNumero.ReadOnly = true;
-            textNumero.Size = new Size(211, 23);
+            textNumero.Size = new Size(125, 23);
             textNumero.TabIndex = 31;
             // 
             // label15
@@ -506,31 +486,11 @@
             label15.AutoSize = true;
             label15.Font = new Font("Arial", 9.75F);
             label15.ForeColor = Color.FromArgb(44, 62, 80);
-            label15.Location = new Point(846, 158);
+            label15.Location = new Point(698, 158);
             label15.Name = "label15";
             label15.Size = new Size(52, 16);
             label15.TabIndex = 30;
             label15.Text = "Numero";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Arial", 9.75F);
-            label14.ForeColor = Color.FromArgb(44, 62, 80);
-            label14.Location = new Point(698, 158);
-            label14.Name = "label14";
-            label14.Size = new Size(30, 16);
-            label14.TabIndex = 29;
-            label14.Text = "Cep";
-            // 
-            // textCep
-            // 
-            textCep.Location = new Point(698, 178);
-            textCep.Mask = "00000-000";
-            textCep.Name = "textCep";
-            textCep.ReadOnly = true;
-            textCep.Size = new Size(142, 23);
-            textCep.TabIndex = 28;
             // 
             // textBairro
             // 
@@ -870,7 +830,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1087, 564);
+            tabPage2.Size = new Size(1087, 565);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Consultas";
             tabPage2.UseVisualStyleBackColor = true;
@@ -881,7 +841,7 @@
             panel3.Controls.Add(btnEditar);
             panel3.Controls.Add(btnExcluir);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(3, 489);
+            panel3.Location = new Point(3, 490);
             panel3.Name = "panel3";
             panel3.Size = new Size(1077, 68);
             panel3.TabIndex = 11;
@@ -916,7 +876,7 @@
             panel2.Controls.Add(tabelaCliente);
             panel2.Location = new Point(3, 123);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1078, 360);
+            panel2.Size = new Size(1078, 361);
             panel2.TabIndex = 1;
             // 
             // tabelaCliente
@@ -928,70 +888,61 @@
             tabelaCliente.EditMode = DataGridViewEditMode.EditOnF2;
             tabelaCliente.Location = new Point(0, 0);
             tabelaCliente.Name = "tabelaCliente";
-            tabelaCliente.Size = new Size(1074, 356);
+            tabelaCliente.Size = new Size(1074, 357);
             tabelaCliente.TabIndex = 3;
             // 
             // Codigo
             // 
             Codigo.HeaderText = "Codigo";
             Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
             Codigo.Width = 80;
             // 
             // Nome
             // 
             Nome.HeaderText = "Nome";
             Nome.Name = "Nome";
-            Nome.ReadOnly = true;
             Nome.Width = 400;
             // 
             // CpfCnpj
             // 
             CpfCnpj.HeaderText = "Cpf/Cnpj";
             CpfCnpj.Name = "CpfCnpj";
-            CpfCnpj.ReadOnly = true;
             CpfCnpj.Width = 200;
             // 
             // TelCliente
             // 
             TelCliente.HeaderText = "Tel";
             TelCliente.Name = "TelCliente";
-            TelCliente.ReadOnly = true;
             TelCliente.Width = 200;
             // 
             // Whatsapp
             // 
             Whatsapp.HeaderText = "Whatsapp";
             Whatsapp.Name = "Whatsapp";
-            Whatsapp.ReadOnly = true;
             Whatsapp.Width = 200;
             // 
             // Uf
             // 
             Uf.HeaderText = "Uf";
             Uf.Name = "Uf";
-            Uf.ReadOnly = true;
             Uf.Width = 200;
             // 
             // Cidade
             // 
             Cidade.HeaderText = "Cidade";
             Cidade.Name = "Cidade";
-            Cidade.ReadOnly = true;
             Cidade.Width = 200;
             // 
             // Bairro
             // 
             Bairro.HeaderText = "Bairro";
             Bairro.Name = "Bairro";
-            Bairro.ReadOnly = true;
             Bairro.Width = 250;
             // 
             // Ativo
             // 
             Ativo.HeaderText = "Ativo";
             Ativo.Name = "Ativo";
-            Ativo.ReadOnly = true;
             Ativo.Width = 50;
             // 
             // DataCriacao
@@ -1008,8 +959,7 @@
             // 
             // groupBox5
             // 
-            groupBox5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox5.Controls.Add(btnPesquisarCliente);
+            groupBox5.Controls.Add(btnPesquisar);
             groupBox5.Controls.Add(label17);
             groupBox5.Controls.Add(comboModelo);
             groupBox5.Controls.Add(checkBoxCarregarTodos);
@@ -1017,24 +967,25 @@
             groupBox5.Controls.Add(label16);
             groupBox5.Controls.Add(label2);
             groupBox5.Controls.Add(comboFiltros);
-            groupBox5.Location = new Point(3, 6);
+            groupBox5.Dock = DockStyle.Top;
+            groupBox5.Location = new Point(3, 3);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(1076, 102);
+            groupBox5.Size = new Size(1077, 102);
             groupBox5.TabIndex = 0;
             groupBox5.TabStop = false;
             groupBox5.Text = "Campos de Pesquisa";
             groupBox5.Resize += groupBox5_Resize;
             // 
-            // btnPesquisarCliente
+            // btnPesquisar
             // 
-            btnPesquisarCliente.Image = Properties.Resources.lupa;
-            btnPesquisarCliente.Location = new Point(962, 69);
-            btnPesquisarCliente.Name = "btnPesquisarCliente";
-            btnPesquisarCliente.Size = new Size(113, 29);
-            btnPesquisarCliente.TabIndex = 19;
-            btnPesquisarCliente.Text = "Pesquisar";
-            btnPesquisarCliente.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnPesquisarCliente.UseVisualStyleBackColor = true;
+            btnPesquisar.Image = Properties.Resources.lupa;
+            btnPesquisar.Location = new Point(962, 69);
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.Size = new Size(109, 29);
+            btnPesquisar.TabIndex = 19;
+            btnPesquisar.Text = "Pesquisar";
+            btnPesquisar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -1058,7 +1009,7 @@
             // checkBoxCarregarTodos
             // 
             checkBoxCarregarTodos.AutoSize = true;
-            checkBoxCarregarTodos.Location = new Point(1017, 15);
+            checkBoxCarregarTodos.Location = new Point(1012, 15);
             checkBoxCarregarTodos.Name = "checkBoxCarregarTodos";
             checkBoxCarregarTodos.Size = new Size(58, 19);
             checkBoxCarregarTodos.TabIndex = 16;
@@ -1070,7 +1021,7 @@
             textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textDadosPesquisa.Location = new Point(374, 40);
             textDadosPesquisa.Name = "textDadosPesquisa";
-            textDadosPesquisa.Size = new Size(696, 23);
+            textDadosPesquisa.Size = new Size(697, 23);
             textDadosPesquisa.TabIndex = 15;
             // 
             // label16
@@ -1114,7 +1065,7 @@
             MinimizeBox = false;
             Name = "CadastrarCliente";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Cadastrar Cliente";
+            Text = "Cadastrar Clientes";
             Load += CadastrarCliente_Load;
             KeyDown += LiberararCamposParaNovoCadastro_KeyDown;
             tabControl1.ResumeLayout(false);
@@ -1173,8 +1124,6 @@
         private TextBox textCidade;
         private TextBox textUf;
         private Label label11;
-        private Label label14;
-        private MaskedTextBox textCep;
         private TextBox textNumero;
         private Label label15;
         private Button btnBuscaCidade;
@@ -1205,15 +1154,11 @@
         private Label label17;
         private ComboBox comboModelo;
         private Panel panel2;
-        private Button btnPesquisarCliente;
+        private Button btnPesquisar;
         private Label label19;
         private MaskedTextBox textDataCadastro;
         private Button btnEditar;
         private Panel panel1;
-        private Button btnNovo;
-        private Button btnSair;
-        private Button btnCancelar;
-        private Button btnGravar;
         private Panel panel3;
         private DataGridView tabelaCliente;
         private DataGridViewTextBoxColumn Codigo;
@@ -1227,5 +1172,8 @@
         private DataGridViewCheckBoxColumn Ativo;
         private DataGridViewTextBoxColumn DataCriacao;
         private DataGridViewTextBoxColumn UltimaAtualizacao;
+        private Button btnNovo;
+        private Button btnCancelar;
+        private Button btnGravar;
     }
 }
