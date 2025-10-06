@@ -28,22 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarBairro));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnCancelar = new Button();
             btnGravar = new Button();
             groupBox1 = new GroupBox();
-            textBox1 = new TextBox();
-            label7 = new Label();
-            textCodigoBairro = new TextBox();
+            comboCidades = new ComboBox();
+            textCodigo = new TextBox();
             label3 = new Label();
-            btnBuscaMunici = new Button();
-            textNomeCidade = new TextBox();
             label5 = new Label();
-            labelUf = new Label();
-            comboBoxUf = new ComboBox();
             textBairro = new TextBox();
             label1 = new Label();
             tabPage2 = new TabPage();
@@ -51,15 +46,7 @@
             btnEditar = new Button();
             btnExcluir = new Button();
             panel2 = new Panel();
-            dataGridView1 = new DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            Codigo = new DataGridViewTextBoxColumn();
-            NomeBairro = new DataGridViewTextBoxColumn();
-            Uf = new DataGridViewTextBoxColumn();
-            NomeCidade = new DataGridViewTextBoxColumn();
-            NomePais = new DataGridViewTextBoxColumn();
-            DataCadastro = new DataGridViewTextBoxColumn();
-            UltimaAtulizacao = new DataGridViewTextBoxColumn();
+            dataGridBairro = new DataGridView();
             groupBox2 = new GroupBox();
             checkBoxTodos = new CheckBox();
             btnPesquisar = new Button();
@@ -76,7 +63,7 @@
             tabPage2.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridBairro).BeginInit();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
@@ -88,7 +75,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(968, 426);
+            tabControl1.Size = new Size(762, 426);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -98,7 +85,7 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(960, 398);
+            tabPage1.Size = new Size(754, 398);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cadastro";
             tabPage1.UseVisualStyleBackColor = true;
@@ -107,12 +94,11 @@
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(3, 343);
             panel1.Name = "panel1";
-            panel1.Size = new Size(954, 52);
+            panel1.Size = new Size(748, 52);
             panel1.TabIndex = 2;
             // 
             // btnNovo
@@ -128,17 +114,6 @@
             btnNovo.Click += LiberararCamposParaNovoCadastro_Click;
             btnNovo.KeyDown += LiberararCamposParaNovoCadastro_Click;
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(193, 5);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 11;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // btnGravar
             // 
             btnGravar.Image = Properties.Resources.salvar;
@@ -149,128 +124,70 @@
             btnGravar.Text = "Gravar F5";
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
+            btnGravar.Click += btnGravar_Click;
             // 
             // groupBox1
             // 
-            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(textCodigoBairro);
+            groupBox1.Controls.Add(comboCidades);
+            groupBox1.Controls.Add(textCodigo);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(btnBuscaMunici);
-            groupBox1.Controls.Add(textNomeCidade);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(labelUf);
-            groupBox1.Controls.Add(comboBoxUf);
             groupBox1.Controls.Add(textBairro);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(6, 6);
+            groupBox1.Dock = DockStyle.Top;
+            groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(948, 120);
+            groupBox1.Size = new Size(748, 120);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
-            groupBox1.Resize += groupBox1_Resize;
             // 
-            // textBox1
+            // comboCidades
             // 
-            textBox1.Location = new Point(5, 89);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(63, 23);
-            textBox1.TabIndex = 47;
+            comboCidades.Enabled = false;
+            comboCidades.FormattingEnabled = true;
+            comboCidades.Location = new Point(7, 92);
+            comboCidades.Name = "comboCidades";
+            comboCidades.Size = new Size(278, 23);
+            comboCidades.TabIndex = 198;
             // 
-            // label7
+            // textCodigo
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Arial", 9.75F);
-            label7.ForeColor = Color.FromArgb(44, 62, 80);
-            label7.Location = new Point(6, 70);
-            label7.Name = "label7";
-            label7.Size = new Size(47, 16);
-            label7.TabIndex = 46;
-            label7.Text = "Codigo";
-            // 
-            // textCodigoBairro
-            // 
-            textCodigoBairro.Location = new Point(4, 38);
-            textCodigoBairro.Name = "textCodigoBairro";
-            textCodigoBairro.ReadOnly = true;
-            textCodigoBairro.Size = new Size(64, 23);
-            textCodigoBairro.TabIndex = 40;
+            textCodigo.Location = new Point(6, 38);
+            textCodigo.Name = "textCodigo";
+            textCodigo.ReadOnly = true;
+            textCodigo.Size = new Size(88, 23);
+            textCodigo.TabIndex = 40;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9.75F);
             label3.ForeColor = Color.FromArgb(44, 62, 80);
-            label3.Location = new Point(4, 18);
+            label3.Location = new Point(6, 19);
             label3.Name = "label3";
             label3.Size = new Size(47, 16);
             label3.TabIndex = 39;
             label3.Text = "Codigo";
-            // 
-            // btnBuscaMunici
-            // 
-            btnBuscaMunici.BackColor = Color.Transparent;
-            btnBuscaMunici.Enabled = false;
-            btnBuscaMunici.FlatAppearance.BorderSize = 0;
-            btnBuscaMunici.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaMunici.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaMunici.FlatStyle = FlatStyle.Flat;
-            btnBuscaMunici.Image = Properties.Resources.lupa;
-            btnBuscaMunici.Location = new Point(909, 89);
-            btnBuscaMunici.Name = "btnBuscaMunici";
-            btnBuscaMunici.Size = new Size(27, 23);
-            btnBuscaMunici.TabIndex = 38;
-            btnBuscaMunici.UseVisualStyleBackColor = false;
-            // 
-            // textNomeCidade
-            // 
-            textNomeCidade.Location = new Point(73, 89);
-            textNomeCidade.Name = "textNomeCidade";
-            textNomeCidade.ReadOnly = true;
-            textNomeCidade.Size = new Size(830, 23);
-            textNomeCidade.TabIndex = 35;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 9.75F);
             label5.ForeColor = Color.FromArgb(44, 62, 80);
-            label5.Location = new Point(73, 70);
+            label5.Location = new Point(6, 73);
             label5.Name = "label5";
-            label5.Size = new Size(74, 16);
+            label5.Size = new Size(54, 16);
             label5.TabIndex = 34;
-            label5.Text = "Cidade - F1";
-            // 
-            // labelUf
-            // 
-            labelUf.AutoSize = true;
-            labelUf.Font = new Font("Arial", 9.75F);
-            labelUf.ForeColor = Color.FromArgb(44, 62, 80);
-            labelUf.Location = new Point(903, 19);
-            labelUf.Name = "labelUf";
-            labelUf.Size = new Size(19, 16);
-            labelUf.TabIndex = 25;
-            labelUf.Text = "Uf";
-            // 
-            // comboBoxUf
-            // 
-            comboBoxUf.Enabled = false;
-            comboBoxUf.FormattingEnabled = true;
-            comboBoxUf.Location = new Point(909, 38);
-            comboBoxUf.Name = "comboBoxUf";
-            comboBoxUf.Size = new Size(33, 23);
-            comboBoxUf.TabIndex = 24;
+            label5.Text = "Cidades";
             // 
             // textBairro
             // 
             textBairro.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBairro.Location = new Point(73, 38);
+            textBairro.Location = new Point(100, 38);
             textBairro.Name = "textBairro";
             textBairro.ReadOnly = true;
-            textBairro.Size = new Size(830, 23);
+            textBairro.Size = new Size(629, 23);
             textBairro.TabIndex = 23;
             // 
             // label1
@@ -278,7 +195,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 9.75F);
             label1.ForeColor = Color.FromArgb(44, 62, 80);
-            label1.Location = new Point(73, 19);
+            label1.Location = new Point(100, 19);
             label1.Name = "label1";
             label1.Size = new Size(97, 16);
             label1.TabIndex = 22;
@@ -293,7 +210,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(960, 398);
+            tabPage2.Size = new Size(754, 398);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Consultas";
             tabPage2.UseVisualStyleBackColor = true;
@@ -304,9 +221,9 @@
             panel3.Controls.Add(btnEditar);
             panel3.Controls.Add(btnExcluir);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(3, 335);
+            panel3.Location = new Point(3, 325);
             panel3.Name = "panel3";
-            panel3.Size = new Size(950, 56);
+            panel3.Size = new Size(744, 66);
             panel3.TabIndex = 3;
             // 
             // btnEditar
@@ -319,6 +236,7 @@
             btnEditar.Text = "Editar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnExcluir
             // 
@@ -330,82 +248,27 @@
             btnExcluir.Text = "Excluir F7";
             btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(dataGridBairro);
             panel2.Location = new Point(6, 109);
             panel2.Name = "panel2";
-            panel2.Size = new Size(944, 210);
+            panel2.Size = new Size(738, 210);
             panel2.TabIndex = 1;
             // 
-            // dataGridView1
+            // dataGridBairro
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id, Codigo, NomeBairro, Uf, NomeCidade, NomePais, DataCadastro, UltimaAtulizacao });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(940, 206);
-            dataGridView1.TabIndex = 1;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "Id";
-            Id.Name = "Id";
-            Id.ReadOnly = true;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            // 
-            // NomeBairro
-            // 
-            NomeBairro.HeaderText = "Nome do Bairro";
-            NomeBairro.Name = "NomeBairro";
-            NomeBairro.ReadOnly = true;
-            NomeBairro.Width = 350;
-            // 
-            // Uf
-            // 
-            Uf.HeaderText = "Uf";
-            Uf.Name = "Uf";
-            Uf.ReadOnly = true;
-            Uf.Width = 80;
-            // 
-            // NomeCidade
-            // 
-            NomeCidade.HeaderText = "Nome da Cidade";
-            NomeCidade.Name = "NomeCidade";
-            NomeCidade.ReadOnly = true;
-            NomeCidade.Width = 250;
-            // 
-            // NomePais
-            // 
-            NomePais.HeaderText = "Nome do Pais";
-            NomePais.Name = "NomePais";
-            NomePais.ReadOnly = true;
-            NomePais.Width = 250;
-            // 
-            // DataCadastro
-            // 
-            DataCadastro.HeaderText = "Data de Cadastro";
-            DataCadastro.Name = "DataCadastro";
-            DataCadastro.ReadOnly = true;
-            DataCadastro.Width = 250;
-            // 
-            // UltimaAtulizacao
-            // 
-            UltimaAtulizacao.HeaderText = "Ultima Atualização";
-            UltimaAtulizacao.Name = "UltimaAtulizacao";
-            UltimaAtulizacao.ReadOnly = true;
-            UltimaAtulizacao.Width = 250;
+            dataGridBairro.BackgroundColor = Color.White;
+            dataGridBairro.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridBairro.Dock = DockStyle.Fill;
+            dataGridBairro.Location = new Point(0, 0);
+            dataGridBairro.Name = "dataGridBairro";
+            dataGridBairro.Size = new Size(734, 206);
+            dataGridBairro.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -420,7 +283,7 @@
             groupBox2.Dock = DockStyle.Top;
             groupBox2.Location = new Point(3, 3);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(950, 97);
+            groupBox2.Size = new Size(744, 97);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Campos de Pesquisa";
@@ -429,7 +292,7 @@
             // checkBoxTodos
             // 
             checkBoxTodos.AutoSize = true;
-            checkBoxTodos.Location = new Point(886, 11);
+            checkBoxTodos.Location = new Point(680, 14);
             checkBoxTodos.Name = "checkBoxTodos";
             checkBoxTodos.Size = new Size(58, 19);
             checkBoxTodos.TabIndex = 27;
@@ -439,7 +302,7 @@
             // btnPesquisar
             // 
             btnPesquisar.Image = Properties.Resources.lupa;
-            btnPesquisar.Location = new Point(831, 62);
+            btnPesquisar.Location = new Point(625, 62);
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.Size = new Size(113, 29);
             btnPesquisar.TabIndex = 26;
@@ -452,8 +315,9 @@
             textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textDadosPesquisa.Location = new Point(374, 35);
             textDadosPesquisa.Name = "textDadosPesquisa";
-            textDadosPesquisa.Size = new Size(570, 23);
+            textDadosPesquisa.Size = new Size(364, 23);
             textDadosPesquisa.TabIndex = 24;
+            textDadosPesquisa.TextChanged += textDadosPesquisa_TextChanged;
             // 
             // label16
             // 
@@ -508,8 +372,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(968, 426);
+            ClientSize = new Size(762, 426);
             Controls.Add(tabControl1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             Name = "CadastrarBairro";
             StartPosition = FormStartPosition.CenterParent;
@@ -524,7 +389,7 @@
             tabPage2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridBairro).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
@@ -548,30 +413,16 @@
         private CheckBox checkBoxTodos;
         private TextBox textBairro;
         private Label label1;
-        private Label labelUf;
-        private ComboBox comboBoxUf;
         private Panel panel1;
         private Button btnNovo;
-        private Button btnCancelar;
         private Button btnGravar;
         private Panel panel3;
         private Button btnEditar;
         private Button btnExcluir;
-        private Button btnBuscaMunici;
-        private TextBox textCodigoBairro;
+        private TextBox textCodigo;
         private Label label3;
-        private TextBox textNomeCidade;
         private Label label5;
-        private TextBox textBox1;
-        private Label label7;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn NomeBairro;
-        private DataGridViewTextBoxColumn Uf;
-        private DataGridViewTextBoxColumn NomeCidade;
-        private DataGridViewTextBoxColumn NomePais;
-        private DataGridViewTextBoxColumn DataCadastro;
-        private DataGridViewTextBoxColumn UltimaAtulizacao;
+        private ComboBox comboCidades;
+        private DataGridView dataGridBairro;
     }
 }

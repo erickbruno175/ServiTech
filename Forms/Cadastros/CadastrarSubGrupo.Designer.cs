@@ -28,54 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarSubGrupo));
             tabControl1 = new TabControl();
             tabPage2 = new TabPage();
+            groupBox2 = new GroupBox();
+            textCodGrupo = new TextBox();
+            textCod = new TextBox();
+            label1 = new Label();
             btnBuscaCategoriaPagamento = new Button();
-            textBox3 = new TextBox();
             label4 = new Label();
             textBox2 = new TextBox();
             label3 = new Label();
+            groupBox3 = new GroupBox();
+            radioAtivoNao = new RadioButton();
+            radioAtivoSim = new RadioButton();
+            textNome = new TextBox();
+            label10 = new Label();
             panel1 = new Panel();
             btnNovo = new Button();
             btnCancelar = new Button();
             btnGravar = new Button();
-            groupBox3 = new GroupBox();
-            radioAtivoNao = new RadioButton();
-            radioAtivoSim = new RadioButton();
-            textBox1 = new TextBox();
-            label2 = new Label();
-            textNomePais = new TextBox();
-            label10 = new Label();
-            textCodigoPais = new TextBox();
-            label1 = new Label();
             tabPage1 = new TabPage();
+            panel3 = new Panel();
+            dataGridView1 = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            Codigo = new DataGridViewTextBoxColumn();
+            Nome = new DataGridViewTextBoxColumn();
+            Grupo = new DataGridViewTextBoxColumn();
+            panel2 = new Panel();
+            btnEditar = new Button();
+            btnExcluir = new Button();
             groupBox1 = new GroupBox();
+            textDadosPesquisa = new TextBox();
+            label5 = new Label();
             checkBoxTodos = new CheckBox();
             btnPesquisar = new Button();
             label16 = new Label();
             label17 = new Label();
             comboModelo = new ComboBox();
-            label5 = new Label();
             comboFiltros = new ComboBox();
-            textDadosPesquisa = new TextBox();
-            panel2 = new Panel();
-            btnEditar = new Button();
-            btnExcluir = new Button();
-            panel3 = new Panel();
-            dataGridView1 = new DataGridView();
-            Id = new DataGridViewTextBoxColumn();
-            Codigo = new DataGridViewTextBoxColumn();
-            Descricao = new DataGridViewTextBoxColumn();
-            CodigoGrupo = new DataGridViewTextBoxColumn();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
-            panel1.SuspendLayout();
+            groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
+            panel1.SuspendLayout();
             tabPage1.SuspendLayout();
-            groupBox1.SuspendLayout();
-            panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
@@ -91,26 +92,62 @@
             // 
             // tabPage2
             // 
-            tabPage2.Controls.Add(btnBuscaCategoriaPagamento);
-            tabPage2.Controls.Add(textBox3);
-            tabPage2.Controls.Add(label4);
-            tabPage2.Controls.Add(textBox2);
-            tabPage2.Controls.Add(label3);
+            tabPage2.Controls.Add(groupBox2);
             tabPage2.Controls.Add(panel1);
-            tabPage2.Controls.Add(groupBox3);
-            tabPage2.Controls.Add(textBox1);
-            tabPage2.Controls.Add(label2);
-            tabPage2.Controls.Add(textNomePais);
-            tabPage2.Controls.Add(label10);
-            tabPage2.Controls.Add(textCodigoPais);
-            tabPage2.Controls.Add(label1);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(671, 306);
+            tabPage2.Size = new Size(671, 392);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Cadastrar";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(textCodGrupo);
+            groupBox2.Controls.Add(textCod);
+            groupBox2.Controls.Add(label1);
+            groupBox2.Controls.Add(btnBuscaCategoriaPagamento);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(groupBox3);
+            groupBox2.Controls.Add(textNome);
+            groupBox2.Controls.Add(label10);
+            groupBox2.Dock = DockStyle.Top;
+            groupBox2.Location = new Point(3, 3);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(665, 168);
+            groupBox2.TabIndex = 78;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Dados";
+            // 
+            // textCodGrupo
+            // 
+            textCodGrupo.Location = new Point(5, 93);
+            textCodGrupo.Name = "textCodGrupo";
+            textCodGrupo.ReadOnly = true;
+            textCodGrupo.Size = new Size(65, 23);
+            textCodGrupo.TabIndex = 94;
+            // 
+            // textCod
+            // 
+            textCod.Location = new Point(6, 39);
+            textCod.Name = "textCod";
+            textCod.ReadOnly = true;
+            textCod.Size = new Size(65, 23);
+            textCod.TabIndex = 93;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 9.75F);
+            label1.ForeColor = Color.FromArgb(44, 62, 80);
+            label1.Location = new Point(6, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 16);
+            label1.TabIndex = 92;
+            label1.Text = "Codigo";
             // 
             // btnBuscaCategoriaPagamento
             // 
@@ -120,95 +157,42 @@
             btnBuscaCategoriaPagamento.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnBuscaCategoriaPagamento.FlatStyle = FlatStyle.Flat;
             btnBuscaCategoriaPagamento.Image = Properties.Resources.lupa;
-            btnBuscaCategoriaPagamento.Location = new Point(634, 96);
+            btnBuscaCategoriaPagamento.Location = new Point(302, 94);
             btnBuscaCategoriaPagamento.Name = "btnBuscaCategoriaPagamento";
             btnBuscaCategoriaPagamento.Size = new Size(29, 23);
-            btnBuscaCategoriaPagamento.TabIndex = 82;
+            btnBuscaCategoriaPagamento.TabIndex = 91;
             btnBuscaCategoriaPagamento.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(338, 96);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(64, 23);
-            textBox3.TabIndex = 81;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9.75F);
             label4.ForeColor = Color.FromArgb(44, 62, 80);
-            label4.Location = new Point(338, 76);
+            label4.Location = new Point(6, 74);
             label4.Name = "label4";
             label4.Size = new Size(47, 16);
-            label4.TabIndex = 80;
+            label4.TabIndex = 90;
             label4.Text = "Codigo";
             // 
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBox2.Location = new Point(408, 96);
+            textBox2.Location = new Point(76, 94);
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
             textBox2.Size = new Size(230, 23);
-            textBox2.TabIndex = 79;
+            textBox2.TabIndex = 89;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9.75F);
             label3.ForeColor = Color.FromArgb(44, 62, 80);
-            label3.Location = new Point(408, 77);
+            label3.Location = new Point(76, 75);
             label3.Name = "label3";
-            label3.Size = new Size(129, 16);
-            label3.TabIndex = 78;
-            label3.Text = "Qual Grupo Pertençe";
-            // 
-            // panel1
-            // 
-            panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
-            panel1.Controls.Add(btnGravar);
-            panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 245);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(665, 58);
-            panel1.TabIndex = 77;
-            // 
-            // btnNovo
-            // 
-            btnNovo.Image = Properties.Resources.crio;
-            btnNovo.Location = new Point(3, 8);
-            btnNovo.Name = "btnNovo";
-            btnNovo.Size = new Size(88, 40);
-            btnNovo.TabIndex = 18;
-            btnNovo.Text = "Incluir F4";
-            btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnNovo.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(191, 8);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 17;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnGravar
-            // 
-            btnGravar.Image = Properties.Resources.salvar;
-            btnGravar.Location = new Point(97, 8);
-            btnGravar.Name = "btnGravar";
-            btnGravar.Size = new Size(88, 40);
-            btnGravar.TabIndex = 16;
-            btnGravar.Text = "Gravar F5";
-            btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnGravar.UseVisualStyleBackColor = true;
+            label3.Size = new Size(50, 16);
+            label3.TabIndex = 88;
+            label3.Text = " Grupo ";
             // 
             // groupBox3
             // 
@@ -217,10 +201,10 @@
             groupBox3.Controls.Add(radioAtivoSim);
             groupBox3.Font = new Font("Arial", 9.75F);
             groupBox3.ForeColor = Color.FromArgb(44, 62, 80);
-            groupBox3.Location = new Point(8, 125);
+            groupBox3.Location = new Point(338, 75);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(134, 68);
-            groupBox3.TabIndex = 76;
+            groupBox3.Size = new Size(154, 65);
+            groupBox3.TabIndex = 87;
             groupBox3.TabStop = false;
             groupBox3.Text = "Ativo ?";
             // 
@@ -246,63 +230,71 @@
             radioAtivoSim.Text = "Sim";
             radioAtivoSim.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textNome
             // 
-            textBox1.Location = new Point(8, 96);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(324, 23);
-            textBox1.TabIndex = 29;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial", 9.75F);
-            label2.ForeColor = Color.FromArgb(44, 62, 80);
-            label2.Location = new Point(8, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 16);
-            label2.TabIndex = 28;
-            label2.Text = "Descrição";
-            // 
-            // textNomePais
-            // 
-            textNomePais.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textNomePais.Location = new Point(78, 41);
-            textNomePais.Name = "textNomePais";
-            textNomePais.ReadOnly = true;
-            textNomePais.Size = new Size(560, 23);
-            textNomePais.TabIndex = 27;
+            textNome.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textNome.Location = new Point(76, 39);
+            textNome.Name = "textNome";
+            textNome.ReadOnly = true;
+            textNome.Size = new Size(560, 23);
+            textNome.TabIndex = 86;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Arial", 9.75F);
             label10.ForeColor = Color.FromArgb(44, 62, 80);
-            label10.Location = new Point(78, 21);
+            label10.Location = new Point(76, 19);
             label10.Name = "label10";
-            label10.Size = new Size(98, 16);
-            label10.TabIndex = 26;
-            label10.Text = "Nome do Grupo";
+            label10.Size = new Size(45, 16);
+            label10.TabIndex = 85;
+            label10.Text = "Nome ";
             // 
-            // textCodigoPais
+            // panel1
             // 
-            textCodigoPais.Location = new Point(8, 41);
-            textCodigoPais.Name = "textCodigoPais";
-            textCodigoPais.ReadOnly = true;
-            textCodigoPais.Size = new Size(64, 23);
-            textCodigoPais.TabIndex = 25;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
+            panel1.Controls.Add(btnNovo);
+            panel1.Controls.Add(btnCancelar);
+            panel1.Controls.Add(btnGravar);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(3, 331);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(665, 58);
+            panel1.TabIndex = 77;
             // 
-            // label1
+            // btnNovo
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial", 9.75F);
-            label1.ForeColor = Color.FromArgb(44, 62, 80);
-            label1.Location = new Point(8, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(47, 16);
-            label1.TabIndex = 24;
-            label1.Text = "Codigo";
+            btnNovo.Image = Properties.Resources.crio;
+            btnNovo.Location = new Point(3, 8);
+            btnNovo.Name = "btnNovo";
+            btnNovo.Size = new Size(88, 40);
+            btnNovo.TabIndex = 18;
+            btnNovo.Text = "Incluir F4";
+            btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.Click += btnNovo_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Image = Properties.Resources.cancelar;
+            btnCancelar.Location = new Point(191, 8);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(101, 40);
+            btnCancelar.TabIndex = 17;
+            btnCancelar.Text = "Cancelar F6";
+            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // btnGravar
+            // 
+            btnGravar.Image = Properties.Resources.salvar;
+            btnGravar.Location = new Point(97, 8);
+            btnGravar.Name = "btnGravar";
+            btnGravar.Size = new Size(88, 40);
+            btnGravar.TabIndex = 16;
+            btnGravar.Text = "Gravar F5";
+            btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnGravar.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
@@ -316,6 +308,90 @@
             tabPage1.TabIndex = 2;
             tabPage1.Text = "Consultas";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(dataGridView1);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(3, 107);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(665, 226);
+            panel3.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id, Codigo, Nome, Grupo });
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.Size = new Size(661, 222);
+            dataGridView1.TabIndex = 0;
+            // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            // 
+            // Codigo
+            // 
+            Codigo.HeaderText = "Codigo";
+            Codigo.Name = "Codigo";
+            Codigo.ReadOnly = true;
+            // 
+            // Nome
+            // 
+            Nome.HeaderText = "Nome ";
+            Nome.Name = "Nome";
+            Nome.ReadOnly = true;
+            Nome.Width = 300;
+            // 
+            // Grupo
+            // 
+            Grupo.HeaderText = " Grupo";
+            Grupo.Name = "Grupo";
+            Grupo.ReadOnly = true;
+            Grupo.Width = 150;
+            // 
+            // panel2
+            // 
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(btnEditar);
+            panel2.Controls.Add(btnExcluir);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(3, 333);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(665, 56);
+            panel2.TabIndex = 3;
+            // 
+            // btnEditar
+            // 
+            btnEditar.Enabled = false;
+            btnEditar.Image = Properties.Resources.novo;
+            btnEditar.Location = new Point(141, 7);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(120, 40);
+            btnEditar.TabIndex = 15;
+            btnEditar.Text = "Editar";
+            btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.Enabled = false;
+            btnExcluir.Image = Properties.Resources.lixeira;
+            btnExcluir.Location = new Point(6, 7);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Size = new Size(129, 40);
+            btnExcluir.TabIndex = 16;
+            btnExcluir.Text = "Excluir F7";
+            btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnExcluir.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -334,6 +410,26 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Campos de Pesquisa";
+            groupBox1.Resize += groupBox1_Resize;
+            // 
+            // textDadosPesquisa
+            // 
+            textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textDadosPesquisa.Location = new Point(371, 39);
+            textDadosPesquisa.Name = "textDadosPesquisa";
+            textDadosPesquisa.Size = new Size(288, 23);
+            textDadosPesquisa.TabIndex = 35;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Arial", 9.75F);
+            label5.ForeColor = Color.FromArgb(44, 62, 80);
+            label5.Location = new Point(6, 19);
+            label5.Name = "label5";
+            label5.Size = new Size(43, 16);
+            label5.TabIndex = 29;
+            label5.Text = "Filtros";
             // 
             // checkBoxTodos
             // 
@@ -386,17 +482,6 @@
             comboModelo.Size = new Size(178, 23);
             comboModelo.TabIndex = 30;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Arial", 9.75F);
-            label5.ForeColor = Color.FromArgb(44, 62, 80);
-            label5.Location = new Point(6, 19);
-            label5.Name = "label5";
-            label5.Size = new Size(43, 16);
-            label5.TabIndex = 29;
-            label5.Text = "Filtros";
-            // 
             // comboFiltros
             // 
             comboFiltros.FormattingEnabled = true;
@@ -405,113 +490,31 @@
             comboFiltros.Size = new Size(178, 23);
             comboFiltros.TabIndex = 28;
             // 
-            // textDadosPesquisa
-            // 
-            textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textDadosPesquisa.Location = new Point(371, 39);
-            textDadosPesquisa.Name = "textDadosPesquisa";
-            textDadosPesquisa.Size = new Size(288, 23);
-            textDadosPesquisa.TabIndex = 35;
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(btnEditar);
-            panel2.Controls.Add(btnExcluir);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(3, 333);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(665, 56);
-            panel2.TabIndex = 3;
-            // 
-            // btnEditar
-            // 
-            btnEditar.Enabled = false;
-            btnEditar.Image = Properties.Resources.novo;
-            btnEditar.Location = new Point(141, 7);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(120, 40);
-            btnEditar.TabIndex = 15;
-            btnEditar.Text = "Editar";
-            btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir
-            // 
-            btnExcluir.Enabled = false;
-            btnExcluir.Image = Properties.Resources.lixeira;
-            btnExcluir.Location = new Point(6, 7);
-            btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(129, 40);
-            btnExcluir.TabIndex = 16;
-            btnExcluir.Text = "Excluir F7";
-            btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel3.BorderStyle = BorderStyle.Fixed3D;
-            panel3.Controls.Add(dataGridView1);
-            panel3.Location = new Point(3, 113);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(665, 214);
-            panel3.TabIndex = 4;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id, Codigo, Descricao, CodigoGrupo });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(661, 210);
-            dataGridView1.TabIndex = 0;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "Id";
-            Id.Name = "Id";
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            // 
-            // Descricao
-            // 
-            Descricao.HeaderText = "Descrição";
-            Descricao.Name = "Descricao";
-            Descricao.Width = 300;
-            // 
-            // CodigoGrupo
-            // 
-            CodigoGrupo.HeaderText = "Codigo Grupo";
-            CodigoGrupo.Name = "CodigoGrupo";
-            CodigoGrupo.Width = 150;
-            // 
             // CadastrarSubGrupo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(679, 420);
             Controls.Add(tabControl1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             Name = "CadastrarSubGrupo";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Cadastrar Sub-Grupos";
+            Load += CadastrarSubGrupo_Load;
+            KeyDown += CadastrarSubGrupo_KeyDown;
             tabControl1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
-            tabPage2.PerformLayout();
-            panel1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -519,24 +522,13 @@
 
         private TabControl tabControl1;
         private TabPage tabPage2;
-        private TextBox textBox1;
+        private TextBox textCodGrupo;
         private Label label2;
-        private TextBox textNomePais;
-        private Label label10;
-        private TextBox textCodigoPais;
-        private Label label1;
-        private GroupBox groupBox3;
-        private RadioButton radioAtivoNao;
-        private RadioButton radioAtivoSim;
         private Panel panel1;
         private Button btnNovo;
         private Button btnCancelar;
         private Button btnGravar;
-        private TextBox textBox3;
-        private Label label4;
-        private TextBox textBox2;
-        private Label label3;
-        private Button btnBuscaCategoriaPagamento;
+        private TextBox textIdGrupo;
         private TabPage tabPage1;
         private GroupBox groupBox1;
         private CheckBox checkBoxTodos;
@@ -552,9 +544,21 @@
         private Button btnExcluir;
         private Panel panel3;
         private DataGridView dataGridView1;
+        private GroupBox groupBox2;
+        private TextBox textCod;
+        private Label label1;
+        private Button btnBuscaCategoriaPagamento;
+        private Label label4;
+        private TextBox textBox2;
+        private Label label3;
+        private GroupBox groupBox3;
+        private RadioButton radioAtivoNao;
+        private RadioButton radioAtivoSim;
+        private TextBox textNome;
+        private Label label10;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn Descricao;
-        private DataGridViewTextBoxColumn CodigoGrupo;
+        private DataGridViewTextBoxColumn Nome;
+        private DataGridViewTextBoxColumn Grupo;
     }
 }

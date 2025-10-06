@@ -18,31 +18,24 @@ namespace ServiTech.Forms.Cadastros
             InitializeComponent();
         }
 
-        private void groupBox1_Resize(object sender, EventArgs e)
-        {
-
-            btnBuscaCategoriaPagamento.Location = new Point(groupBox1.Width - btnBuscaCategoriaPagamento.Width - 9, btnBuscaCategoriaPagamento.Location.Y);
-        }
-
-        private void BuscarCategoriaFormaPagamento_Click(object sender, EventArgs e)
-        {
 
 
-            PesquisaCategoriasPagamento pesquisaCategoriasPagamento = new PesquisaCategoriasPagamento();
-            pesquisaCategoriasPagamento.ShowDialog();
 
-        }
 
         private void LiberarCamposParaNovoCadastro_Click(object sender, EventArgs e)
         {
 
-            textCategoria.ReadOnly = false;
-            textDescricao.ReadOnly = false;
-            textDescricao.Focus();
+            textNome.ReadOnly = false;
+            textNome.Focus();
+            textOperadora.ReadOnly = false;
+            textTaxa.ReadOnly = false;
+            textTipo.ReadOnly = false;
             radioAtivoNao.Enabled = true;
             radioAtivoSim.Enabled = true;
+            radioButtonAceitaNao.Enabled = true;
+            radioButtonAceitaSim.Enabled = true;
 
-           
+
         }
 
         private void LiberarCamposParaCadastro_KeyDown(object sender, KeyEventArgs e)
@@ -50,11 +43,16 @@ namespace ServiTech.Forms.Cadastros
 
             if (e.KeyCode == Keys.F4)
             {
-                textCategoria.ReadOnly = false;
-                textDescricao.ReadOnly = false;
-                textDescricao.Focus();
+                textNome.ReadOnly = false;
+                textNome.Focus();
+                textOperadora.ReadOnly = false;
+                textTipo.ReadOnly = false;
+
+                textTaxa.ReadOnly = false;
                 radioAtivoNao.Enabled = true;
                 radioAtivoSim.Enabled = true;
+                radioButtonAceitaNao.Enabled = true;
+                radioButtonAceitaSim.Enabled = true;
             }
         }
 
@@ -62,6 +60,27 @@ namespace ServiTech.Forms.Cadastros
         {
             btnPesquisarDados.Location = new Point(groupBox4.Width - btnPesquisarDados.Width - 9, btnPesquisarDados.Location.Y);
             checkBoxTodos.Location = new Point(groupBox4.Width - checkBoxTodos.Width - 9, checkBoxTodos.Location.Y);
+
+        }
+
+        private void CadastrarFormaPagamento_Load(object sender, EventArgs e)
+        {
+            comboFiltros.Items.Add("Por Nome ");
+            comboFiltros.Items.Add("Por Codigo ");
+
+            comboFiltros.SelectedIndex = 0;
+            comboFiltros.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            comboModelo.Items.Add("Inicia Com");
+            comboModelo.Items.Add("Termina Com");
+            comboModelo.Items.Add("Contem");
+            comboModelo.Items.Add("Exatamente");
+            comboModelo.SelectedIndex = 0;
+            comboModelo.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

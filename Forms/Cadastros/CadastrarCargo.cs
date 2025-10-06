@@ -18,7 +18,7 @@ namespace ServiTech.Forms.Cadastros
             InitializeComponent();
         }
 
-      
+
 
         private void CadastrarPais_Load(object sender, EventArgs e)
         {
@@ -38,28 +38,36 @@ namespace ServiTech.Forms.Cadastros
 
         private void groupBox2_Resize(object sender, EventArgs e)
         {
-            btnPesquisar.Location = new Point(this.groupBox2.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
+            btnPesquisar.Location = new Point(groupBox2.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
+            checkBoxTodos.Location = new Point(groupBox2.Width - checkBoxTodos.Width - 9, checkBoxTodos.Location.Y);
 
         }
 
         private void LiberarCamposParaNovoCadastro_Click(object sender, EventArgs e)
         {
 
-            textNomeCargo.ReadOnly = false;
-            textDescriCargo.ReadOnly = false;
-            textNomeCargo.Focus();
+            textNome.ReadOnly = false;
+            textNome.Focus();
         }
 
         private void LiberarCamposParaNovoCadastro_KeyDown(object sender, KeyEventArgs e)
         {
 
-            if(e.KeyCode == Keys.F4)
+            if (e.KeyCode == Keys.F4)
             {
-                textNomeCargo.ReadOnly = false;
-                textDescriCargo.ReadOnly = false;
+                textNome.ReadOnly = false;
 
-                textNomeCargo.Focus();
+                textNome.Focus();
             }
+        }
+
+        private void LiberarCampos_Click(object sender, EventArgs e)
+        {
+            textNome.ReadOnly = false;
+
+            textNome.Focus();
+
+
         }
     }
 }

@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarCliente));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            groupBox6 = new GroupBox();
+            textBox4 = new TextBox();
+            label21 = new Label();
+            label30 = new Label();
+            maskedTextBox1 = new MaskedTextBox();
+            textBox3 = new TextBox();
+            label20 = new Label();
+            button1 = new Button();
+            textFormaPagamento = new TextBox();
+            label18 = new Label();
+            label14 = new Label();
+            comboBoxCondicaoPagamento = new ComboBox();
+            textLimiteCredito = new TextBox();
+            label27 = new Label();
             panel1 = new Panel();
             btnNovo = new Button();
             btnCancelar = new Button();
             btnGravar = new Button();
             groupBox4 = new GroupBox();
+            textMotivo = new TextBox();
+            label31 = new Label();
+            groupBox7 = new GroupBox();
+            radioBloqueadoNao = new RadioButton();
+            radioBloqueadoSim = new RadioButton();
             label26 = new Label();
             comboBoxGralParentesco = new ComboBox();
             textNomeContato = new TextBox();
@@ -50,6 +70,7 @@
             label29 = new Label();
             textCpfContato = new MaskedTextBox();
             groupBox1 = new GroupBox();
+            comboBoxUf = new ComboBox();
             label19 = new Label();
             btnBuscarPais = new Button();
             btnBuscaBairro = new Button();
@@ -61,7 +82,6 @@
             label13 = new Label();
             label12 = new Label();
             textCidade = new TextBox();
-            textUf = new TextBox();
             label11 = new Label();
             textPais = new TextBox();
             label10 = new Label();
@@ -87,7 +107,7 @@
             groupBox2 = new GroupBox();
             radioButtonPessaoJuridica = new RadioButton();
             radioButtonPessoaFisica = new RadioButton();
-            textCodigoCliente = new TextBox();
+            textCod = new TextBox();
             label1 = new Label();
             tabPage2 = new TabPage();
             panel3 = new Panel();
@@ -106,6 +126,11 @@
             Ativo = new DataGridViewCheckBoxColumn();
             DataCriacao = new DataGridViewTextBoxColumn();
             UltimaAtualizacao = new DataGridViewTextBoxColumn();
+            NomeFantasia = new DataGridViewTextBoxColumn();
+            LimiteCredito = new DataGridViewTextBoxColumn();
+            ContatoComercial = new DataGridViewTextBoxColumn();
+            ObservacaoGeral = new DataGridViewTextBoxColumn();
+            Bloqueado = new DataGridViewCheckBoxColumn();
             groupBox5 = new GroupBox();
             btnPesquisar = new Button();
             label17 = new Label();
@@ -117,8 +142,10 @@
             comboFiltros = new ComboBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            groupBox6.SuspendLayout();
             panel1.SuspendLayout();
             groupBox4.SuspendLayout();
+            groupBox7.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -137,22 +164,183 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1095, 593);
+            tabControl1.Size = new Size(1192, 767);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             tabPage1.BorderStyle = BorderStyle.Fixed3D;
+            tabPage1.Controls.Add(groupBox6);
             tabPage1.Controls.Add(panel1);
             tabPage1.Controls.Add(groupBox4);
             tabPage1.Controls.Add(groupBox1);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1087, 565);
+            tabPage1.Size = new Size(1184, 739);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cadastro";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox6
+            // 
+            groupBox6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox6.Controls.Add(textBox4);
+            groupBox6.Controls.Add(label21);
+            groupBox6.Controls.Add(label30);
+            groupBox6.Controls.Add(maskedTextBox1);
+            groupBox6.Controls.Add(textBox3);
+            groupBox6.Controls.Add(label20);
+            groupBox6.Controls.Add(button1);
+            groupBox6.Controls.Add(textFormaPagamento);
+            groupBox6.Controls.Add(label18);
+            groupBox6.Controls.Add(label14);
+            groupBox6.Controls.Add(comboBoxCondicaoPagamento);
+            groupBox6.Controls.Add(textLimiteCredito);
+            groupBox6.Controls.Add(label27);
+            groupBox6.Location = new Point(6, 382);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(1168, 255);
+            groupBox6.TabIndex = 12;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Dados Fiscais";
+            // 
+            // textBox4
+            // 
+            textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBox4.Location = new Point(191, 91);
+            textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
+            textBox4.Size = new Size(311, 23);
+            textBox4.TabIndex = 46;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Arial", 9.75F);
+            label21.ForeColor = Color.FromArgb(44, 62, 80);
+            label21.Location = new Point(191, 72);
+            label21.Name = "label21";
+            label21.Size = new Size(90, 16);
+            label21.TabIndex = 45;
+            label21.Text = "Nome fantasia";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Arial", 9.75F);
+            label30.ForeColor = Color.FromArgb(44, 62, 80);
+            label30.Location = new Point(7, 71);
+            label30.Name = "label30";
+            label30.Size = new Size(112, 16);
+            label30.TabIndex = 44;
+            label30.Text = "Contato comercial";
+            // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Location = new Point(7, 91);
+            maskedTextBox1.Mask = "(00) 00000-0000";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.ReadOnly = true;
+            maskedTextBox1.Size = new Size(176, 23);
+            maskedTextBox1.TabIndex = 43;
+            // 
+            // textBox3
+            // 
+            textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBox3.Location = new Point(7, 146);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new Size(518, 103);
+            textBox3.TabIndex = 42;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Arial", 9.75F);
+            label20.ForeColor = Color.FromArgb(44, 62, 80);
+            label20.Location = new Point(6, 127);
+            label20.Name = "label20";
+            label20.Size = new Size(121, 16);
+            label20.TabIndex = 41;
+            label20.Text = "Observações gerais";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.Enabled = false;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = Properties.Resources.lupa;
+            button1.Location = new Point(829, 34);
+            button1.Name = "button1";
+            button1.Size = new Size(28, 23);
+            button1.TabIndex = 38;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // textFormaPagamento
+            // 
+            textFormaPagamento.Location = new Point(390, 35);
+            textFormaPagamento.Name = "textFormaPagamento";
+            textFormaPagamento.ReadOnly = true;
+            textFormaPagamento.Size = new Size(433, 23);
+            textFormaPagamento.TabIndex = 40;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Arial", 9.75F);
+            label18.ForeColor = Color.FromArgb(44, 62, 80);
+            label18.Location = new Point(390, 15);
+            label18.Name = "label18";
+            label18.Size = new Size(200, 16);
+            label18.TabIndex = 39;
+            label18.Text = "Forma de pagamento preferencial";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Arial", 9.75F);
+            label14.ForeColor = Color.FromArgb(44, 62, 80);
+            label14.Location = new Point(191, 15);
+            label14.Name = "label14";
+            label14.Size = new Size(190, 16);
+            label14.TabIndex = 37;
+            label14.Text = "Condição de pagamento padrão";
+            // 
+            // comboBoxCondicaoPagamento
+            // 
+            comboBoxCondicaoPagamento.Enabled = false;
+            comboBoxCondicaoPagamento.FormattingEnabled = true;
+            comboBoxCondicaoPagamento.Items.AddRange(new object[] { "À Vista", "7 Dias", "15 Dias", "30 Dias", "45 Dias", "60 Dias", "90 Dias", "30/60", "30/60/90", "Entrada + 30 Dias", "Entrada + 30/60", "Cartão de Crédito - 1x", "Cartão de Crédito - 2x", "Cartão de Crédito - 3x", "Cartão de Crédito - 6x", "Cartão de Crédito - 12x", "Boleto Bancário - Vencimento Fixo (dia 10)", "Boleto Bancário - Vencimento Fixo (dia 15)", "Débito Automático", "Cheque Pré-Datado - 30 Dias", "Cheque Pré-Datado - 30/60" });
+            comboBoxCondicaoPagamento.Location = new Point(191, 35);
+            comboBoxCondicaoPagamento.Name = "comboBoxCondicaoPagamento";
+            comboBoxCondicaoPagamento.Size = new Size(190, 23);
+            comboBoxCondicaoPagamento.TabIndex = 36;
+            // 
+            // textLimiteCredito
+            // 
+            textLimiteCredito.Location = new Point(7, 35);
+            textLimiteCredito.Name = "textLimiteCredito";
+            textLimiteCredito.ReadOnly = true;
+            textLimiteCredito.Size = new Size(176, 23);
+            textLimiteCredito.TabIndex = 33;
+            textLimiteCredito.Text = "0,00";
+            textLimiteCredito.TextChanged += MaskaraCampoMoeda_TextChanged;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Arial", 9.75F);
+            label27.ForeColor = Color.FromArgb(44, 62, 80);
+            label27.Location = new Point(6, 16);
+            label27.Name = "label27";
+            label27.Size = new Size(103, 16);
+            label27.TabIndex = 12;
+            label27.Text = "Limite de crédito";
             // 
             // panel1
             // 
@@ -161,9 +349,9 @@
             panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 507);
+            panel1.Location = new Point(3, 681);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1077, 51);
+            panel1.Size = new Size(1174, 51);
             panel1.TabIndex = 11;
             // 
             // btnNovo
@@ -176,6 +364,7 @@
             btnNovo.Text = "Incluir F4";
             btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.Click += LiberararCamposParaNovoCadastro_Click;
             // 
             // btnCancelar
             // 
@@ -202,6 +391,9 @@
             // groupBox4
             // 
             groupBox4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox4.Controls.Add(textMotivo);
+            groupBox4.Controls.Add(label31);
+            groupBox4.Controls.Add(groupBox7);
             groupBox4.Controls.Add(label26);
             groupBox4.Controls.Add(comboBoxGralParentesco);
             groupBox4.Controls.Add(textNomeContato);
@@ -216,19 +408,74 @@
             groupBox4.Controls.Add(textRgContato);
             groupBox4.Controls.Add(label29);
             groupBox4.Controls.Add(textCpfContato);
-            groupBox4.Location = new Point(6, 272);
+            groupBox4.Location = new Point(6, 240);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(1071, 208);
+            groupBox4.Size = new Size(1168, 136);
             groupBox4.TabIndex = 1;
             groupBox4.TabStop = false;
             groupBox4.Text = "Dados Para Contato";
+            // 
+            // textMotivo
+            // 
+            textMotivo.Location = new Point(850, 34);
+            textMotivo.Name = "textMotivo";
+            textMotivo.ReadOnly = true;
+            textMotivo.Size = new Size(304, 23);
+            textMotivo.TabIndex = 38;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Arial", 9.75F);
+            label31.ForeColor = Color.FromArgb(44, 62, 80);
+            label31.Location = new Point(850, 14);
+            label31.Name = "label31";
+            label31.Size = new Size(114, 16);
+            label31.TabIndex = 37;
+            label31.Text = "Motivo de bloqueio";
+            // 
+            // groupBox7
+            // 
+            groupBox7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            groupBox7.Controls.Add(radioBloqueadoNao);
+            groupBox7.Controls.Add(radioBloqueadoSim);
+            groupBox7.Font = new Font("Arial", 9.75F);
+            groupBox7.ForeColor = Color.FromArgb(44, 62, 80);
+            groupBox7.Location = new Point(675, 16);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Size = new Size(169, 56);
+            groupBox7.TabIndex = 36;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Bloqueado para compras";
+            // 
+            // radioBloqueadoNao
+            // 
+            radioBloqueadoNao.Enabled = false;
+            radioBloqueadoNao.Location = new Point(87, 21);
+            radioBloqueadoNao.Name = "radioBloqueadoNao";
+            radioBloqueadoNao.Size = new Size(76, 22);
+            radioBloqueadoNao.TabIndex = 4;
+            radioBloqueadoNao.TabStop = true;
+            radioBloqueadoNao.Text = "Não";
+            radioBloqueadoNao.UseVisualStyleBackColor = true;
+            // 
+            // radioBloqueadoSim
+            // 
+            radioBloqueadoSim.Enabled = false;
+            radioBloqueadoSim.Location = new Point(6, 18);
+            radioBloqueadoSim.Name = "radioBloqueadoSim";
+            radioBloqueadoSim.Size = new Size(54, 24);
+            radioBloqueadoSim.TabIndex = 3;
+            radioBloqueadoSim.TabStop = true;
+            radioBloqueadoSim.Text = "Sim";
+            radioBloqueadoSim.UseVisualStyleBackColor = true;
             // 
             // label26
             // 
             label26.AutoSize = true;
             label26.Font = new Font("Arial", 9.75F);
             label26.ForeColor = Color.FromArgb(44, 62, 80);
-            label26.Location = new Point(6, 121);
+            label26.Location = new Point(663, 72);
             label26.Name = "label26";
             label26.Size = new Size(119, 16);
             label26.TabIndex = 35;
@@ -238,27 +485,26 @@
             // 
             comboBoxGralParentesco.Enabled = false;
             comboBoxGralParentesco.FormattingEnabled = true;
-            comboBoxGralParentesco.Location = new Point(6, 141);
+            comboBoxGralParentesco.Items.AddRange(new object[] { "Pai", "Mãe", "Filho(a)", "Irmão(ã)", "Avô", "Avó", "Tio(a)", "Primo(a)", "Sobrinho(a)", "Cônjuge", "Companheiro(a)", "Sogro(a)", "Genro", "Nora", "Responsável Legal", "Outro" });
+            comboBoxGralParentesco.Location = new Point(663, 92);
             comboBoxGralParentesco.Name = "comboBoxGralParentesco";
-            comboBoxGralParentesco.Size = new Size(190, 23);
+            comboBoxGralParentesco.Size = new Size(228, 23);
             comboBoxGralParentesco.TabIndex = 34;
             // 
             // textNomeContato
             // 
-            textNomeContato.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textNomeContato.Location = new Point(314, 35);
             textNomeContato.Name = "textNomeContato";
             textNomeContato.ReadOnly = true;
-            textNomeContato.Size = new Size(509, 23);
+            textNomeContato.Size = new Size(343, 23);
             textNomeContato.TabIndex = 33;
             // 
             // textEmailContato
             // 
-            textEmailContato.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textEmailContato.Location = new Point(314, 92);
             textEmailContato.Name = "textEmailContato";
             textEmailContato.ReadOnly = true;
-            textEmailContato.Size = new Size(509, 23);
+            textEmailContato.Size = new Size(343, 23);
             textEmailContato.TabIndex = 19;
             // 
             // label22
@@ -365,6 +611,7 @@
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(comboBoxUf);
             groupBox1.Controls.Add(label19);
             groupBox1.Controls.Add(btnBuscarPais);
             groupBox1.Controls.Add(btnBuscaBairro);
@@ -376,7 +623,6 @@
             groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(textCidade);
-            groupBox1.Controls.Add(textUf);
             groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(textPais);
             groupBox1.Controls.Add(label10);
@@ -398,21 +644,31 @@
             groupBox1.Controls.Add(labelCpfCnpj);
             groupBox1.Controls.Add(textCpfCnpj);
             groupBox1.Controls.Add(groupBox2);
-            groupBox1.Controls.Add(textCodigoCliente);
+            groupBox1.Controls.Add(textCod);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(6, 16);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1071, 250);
+            groupBox1.Size = new Size(1168, 218);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados Do Cliente";
+            // 
+            // comboBoxUf
+            // 
+            comboBoxUf.Enabled = false;
+            comboBoxUf.FormattingEnabled = true;
+            comboBoxUf.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
+            comboBoxUf.Location = new Point(185, 177);
+            comboBoxUf.Name = "comboBoxUf";
+            comboBoxUf.Size = new Size(64, 23);
+            comboBoxUf.TabIndex = 36;
             // 
             // label19
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Arial", 9.75F);
             label19.ForeColor = Color.FromArgb(44, 62, 80);
-            label19.Location = new Point(6, 204);
+            label19.Location = new Point(829, 161);
             label19.Name = "label19";
             label19.Size = new Size(108, 16);
             label19.TabIndex = 35;
@@ -450,7 +706,7 @@
             // 
             // textDataCadastro
             // 
-            textDataCadastro.Location = new Point(6, 221);
+            textDataCadastro.Location = new Point(829, 178);
             textDataCadastro.Mask = "00/00/0000";
             textDataCadastro.Name = "textDataCadastro";
             textDataCadastro.ReadOnly = true;
@@ -530,14 +786,6 @@
             textCidade.Size = new Size(139, 23);
             textCidade.TabIndex = 24;
             // 
-            // textUf
-            // 
-            textUf.Location = new Point(185, 178);
-            textUf.Name = "textUf";
-            textUf.ReadOnly = true;
-            textUf.Size = new Size(64, 23);
-            textUf.TabIndex = 23;
-            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -574,7 +822,7 @@
             textEmail.Location = new Point(698, 113);
             textEmail.Name = "textEmail";
             textEmail.ReadOnly = true;
-            textEmail.Size = new Size(359, 23);
+            textEmail.Size = new Size(456, 23);
             textEmail.TabIndex = 19;
             // 
             // label9
@@ -634,7 +882,7 @@
             textNomeCliente.Location = new Point(568, 40);
             textNomeCliente.Name = "textNomeCliente";
             textNomeCliente.ReadOnly = true;
-            textNomeCliente.Size = new Size(489, 23);
+            textNomeCliente.Size = new Size(586, 23);
             textNomeCliente.TabIndex = 13;
             // 
             // label6
@@ -802,13 +1050,13 @@
             radioButtonPessoaFisica.UseVisualStyleBackColor = true;
             radioButtonPessoaFisica.CheckedChanged += DefinirMascaraCpfCnpj_CheckedChanged;
             // 
-            // textCodigoCliente
+            // textCod
             // 
-            textCodigoCliente.Location = new Point(6, 42);
-            textCodigoCliente.Name = "textCodigoCliente";
-            textCodigoCliente.ReadOnly = true;
-            textCodigoCliente.Size = new Size(51, 23);
-            textCodigoCliente.TabIndex = 1;
+            textCod.Location = new Point(6, 42);
+            textCod.Name = "textCod";
+            textCod.ReadOnly = true;
+            textCod.Size = new Size(51, 23);
+            textCod.TabIndex = 1;
             // 
             // label1
             // 
@@ -830,7 +1078,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1087, 565);
+            tabPage2.Size = new Size(1184, 739);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Consultas";
             tabPage2.UseVisualStyleBackColor = true;
@@ -841,9 +1089,9 @@
             panel3.Controls.Add(btnEditar);
             panel3.Controls.Add(btnExcluir);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(3, 490);
+            panel3.Location = new Point(3, 664);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1077, 68);
+            panel3.Size = new Size(1174, 68);
             panel3.TabIndex = 11;
             // 
             // btnEditar
@@ -870,92 +1118,134 @@
             // 
             // panel2
             // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.AutoScroll = true;
             panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(tabelaCliente);
-            panel2.Location = new Point(3, 123);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(3, 105);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1078, 361);
+            panel2.Size = new Size(1174, 627);
             panel2.TabIndex = 1;
             // 
             // tabelaCliente
             // 
+            tabelaCliente.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabelaCliente.BackgroundColor = Color.White;
-            tabelaCliente.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tabelaCliente.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nome, CpfCnpj, TelCliente, Whatsapp, Uf, Cidade, Bairro, Ativo, DataCriacao, UltimaAtualizacao });
-            tabelaCliente.Dock = DockStyle.Fill;
+            tabelaCliente.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            tabelaCliente.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nome, CpfCnpj, TelCliente, Whatsapp, Uf, Cidade, Bairro, Ativo, DataCriacao, UltimaAtualizacao, NomeFantasia, LimiteCredito, ContatoComercial, ObservacaoGeral, Bloqueado });
             tabelaCliente.EditMode = DataGridViewEditMode.EditOnF2;
-            tabelaCliente.Location = new Point(0, 0);
+            tabelaCliente.Location = new Point(2, 0);
             tabelaCliente.Name = "tabelaCliente";
-            tabelaCliente.Size = new Size(1074, 357);
+            tabelaCliente.ReadOnly = true;
+            tabelaCliente.Size = new Size(1170, 551);
             tabelaCliente.TabIndex = 3;
             // 
             // Codigo
             // 
             Codigo.HeaderText = "Codigo";
             Codigo.Name = "Codigo";
+            Codigo.ReadOnly = true;
             Codigo.Width = 80;
             // 
             // Nome
             // 
             Nome.HeaderText = "Nome";
             Nome.Name = "Nome";
+            Nome.ReadOnly = true;
             Nome.Width = 400;
             // 
             // CpfCnpj
             // 
             CpfCnpj.HeaderText = "Cpf/Cnpj";
             CpfCnpj.Name = "CpfCnpj";
+            CpfCnpj.ReadOnly = true;
             CpfCnpj.Width = 200;
             // 
             // TelCliente
             // 
             TelCliente.HeaderText = "Tel";
             TelCliente.Name = "TelCliente";
+            TelCliente.ReadOnly = true;
             TelCliente.Width = 200;
             // 
             // Whatsapp
             // 
             Whatsapp.HeaderText = "Whatsapp";
             Whatsapp.Name = "Whatsapp";
+            Whatsapp.ReadOnly = true;
             Whatsapp.Width = 200;
             // 
             // Uf
             // 
             Uf.HeaderText = "Uf";
             Uf.Name = "Uf";
+            Uf.ReadOnly = true;
             Uf.Width = 200;
             // 
             // Cidade
             // 
             Cidade.HeaderText = "Cidade";
             Cidade.Name = "Cidade";
+            Cidade.ReadOnly = true;
             Cidade.Width = 200;
             // 
             // Bairro
             // 
             Bairro.HeaderText = "Bairro";
             Bairro.Name = "Bairro";
+            Bairro.ReadOnly = true;
             Bairro.Width = 250;
             // 
             // Ativo
             // 
             Ativo.HeaderText = "Ativo";
             Ativo.Name = "Ativo";
+            Ativo.ReadOnly = true;
             Ativo.Width = 50;
             // 
             // DataCriacao
             // 
             DataCriacao.HeaderText = "Data de Criação";
             DataCriacao.Name = "DataCriacao";
+            DataCriacao.ReadOnly = true;
             DataCriacao.Width = 250;
             // 
             // UltimaAtualizacao
             // 
             UltimaAtualizacao.HeaderText = "Ultima Atulização";
             UltimaAtualizacao.Name = "UltimaAtualizacao";
+            UltimaAtualizacao.ReadOnly = true;
             UltimaAtualizacao.Width = 250;
+            // 
+            // NomeFantasia
+            // 
+            NomeFantasia.HeaderText = "Nome Fantasia";
+            NomeFantasia.Name = "NomeFantasia";
+            NomeFantasia.ReadOnly = true;
+            // 
+            // LimiteCredito
+            // 
+            LimiteCredito.HeaderText = "Limite de Credito";
+            LimiteCredito.Name = "LimiteCredito";
+            LimiteCredito.ReadOnly = true;
+            // 
+            // ContatoComercial
+            // 
+            ContatoComercial.HeaderText = "Contato Comercial";
+            ContatoComercial.Name = "ContatoComercial";
+            ContatoComercial.ReadOnly = true;
+            // 
+            // ObservacaoGeral
+            // 
+            ObservacaoGeral.HeaderText = "Observação Geral";
+            ObservacaoGeral.Name = "ObservacaoGeral";
+            ObservacaoGeral.ReadOnly = true;
+            // 
+            // Bloqueado
+            // 
+            Bloqueado.HeaderText = "Bloqueado ";
+            Bloqueado.Name = "Bloqueado";
+            Bloqueado.ReadOnly = true;
             // 
             // groupBox5
             // 
@@ -970,7 +1260,7 @@
             groupBox5.Dock = DockStyle.Top;
             groupBox5.Location = new Point(3, 3);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(1077, 102);
+            groupBox5.Size = new Size(1174, 102);
             groupBox5.TabIndex = 0;
             groupBox5.TabStop = false;
             groupBox5.Text = "Campos de Pesquisa";
@@ -979,7 +1269,7 @@
             // btnPesquisar
             // 
             btnPesquisar.Image = Properties.Resources.lupa;
-            btnPesquisar.Location = new Point(962, 69);
+            btnPesquisar.Location = new Point(1059, 67);
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.Size = new Size(109, 29);
             btnPesquisar.TabIndex = 19;
@@ -1009,7 +1299,7 @@
             // checkBoxCarregarTodos
             // 
             checkBoxCarregarTodos.AutoSize = true;
-            checkBoxCarregarTodos.Location = new Point(1012, 15);
+            checkBoxCarregarTodos.Location = new Point(1110, 18);
             checkBoxCarregarTodos.Name = "checkBoxCarregarTodos";
             checkBoxCarregarTodos.Size = new Size(58, 19);
             checkBoxCarregarTodos.TabIndex = 16;
@@ -1021,7 +1311,7 @@
             textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textDadosPesquisa.Location = new Point(374, 40);
             textDadosPesquisa.Name = "textDadosPesquisa";
-            textDadosPesquisa.Size = new Size(697, 23);
+            textDadosPesquisa.Size = new Size(794, 23);
             textDadosPesquisa.TabIndex = 15;
             // 
             // label16
@@ -1058,9 +1348,10 @@
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(1095, 593);
+            ClientSize = new Size(1192, 767);
             Controls.Add(tabControl1);
             HelpButton = true;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             MinimizeBox = false;
             Name = "CadastrarCliente";
@@ -1070,9 +1361,12 @@
             KeyDown += LiberararCamposParaNovoCadastro_KeyDown;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
             panel1.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
+            groupBox7.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox3.ResumeLayout(false);
@@ -1092,8 +1386,6 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private GroupBox groupBox1;
-        private TextBox textCodigoCliente;
-        private Label label1;
         private GroupBox groupBox2;
         private RadioButton radioButtonPessaoJuridica;
         private RadioButton radioButtonPessoaFisica;
@@ -1122,27 +1414,11 @@
         private Label label13;
         private Label label12;
         private TextBox textCidade;
-        private TextBox textUf;
         private Label label11;
         private TextBox textNumero;
         private Label label15;
         private Button btnBuscaCidade;
         private Button btnBuscaBairro;
-        private GroupBox groupBox4;
-        private TextBox textNomeContato;
-        private TextBox textEmailContato;
-        private Label label22;
-        private Label label23;
-        private MaskedTextBox textWhatsAppContato;
-        private Label label24;
-        private MaskedTextBox textTelFixoContato;
-        private Label label25;
-        private Label label28;
-        private MaskedTextBox textRgContato;
-        private Label label29;
-        private MaskedTextBox textCpfContato;
-        private Label label26;
-        private ComboBox comboBoxGralParentesco;
         private Button btnBuscarPais;
         private GroupBox groupBox5;
         private Button btnExcluir;
@@ -1175,5 +1451,47 @@
         private Button btnNovo;
         private Button btnCancelar;
         private Button btnGravar;
+        private GroupBox groupBox6;
+        private Label label14;
+        private ComboBox comboBoxCondicaoPagamento;
+        private TextBox textLimiteCredito;
+        private Label label27;
+        private TextBox textBox4;
+        private Label label21;
+        private Label label30;
+        private MaskedTextBox maskedTextBox1;
+        private TextBox textBox3;
+        private Label label20;
+        private Button button1;
+        private TextBox textFormaPagamento;
+        private Label label18;
+        private GroupBox groupBox4;
+        private Label label26;
+        private ComboBox comboBoxGralParentesco;
+        private TextBox textNomeContato;
+        private TextBox textEmailContato;
+        private Label label22;
+        private Label label23;
+        private MaskedTextBox textWhatsAppContato;
+        private Label label24;
+        private MaskedTextBox textTelFixoContato;
+        private Label label25;
+        private Label label28;
+        private MaskedTextBox textRgContato;
+        private Label label29;
+        private MaskedTextBox textCpfContato;
+        private DataGridViewTextBoxColumn NomeFantasia;
+        private DataGridViewTextBoxColumn LimiteCredito;
+        private DataGridViewTextBoxColumn ContatoComercial;
+        private DataGridViewTextBoxColumn ObservacaoGeral;
+        private DataGridViewCheckBoxColumn Bloqueado;
+        private GroupBox groupBox7;
+        private RadioButton radioBloqueadoNao;
+        private RadioButton radioBloqueadoSim;
+        private TextBox textMotivo;
+        private Label label31;
+        private TextBox textCod;
+        private Label label1;
+        private ComboBox comboBoxUf;
     }
 }

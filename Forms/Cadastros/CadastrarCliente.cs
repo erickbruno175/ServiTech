@@ -90,10 +90,11 @@ namespace ServiTech.Forms.Cadastros
                 switch (control)
                 {
                     case TextBox textBox:
-                        this.textCodigoCliente.ReadOnly = true; // seu campo específico
-                        this.textNomeCliente.Focus();
-                        radioButtonPessaoJuridica.Checked = true;
                         textBox.ReadOnly = false;
+                        textNomeCliente.Focus();
+                        radioButtonPessaoJuridica.Checked = true;
+                        textCod.ReadOnly = true;
+                        
                         break;
 
                     case ComboBox comboBox:
@@ -135,11 +136,43 @@ namespace ServiTech.Forms.Cadastros
             this.Close();
         }
 
-       
+
         private void groupBox5_Resize(object sender, EventArgs e)
         {
             btnPesquisar.Location = new Point(groupBox5.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
             checkBoxCarregarTodos.Location = new Point(groupBox5.Width - checkBoxCarregarTodos.Width - 9, checkBoxCarregarTodos.Location.Y);
+        }
+
+        private void MaskaraCampoMoeda_TextChanged(object sender, EventArgs e)
+        {
+
+
+            TextBox textBox = sender as TextBox;
+
+
+            if (!string.IsNullOrEmpty(textBox.Text))
+            {
+                string newText = new string(textBox.Text.Where(c => char.IsDigit(c)).ToArray());// Remove todos os caracteres que não são dígitos
+                textBox.Text = newText;// Atualiza o texto da TextBox
+                textBox.SelectionStart = textBox.Text.Length; // Coloca o cursor no final do texto
+            }
+
+
+            if (!string.IsNullOrEmpty(textBox.Text))
+            {
+                string texto = textBox.Text.Replace("R$", "")
+                                   .Replace(".", "")
+                                   .Replace(",", "")
+                                   .Trim();
+                if (decimal.TryParse(texto, out decimal valor)) // tenta converter o texto para decimal
+                {
+                    textBox.TextChanged -= MaskaraCampoMoeda_TextChanged; // evita loop
+                    textBox.Text = string.Format(System.Globalization.CultureInfo.GetCultureInfo("pt-BR"), "{0:C2}", valor / 100);// formata para moeda BRL
+                    textBox.SelectionStart = textBox.Text.Length; // cursor no fim
+                    textBox.TextChanged += MaskaraCampoMoeda_TextChanged; // reativa o evento
+                }
+            }
+
         }
     }
 }

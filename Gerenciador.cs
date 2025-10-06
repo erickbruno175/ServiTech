@@ -1,7 +1,9 @@
 ﻿
 using ServiTech.Caixa;
+using ServiTech.Componentes.FormConsultas;
 using ServiTech.Forms.Cadastros;
 using ServiTech.Forms.Cadastros.Tributaria;
+using ServiTech.Os;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -11,6 +13,7 @@ namespace ServiTech
     {
 
         private readonly System.Windows.Forms.Timer timer;
+
         public Gerenciador()
         {
             InitializeComponent();
@@ -32,31 +35,30 @@ namespace ServiTech
         private void FormCadastrarPais_Click(object sender, EventArgs e)
         {
 
-            CadastrarPais cadastrarPais = new CadastrarPais();
+            var db = new DbConection.DbConectionPdv();
+            CadastrarPais cadastrarPais = new CadastrarPais(db);
             cadastrarPais.ShowDialog();
 
         }
 
         private void FormCadastrarCidade_Click(object sender, EventArgs e)
         {
-
-            CadastrarCidade cadastrarCidade = new CadastrarCidade();
+            DbConection.DbConectionPdv db = new DbConection.DbConectionPdv();
+            CadastrarCidade cadastrarCidade = new CadastrarCidade(db);
             cadastrarCidade.ShowDialog();
 
         }
 
         private void FormCadastrarBairro_Click(object sender, EventArgs e)
         {
+            DbConection.DbConectionPdv db = new DbConection.DbConectionPdv();
 
 
-            CadastrarBairro cadastrarBairro = new CadastrarBairro();
+            CadastrarBairro cadastrarBairro = new CadastrarBairro(db);
             cadastrarBairro.ShowDialog();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void FormCadastrarCargo_Click(object sender, EventArgs e)
         {
@@ -68,23 +70,18 @@ namespace ServiTech
         private void FormCadastrarServico_Click(object sender, EventArgs e)
         {
 
-            CadastrarServico cadastrarServico = new CadastrarServico();
+            CadastrarMaoObra cadastrarServico = new CadastrarMaoObra();
             cadastrarServico.ShowDialog();
         }
 
 
 
-        private void FormCadastrarCategoria_Click(object sender, EventArgs e)
-        {
-
-            CadastrarCategoriaServico cadastrarCategoria = new CadastrarCategoriaServico();
-            cadastrarCategoria.ShowDialog();
-        }
-
+    
 
 
         private void FormsCadastrarFormaPagamento_Click(object sender, EventArgs e)
         {
+
 
             CadastrarFormaPagamento cadastrarFormaPagamento = new CadastrarFormaPagamento();
             cadastrarFormaPagamento.ShowDialog();
@@ -99,15 +96,16 @@ namespace ServiTech
 
         private void FormsCadastarFornecedor_Click(object sender, EventArgs e)
         {
+            DbConection.DbConectionPdv db = new DbConection.DbConectionPdv();
 
-            CadastrarFornecedor cadastrarFornecedor = new CadastrarFornecedor();
+            CadastrarFornecedor cadastrarFornecedor = new CadastrarFornecedor(db);
             cadastrarFornecedor.ShowDialog();
         }
 
         private void FormCadastrarServicos_Click(object sender, EventArgs e)
         {
 
-            CadastrarServico cadastrarServico = new CadastrarServico();
+            CadastrarMaoObra cadastrarServico = new CadastrarMaoObra();
             cadastrarServico.ShowDialog();
         }
 
@@ -123,12 +121,13 @@ namespace ServiTech
         private void FormCadastrarBaucaoCaixa_Clcik(object sender, EventArgs e)
         {
 
-            CadastrarBalcao cadastrarBalcao = new CadastrarBalcao();
+            CadastrarBalcaoCaixa cadastrarBalcao = new CadastrarBalcaoCaixa();
             cadastrarBalcao.ShowDialog();
         }
 
         private void FormCadastrarProduto_Click(object sender, EventArgs e)
         {
+
 
             CadastrarProduto cadastrarProduto = new CadastrarProduto();
             cadastrarProduto.ShowDialog();
@@ -148,12 +147,7 @@ namespace ServiTech
             cadastrarSubGrupo.ShowDialog();
         }
 
-        private void FormCadastrarCategoriaFormaPagamento_Click(object sender, EventArgs e)
-        {
 
-            CadastrarCategoriaPagamento cadastrarCategoriaPagamento = new CadastrarCategoriaPagamento();
-            cadastrarCategoriaPagamento.ShowDialog();
-        }
 
 
 
@@ -186,17 +180,77 @@ namespace ServiTech
             cadastrarFuncionario.ShowDialog();
         }
 
-     
+
 
         private void CapturaTeclasAtalho_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.F9)
+            if (e.KeyCode == Keys.F7)
             {
                 Pdv pdv = new Pdv();
                 pdv.WindowState = FormWindowState.Maximized;
                 pdv.ShowDialog();
             }
+            else if (e.KeyCode == Keys.F2)
+            {
+                PesquisarProduto pesquisarProduto = new PesquisarProduto();
+                pesquisarProduto.ShowDialog();
+            }
+            else if (e.KeyCode == Keys.F8)
+            {
 
+                FecharAplicacao_Click(sender, e);
+            }
+
+        }
+
+        private void FormCondicaoPagamento_Click(object sender, EventArgs e)
+        {
+
+            CadastrarCondicaoPagamento cadastrarCondicaoPagamento = new CadastrarCondicaoPagamento();
+            cadastrarCondicaoPagamento.ShowDialog();
+        }
+
+       
+
+        private void FormCadastroSeguimento(object sender, EventArgs e)
+        {
+
+            CadastrarAtividade cadastrarSeguimento = new CadastrarAtividade();
+            cadastrarSeguimento.ShowDialog();
+
+        }
+
+        private void FecharAplicacao_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show("Deseja realmente sair do sistema?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                return;
+            }
+            Application.Exit();
+        }
+
+        private void FormCadastroMarca_Click(object sender, EventArgs e)
+        {
+
+            CadastrarMarca cadastrarMarca = new CadastrarMarca();
+            cadastrarMarca.ShowDialog();
+        }
+
+        private void FormCadastroTrasnportadora(object sender, EventArgs e)
+        {
+
+            CadastrarTransportadora cadastrarTransportadora = new CadastrarTransportadora();
+            cadastrarTransportadora.ShowDialog();
+
+        }
+
+     
+
+        private void criarUmaNovaOrdemDeServiçoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormOrdemServico ordemServico = new FormOrdemServico();
+            ordemServico.ShowDialog();
         }
     }
 }

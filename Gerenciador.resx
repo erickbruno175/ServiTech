@@ -117,1649 +117,1826 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;execuçãoToolStripMenuItem.Name" xml:space="preserve">
-    <value>execuçãoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;localidadeToolStripMenuItem.Name" xml:space="preserve">
-    <value>localidadeToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;btnUsuario.Name" xml:space="preserve">
-    <value>btnUsuario</value>
-  </data>
-  <data name="&gt;&gt;origemMercadoriaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;execuçãoEPeçasToolStripMenuItem.Name" xml:space="preserve">
-    <value>execuçãoEPeçasToolStripMenuItem</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cargoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="&gt;&gt;integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Name" xml:space="preserve">
-    <value>integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnServico.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pdvCaixaToolStripMenuItem.Name" xml:space="preserve">
-    <value>pdvCaixaToolStripMenuItem</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>ServiTech -Ordem de Serviço</value>
-  </data>
-  <data name="execuçãoEPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pemissõesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;orçamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnVenda.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;categoriaToolStripMenuItem.Name" xml:space="preserve">
-    <value>categoriaToolStripMenuItem</value>
-  </data>
-  <data name="btnServico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 1</value>
-  </data>
-  <data name="&gt;&gt;lançarContasAReceberToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançamentoParçeladoToolStripMenuItem</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="pedidoDeCompraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 22</value>
-  </data>
-  <data name="gruposSubGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 22</value>
-  </data>
-  <data name="cESTToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;btnServico.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;caixaTerminalToolStripMenuItem.Name" xml:space="preserve">
-    <value>caixaTerminalToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tecnicoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inventárioconferênciaAjusteToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;fornecedorToolStripMenuItem.Name" xml:space="preserve">
-    <value>fornecedorToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;integraçõesToolStripMenuItem.Name" xml:space="preserve">
-    <value>integraçõesToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;orçamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>orçamentoToolStripMenuItem</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 1</value>
-  </data>
-  <data name="fiscalTributariaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 20</value>
-  </data>
-  <data name="relatóriosDeOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="cidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;emitirReciboOuNotaFiscalToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="entradasaídaManualToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>364, 22</value>
-  </data>
-  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
-    <value>toolStripTextBox1</value>
-  </data>
-  <data name="formaPagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="lançamentoDeContasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
-  </data>
-  <data name="&gt;&gt;controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="execuçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 22</value>
-  </data>
-  <data name="&gt;&gt;grupoToolStripMenuItem.Name" xml:space="preserve">
-    <value>grupoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pedidoDeVendaToolStripMenuItem.Name" xml:space="preserve">
-    <value>pedidoDeVendaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;estoqueToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BtnRelatorio.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BtnFornecedor.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="funcionarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;btnPdv.Name" xml:space="preserve">
-    <value>btnPdv</value>
-  </data>
-  <data name="grupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="empresaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;lblMensagem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 0</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 6</value>
-  </data>
-  <data name="&gt;&gt;cSTCSOSNToolStripMenuItem.Name" xml:space="preserve">
-    <value>cSTCSOSNToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;finaceiroToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aprovarOrçamentoPeloClienteToolStripMenuItem.Name" xml:space="preserve">
-    <value>aprovarOrçamentoPeloClienteToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;cadastrosToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="criarUmaNovaOrdemDeServiçoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 22</value>
-  </data>
-  <data name="btnProduto.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
-  </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 1</value>
-  </data>
-  <data name="&gt;&gt;subGrupoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="paisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 6</value>
-  </data>
-  <data name="produtosServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;btnUsuario.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 1</value>
-  </data>
-  <data name="&gt;&gt;serviçosToolStripMenuItem.Name" xml:space="preserve">
-    <value>serviçosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="iSSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnTransportadora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 1</value>
-  </data>
-  <data name="mãoDeObraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 22</value>
-  </data>
-  <data name="lançarContasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
-  </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnSair.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;vendasDiáriasSemanaisMensaisToolStripMenuItem.Name" xml:space="preserve">
-    <value>vendasDiáriasSemanaisMensaisToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;btnServiço.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnTransportadora.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lançarContasAPagarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem1.Name" xml:space="preserve">
-    <value>lançamentoParçeladoToolStripMenuItem1</value>
-  </data>
-  <data name="enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>381, 22</value>
-  </data>
-  <data name="&gt;&gt;geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Name" xml:space="preserve">
-    <value>geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem</value>
-  </data>
-  <data name="bancoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="laçamentoDeBoletosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 22</value>
-  </data>
-  <data name="cadastrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 22</value>
-  </data>
-  <data name="lançamentoDeContasAReceberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 22</value>
-  </data>
-  <data name="unidadeDeMedidaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;fluxoDeCaixadiáriomensalToolStripMenuItem.Name" xml:space="preserve">
-    <value>fluxoDeCaixadiáriomensalToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;vnedasFaturamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPdv.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tabelasFiscaistributáriasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSair.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="aprovarOrçamentoPeloClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>381, 22</value>
-  </data>
-  <data name="configuraçãoDoRegimeTributárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 22</value>
-  </data>
-  <data name="faturamentoPorProdutoserviçoclienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 22</value>
-  </data>
-  <data name="&gt;&gt;entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;categoriaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;formaPagamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCliente.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;execuçãoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tipoDePagamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 22</value>
-  </data>
-  <data name="&gt;&gt;produtosToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pdvCaixaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 22</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançamentoDeTituloToolStripMenuItem</value>
-  </data>
-  <data name="fornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="labelDataHora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1038, 46</value>
-  </data>
-  <data name="&gt;&gt;btnOs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblMensagem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 480</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 1</value>
-  </data>
-  <data name="&gt;&gt;desToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
-  </data>
-  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 6</value>
-  </data>
-  <data name="&gt;&gt;lançarContasAPagarToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançarContasAPagarToolStripMenuItem</value>
-  </data>
-  <data name="clienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="lblMensagem.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnOs.Name" xml:space="preserve">
-    <value>btnOs</value>
-  </data>
-  <data name="&gt;&gt;pedidoDeVendaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOrdemServi.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnProdu.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;ordemDeServiçoOSToolStripMenuItem.Name" xml:space="preserve">
-    <value>ordemDeServiçoOSToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;configuraçãoDoRegimeTributárioToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;impressorastérmicasFiscaisToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;consultaDeNotasRecebidasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;faturamentoPorProdutoserviçoclienteToolStripMenuItem.Name" xml:space="preserve">
-    <value>faturamentoPorProdutoserviçoclienteToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;acompanharStatusDaOSToolStripMenuItem.Name" xml:space="preserve">
-    <value>acompanharStatusDaOSToolStripMenuItem</value>
-  </data>
-  <data name="consultaDeVendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 22</value>
-  </data>
-  <data name="&gt;&gt;btnRelatorio.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnProdu.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnTransportadora.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
   <data name="&gt;&gt;vnedasFaturamentoToolStripMenuItem.Name" xml:space="preserve">
     <value>vnedasFaturamentoToolStripMenuItem</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnSair.Location" type="System.Drawing.Point, System.Drawing">
     <value>796, 1</value>
-  </data>
-  <data name="&gt;&gt;btnFornecedor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="suaLogoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="fluxoDeCaixaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 22</value>
-  </data>
-  <data name="fluxoDeCaixadiáriomensalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 22</value>
-  </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnOrdemServi.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="categoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="btnFornecedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 0</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
-    <value>toolStripSeparator3</value>
-  </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;BtnCliente.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;produtosServiçosToolStripMenuItem.Name" xml:space="preserve">
-    <value>produtosServiçosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;registrarEquipamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnVenda.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnPdv.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnFornecedor.Name" xml:space="preserve">
-    <value>btnFornecedor</value>
-  </data>
-  <data name="&gt;&gt;BtnRelatorio.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;unidadeDeMedidaToolStripMenuItem.Name" xml:space="preserve">
-    <value>unidadeDeMedidaToolStripMenuItem</value>
-  </data>
-  <data name="diagnósticoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;ordemDeServiçoOSToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;emissãoDeNotaFiscalDeSaídaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="integraçõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 20</value>
-  </data>
-  <data name="&gt;&gt;btnTransportadora.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>364, 22</value>
-  </data>
-  <data name="btnVenda.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 1</value>
-  </data>
-  <data name="&gt;&gt;registrarEquipamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>registrarEquipamentoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="emissãoDeNotaFiscalDeSaídaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 22</value>
-  </data>
-  <data name="&gt;&gt;btnProdu.Name" xml:space="preserve">
-    <value>btnProdu</value>
-  </data>
-  <data name="&gt;&gt;laçamentoDeBoletosToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSair.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnRelatorio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 1</value>
-  </data>
-  <data name="&gt;&gt;vendasDiáriasSemanaisMensaisToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPdv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>823, 2</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;cSTCSOSNToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BtnCliente.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 1</value>
-  </data>
-  <data name="relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 22</value>
-  </data>
-  <data name="&gt;&gt;btnProdu.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;pedidoDeCompraToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;registrarMãoDeObraToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnOrdemServi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 1</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1080, 40</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="origemMercadoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;consultaDeVendasToolStripMenuItem.Name" xml:space="preserve">
-    <value>consultaDeVendasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;paisToolStripMenuItem.Name" xml:space="preserve">
-    <value>paisToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;labelDataHora.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;diagnósticoToolStripMenuItem.Name" xml:space="preserve">
-    <value>diagnósticoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;entradasaídaManualToolStripMenuItem.Name" xml:space="preserve">
-    <value>entradasaídaManualToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;vendasSaidasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="acompanharStatusDaOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeContasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 0</value>
-  </data>
-  <data name="&gt;&gt;despesasToolStripMenuItem.Name" xml:space="preserve">
-    <value>despesasToolStripMenuItem</value>
-  </data>
-  <data name="emitirReciboOuNotaFiscalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 22</value>
-  </data>
-  <data name="&gt;&gt;laçamentoDeBoletosToolStripMenuItem.Name" xml:space="preserve">
-    <value>laçamentoDeBoletosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;cargoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="inserirServiçosEPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>381, 22</value>
-  </data>
-  <data name="&gt;&gt;usuarioToolStripMenuItem.Name" xml:space="preserve">
-    <value>usuarioToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeContasAReceberToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabelasFiscaistributáriasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="&gt;&gt;finalizaçãoToolStripMenuItem.Name" xml:space="preserve">
-    <value>finalizaçãoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;subGrupoToolStripMenuItem.Name" xml:space="preserve">
-    <value>subGrupoToolStripMenuItem</value>
-  </data>
-  <data name="ordemDeServiçoOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 20</value>
-  </data>
-  <data name="&gt;&gt;labelDataHora.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inserirServiçosEPeçasToolStripMenuItem.Name" xml:space="preserve">
-    <value>inserirServiçosEPeçasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;caixaTerminalToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;consultarOSAnterioresToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnProduto.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;bancoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnVenda.Name" xml:space="preserve">
-    <value>btnVenda</value>
-  </data>
-  <data name="&gt;&gt;produtosToolStripMenuItem.Name" xml:space="preserve">
-    <value>produtosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;empresaToolStripMenuItem.Name" xml:space="preserve">
-    <value>empresaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;btnProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emitirReciboOuNotaFiscalToolStripMenuItem.Name" xml:space="preserve">
-    <value>emitirReciboOuNotaFiscalToolStripMenuItem</value>
-  </data>
-  <data name="históricoDeOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="&gt;&gt;execuçãoEPeçasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="categoriaDePagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 22</value>
-  </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
-  </data>
-  <data name="&gt;&gt;btnProduto.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;labelDataHora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;formaPagamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>formaPagamentoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;relatóriosDeOSToolStripMenuItem.Name" xml:space="preserve">
-    <value>relatóriosDeOSToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;entregaFinalizaçãoToolStripMenuItem.Name" xml:space="preserve">
-    <value>entregaFinalizaçãoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;grupoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="registrarEquipamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
-  </data>
-  <data name="&gt;&gt;btnVenda.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tecnicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 22</value>
-  </data>
-  <data name="&gt;&gt;BtnFornecedor.Name" xml:space="preserve">
-    <value>BtnFornecedor</value>
-  </data>
-  <data name="&gt;&gt;btnUsuario.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BtnRelatorio.Name" xml:space="preserve">
-    <value>BtnRelatorio</value>
-  </data>
-  <data name="&gt;&gt;fiscalTributariaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Name" xml:space="preserve">
-    <value>controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem</value>
-  </data>
-  <data name="geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 22</value>
-  </data>
-  <data name="&gt;&gt;btnPdv.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;usuarioToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;relatóriosDeOSToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnServiço.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="envioDeOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 22</value>
-  </data>
-  <data name="btnCliente.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnProduto.Name" xml:space="preserve">
-    <value>btnProduto</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Gerenciador</value>
-  </data>
-  <data name="&gt;&gt;cFOPToolStripMenuItem.Name" xml:space="preserve">
-    <value>cFOPToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;estoqueToolStripMenuItem.Name" xml:space="preserve">
-    <value>estoqueToolStripMenuItem</value>
-  </data>
-  <data name="bairroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;bancoToolStripMenuItem.Name" xml:space="preserve">
-    <value>bancoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeContasAReceberToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançamentoDeContasAReceberToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;fiscalTributariaToolStripMenuItem.Name" xml:space="preserve">
-    <value>fiscalTributariaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;entradasaídaManualToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inventárioconferênciaAjusteToolStripMenuItem.Name" xml:space="preserve">
-    <value>inventárioconferênciaAjusteToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;clienteToolStripMenuItem.Name" xml:space="preserve">
-    <value>clienteToolStripMenuItem</value>
-  </data>
-  <data name="relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>364, 22</value>
-  </data>
-  <data name="históricoERastreioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
-  </data>
-  <data name="tipoDePagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 22</value>
-  </data>
-  <data name="&gt;&gt;lançarContasAReceberToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançarContasAReceberToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
-  </data>
-  <data name="nCMToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;pdvCaixaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
-  </data>
-  <data name="pemissõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;mãoDeObraToolStripMenuItem.Name" xml:space="preserve">
-    <value>mãoDeObraToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
   </data>
   <data name="&gt;&gt;button5.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;pdvToolStripMenuItem.Name" xml:space="preserve">
-    <value>pdvToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="peçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;estadoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;fluxoDeCaixadiáriomensalToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCliente.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cESTToolStripMenuItem.Name" xml:space="preserve">
-    <value>cESTToolStripMenuItem</value>
-  </data>
-  <data name="trocarSenhaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="&gt;&gt;gruposSubGrupoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnProduto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 1</value>
-  </data>
-  <data name="lançamentoDeTituloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="&gt;&gt;envioDeOrçamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;entregaFinalizaçãoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cFOPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;btnOs.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tipoDePagamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>tipoDePagamentoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;BtnCliente.Name" xml:space="preserve">
-    <value>BtnCliente</value>
-  </data>
-  <data name="&gt;&gt;integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem.Name" xml:space="preserve">
-    <value>enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem</value>
-  </data>
-  <data name="lançamentoParçeladoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="&gt;&gt;históricoDeOSToolStripMenuItem.Name" xml:space="preserve">
-    <value>históricoDeOSToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;btnPdvCaixa.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnOrdemServi.Name" xml:space="preserve">
-    <value>btnOrdemServi</value>
-  </data>
-  <data name="vendasDiáriasSemanaisMensaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 22</value>
-  </data>
-  <data name="&gt;&gt;origemMercadoriaToolStripMenuItem.Name" xml:space="preserve">
-    <value>origemMercadoriaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;categoriaDePagamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cSTCSOSNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="btnCliente.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 1</value>
-  </data>
-  <data name="&gt;&gt;paisToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="toolStripTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="impressorastérmicasFiscaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 22</value>
-  </data>
-  <data name="&gt;&gt;btnCliente.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="desToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="&gt;&gt;btnCliente.Name" xml:space="preserve">
-    <value>btnCliente</value>
-  </data>
-  <data name="btnServiço.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="abrirNovaOrdemDeServiçoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="btnFornecedor.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;inserirServiçosEPeçasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="consultarOSAnterioresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 22</value>
-  </data>
-  <data name="&gt;&gt;fornecedorToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="estadoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 22</value>
-  </data>
-  <data name="&gt;&gt;peçasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnFornecedor.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;finaceiroToolStripMenuItem.Name" xml:space="preserve">
-    <value>finaceiroToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;relatorioToolStripMenuItem.Name" xml:space="preserve">
-    <value>relatorioToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;impressorastérmicasFiscaisToolStripMenuItem.Name" xml:space="preserve">
-    <value>impressorastérmicasFiscaisToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;tabelasFiscaistributáriasToolStripMenuItem.Name" xml:space="preserve">
-    <value>tabelasFiscaistributáriasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;abrirNovaOrdemDeServiçoToolStripMenuItem.Name" xml:space="preserve">
-    <value>abrirNovaOrdemDeServiçoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;desToolStripMenuItem.Name" xml:space="preserve">
-    <value>desToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;cidadeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;peçasToolStripMenuItem.Name" xml:space="preserve">
-    <value>peçasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Name" xml:space="preserve">
-    <value>relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem</value>
-  </data>
-  <data name="pdvToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 20</value>
-  </data>
-  <data name="&gt;&gt;btnServico.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;categoriaDePagamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>categoriaDePagamentoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="caixaTerminalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;diagnósticoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;históricoERastreioToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nCMToolStripMenuItem.Name" xml:space="preserve">
-    <value>nCMToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;consultaDeNotasRecebidasToolStripMenuItem.Name" xml:space="preserve">
-    <value>consultaDeNotasRecebidasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;bairroToolStripMenuItem.Name" xml:space="preserve">
-    <value>bairroToolStripMenuItem</value>
-  </data>
   <data name="&gt;&gt;criarUmaNovaOrdemDeServiçoToolStripMenuItem.Name" xml:space="preserve">
     <value>criarUmaNovaOrdemDeServiçoToolStripMenuItem</value>
   </data>
-  <data name="planosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 22</value>
-  </data>
-  <data name="&gt;&gt;relatóriosTributáriosToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;categoriaServiçosToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lançarContasAReceberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
-  </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
-  </data>
-  <data name="&gt;&gt;serviçosToolStripMenuItem1.Name" xml:space="preserve">
-    <value>serviçosToolStripMenuItem1</value>
-  </data>
-  <data name="serviçosToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;despesasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;aprovarOrçamentoPeloClienteToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tecnicoToolStripMenuItem.Name" xml:space="preserve">
-    <value>tecnicoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;integraçõesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnServiços.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 0</value>
-  </data>
-  <data name="registrarMãoDeObraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 22</value>
-  </data>
-  <data name="serviçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;lblMensagem.Name" xml:space="preserve">
-    <value>lblMensagem</value>
-  </data>
-  <data name="&gt;&gt;lblMensagem.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;consultarOSAnterioresToolStripMenuItem.Name" xml:space="preserve">
-    <value>consultarOSAnterioresToolStripMenuItem</value>
-  </data>
-  <data name="subGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;históricoDeOSToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;localidadeToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 22</value>
   </data>
   <data name="btnUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>691, 3</value>
   </data>
-  <data name="pedidoDeVendaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 22</value>
-  </data>
-  <data name="&gt;&gt;btnVenda.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="lançamentoDeTituloToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="orçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 22</value>
-  </data>
-  <data name="&gt;&gt;pdvToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Name" xml:space="preserve">
-    <value>entradaDeNotasFiscaismanualOuXMLToolStripMenuItem</value>
-  </data>
-  <data name="usuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 22</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnSair.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelDataHora.Name" xml:space="preserve">
-    <value>labelDataHora</value>
-  </data>
-  <data name="&gt;&gt;cidadeToolStripMenuItem.Name" xml:space="preserve">
-    <value>cidadeToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;btnFornecedor.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="BtnFornecedor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 1</value>
-  </data>
-  <data name="&gt;&gt;cargoToolStripMenuItem1.Name" xml:space="preserve">
-    <value>cargoToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lançamentoParçeladoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="transportadoraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="btnRelatorio.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="consultaDeNotasRecebidasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 22</value>
-  </data>
-  <data name="despesasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 22</value>
-  </data>
-  <data name="&gt;&gt;relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Name" xml:space="preserve">
-    <value>relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;pedidoDeCompraToolStripMenuItem.Name" xml:space="preserve">
-    <value>pedidoDeCompraToolStripMenuItem</value>
-  </data>
-  <data name="relatóriosTributáriosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>291, 22</value>
-  </data>
-  <data name="&gt;&gt;registrarMãoDeObraToolStripMenuItem.Name" xml:space="preserve">
-    <value>registrarMãoDeObraToolStripMenuItem</value>
-  </data>
-  <data name="cargoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="&gt;&gt;btnServiço.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;consultaDeVendasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeContasToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançamentoDeContasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;comprasToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="finaceiroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
-  </data>
-  <data name="&gt;&gt;lblMensagem.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lançamentoDeContasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 22</value>
-  </data>
-  <data name="&gt;&gt;bairroToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;suaLogoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnServiços.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;históricoERastreioToolStripMenuItem.Name" xml:space="preserve">
-    <value>históricoERastreioToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;sairToolStripMenuItem.Name" xml:space="preserve">
-    <value>sairToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;btnRelatorio.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="vnedasFaturamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 21</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;transportadoraToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fluxoDeCaixaToolStripMenuItem.Name" xml:space="preserve">
-    <value>fluxoDeCaixaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;iSSToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnTransportadora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="relatorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 20</value>
-  </data>
-  <data name="&gt;&gt;transportadoraToolStripMenuItem.Name" xml:space="preserve">
-    <value>transportadoraToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;históricoRastreamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>históricoRastreamentoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;relatóriosTributáriosToolStripMenuItem.Name" xml:space="preserve">
-    <value>relatóriosTributáriosToolStripMenuItem</value>
-  </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 1</value>
-  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;históricoRastreamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aprovaçãoDoOrçamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="históricoRastreamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 22</value>
-  </data>
-  <data name="&gt;&gt;btnSair.Name" xml:space="preserve">
-    <value>btnSair</value>
-  </data>
-  <data name="&gt;&gt;relatorioToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serviçosToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trocarSenhaToolStripMenuItem.Name" xml:space="preserve">
-    <value>trocarSenhaToolStripMenuItem</value>
-  </data>
-  <data name="btnOs.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="BtnRelatorio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 1</value>
-  </data>
-  <data name="inventárioconferênciaAjusteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>364, 22</value>
-  </data>
-  <data name="&gt;&gt;serviçosToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeContasAPagarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnServiço.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 3</value>
-  </data>
-  <data name="&gt;&gt;configuraçãoDoRegimeTributárioToolStripMenuItem.Name" xml:space="preserve">
-    <value>configuraçãoDoRegimeTributárioToolStripMenuItem</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="btnPdvCaixa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>691, 3</value>
-  </data>
-  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem1.Name" xml:space="preserve">
-    <value>lançamentoDeTituloToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;iSSToolStripMenuItem.Name" xml:space="preserve">
-    <value>iSSToolStripMenuItem</value>
-  </data>
-  <data name="finalizaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 22</value>
-  </data>
-  <data name="btnOs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 0</value>
-  </data>
-  <data name="&gt;&gt;btnOrdemServi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fluxoDeCaixaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnTransportadora.Name" xml:space="preserve">
-    <value>btnTransportadora</value>
-  </data>
-  <data name="&gt;&gt;cargoToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;funcionarioToolStripMenuItem.Name" xml:space="preserve">
-    <value>funcionarioToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;empresaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnServiço.Name" xml:space="preserve">
-    <value>btnServiço</value>
-  </data>
-  <data name="&gt;&gt;btnPdvCaixa.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="BtnCliente.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 6</value>
   </data>
   <data name="&gt;&gt;comprasToolStripMenuItem.Name" xml:space="preserve">
     <value>comprasToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;cadastrosToolStripMenuItem.Name" xml:space="preserve">
-    <value>cadastrosToolStripMenuItem</value>
+  <data name="btnServiços.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 0</value>
   </data>
-  <data name="&gt;&gt;lançamentoDeContasAPagarToolStripMenuItem.Name" xml:space="preserve">
-    <value>lançamentoDeContasAPagarToolStripMenuItem</value>
+  <data name="&gt;&gt;consultarOSAnterioresToolStripMenuItem.Name" xml:space="preserve">
+    <value>consultarOSAnterioresToolStripMenuItem</value>
   </data>
-  <data name="comprasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 21</value>
-  </data>
-  <data name="&gt;&gt;planosToolStripMenuItem.Name" xml:space="preserve">
-    <value>planosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;produtosServiçosToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;inserirServiçosEPeçasToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnFornecedor.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;pdvCaixaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Name" xml:space="preserve">
-    <value>emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem</value>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
-  <data name="&gt;&gt;envioDeOrçamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>envioDeOrçamentoToolStripMenuItem</value>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;leitoresDeCódigoDeBarrasToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;consultaDeNotasRecebidasToolStripMenuItem.Name" xml:space="preserve">
+    <value>consultaDeNotasRecebidasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;btnCliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProdu.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lançarContasAPagarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnServiço.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnTransportadora.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;criarUmaNovaOrdemDeServiçoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnRelatorio.Name" xml:space="preserve">
     <value>btnRelatorio</value>
   </data>
-  <data name="BtnFornecedor.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;categoriaDePagamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>categoriaDePagamentoToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;funcionarioToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnOrdemServi.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="btnProduto.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="entregaFinalizaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 22</value>
+  <data name="&gt;&gt;históricoERastreioToolStripMenuItem.Name" xml:space="preserve">
+    <value>históricoERastreioToolStripMenuItem</value>
   </data>
-  <data name="localidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Name" xml:space="preserve">
+    <value>relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Gerenciador</value>
+  </data>
+  <data name="&gt;&gt;clienteToolStripMenuItem.Name" xml:space="preserve">
+    <value>clienteToolStripMenuItem</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1080, 40</value>
+  </data>
+  <data name="&gt;&gt;btnOs.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tipoDePagamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>tipoDePagamentoToolStripMenuItem</value>
+  </data>
+  <data name="fiscalTributariaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 20</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
+    <value>toolStripSeparator4</value>
+  </data>
+  <data name="btnOrdemServi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="&gt;&gt;históricoDeOSToolStripMenuItem.Name" xml:space="preserve">
+    <value>históricoDeOSToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pdvToolStripMenuItem.Name" xml:space="preserve">
+    <value>pdvToolStripMenuItem</value>
+  </data>
+  <data name="subGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
-  <data name="&gt;&gt;abrirNovaOrdemDeServiçoToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnServiço.Name" xml:space="preserve">
+    <value>btnServiço</value>
+  </data>
+  <data name="&gt;&gt;relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem.Name" xml:space="preserve">
+    <value>relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem</value>
+  </data>
+  <data name="badeiraDoCartãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnPdv.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;históricoRastreamentoToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;leitoresDeCódigoDeBarrasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;planosToolStripMenuItem.Type" xml:space="preserve">
+  <data name="lblMensagem.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Name" xml:space="preserve">
+    <value>geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem</value>
+  </data>
+  <data name="vendasSaidasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 21</value>
+  </data>
+  <data name="&gt;&gt;aprovaçãoDoOrçamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>aprovaçãoDoOrçamentoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;btnOrdemServi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="valorDeSuprimentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 22</value>
+  </data>
+  <data name="&gt;&gt;geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="equipamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="envioDeOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 22</value>
+  </data>
+  <data name="&gt;&gt;btnUsuario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="serviçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;fornecedorToolStripMenuItem.Name" xml:space="preserve">
+    <value>fornecedorToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tecnicoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;valorDeSuprimentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>valorDeSuprimentoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;btnServiço.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;faturamentoPorProdutoserviçoclienteToolStripMenuItem.Name" xml:space="preserve">
+    <value>faturamentoPorProdutoserviçoclienteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;vnedasFaturamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabelasFiscaistributáriasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnServiços.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;diagnósticoToolStripMenuItem.Name" xml:space="preserve">
+    <value>diagnósticoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtosServiçosToolStripMenuItem.Name" xml:space="preserve">
+    <value>produtosServiçosToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtoToolStripMenuItem.Name" xml:space="preserve">
+    <value>produtoToolStripMenuItem</value>
+  </data>
+  <data name="impressorastérmicasFiscaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 22</value>
+  </data>
+  <data name="fornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;consultaDeVendasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bairroToolStripMenuItem.Name" xml:space="preserve">
+    <value>bairroToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnFornecedor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnProdu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pedidoDeCompraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 22</value>
+  </data>
+  <data name="suaLogoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;btnUsuario.Name" xml:space="preserve">
+    <value>btnUsuario</value>
+  </data>
+  <data name="&gt;&gt;registrarMãoDeObraToolStripMenuItem.Name" xml:space="preserve">
+    <value>registrarMãoDeObraToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;registrarEquipamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>registrarEquipamentoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;caixaTerminalToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnPdv.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cargoToolStripMenuItem.Name" xml:space="preserve">
-    <value>cargoToolStripMenuItem</value>
+  <data name="&gt;&gt;caixaTerminalToolStripMenuItem.Name" xml:space="preserve">
+    <value>caixaTerminalToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;btnPdvCaixa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="formaPagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="&gt;&gt;BtnCliente.ZOrder" xml:space="preserve">
+  <data name="btnRelatorio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>369, 1</value>
+  </data>
+  <data name="&gt;&gt;pedidoDeVendaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finalizaçãoEntregaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;transportadoraToolStripMenuItem.Name" xml:space="preserve">
+    <value>transportadoraToolStripMenuItem</value>
+  </data>
+  <data name="btnOs.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;leitoresDeCódigoDeBarrasToolStripMenuItem.Name" xml:space="preserve">
-    <value>leitoresDeCódigoDeBarrasToolStripMenuItem</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ServiTech -Ordem de Serviço</value>
   </data>
-  <data name="&gt;&gt;btnServiços.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="reimpressãoDeCupomFiscalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 22</value>
   </data>
-  <data name="&gt;&gt;acompanharStatusDaOSToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cFOPToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="labelDataHora.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;pemissõesToolStripMenuItem.Name" xml:space="preserve">
-    <value>pemissõesToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;finalizaçãoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;suaLogoToolStripMenuItem.Name" xml:space="preserve">
-    <value>suaLogoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;criarUmaNovaOrdemDeServiçoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;faturamentoPorProdutoserviçoclienteToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnOs.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mãoDeObraToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPdvCaixa.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;aprovaçãoDoOrçamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>aprovaçãoDoOrçamentoToolStripMenuItem</value>
-  </data>
-  <data name="vendasSaidasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 21</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnServiços.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;BtnCliente.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnRelatorio.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;emissãoDeNotaFiscalDeSaídaToolStripMenuItem.Name" xml:space="preserve">
-    <value>emissãoDeNotaFiscalDeSaídaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;gruposSubGrupoToolStripMenuItem.Name" xml:space="preserve">
-    <value>gruposSubGrupoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;BtnFornecedor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;BtnRelatorio.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnProdu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 80</value>
-  </data>
-  <data name="&gt;&gt;unidadeDeMedidaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 22</value>
+  <data name="lançamentoDeTituloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
   </data>
   <data name="&gt;&gt;cESTToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;sairToolStripMenuItem.Type" xml:space="preserve">
+  <data name="tecnicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="emissãoDeNotaFiscalDeSaídaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 22</value>
+  </data>
+  <data name="trocarSenhaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;pdvToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnPdvCaixa.Name" xml:space="preserve">
-    <value>btnPdvCaixa</value>
+  <data name="enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 22</value>
   </data>
-  <data name="sairToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 20</value>
+  <data name="&gt;&gt;laçamentoDeBoletosToolStripMenuItem.Name" xml:space="preserve">
+    <value>laçamentoDeBoletosToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem.Name" xml:space="preserve">
-    <value>relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem</value>
+  <data name="&gt;&gt;btnOrdemServi.Name" xml:space="preserve">
+    <value>btnOrdemServi</value>
   </data>
-  <data name="&gt;&gt;vendasSaidasToolStripMenuItem.Name" xml:space="preserve">
-    <value>vendasSaidasToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;btnServiços.Name" xml:space="preserve">
-    <value>btnServiços</value>
-  </data>
-  <data name="&gt;&gt;BtnRelatorio.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnUsuario.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem.Name" xml:space="preserve">
-    <value>controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem</value>
+  <data name="&gt;&gt;btnProdu.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lançamentoDeContasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="&gt;&gt;finalizaçãoEntregaToolStripMenuItem.Name" xml:space="preserve">
+    <value>finalizaçãoEntregaToolStripMenuItem</value>
+  </data>
+  <data name="registrarMãoDeObraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 22</value>
+  </data>
+  <data name="clienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="&gt;&gt;btnServiços.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;clienteToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="&gt;&gt;nCMToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;inventárioconferênciaAjusteToolStripMenuItem.Name" xml:space="preserve">
+    <value>inventárioconferênciaAjusteToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;btnServico.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="seguimentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="&gt;&gt;categoriaServiçosToolStripMenuItem.Name" xml:space="preserve">
+    <value>categoriaServiçosToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
     <value>toolStripSeparator2</value>
   </data>
-  <data name="&gt;&gt;geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnRelatorio.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;inventárioconferênciaAjusteToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnServico.Name" xml:space="preserve">
-    <value>btnServico</value>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
   </data>
-  <data name="estoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 21</value>
+  <data name="&gt;&gt;cadastrosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cESTToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;btnServiço.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnServiços.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="vendasDiáriasSemanaisMensaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="&gt;&gt;ajudarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lançamentoParçeladoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="&gt;&gt;orçamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;equipamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>equipamentoToolStripMenuItem</value>
+  </data>
+  <data name="btnPdv.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="criarUmaNovaOrdemDeServiçoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="&gt;&gt;pedidoDeCompraToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem.Name" xml:space="preserve">
+    <value>lançamentoParçeladoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;desToolStripMenuItem.Name" xml:space="preserve">
+    <value>desToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tabelasFiscaistributáriasToolStripMenuItem.Name" xml:space="preserve">
+    <value>tabelasFiscaistributáriasToolStripMenuItem</value>
+  </data>
+  <data name="fluxoDeCaixaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="btnPdvCaixa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 3</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnProduto.Name" xml:space="preserve">
+    <value>btnProduto</value>
+  </data>
+  <data name="&gt;&gt;planosToolStripMenuItem.Name" xml:space="preserve">
+    <value>planosToolStripMenuItem</value>
+  </data>
+  <data name="peçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="empresaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;paisToolStripMenuItem.Name" xml:space="preserve">
+    <value>paisToolStripMenuItem</value>
+  </data>
+  <data name="serviçosToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="btnOs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 0</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="laçamentoDeBoletosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="cidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="consultarOSAnterioresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 6</value>
+  </data>
+  <data name="&gt;&gt;cESTToolStripMenuItem.Name" xml:space="preserve">
+    <value>cESTToolStripMenuItem</value>
+  </data>
+  <data name="BtnCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 1</value>
+  </data>
+  <data name="&gt;&gt;btnSair.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnVenda.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cFOPToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 6</value>
+  </data>
+  <data name="lançarContasAReceberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 22</value>
+  </data>
+  <data name="&gt;&gt;abrirNovaOrdemDeServiçoToolStripMenuItem.Name" xml:space="preserve">
+    <value>abrirNovaOrdemDeServiçoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;fluxoDeCaixaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="execuçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="balançaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;btnPdvCaixa.Name" xml:space="preserve">
+    <value>btnPdvCaixa</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;cancelamentoDeCupomToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oçamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>oçamentoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;pdvCaixaToolStripMenuItem.Name" xml:space="preserve">
+    <value>pdvCaixaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;sairToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="faturamentoPorProdutoserviçoclienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pedidoDeCompraToolStripMenuItem.Name" xml:space="preserve">
+    <value>pedidoDeCompraToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emitirReciboOuNotaFiscalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 0</value>
+  </data>
+  <data name="&gt;&gt;relatóriosDeOSToolStripMenuItem.Name" xml:space="preserve">
+    <value>relatóriosDeOSToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 22</value>
+  </data>
+  <data name="finalizaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="&gt;&gt;gruposSubGrupoToolStripMenuItem.Name" xml:space="preserve">
+    <value>gruposSubGrupoToolStripMenuItem</value>
+  </data>
+  <data name="marcasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 80</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;emitirReciboOuNotaFiscalToolStripMenuItem.Name" xml:space="preserve">
+    <value>emitirReciboOuNotaFiscalToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;categoriaToolStripMenuItem.Name" xml:space="preserve">
+    <value>categoriaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lançarContasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 22</value>
+  </data>
+  <data name="bancoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;leitoresDeCódigoDeBarrasToolStripMenuItem.Name" xml:space="preserve">
+    <value>leitoresDeCódigoDeBarrasToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lançamentoParçeladoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 22</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="transportadoraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;tecnicoToolStripMenuItem.Name" xml:space="preserve">
+    <value>tecnicoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMensagem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;orçamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>orçamentoToolStripMenuItem</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="cFOPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;reimpressãoDeCupomFiscalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;valorDeSuprimentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnFornecedor.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="BtnCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnRelatorio.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;históricoRastreamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>históricoRastreamentoToolStripMenuItem</value>
+  </data>
+  <data name="categoriaServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="&gt;&gt;trocarSenhaToolStripMenuItem.Name" xml:space="preserve">
+    <value>trocarSenhaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeContasAPagarToolStripMenuItem.Name" xml:space="preserve">
+    <value>lançamentoDeContasAPagarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;labelDataHora.Name" xml:space="preserve">
+    <value>labelDataHora</value>
+  </data>
+  <data name="&gt;&gt;btnOs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="categoriaDePagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="relatóriosTributáriosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 22</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;estoqueToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="entradasaídaManualToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 22</value>
+  </data>
+  <data name="&gt;&gt;finaceiroToolStripMenuItem.Name" xml:space="preserve">
+    <value>finaceiroToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;funcionarioToolStripMenuItem.Name" xml:space="preserve">
+    <value>funcionarioToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;paisToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;categoriaDePagamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cadastrosToolStripMenuItem.Name" xml:space="preserve">
+    <value>cadastrosToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;estadoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pdvCaixaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 22</value>
+  </data>
+  <data name="&gt;&gt;btnFornecedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;balançaToolStripMenuItem.Name" xml:space="preserve">
+    <value>balançaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lblMensagem.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bairroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;serviçosToolStripMenuItem1.Name" xml:space="preserve">
+    <value>serviçosToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;BtnCliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;configuraçãoDoRegimeTributárioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;integraçõesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="usuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 22</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cSTCSOSNToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;relatóriosTributáriosToolStripMenuItem.Name" xml:space="preserve">
+    <value>relatóriosTributáriosToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;laçamentoDeBoletosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;entradasaídaManualToolStripMenuItem.Name" xml:space="preserve">
+    <value>entradasaídaManualToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;oçamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;transportadoraToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;consultarOSAnterioresToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnPdv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>823, 2</value>
+  </data>
+  <data name="tipoDePagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="&gt;&gt;btnPdvCaixa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finalizaçãoToolStripMenuItem.Name" xml:space="preserve">
+    <value>finalizaçãoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtosToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cargoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 22</value>
+  </data>
+  <data name="categoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;empresaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;execuçãoEPeçasToolStripMenuItem.Name" xml:space="preserve">
+    <value>execuçãoEPeçasToolStripMenuItem</value>
+  </data>
+  <data name="btnPdvCaixa.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;suaLogoToolStripMenuItem.Name" xml:space="preserve">
+    <value>suaLogoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;nCMToolStripMenuItem.Name" xml:space="preserve">
+    <value>nCMToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;btnFornecedor.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="condiçãoDePagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="&gt;&gt;btnServico.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="finalizaçãoEntregaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="&gt;&gt;desToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTransportadora.Name" xml:space="preserve">
+    <value>btnTransportadora</value>
+  </data>
+  <data name="&gt;&gt;acompanharStatusDaOSToolStripMenuItem.Name" xml:space="preserve">
+    <value>acompanharStatusDaOSToolStripMenuItem</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;empresaToolStripMenuItem.Name" xml:space="preserve">
+    <value>empresaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;labelDataHora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="estadoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="&gt;&gt;trocarSenhaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vendasDiáriasSemanaisMensaisToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="planosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 22</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeContasToolStripMenuItem.Name" xml:space="preserve">
+    <value>lançamentoDeContasToolStripMenuItem</value>
+  </data>
+  <data name="aprovaçãoDoOrçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="lançamentoDeContasAReceberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="&gt;&gt;cidadeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;registrarMãoDeObraToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pedidoDeVendaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 22</value>
+  </data>
+  <data name="btnUsuario.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cargoToolStripMenuItem.Name" xml:space="preserve">
+    <value>cargoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;consultaDeNotasRecebidasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;planosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 6</value>
+  </data>
+  <data name="&gt;&gt;BtnCliente.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="registrarEquipamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="&gt;&gt;usuarioToolStripMenuItem.Name" xml:space="preserve">
+    <value>usuarioToolStripMenuItem</value>
+  </data>
+  <data name="btnVenda.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
+    <value>toolStripSeparator5</value>
+  </data>
+  <data name="entregaFinalizaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="&gt;&gt;fiscalTributariaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;consultaDeVendasToolStripMenuItem.Name" xml:space="preserve">
+    <value>consultaDeVendasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnTransportadora.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="btnTransportadora.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 1</value>
+  </data>
+  <data name="&gt;&gt;impressorastérmicasFiscaisToolStripMenuItem.Name" xml:space="preserve">
+    <value>impressorastérmicasFiscaisToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;históricoERastreioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pemissõesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSair.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnServico.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;produtosToolStripMenuItem1.Name" xml:space="preserve">
+    <value>produtosToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;bancoToolStripMenuItem.Name" xml:space="preserve">
+    <value>bancoToolStripMenuItem</value>
+  </data>
+  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;BtnRelatorio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;etiquetasToolStripMenuItem.Name" xml:space="preserve">
+    <value>etiquetasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;btnOs.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;subGrupoToolStripMenuItem.Name" xml:space="preserve">
+    <value>subGrupoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnFornecedor.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;funcionarioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aprovaçãoDoOrçamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="&gt;&gt;btnServiços.Name" xml:space="preserve">
+    <value>btnServiços</value>
+  </data>
+  <data name="&gt;&gt;BtnCliente.Name" xml:space="preserve">
+    <value>BtnCliente</value>
+  </data>
+  <data name="&gt;&gt;btnPdvCaixa.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnServiço.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnServico.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 1</value>
+  </data>
+  <data name="pemissõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;etiquetasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BtnRelatorio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>591, 1</value>
+  </data>
+  <data name="consultaDeVendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 22</value>
+  </data>
+  <data name="&gt;&gt;faturamentoPorProdutoserviçoclienteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnVenda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 1</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 20</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 50</value>
+  </data>
+  <data name="&gt;&gt;btnPdvCaixa.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;emissãoDeNotaFiscalDeSaídaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;localidadeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Name" xml:space="preserve">
+    <value>entradaDeNotasFiscaismanualOuXMLToolStripMenuItem</value>
+  </data>
+  <data name="labelDataHora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1038, 46</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vendasDiáriasSemanaisMensaisToolStripMenuItem.Name" xml:space="preserve">
+    <value>vendasDiáriasSemanaisMensaisToolStripMenuItem</value>
+  </data>
+  <data name="despesasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="btnFornecedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 0</value>
+  </data>
+  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>478, 1</value>
+  </data>
+  <data name="&gt;&gt;cidadeToolStripMenuItem.Name" xml:space="preserve">
+    <value>cidadeToolStripMenuItem</value>
+  </data>
+  <data name="btnSair.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblMensagem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 480</value>
+  </data>
+  <data name="&gt;&gt;integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem.Name" xml:space="preserve">
+    <value>integraçãoComConciliaçãoBancáriaopcionalToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;relatóriosTributáriosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCliente.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="btnProdu.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem.Name" xml:space="preserve">
+    <value>enviarOrçamentoopcionalPDFSMSWhatsAppToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;suaLogoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cancelamentoDeCupomToolStripMenuItem.Name" xml:space="preserve">
+    <value>cancelamentoDeCupomToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;labelDataHora.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;marcasToolStripMenuItem.Name" xml:space="preserve">
+    <value>marcasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;marcasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cargoToolStripMenuItem1.Name" xml:space="preserve">
+    <value>cargoToolStripMenuItem1</value>
+  </data>
+  <data name="origemMercadoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnOrdemServi.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;badeiraDoCartãoToolStripMenuItem.Name" xml:space="preserve">
+    <value>badeiraDoCartãoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;localidadeToolStripMenuItem.Name" xml:space="preserve">
+    <value>localidadeToolStripMenuItem</value>
+  </data>
+  <data name="btnCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnServico.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 1</value>
+  </data>
+  <data name="integraçõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="diagnósticoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="&gt;&gt;controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Name" xml:space="preserve">
+    <value>controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem</value>
+  </data>
+  <data name="configuraçãoDoRegimeTributárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 22</value>
+  </data>
+  <data name="&gt;&gt;btnCliente.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lançarContasAReceberToolStripMenuItem.Name" xml:space="preserve">
+    <value>lançarContasAReceberToolStripMenuItem</value>
+  </data>
+  <data name="emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 22</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeContasAReceberToolStripMenuItem.Name" xml:space="preserve">
+    <value>lançamentoDeContasAReceberToolStripMenuItem</value>
+  </data>
+  <data name="ajudarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 21</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="produtosServiçosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;tipoDePagamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabelasFiscaistributáriasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 22</value>
+  </data>
+  <data name="&gt;&gt;equipamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="históricoDeOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;unidadeDeMedidaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;nCMToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grupoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aprovarOrçamentoPeloClienteToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;estadoToolStripMenuItem.Name" xml:space="preserve">
-    <value>estadoToolStripMenuItem</value>
+  <data name="&gt;&gt;sairToolStripMenuItem.Name" xml:space="preserve">
+    <value>sairToolStripMenuItem</value>
   </data>
-  <data name="btnUsuario.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;mãoDeObraToolStripMenuItem.Name" xml:space="preserve">
+    <value>mãoDeObraToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;grupoToolStripMenuItem.Name" xml:space="preserve">
+    <value>grupoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem1.Name" xml:space="preserve">
+    <value>lançamentoDeTituloToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;despesasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lançamentoDeTituloToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="&gt;&gt;serviçosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;envioDeOrçamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="caixaTerminalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="funcionarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;cargoToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;relatóriosDeOSToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fluxoDeCaixadiáriomensalToolStripMenuItem.Name" xml:space="preserve">
+    <value>fluxoDeCaixadiáriomensalToolStripMenuItem</value>
+  </data>
+  <data name="acompanharStatusDaOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="históricoERastreioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="fluxoDeCaixadiáriomensalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="&gt;&gt;despesasToolStripMenuItem.Name" xml:space="preserve">
+    <value>despesasToolStripMenuItem</value>
+  </data>
+  <data name="btnProduto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;categoriaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFornecedor.Name" xml:space="preserve">
+    <value>btnFornecedor</value>
   </data>
   <data name="btnProdu.Location" type="System.Drawing.Point, System.Drawing">
     <value>257, 3</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="produtoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 22</value>
+  </data>
+  <data name="&gt;&gt;entradasaídaManualToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;devoluçãoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;usuarioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;vendasSaidasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFornecedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnVenda.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnServico.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;entregaFinalizaçãoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="desToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 22</value>
+  </data>
+  <data name="&gt;&gt;pemissõesToolStripMenuItem.Name" xml:space="preserve">
+    <value>pemissõesToolStripMenuItem</value>
+  </data>
+  <data name="oçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeContasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;finalizaçãoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ordemDeServiçoOSToolStripMenuItem.Name" xml:space="preserve">
+    <value>ordemDeServiçoOSToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;btnPdv.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="relatorioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="toolStripTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="labelDataHora.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;serviçosToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;unidadeDeMedidaToolStripMenuItem.Name" xml:space="preserve">
+    <value>unidadeDeMedidaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formaPagamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>formaPagamentoToolStripMenuItem</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 0</value>
+  </data>
+  <data name="&gt;&gt;BtnFornecedor.Name" xml:space="preserve">
+    <value>BtnFornecedor</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;clienteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;execuçãoEPeçasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;subGrupoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnVenda.Name" xml:space="preserve">
+    <value>btnVenda</value>
+  </data>
+  <data name="&gt;&gt;fluxoDeCaixadiáriomensalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnServico.Name" xml:space="preserve">
+    <value>btnServico</value>
+  </data>
+  <data name="&gt;&gt;gruposSubGrupoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cSTCSOSNToolStripMenuItem.Name" xml:space="preserve">
+    <value>cSTCSOSNToolStripMenuItem</value>
+  </data>
+  <data name="iSSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;seguimentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>seguimentoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;execuçãoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnOrdemServi.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnServiço.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;reimpressãoDeCupomFiscalToolStripMenuItem.Name" xml:space="preserve">
+    <value>reimpressãoDeCupomFiscalToolStripMenuItem</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 1</value>
+  </data>
+  <data name="&gt;&gt;btnSair.Name" xml:space="preserve">
+    <value>btnSair</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;relatorioToolStripMenuItem.Name" xml:space="preserve">
+    <value>relatorioToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;BtnRelatorio.Name" xml:space="preserve">
+    <value>BtnRelatorio</value>
+  </data>
+  <data name="&gt;&gt;btnProduto.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="orçamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;seguimentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;abrirNovaOrdemDeServiçoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="vnedasFaturamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 21</value>
+  </data>
+  <data name="&gt;&gt;btnServiços.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="relatóriosDeGiroEstoqueMínimoAlertaDeReposiçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 22</value>
+  </data>
+  <data name="gruposSubGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 22</value>
+  </data>
+  <data name="&gt;&gt;configuraçãoDoRegimeTributárioToolStripMenuItem.Name" xml:space="preserve">
+    <value>configuraçãoDoRegimeTributárioToolStripMenuItem</value>
+  </data>
+  <data name="históricoRastreamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 22</value>
+  </data>
+  <data name="paisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="BtnFornecedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 1</value>
+  </data>
+  <data name="&gt;&gt;lançarContasAReceberToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bancoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;badeiraDoCartãoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnRelatorio.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnProduto.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cancelamentoDeCupomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 22</value>
+  </data>
+  <data name="&gt;&gt;relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;impressorastérmicasFiscaisToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pedidoDeVendaToolStripMenuItem.Name" xml:space="preserve">
+    <value>pedidoDeVendaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtosToolStripMenuItem.Name" xml:space="preserve">
+    <value>produtosToolStripMenuItem</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnProdu.Name" xml:space="preserve">
+    <value>btnProdu</value>
+  </data>
+  <data name="cadastrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="pdvToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="&gt;&gt;ordemDeServiçoOSToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="serviçosToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="relatóriosDeOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="aprovarOrçamentoPeloClienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 22</value>
+  </data>
+  <data name="&gt;&gt;comprasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem.Name" xml:space="preserve">
+    <value>lançamentoDeTituloToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;acompanharStatusDaOSToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnTransportadora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 1</value>
+  </data>
+  <data name="&gt;&gt;serviçosToolStripMenuItem2.Name" xml:space="preserve">
+    <value>serviçosToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;fiscalTributariaToolStripMenuItem.Name" xml:space="preserve">
+    <value>fiscalTributariaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;BtnFornecedor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeContasAReceberToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="&gt;&gt;serviçosToolStripMenuItem.Name" xml:space="preserve">
+    <value>serviçosToolStripMenuItem</value>
+  </data>
+  <data name="cargoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;peçasToolStripMenuItem.Name" xml:space="preserve">
+    <value>peçasToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;iSSToolStripMenuItem.Name" xml:space="preserve">
+    <value>iSSToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;produtosServiçosToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCliente.Name" xml:space="preserve">
+    <value>btnCliente</value>
+  </data>
+  <data name="&gt;&gt;vendasSaidasToolStripMenuItem.Name" xml:space="preserve">
+    <value>vendasSaidasToolStripMenuItem</value>
+  </data>
+  <data name="devoluçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 22</value>
+  </data>
+  <data name="&gt;&gt;peçasToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;integraçõesToolStripMenuItem.Name" xml:space="preserve">
+    <value>integraçõesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;registrarEquipamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="etiquetasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="geraçãoDeLivrosFiscaisERelatóriosvendasPorCSTCFOPApuraçãoDeImpostosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 22</value>
+  </data>
+  <data name="&gt;&gt;inserirServiçosEPeçasToolStripMenuItem.Name" xml:space="preserve">
+    <value>inserirServiçosEPeçasToolStripMenuItem</value>
+  </data>
+  <data name="lançamentoDeContasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="BtnRelatorio.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelDataHora.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSair.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="abrirNovaOrdemDeServiçoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 22</value>
+  </data>
+  <data name="sairToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="&gt;&gt;btnUsuario.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cargoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOs.Name" xml:space="preserve">
+    <value>btnOs</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;balançaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="produtosToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;btnVenda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOrdemServi.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;históricoDeOSToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;estoqueToolStripMenuItem.Name" xml:space="preserve">
+    <value>estoqueToolStripMenuItem</value>
+  </data>
+  <data name="grupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;btnTransportadora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;condiçãoDePagamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>condiçãoDePagamentoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;cFOPToolStripMenuItem.Name" xml:space="preserve">
+    <value>cFOPToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem.Name" xml:space="preserve">
+    <value>controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ajudarToolStripMenuItem.Name" xml:space="preserve">
+    <value>ajudarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;btnPdv.Name" xml:space="preserve">
+    <value>btnPdv</value>
+  </data>
+  <data name="&gt;&gt;mãoDeObraToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem.Name" xml:space="preserve">
+    <value>relatóriosParaContabilidadeSPEDFiscalContribuiçõesExportaçãoquandoAplicávelToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
+    <value>toolStripTextBox1</value>
+  </data>
+  <data name="&gt;&gt;devoluçãoToolStripMenuItem.Name" xml:space="preserve">
+    <value>devoluçãoToolStripMenuItem</value>
+  </data>
+  <data name="nCMToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;lblMensagem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;emissãoDeNotaFiscalDeSaídaToolStripMenuItem.Name" xml:space="preserve">
+    <value>emissãoDeNotaFiscalDeSaídaToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;diagnósticoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 22</value>
+  </data>
+  <data name="&gt;&gt;BtnCliente.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;condiçãoDePagamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem.Name" xml:space="preserve">
+    <value>emissãoDeDocumentosNFeNFSeNFCeToolStripMenuItem</value>
+  </data>
+  <data name="cSTCSOSNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="inventárioconferênciaAjusteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 22</value>
+  </data>
+  <data name="comprasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 21</value>
+  </data>
+  <data name="relatóriosFinanceirosEExportaçãoParaExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="&gt;&gt;estadoToolStripMenuItem.Name" xml:space="preserve">
+    <value>estadoToolStripMenuItem</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 6</value>
+  </data>
+  <data name="&gt;&gt;lançamentoParçeladoToolStripMenuItem1.Name" xml:space="preserve">
+    <value>lançamentoParçeladoToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;execuçãoToolStripMenuItem.Name" xml:space="preserve">
+    <value>execuçãoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;bairroToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeContasAPagarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mãoDeObraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;fornecedorToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;entregaFinalizaçãoToolStripMenuItem.Name" xml:space="preserve">
+    <value>entregaFinalizaçãoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;finaceiroToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="inserirServiçosEPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 22</value>
+  </data>
+  <data name="&gt;&gt;lblMensagem.Name" xml:space="preserve">
+    <value>lblMensagem</value>
+  </data>
+  <data name="estoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 21</value>
+  </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;iSSToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRelatorio.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lançarContasAPagarToolStripMenuItem.Name" xml:space="preserve">
+    <value>lançarContasAPagarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;aprovarOrçamentoPeloClienteToolStripMenuItem.Name" xml:space="preserve">
+    <value>aprovarOrçamentoPeloClienteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;BtnFornecedor.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;relatorioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;origemMercadoriaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serviçosToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lançamentoDeTituloToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formaPagamentoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;origemMercadoriaToolStripMenuItem.Name" xml:space="preserve">
+    <value>origemMercadoriaToolStripMenuItem</value>
+  </data>
+  <data name="execuçãoEPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="&gt;&gt;fluxoDeCaixaToolStripMenuItem.Name" xml:space="preserve">
+    <value>fluxoDeCaixaToolStripMenuItem</value>
+  </data>
+  <data name="controlarPeçasUsadasentradasaídaDoEstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>378, 22</value>
+  </data>
+  <data name="emitirReciboOuNotaFiscalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="consultaDeNotasRecebidasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 22</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;envioDeOrçamentoToolStripMenuItem.Name" xml:space="preserve">
+    <value>envioDeOrçamentoToolStripMenuItem</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -1768,5 +1945,8 @@
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

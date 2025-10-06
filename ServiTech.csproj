@@ -9,22 +9,34 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="Componentes\FormConsultas\PesquisaCategoriasPagamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Remove="DbContext\**" />
+    <Compile Remove="Financeiro\**" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="Relatorios\**" />
+    <EmbeddedResource Remove="DbContext\**" />
+    <EmbeddedResource Remove="Financeiro\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Relatorios\**" />
+    <None Remove="DbContext\**" />
+    <None Remove="Financeiro\**" />
+    <None Remove="Models\**" />
+    <None Remove="Relatorios\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Forms\Cadastros\CadastrarBairro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Cadastros\CadastrarCategoriaPagamento.cs">
+    <Compile Update="Forms\Cadastros\CadastrarTransportadora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Cadastros\CadastrarCategoriaServico.cs">
+    <Compile Update="Forms\Cadastros\CadastrarMarca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Cadastros\CadastrarSubGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Cadastros\CadastrarServico.cs">
+    <Compile Update="Forms\Cadastros\CadastrarMaoObra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Cadastros\CadastrarCidade.cs">
@@ -48,10 +60,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DbContext\" />
-    <Folder Include="Financeiro\" />
-    <Folder Include="Models\" />
-    <Folder Include="Relatorios\" />
+    <Folder Include="Configuracoes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net" Version="0.16.10" />
   </ItemGroup>
 
 </Project>

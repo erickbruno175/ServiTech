@@ -31,19 +31,20 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pdv));
             header = new Panel();
             labelDataHora = new Label();
             label1InfoOperador = new Label();
             pictureBoxLogo = new PictureBox();
             panel2 = new Panel();
             content = new Panel();
-            label1 = new Label();
             textBox1 = new TextBox();
+            labelTituloCaixa = new Label();
             btnAbrirGaveta = new Button();
             footer = new Panel();
+            btnSair = new Button();
             btnFecharCaixa = new Button();
             btnSangria = new Button();
-            button1 = new Button();
             btnNovaVenda = new Button();
             btnConsultaProduto = new Button();
             btnCancelarVenda = new Button();
@@ -64,7 +65,6 @@
             label2 = new Label();
             textReadCodProduto = new TextBox();
             painelGridProdutos = new Panel();
-            labelTituloCaixa = new Label();
             textReadCupom = new TextBox();
             gridProdutos = new DataGridView();
             Codigo = new DataGridViewTextBoxColumn();
@@ -90,6 +90,8 @@
             header.Controls.Add(label1InfoOperador);
             header.Controls.Add(pictureBoxLogo);
             header.Dock = DockStyle.Top;
+            header.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            header.ForeColor = Color.White;
             header.Location = new Point(0, 0);
             header.Name = "header";
             header.Size = new Size(1547, 66);
@@ -100,12 +102,12 @@
             labelDataHora.BackColor = Color.Transparent;
             labelDataHora.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelDataHora.ForeColor = Color.White;
-            labelDataHora.Location = new Point(1372, 2);
+            labelDataHora.Location = new Point(1385, 2);
             labelDataHora.Name = "labelDataHora";
-            labelDataHora.Size = new Size(174, 62);
+            labelDataHora.Size = new Size(161, 62);
             labelDataHora.TabIndex = 7;
             labelDataHora.Text = "data";
-            labelDataHora.TextAlign = ContentAlignment.MiddleRight;
+            labelDataHora.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1InfoOperador
             // 
@@ -113,12 +115,14 @@
             label1InfoOperador.BackColor = Color.Transparent;
             label1InfoOperador.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1InfoOperador.ForeColor = Color.White;
-            label1InfoOperador.Location = new Point(99, 0);
+            label1InfoOperador.Image = Properties.Resources.operador_de_telefone;
+            label1InfoOperador.ImageAlign = ContentAlignment.MiddleLeft;
+            label1InfoOperador.Location = new Point(721, 2);
             label1InfoOperador.Name = "label1InfoOperador";
-            label1InfoOperador.Size = new Size(1267, 62);
+            label1InfoOperador.Size = new Size(119, 62);
             label1InfoOperador.TabIndex = 3;
             label1InfoOperador.Text = "Operador:";
-            label1InfoOperador.TextAlign = ContentAlignment.MiddleCenter;
+            label1InfoOperador.TextAlign = ContentAlignment.MiddleRight;
             // 
             // pictureBoxLogo
             // 
@@ -143,9 +147,10 @@
             // 
             // content
             // 
+            content.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             content.BackColor = Color.White;
-            content.Controls.Add(label1);
             content.Controls.Add(textBox1);
+            content.Controls.Add(labelTituloCaixa);
             content.Controls.Add(btnAbrirGaveta);
             content.Controls.Add(footer);
             content.Controls.Add(labelTituloStatusCaixa);
@@ -161,35 +166,39 @@
             content.Controls.Add(label2);
             content.Controls.Add(textReadCodProduto);
             content.Controls.Add(painelGridProdutos);
-            content.Dock = DockStyle.Fill;
             content.Location = new Point(0, 66);
             content.Name = "content";
             content.Size = new Size(1547, 759);
             content.TabIndex = 2;
             content.Resize += panel3_Resize;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(0, 66, 100);
-            label1.Location = new Point(835, 536);
-            label1.Name = "label1";
-            label1.Size = new Size(189, 32);
-            label1.TabIndex = 15;
-            label1.Text = "Quant. Estoque";
-            // 
             // textBox1
             // 
-            textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(728, 571);
+            textBox1.BackColor = Color.FromArgb(0, 66, 100);
+            textBox1.Dock = DockStyle.Top;
+            textBox1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.ForeColor = Color.White;
+            textBox1.Location = new Point(0, 0);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(350, 40);
-            textBox1.TabIndex = 14;
-            textBox1.Text = "0";
+            textBox1.Size = new Size(1547, 72);
+            textBox1.TabIndex = 15;
+            textBox1.Text = " 1 -Uni Café Santa Clara";
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.KeyPress += textReadTotalPreco_KeyPress;
+            // 
+            // labelTituloCaixa
+            // 
+            labelTituloCaixa.BackColor = Color.FromArgb(0, 66, 100);
+            labelTituloCaixa.BorderStyle = BorderStyle.Fixed3D;
+            labelTituloCaixa.Font = new Font("Segoe UI", 26.25F);
+            labelTituloCaixa.ForeColor = Color.White;
+            labelTituloCaixa.Location = new Point(1, 631);
+            labelTituloCaixa.Name = "labelTituloCaixa";
+            labelTituloCaixa.Size = new Size(709, 52);
+            labelTituloCaixa.TabIndex = 14;
+            labelTituloCaixa.Text = "Caixa 01";
+            labelTituloCaixa.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnAbrirGaveta
             // 
@@ -202,9 +211,9 @@
             btnAbrirGaveta.ForeColor = Color.FromArgb(0, 66, 100);
             btnAbrirGaveta.Image = Properties.Resources.maquina__2_;
             btnAbrirGaveta.ImageAlign = ContentAlignment.MiddleLeft;
-            btnAbrirGaveta.Location = new Point(1363, 24);
+            btnAbrirGaveta.Location = new Point(1363, 95);
             btnAbrirGaveta.Name = "btnAbrirGaveta";
-            btnAbrirGaveta.Size = new Size(172, 73);
+            btnAbrirGaveta.Size = new Size(172, 39);
             btnAbrirGaveta.TabIndex = 5;
             btnAbrirGaveta.TabStop = false;
             btnAbrirGaveta.Text = "Abrir Gaveta F12";
@@ -216,9 +225,9 @@
             footer.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             footer.BackColor = Color.FromArgb(0, 66, 100);
             footer.BorderStyle = BorderStyle.Fixed3D;
+            footer.Controls.Add(btnSair);
             footer.Controls.Add(btnFecharCaixa);
             footer.Controls.Add(btnSangria);
-            footer.Controls.Add(button1);
             footer.Controls.Add(btnNovaVenda);
             footer.Controls.Add(btnConsultaProduto);
             footer.Controls.Add(btnCancelarVenda);
@@ -228,6 +237,28 @@
             footer.Name = "footer";
             footer.Size = new Size(1540, 77);
             footer.TabIndex = 13;
+            // 
+            // btnSair
+            // 
+            btnSair.BackColor = Color.Transparent;
+            btnSair.Dock = DockStyle.Right;
+            btnSair.FlatAppearance.BorderSize = 0;
+            btnSair.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnSair.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, 128, 128, 128);
+            btnSair.FlatStyle = FlatStyle.Flat;
+            btnSair.Font = new Font("Segoe UI", 9.75F);
+            btnSair.ForeColor = Color.White;
+            btnSair.Image = Properties.Resources.sair1;
+            btnSair.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSair.Location = new Point(1439, 0);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new Size(97, 73);
+            btnSair.TabIndex = 9;
+            btnSair.TabStop = false;
+            btnSair.Text = "Sair Esc";
+            btnSair.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSair.UseVisualStyleBackColor = false;
+            btnSair.Click += SairPdv_Click;
             // 
             // btnFecharCaixa
             // 
@@ -240,12 +271,12 @@
             btnFecharCaixa.ForeColor = Color.White;
             btnFecharCaixa.Image = Properties.Resources.feichamento;
             btnFecharCaixa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnFecharCaixa.Location = new Point(945, -1);
+            btnFecharCaixa.Location = new Point(845, 0);
             btnFecharCaixa.Name = "btnFecharCaixa";
-            btnFecharCaixa.Size = new Size(174, 73);
+            btnFecharCaixa.Size = new Size(187, 73);
             btnFecharCaixa.TabIndex = 8;
             btnFecharCaixa.TabStop = false;
-            btnFecharCaixa.Text = "Fechamento do Caixa F8";
+            btnFecharCaixa.Text = "Fechamento do Caixa F7";
             btnFecharCaixa.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnFecharCaixa.UseVisualStyleBackColor = false;
             // 
@@ -260,34 +291,14 @@
             btnSangria.ForeColor = Color.White;
             btnSangria.Image = Properties.Resources.retirada_de_dinheiro;
             btnSangria.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSangria.Location = new Point(842, -1);
+            btnSangria.Location = new Point(736, 0);
             btnSangria.Name = "btnSangria";
-            btnSangria.Size = new Size(97, 73);
+            btnSangria.Size = new Size(103, 73);
             btnSangria.TabIndex = 7;
             btnSangria.TabStop = false;
-            btnSangria.Text = "Sangria F7";
+            btnSangria.Text = "Sangria F6";
             btnSangria.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSangria.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Transparent;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(30, 128, 128, 128);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9.75F);
-            button1.ForeColor = Color.White;
-            button1.Image = Properties.Resources.atendimento_ao_cliente;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(691, -3);
-            button1.Name = "button1";
-            button1.Size = new Size(145, 73);
-            button1.TabIndex = 6;
-            button1.TabStop = false;
-            button1.Text = "Consultar Cliente F6";
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = false;
             // 
             // btnNovaVenda
             // 
@@ -301,7 +312,7 @@
             btnNovaVenda.Image = Properties.Resources.carrinho_de_compras1;
             btnNovaVenda.Location = new Point(1, -2);
             btnNovaVenda.Name = "btnNovaVenda";
-            btnNovaVenda.Size = new Size(122, 72);
+            btnNovaVenda.Size = new Size(139, 72);
             btnNovaVenda.TabIndex = 4;
             btnNovaVenda.TabStop = false;
             btnNovaVenda.Text = "Nova Venda F1";
@@ -318,9 +329,9 @@
             btnConsultaProduto.Font = new Font("Segoe UI", 9.75F);
             btnConsultaProduto.ForeColor = Color.White;
             btnConsultaProduto.Image = Properties.Resources.prod;
-            btnConsultaProduto.Location = new Point(129, -2);
+            btnConsultaProduto.Location = new Point(146, -2);
             btnConsultaProduto.Name = "btnConsultaProduto";
-            btnConsultaProduto.Size = new Size(146, 72);
+            btnConsultaProduto.Size = new Size(164, 72);
             btnConsultaProduto.TabIndex = 3;
             btnConsultaProduto.TabStop = false;
             btnConsultaProduto.Text = "Consultar Produto F2";
@@ -337,9 +348,9 @@
             btnCancelarVenda.Font = new Font("Segoe UI", 9.75F);
             btnCancelarVenda.ForeColor = Color.White;
             btnCancelarVenda.Image = Properties.Resources.cancelar1;
-            btnCancelarVenda.Location = new Point(281, -2);
+            btnCancelarVenda.Location = new Point(316, -2);
             btnCancelarVenda.Name = "btnCancelarVenda";
-            btnCancelarVenda.Size = new Size(144, 72);
+            btnCancelarVenda.Size = new Size(150, 72);
             btnCancelarVenda.TabIndex = 2;
             btnCancelarVenda.TabStop = false;
             btnCancelarVenda.Text = "Cancelar Venda F3";
@@ -356,12 +367,12 @@
             btnDesconto.Font = new Font("Segoe UI", 9.75F);
             btnDesconto.ForeColor = Color.White;
             btnDesconto.Image = Properties.Resources.desconto;
-            btnDesconto.Location = new Point(431, -2);
+            btnDesconto.Location = new Point(472, -2);
             btnDesconto.Name = "btnDesconto";
-            btnDesconto.Size = new Size(105, 72);
+            btnDesconto.Size = new Size(134, 72);
             btnDesconto.TabIndex = 1;
             btnDesconto.TabStop = false;
-            btnDesconto.Text = "Desconto F4";
+            btnDesconto.Text = "Desc/Acres F4";
             btnDesconto.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnDesconto.UseVisualStyleBackColor = false;
             // 
@@ -374,14 +385,14 @@
             btnFinalizaVenda.FlatStyle = FlatStyle.Flat;
             btnFinalizaVenda.Font = new Font("Segoe UI", 9.75F);
             btnFinalizaVenda.ForeColor = Color.White;
-            btnFinalizaVenda.Image = Properties.Resources.finalisar_compra;
+            btnFinalizaVenda.Image = Properties.Resources.pagar;
             btnFinalizaVenda.ImageAlign = ContentAlignment.MiddleLeft;
-            btnFinalizaVenda.Location = new Point(542, -2);
+            btnFinalizaVenda.Location = new Point(602, -2);
             btnFinalizaVenda.Name = "btnFinalizaVenda";
-            btnFinalizaVenda.Size = new Size(143, 72);
+            btnFinalizaVenda.Size = new Size(128, 72);
             btnFinalizaVenda.TabIndex = 0;
             btnFinalizaVenda.TabStop = false;
-            btnFinalizaVenda.Text = "Finalizar Venda F5";
+            btnFinalizaVenda.Text = "Pagamento F5";
             btnFinalizaVenda.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnFinalizaVenda.UseVisualStyleBackColor = false;
             // 
@@ -390,25 +401,28 @@
             labelTituloStatusCaixa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             labelTituloStatusCaixa.BackColor = Color.FromArgb(0, 66, 100);
             labelTituloStatusCaixa.BorderStyle = BorderStyle.Fixed3D;
-            labelTituloStatusCaixa.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTituloStatusCaixa.Font = new Font("Segoe UI", 26.25F);
             labelTituloStatusCaixa.ForeColor = Color.White;
-            labelTituloStatusCaixa.Location = new Point(716, 636);
+            labelTituloStatusCaixa.Location = new Point(707, 631);
             labelTituloStatusCaixa.Name = "labelTituloStatusCaixa";
-            labelTituloStatusCaixa.Size = new Size(827, 47);
+            labelTituloStatusCaixa.Size = new Size(834, 52);
             labelTituloStatusCaixa.TabIndex = 12;
-            labelTituloStatusCaixa.Text = "Venda Aberta";
+            labelTituloStatusCaixa.Text = "CAIXA LIVRE";
             labelTituloStatusCaixa.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textTotal
             // 
+            textTotal.BackColor = Color.FromArgb(0, 66, 100);
             textTotal.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textTotal.Location = new Point(1109, 545);
+            textTotal.ForeColor = Color.White;
+            textTotal.Location = new Point(1109, 549);
             textTotal.Multiline = true;
             textTotal.Name = "textTotal";
-            textTotal.Size = new Size(426, 82);
+            textTotal.Size = new Size(432, 77);
             textTotal.TabIndex = 11;
             textTotal.Text = "0,00";
             textTotal.TextAlign = HorizontalAlignment.Center;
+            textTotal.TextChanged += MskararCampoMoeda_Changed;
             textTotal.KeyPress += textTotal_KeyPress;
             // 
             // label7
@@ -417,7 +431,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.FromArgb(0, 66, 100);
-            label7.Location = new Point(1238, 502);
+            label7.Location = new Point(1109, 506);
             label7.Name = "label7";
             label7.Size = new Size(195, 40);
             label7.TabIndex = 10;
@@ -427,18 +441,20 @@
             // 
             panel4.Controls.Add(pictureBox1);
             panel4.Controls.Add(label6);
-            panel4.Location = new Point(1109, 103);
+            panel4.Location = new Point(1109, 140);
             panel4.Name = "panel4";
-            panel4.Size = new Size(426, 396);
+            panel4.Size = new Size(426, 359);
             panel4.TabIndex = 9;
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Location = new Point(0, 38);
+            pictureBox1.Image = Properties.Resources.marca;
+            pictureBox1.Location = new Point(0, 46);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(426, 358);
+            pictureBox1.Size = new Size(426, 313);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -451,132 +467,120 @@
             label6.ForeColor = Color.White;
             label6.Location = new Point(0, 0);
             label6.Name = "label6";
-            label6.Size = new Size(426, 38);
+            label6.Size = new Size(426, 46);
             label6.TabIndex = 1;
-            label6.Text = "Imagem do produto";
+            label6.Text = "Imagem do Produto";
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label5.ForeColor = Color.FromArgb(0, 66, 100);
-            label5.Location = new Point(835, 424);
+            label5.Location = new Point(850, 448);
             label5.Name = "label5";
-            label5.Size = new Size(142, 32);
+            label5.Size = new Size(111, 25);
             label5.TabIndex = 8;
             label5.Text = "Preço Total";
             // 
             // textReadTotalPreco
             // 
-            textReadTotalPreco.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textReadTotalPreco.Location = new Point(728, 459);
+            textReadTotalPreco.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textReadTotalPreco.Location = new Point(733, 485);
             textReadTotalPreco.Multiline = true;
             textReadTotalPreco.Name = "textReadTotalPreco";
+            textReadTotalPreco.PlaceholderText = "0,00";
             textReadTotalPreco.Size = new Size(350, 40);
             textReadTotalPreco.TabIndex = 7;
-            textReadTotalPreco.Text = "0,00";
             textReadTotalPreco.TextAlign = HorizontalAlignment.Center;
-            textReadTotalPreco.KeyPress += textTotal_KeyPress;
+            textReadTotalPreco.TextChanged += MskararCampoMoeda_Changed;
+            textReadTotalPreco.KeyPress += textReadTotalPreco_KeyPress;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label4.ForeColor = Color.FromArgb(0, 66, 100);
-            label4.Location = new Point(835, 312);
+            label4.Location = new Point(840, 344);
             label4.Name = "label4";
-            label4.Size = new Size(134, 32);
+            label4.Size = new Size(141, 25);
             label4.TabIndex = 6;
-            label4.Text = "Preço Unit";
+            label4.Text = "Preço Unitário";
             // 
             // textReadPrecoProduto
             // 
-            textReadPrecoProduto.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textReadPrecoProduto.Location = new Point(728, 347);
+            textReadPrecoProduto.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textReadPrecoProduto.Location = new Point(733, 384);
             textReadPrecoProduto.Multiline = true;
             textReadPrecoProduto.Name = "textReadPrecoProduto";
+            textReadPrecoProduto.PlaceholderText = "0,00";
             textReadPrecoProduto.Size = new Size(350, 40);
             textReadPrecoProduto.TabIndex = 5;
-            textReadPrecoProduto.Text = "0,00";
             textReadPrecoProduto.TextAlign = HorizontalAlignment.Center;
-            textReadPrecoProduto.KeyPress += textTotal_KeyPress;
+            textReadPrecoProduto.TextChanged += MskararCampoMoeda_Changed;
+            textReadPrecoProduto.KeyPress += textReadTotalPreco_KeyPress;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label3.ForeColor = Color.FromArgb(0, 66, 100);
-            label3.Location = new Point(835, 200);
+            label3.Location = new Point(850, 240);
             label3.Name = "label3";
-            label3.Size = new Size(147, 32);
+            label3.Size = new Size(116, 25);
             label3.TabIndex = 4;
             label3.Text = "Quantidade";
             // 
             // textReadQuantProduto
             // 
-            textReadQuantProduto.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textReadQuantProduto.Location = new Point(728, 235);
+            textReadQuantProduto.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textReadQuantProduto.Location = new Point(733, 278);
             textReadQuantProduto.Multiline = true;
             textReadQuantProduto.Name = "textReadQuantProduto";
+            textReadQuantProduto.PlaceholderText = "1";
             textReadQuantProduto.Size = new Size(350, 40);
             textReadQuantProduto.TabIndex = 3;
-            textReadQuantProduto.Text = "1";
             textReadQuantProduto.TextAlign = HorizontalAlignment.Center;
-            textReadQuantProduto.KeyPress += textTotal_KeyPress;
+            textReadQuantProduto.KeyPress += textReadTotalPreco_KeyPress;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label2.ForeColor = Color.FromArgb(0, 66, 100);
-            label2.Location = new Point(863, 56);
+            label2.Location = new Point(760, 140);
             label2.Name = "label2";
-            label2.Size = new Size(96, 32);
+            label2.Size = new Size(301, 25);
             label2.TabIndex = 2;
-            label2.Text = "Código";
+            label2.Text = "Cód de Barra/Descr/Cód Interno";
             // 
             // textReadCodProduto
             // 
-            textReadCodProduto.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textReadCodProduto.Location = new Point(728, 101);
+            textReadCodProduto.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textReadCodProduto.Location = new Point(733, 174);
             textReadCodProduto.Multiline = true;
             textReadCodProduto.Name = "textReadCodProduto";
+            textReadCodProduto.PlaceholderText = "0000";
             textReadCodProduto.Size = new Size(350, 40);
             textReadCodProduto.TabIndex = 1;
-            textReadCodProduto.Text = "00000000";
             textReadCodProduto.TextAlign = HorizontalAlignment.Center;
-            textReadCodProduto.KeyPress += textTotal_KeyPress;
+            textReadCodProduto.Enter += textReadCodProduto_TextChanged;
             // 
             // painelGridProdutos
             // 
             painelGridProdutos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             painelGridProdutos.BackColor = Color.White;
             painelGridProdutos.BorderStyle = BorderStyle.FixedSingle;
-            painelGridProdutos.Controls.Add(labelTituloCaixa);
             painelGridProdutos.Controls.Add(textReadCupom);
             painelGridProdutos.Controls.Add(gridProdutos);
-            painelGridProdutos.Location = new Point(3, 3);
+            painelGridProdutos.Location = new Point(3, 70);
             painelGridProdutos.Name = "painelGridProdutos";
-            painelGridProdutos.Size = new Size(708, 681);
+            painelGridProdutos.Size = new Size(707, 561);
             painelGridProdutos.TabIndex = 0;
-            // 
-            // labelTituloCaixa
-            // 
-            labelTituloCaixa.BackColor = Color.FromArgb(0, 66, 100);
-            labelTituloCaixa.BorderStyle = BorderStyle.Fixed3D;
-            labelTituloCaixa.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelTituloCaixa.ForeColor = Color.White;
-            labelTituloCaixa.Location = new Point(0, 631);
-            labelTituloCaixa.Name = "labelTituloCaixa";
-            labelTituloCaixa.Size = new Size(703, 48);
-            labelTituloCaixa.TabIndex = 13;
-            labelTituloCaixa.Text = "Caixa 01";
-            labelTituloCaixa.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textReadCupom
             // 
@@ -584,20 +588,21 @@
             textReadCupom.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textReadCupom.ForeColor = Color.FromArgb(0, 66, 100);
             textReadCupom.Location = new Point(0, 0);
-            textReadCupom.Multiline = true;
             textReadCupom.Name = "textReadCupom";
-            textReadCupom.Size = new Size(706, 53);
+            textReadCupom.Size = new Size(705, 39);
             textReadCupom.TabIndex = 2;
             textReadCupom.Text = "Cupom";
             textReadCupom.TextAlign = HorizontalAlignment.Center;
+            textReadCupom.UseWaitCursor = true;
             textReadCupom.KeyPress += textTotal_KeyPress;
             // 
             // gridProdutos
             // 
+            gridProdutos.AllowUserToResizeColumns = false;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(245, 245, 245);
             gridProdutos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             gridProdutos.BackgroundColor = Color.LightGray;
-            gridProdutos.BorderStyle = BorderStyle.Fixed3D;
+            gridProdutos.BorderStyle = BorderStyle.None;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(0, 66, 100);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -610,20 +615,20 @@
             gridProdutos.Columns.AddRange(new DataGridViewColumn[] { Codigo, Descricao, Quant, ValorUni, PreçoTotal });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(30, 144, 255);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 66, 100);
             dataGridViewCellStyle3.SelectionForeColor = Color.White;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             gridProdutos.DefaultCellStyle = dataGridViewCellStyle3;
             gridProdutos.EnableHeadersVisualStyles = false;
             gridProdutos.GridColor = Color.LightGray;
-            gridProdutos.Location = new Point(2, 52);
+            gridProdutos.Location = new Point(2, 39);
             gridProdutos.Name = "gridProdutos";
             gridProdutos.ReadOnly = true;
             gridProdutos.RowHeadersVisible = false;
             gridProdutos.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            gridProdutos.Size = new Size(699, 571);
+            gridProdutos.Size = new Size(703, 516);
             gridProdutos.TabIndex = 0;
             gridProdutos.Paint += CarregarMarcaDgua_Paint;
             // 
@@ -670,9 +675,10 @@
             Controls.Add(content);
             Controls.Add(panel2);
             Controls.Add(header);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
-            MaximizeBox = false;
             Name = "Pdv";
+            KeyDown += CapturaTecla;
             header.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxLogo).EndInit();
             content.ResumeLayout(false);
@@ -721,13 +727,12 @@
         private Button btnFinalizaVenda;
         private Button btnNovaVenda;
         private Button btnAbrirGaveta;
-        private Button button1;
-        private Label labelTituloCaixa;
         private Label label1InfoOperador;
         private Label labelDataHora;
         private Button btnSangria;
-        private Label label1;
-        private TextBox textBox1;
         private Button btnFecharCaixa;
+        private Button btnSair;
+        private Label labelTituloCaixa;
+        private TextBox textBox1;
     }
 }

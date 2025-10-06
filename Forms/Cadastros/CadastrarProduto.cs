@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using ServiTech.Componentes.Services;
 
 namespace ServiTech.Forms.Cadastros
 {
@@ -17,18 +18,6 @@ namespace ServiTech.Forms.Cadastros
         {
             InitializeComponent();
         }
-
-
-
-        private void tabPage1_Resize(object sender, EventArgs e)
-        {
-            btnBuscaForn.Location = new Point(tabPage1.Width - btnBuscaForn.Width - 9, btnBuscaForn.Location.Y);
-            btnBuscaOriProduto.Location = new Point(tabPage1.Width - btnBuscaOriProduto.Width - 9, btnBuscaOriProduto.Location.Y);
-
-
-        }
-
-
 
 
 
@@ -65,59 +54,82 @@ namespace ServiTech.Forms.Cadastros
         }
 
 
-
         private void LiberaCamposParaCadastro_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F4)
             {
                 foreach (TabPage page in tabControl1.TabPages)
                 {
-                    foreach (Control control in page.Controls)
-                    {
-                        if (control is TextBox textBox)
-                        {
-                            textBox.ReadOnly = false;
-                        }
-                        else if (control is NumericUpDown numeric)
-                        {
-                            numeric.ReadOnly = false;
-                        }
-                        else if (control is Button button)
-                        {
-                            button.Enabled = true;
-                        }
-                        else if (control is GroupBox groupBox)
-                        {
-                            foreach (Control item in groupBox.Controls)
-                            {
-                                if (item is RadioButton radio)
-                                {
-                                    radio.Enabled = true;
-                                }
-                            }
+                    HabilitarControles(page.Controls);
+                }
+            }
+            else if (e.KeyCode == Keys.F12)
 
-                        }
-                        else if (control is ComboBox comboBox)
-                        {
-                            comboBox.Enabled = true;
-                        }
-                    }
+            {
+                if (textCodBarra.ReadOnly == true)
 
-                    textCodBarra.Focus(); // foco apenas no principal
+                {
+                    MessageBox.Show("Para gerar um código de barras, primeiro habilite os campos com F4", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                FrmGerarCodigoBarras frmGerador = new FrmGerarCodigoBarras();
 
-                    textCodProd.ReadOnly = true;
+                frmGerador.ShowDialog();
 
-                    textCodCfop.ReadOnly = true;
-                    textCodForn.ReadOnly = true;
-                    textPrecoVenda.ReadOnly = true;
-                    textCodCst.ReadOnly = true;
-                    textCodOrigemProd.ReadOnly = true;
+                if (!string.IsNullOrWhiteSpace(frmGerador.CodigoGerado))
+                {
+                    textCodBarra.Text = frmGerador.CodigoGerado;
+                }
 
 
+            }
+        }
 
+        private void HabilitarControles(Control.ControlCollection controls)
+        {
+            foreach (Control control in controls)
+            {
+                switch (control)
+                {
+                    case TextBox textBox:
+                        textBox.ReadOnly = false;
+                        textNomeProd.Focus();
+                        break;
+
+                    case ComboBox comboBox:
+                        comboBox.Enabled = true;
+                        break;
+
+                    case Button button:
+                        button.Enabled = true;
+                        break;
+
+                    case NumericUpDown numericUpDown:
+                        numericUpDown.ReadOnly = false;
+                        break;
+
+                    case RadioButton radioButton:
+                        radioButton.Enabled = true;
+                        break;
+
+                    case MaskedTextBox maskedTextBox:
+                        maskedTextBox.ReadOnly = false;
+
+                        break;
+
+
+                    case GroupBox groupBox:
+                        // chamada recursiva para liberar os controles internos
+                        HabilitarControles(groupBox.Controls);
+                        break;
                 }
             }
 
+            // campos que SEMPRE ficam bloqueados
+            textCodForn.ReadOnly = true;
+            textCodProd.ReadOnly = true;
+            textPrecoVenda.ReadOnly = true;
+            textCod.ReadOnly = true;
         }
 
         private void textMargemCalc_Leave(object sender, EventArgs e)
@@ -155,10 +167,6 @@ namespace ServiTech.Forms.Cadastros
             comboFiltros.Items.Add("Por Codigo Barra ");
             comboFiltros.Items.Add("Por Fornecedor ");
             comboFiltros.Items.Add("Por Marca ");
-
-
-
-
             comboFiltros.SelectedIndex = 0;
 
             comboModelo.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -167,6 +175,12 @@ namespace ServiTech.Forms.Cadastros
             comboModelo.Items.Add("Contem");
             comboModelo.Items.Add("Exatamente");
             comboModelo.SelectedIndex = 0;
+
+            textDataCadastro.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            textUltimaEntrada.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            textUltimaSaida.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+
         }
 
         private void InserirImagem_Produto_Click(object sender, EventArgs e)
@@ -184,9 +198,9 @@ namespace ServiTech.Forms.Cadastros
 
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            e.Handled = true;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiTech.DbConection;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +13,16 @@ namespace ServiTech.Forms.Cadastros
 {
     public partial class CadastrarFornecedor : Form
     {
-        public CadastrarFornecedor()
+
+        private readonly DbConectionPdv dbConection;
+        public CadastrarFornecedor(DbConectionPdv dbConectionPdv)
         {
             InitializeComponent();
+            dbConection = dbConectionPdv;
         }
 
 
 
-        private void groupBox5_Resize(object sender, EventArgs e)
-        {
-            btnPesquisar.Location = new Point(groupBox5.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
-            checkBoxCarregarTodos.Location = new Point(groupBox5.Width - checkBoxCarregarTodos.Width - 9, checkBoxCarregarTodos.Location.Y);
-
-        }
         private void LiberarCamposParaCadastro_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F4)
@@ -43,7 +41,7 @@ namespace ServiTech.Forms.Cadastros
                 switch (control)
                 {
                     case TextBox textBox:
-                        this.textCodigo.ReadOnly = true; // seu campo específico
+                        this.textCod.ReadOnly = true; // seu campo específico
                         this.textRazaoSocial.Focus();
                         radioButtonPessaoJuridica.Checked = true;
                         textBox.ReadOnly = false;
@@ -55,6 +53,8 @@ namespace ServiTech.Forms.Cadastros
 
                     case MaskedTextBox maskedTextBox:
                         maskedTextBox.ReadOnly = false;
+                        textDataCadastro.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                        textDataCadastro.ReadOnly = true;
                         break;
 
                     case RadioButton radioButton:
@@ -104,26 +104,17 @@ namespace ServiTech.Forms.Cadastros
 
         }
 
+
+
         private void CadastrarFornecedor_Load(object sender, EventArgs e)
         {
             comboFiltros.DropDownStyle = ComboBoxStyle.DropDownList;
             comboFiltros.Items.Add("Por Nome ");
             comboFiltros.Items.Add("Por Codigo ");
-            comboFiltros.Items.Add("Por Cpf  ");
-            comboFiltros.Items.Add("Por Cnpj ");
+            comboFiltros.Items.Add("Por Tel ");
             comboFiltros.Items.Add("Por Email ");
-            comboFiltros.Items.Add("Por Nome Responssavel ");
-
-
-            comboFiltros.SelectedIndex = 0;
-
-            comboModelo.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboModelo.Items.Add("Inicia Com");
-            comboModelo.Items.Add("Termina Com");
-            comboModelo.Items.Add("Contem");
-            comboModelo.Items.Add("Exatamente");
-            comboModelo.SelectedIndex = 0;
-
+            comboFiltros.Items.Add("Por Cpf ");
+            comboFiltros.Items.Add("Por Cnpj ");
 
             comboFiltros.SelectedIndex = 0;
 
@@ -133,6 +124,40 @@ namespace ServiTech.Forms.Cadastros
             comboModelo.Items.Add("Contem");
             comboModelo.Items.Add("Exatamente");
             comboModelo.SelectedIndex = 0;
+
+            this.CarregarPaisesCombo();
+        }
+
+        private void groupBox7_Resize(object sender, EventArgs e)
+        {
+            btnBuscar.Location = new Point(groupBox7.Width - btnBuscar.Width - 9, btnBuscar.Location.Y);
+            checkBoxCarregarTodos.Location = new Point(groupBox7.Width - checkBoxCarregarTodos.Width - 9, checkBoxCarregarTodos.Location.Y);
+
+        }
+
+        private void LiberarCampos_Click(object sender, EventArgs e)
+        {
+
+            foreach (TabPage tab in tabControl1.TabPages)
+            {
+                HabilitarControles(tab.Controls);
+            }
+        }
+
+        private void CarregarPaisesCombo()
+        {
+            var paises = dbConection.Paises.OrderBy(p => p.Nome).ToList();
+            comboPaises.DataSource = paises;
+            comboPaises.DisplayMember = "Nome";
+            comboPaises.ValueMember = "Id";
+            comboPaises.SelectedIndex = 5; // Nenhum país selecionado inicialmente
+        }
+
+        private void comboPaises_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var valorSelecionado = comboPaises.SelectedValue;
+           
+
         }
     }
 }

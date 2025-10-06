@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarCargo));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             panel3 = new Panel();
@@ -35,24 +36,18 @@
             btnCancelar = new Button();
             btnGravar = new Button();
             groupBox1 = new GroupBox();
-            textDescriCargo = new TextBox();
-            label3 = new Label();
-            textNomeCargo = new TextBox();
+            textCod = new TextBox();
+            label4 = new Label();
+            textNome = new TextBox();
             label10 = new Label();
-            textCodigoCargo = new TextBox();
-            label1 = new Label();
             tabPage2 = new TabPage();
             panel1 = new Panel();
             btnEditar = new Button();
             btnExcluir = new Button();
             panel2 = new Panel();
             dataGridView1 = new DataGridView();
-            Id = new DataGridViewTextBoxColumn();
             Codigo = new DataGridViewTextBoxColumn();
-            NomeCargo = new DataGridViewTextBoxColumn();
-            DescricaoCargo = new DataGridViewTextBoxColumn();
-            DataCadastro = new DataGridViewTextBoxColumn();
-            UltimaAtualização = new DataGridViewTextBoxColumn();
+            Nome = new DataGridViewTextBoxColumn();
             groupBox2 = new GroupBox();
             checkBoxTodos = new CheckBox();
             btnPesquisar = new Button();
@@ -81,7 +76,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(989, 467);
+            tabControl1.Size = new Size(1013, 467);
             tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -91,7 +86,7 @@
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(981, 439);
+            tabPage1.Size = new Size(1005, 439);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cadastro";
             tabPage1.UseVisualStyleBackColor = true;
@@ -106,7 +101,7 @@
             panel3.Dock = DockStyle.Bottom;
             panel3.Location = new Point(3, 386);
             panel3.Name = "panel3";
-            panel3.Size = new Size(975, 50);
+            panel3.Size = new Size(999, 50);
             panel3.TabIndex = 1;
             // 
             // btnNovo
@@ -119,6 +114,7 @@
             btnNovo.Text = "Incluir F4";
             btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNovo.UseVisualStyleBackColor = true;
+            btnNovo.Click += LiberarCampos_Click;
             // 
             // btnCancelar
             // 
@@ -144,77 +140,55 @@
             // 
             // groupBox1
             // 
-            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox1.Controls.Add(textDescriCargo);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textNomeCargo);
+            groupBox1.Controls.Add(textCod);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(textNome);
             groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(textCodigoCargo);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(6, 6);
+            groupBox1.Dock = DockStyle.Top;
+            groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(967, 88);
+            groupBox1.Size = new Size(999, 88);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
             // 
-            // textDescriCargo
+            // textCod
             // 
-            textDescriCargo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textDescriCargo.Location = new Point(288, 45);
-            textDescriCargo.Name = "textDescriCargo";
-            textDescriCargo.ReadOnly = true;
-            textDescriCargo.Size = new Size(673, 23);
-            textDescriCargo.TabIndex = 25;
+            textCod.Location = new Point(6, 45);
+            textCod.Name = "textCod";
+            textCod.ReadOnly = true;
+            textCod.Size = new Size(41, 23);
+            textCod.TabIndex = 51;
             // 
-            // label3
+            // label4
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial", 9.75F);
-            label3.ForeColor = Color.FromArgb(44, 62, 80);
-            label3.Location = new Point(288, 26);
-            label3.Name = "label3";
-            label3.Size = new Size(65, 16);
-            label3.TabIndex = 24;
-            label3.Text = "Descrição";
+            label4.AutoSize = true;
+            label4.Font = new Font("Arial", 9.75F);
+            label4.ForeColor = Color.FromArgb(44, 62, 80);
+            label4.Location = new Point(6, 25);
+            label4.Name = "label4";
+            label4.Size = new Size(47, 16);
+            label4.TabIndex = 50;
+            label4.Text = "Codigo";
             // 
-            // textNomeCargo
+            // textNome
             // 
-            textNomeCargo.Location = new Point(76, 45);
-            textNomeCargo.Name = "textNomeCargo";
-            textNomeCargo.ReadOnly = true;
-            textNomeCargo.Size = new Size(206, 23);
-            textNomeCargo.TabIndex = 23;
+            textNome.Location = new Point(53, 45);
+            textNome.Name = "textNome";
+            textNome.ReadOnly = true;
+            textNome.Size = new Size(846, 23);
+            textNome.TabIndex = 23;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Arial", 9.75F);
             label10.ForeColor = Color.FromArgb(44, 62, 80);
-            label10.Location = new Point(76, 25);
+            label10.Location = new Point(53, 26);
             label10.Name = "label10";
-            label10.Size = new Size(97, 16);
+            label10.Size = new Size(45, 16);
             label10.TabIndex = 22;
-            label10.Text = "Nome do Cargo";
-            // 
-            // textCodigoCargo
-            // 
-            textCodigoCargo.Location = new Point(6, 45);
-            textCodigoCargo.Name = "textCodigoCargo";
-            textCodigoCargo.ReadOnly = true;
-            textCodigoCargo.Size = new Size(64, 23);
-            textCodigoCargo.TabIndex = 3;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial", 9.75F);
-            label1.ForeColor = Color.FromArgb(44, 62, 80);
-            label1.Location = new Point(6, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(47, 16);
-            label1.TabIndex = 2;
-            label1.Text = "Codigo";
+            label10.Text = "Nome ";
             // 
             // tabPage2
             // 
@@ -225,7 +199,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(981, 439);
+            tabPage2.Size = new Size(1005, 439);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Consultas";
             tabPage2.UseVisualStyleBackColor = true;
@@ -236,9 +210,9 @@
             panel1.Controls.Add(btnEditar);
             panel1.Controls.Add(btnExcluir);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 376);
+            panel1.Location = new Point(3, 382);
             panel1.Name = "panel1";
-            panel1.Size = new Size(971, 56);
+            panel1.Size = new Size(995, 50);
             panel1.TabIndex = 2;
             // 
             // btnEditar
@@ -265,32 +239,27 @@
             // 
             // panel2
             // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(dataGridView1);
-            panel2.Location = new Point(-2, 109);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(3, 100);
             panel2.Name = "panel2";
-            panel2.Size = new Size(978, 261);
+            panel2.Size = new Size(995, 332);
             panel2.TabIndex = 1;
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.BorderStyle = BorderStyle.Fixed3D;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id, Codigo, NomeCargo, DescricaoCargo, DataCadastro, UltimaAtualização });
-            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nome });
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(974, 257);
+            dataGridView1.Size = new Size(991, 283);
             dataGridView1.TabIndex = 2;
-            // 
-            // Id
-            // 
-            Id.HeaderText = "Id";
-            Id.Name = "Id";
-            Id.ReadOnly = true;
             // 
             // Codigo
             // 
@@ -298,33 +267,12 @@
             Codigo.Name = "Codigo";
             Codigo.ReadOnly = true;
             // 
-            // NomeCargo
+            // Nome
             // 
-            NomeCargo.HeaderText = "Nome do Cargo";
-            NomeCargo.Name = "NomeCargo";
-            NomeCargo.ReadOnly = true;
-            NomeCargo.Width = 450;
-            // 
-            // DescricaoCargo
-            // 
-            DescricaoCargo.HeaderText = "Descrição ";
-            DescricaoCargo.Name = "DescricaoCargo";
-            DescricaoCargo.ReadOnly = true;
-            DescricaoCargo.Width = 300;
-            // 
-            // DataCadastro
-            // 
-            DataCadastro.HeaderText = "Data de Cadastro";
-            DataCadastro.Name = "DataCadastro";
-            DataCadastro.ReadOnly = true;
-            DataCadastro.Width = 250;
-            // 
-            // UltimaAtualização
-            // 
-            UltimaAtualização.HeaderText = "Ultima Atualização";
-            UltimaAtualização.Name = "UltimaAtualização";
-            UltimaAtualização.ReadOnly = true;
-            UltimaAtualização.Width = 250;
+            Nome.HeaderText = "Nome";
+            Nome.Name = "Nome";
+            Nome.ReadOnly = true;
+            Nome.Width = 400;
             // 
             // groupBox2
             // 
@@ -339,7 +287,7 @@
             groupBox2.Dock = DockStyle.Top;
             groupBox2.Location = new Point(3, 3);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(971, 97);
+            groupBox2.Size = new Size(995, 97);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Campos de Pesquisa";
@@ -348,7 +296,7 @@
             // checkBoxTodos
             // 
             checkBoxTodos.AutoSize = true;
-            checkBoxTodos.Location = new Point(907, 16);
+            checkBoxTodos.Location = new Point(931, 11);
             checkBoxTodos.Name = "checkBoxTodos";
             checkBoxTodos.Size = new Size(58, 19);
             checkBoxTodos.TabIndex = 27;
@@ -358,7 +306,7 @@
             // btnPesquisar
             // 
             btnPesquisar.Image = Properties.Resources.lupa;
-            btnPesquisar.Location = new Point(852, 62);
+            btnPesquisar.Location = new Point(876, 62);
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.Size = new Size(113, 29);
             btnPesquisar.TabIndex = 26;
@@ -371,7 +319,7 @@
             textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textDadosPesquisa.Location = new Point(374, 35);
             textDadosPesquisa.Name = "textDadosPesquisa";
-            textDadosPesquisa.Size = new Size(591, 23);
+            textDadosPesquisa.Size = new Size(615, 23);
             textDadosPesquisa.TabIndex = 24;
             // 
             // label16
@@ -427,8 +375,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(989, 467);
+            ClientSize = new Size(1013, 467);
             Controls.Add(tabControl1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             Name = "CadastrarCargo";
             StartPosition = FormStartPosition.CenterParent;
@@ -455,9 +404,7 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private GroupBox groupBox1;
-        private TextBox textCodigoCargo;
-        private Label label1;
-        private TextBox textNomeCargo;
+        private TextBox textNome;
         private Label label10;
         private GroupBox groupBox2;
         private Label label17;
@@ -473,17 +420,13 @@
         private Panel panel1;
         private Button btnEditar;
         private Button btnExcluir;
-        private TextBox textDescriCargo;
-        private Label label3;
         private Button btnNovo;
         private Button btnCancelar;
         private Button btnGravar;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Id;
+        private TextBox textCod;
+        private Label label4;
         private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn NomeCargo;
-        private DataGridViewTextBoxColumn DescricaoCargo;
-        private DataGridViewTextBoxColumn DataCadastro;
-        private DataGridViewTextBoxColumn UltimaAtualização;
+        private DataGridViewTextBoxColumn Nome;
     }
 }

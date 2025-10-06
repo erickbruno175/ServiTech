@@ -59,16 +59,14 @@ namespace ServiTech.Forms.Cadastros
                 {
                     foreach (Control control in page.Controls)
                     {
-
+                        textCod.ReadOnly = true;
+                        textNome.Focus();
 
                         if (control is TextBox textBox)
                         {
                             textBox.ReadOnly = false;
-                            textNome.Focus();
-                            textNome.SelectionStart = textNome.TextLength;
-                            textCodigo.ReadOnly = true;
-                            
-                        }
+
+                         }
 
                         if (control is MaskedTextBox maskedTextBox)
                         {
@@ -110,6 +108,92 @@ namespace ServiTech.Forms.Cadastros
 
 
             }
+        }
+
+
+
+        private void CadastrarFuncionario_Load(object sender, EventArgs e)
+        {
+
+            comboFiltros.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboFiltros.Items.Add("Por Nome ");
+            comboFiltros.Items.Add("Por Codigo ");
+            comboFiltros.Items.Add("Por Cpf  ");
+            comboFiltros.Items.Add("Por Tel ");
+            comboFiltros.Items.Add("Por Rg  ");
+            comboFiltros.Items.Add("Por Cargo ");
+            comboFiltros.SelectedIndex = 0;
+
+
+
+            comboModelo.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboModelo.Items.Add("Inicia Com");
+            comboModelo.Items.Add("Termina Com");
+            comboModelo.Items.Add("Contem");
+            comboModelo.Items.Add("Exatamente");
+            comboModelo.SelectedIndex = 0;
+        }
+
+      
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+           
+
+                foreach (TabPage page in tabControl1.TabPages)
+                {
+                    foreach (Control control in page.Controls)
+                    {
+                      textCod.ReadOnly = true;
+                      textNome.Focus();
+
+                    if (control is TextBox textBox)
+                        {
+                            textBox.ReadOnly = false;
+                           
+                          
+                        }
+
+                        if (control is MaskedTextBox maskedTextBox)
+                        {
+                            maskedTextBox.ReadOnly = false;
+                        }
+                        if (control is ComboBox comboBox)
+                        {
+                            comboBox.Enabled = true;
+                        }
+
+
+                        if (control is GroupBox groupBox)
+                        {
+                            foreach (Control rbControl in groupBox.Controls)
+                            {
+                                if (rbControl is RadioButton radioButton)
+                                {
+                                    radioButton.Enabled = true;
+                                }
+                                if (rbControl is MaskedTextBox maskedTextBoxGroup)
+                                {
+                                    maskedTextBoxGroup.ReadOnly = false;
+                                }
+
+                                if (rbControl is TextBox textBoxGroup)
+                                {
+                                    textBoxGroup.ReadOnly = false;
+                                }
+                                if (rbControl is ComboBox comboBoxGroup)
+                                {
+                                    comboBoxGroup.Enabled = true;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+
+
+            
         }
     }
 }
