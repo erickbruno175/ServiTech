@@ -15,14 +15,18 @@ namespace ServiTech.Caixa
     public partial class Pdv : Form
     {
         private readonly System.Windows.Forms.Timer timer;
+        private string textoOriginal = "Bem - vindo  ao UniPDV " +
+            "";
+        private int indiceAtual = 0;
 
         public Pdv()
         {
+            InitializeComponent();
+            textBoxTitulo.Text = textoOriginal;
             this.timer = new System.Windows.Forms.Timer();
-            this.timer.Interval = 100;
+            this.timer.Interval = 500;
             this.timer.Tick += Time_Tick;
             this.timer.Start();
-            InitializeComponent();
         }
 
         private void panel3_Resize(object sender, EventArgs e)
@@ -40,8 +44,8 @@ namespace ServiTech.Caixa
             int targetHeight = (int)((double)watermark.Height / watermark.Width * targetWidth);
 
             // 🔹 Centraliza no DataGridView
-            int x = (gridProdutos.Width - targetWidth) / 2;
-            int y = (gridProdutos.Height - targetHeight) / 2;
+            int x = (gridItensVendas.Width - targetWidth) / 2;
+            int y = (gridItensVendas.Height - targetHeight) / 2;
 
             // 🔹 Desenha redimensionada
             e.Graphics.DrawImage(watermark, new Rectangle(x, y, targetWidth, targetHeight)); // 
@@ -54,14 +58,23 @@ namespace ServiTech.Caixa
 
         private void Time_Tick(object sender, EventArgs e)
         {
-            labelDataHora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            labelDataHora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") + " : ";
+            indiceAtual++;
+            if (indiceAtual >= textoOriginal.Length)
+                indiceAtual = 0;
+
+            // faz o texto “andar”
+            string textoRolando = textoOriginal.Substring(indiceAtual) + textoOriginal.Substring(0, indiceAtual);
+            textBoxTitulo.Text = textoRolando;
         }
+
+
+
 
         private void SairPdv_Click(object sender, EventArgs e)
         {
 
             this.Close();
-
 
         }
 
@@ -69,7 +82,7 @@ namespace ServiTech.Caixa
 
         {
 
-            textReadCodProduto.Clear();
+            textCodProduto.Clear();
         }
 
         private void textReadCodProduto_TextChanged(object sender, EventArgs e)
@@ -77,11 +90,11 @@ namespace ServiTech.Caixa
 
 
 
-            if (!string.IsNullOrEmpty(textReadCodProduto.Text))
+            if (!string.IsNullOrEmpty(textCodProduto.Text))
             {
-                string newText = new string(textReadCodProduto.Text.Where(c => char.IsDigit(c)).ToArray());// Remove todos os caracteres que não são dígitos
-                textReadCodProduto.Text = newText;// Atualiza o texto da TextBox
-                textReadCodProduto.SelectionStart = textReadCodProduto.Text.Length; // Coloca o cursor no final do texto
+                string newText = new string(textCodProduto.Text.Where(c => char.IsDigit(c)).ToArray());// Remove todos os caracteres que não são dígitos
+                textCodProduto.Text = newText;// Atualiza o texto da TextBox
+                textCodProduto.SelectionStart = textCodProduto.Text.Length; // Coloca o cursor no final do texto
             }
         }
 
@@ -108,8 +121,8 @@ namespace ServiTech.Caixa
             int targetHeight = (int)((double)watermark.Height / watermark.Width * targetWidth);
 
             // 🔹 Centraliza no DataGridView
-            int x = (pictureBox1.Width - targetWidth) / 2;
-            int y = (pictureBox1.Height - targetHeight) / 2;
+            int x = (pictureLogo.Width - targetWidth) / 2;
+            int y = (pictureLogo.Height - targetHeight) / 2;
 
             // 🔹 Desenha redimensionada
             e.Graphics.DrawImage(watermark, new Rectangle(x, y, targetWidth, targetHeight)); // 
@@ -148,6 +161,16 @@ namespace ServiTech.Caixa
         private void textReadTotalPreco_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void textTotal_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void painelGridProdutos_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

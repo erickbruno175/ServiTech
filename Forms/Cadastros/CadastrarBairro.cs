@@ -33,19 +33,10 @@ namespace ServiTech.Forms.Cadastros
             comboModelo.Items.Add("Inicia Com");
             comboModelo.Items.Add("Termina Com");
             comboModelo.Items.Add("Contem");
-            comboModelo.Items.Add("Exatamente");
             comboModelo.SelectedIndex = 0;
 
-            this.CaregarGridBairros();
+            this.CarregarGridBairros();
             this.CarregarCidadesCombo();
-
-        }
-
-        private void groupBox2_Resize(object sender, EventArgs e)
-        {
-            btnPesquisar.Location = new Point(this.groupBox2.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
-            checkBoxTodos.Location = new Point(this.groupBox2.Width - checkBoxTodos.Width - 9, checkBoxTodos.Location.Y);
-
 
         }
 
@@ -62,9 +53,13 @@ namespace ServiTech.Forms.Cadastros
                 textBairro.ReadOnly = false;
                 textBairro.Focus();
                 comboCidades.Enabled = true;
-                textCodigo.Text = "";
-                textBairro.Text = "";
+                textCodigo.Clear();
+                textBairro.Clear();
 
+            }
+            else if (e.KeyCode == Keys.F5)
+            {
+                this.GravarBairro();
             }
 
         }
@@ -76,40 +71,71 @@ namespace ServiTech.Forms.Cadastros
             textBairro.ReadOnly = false;
             textBairro.Focus();
             comboCidades.Enabled = true;
-            textCodigo.Text = "";
-            textBairro.Text = "";
+            textCodigo.Clear();
+            textBairro.Clear();
 
         }
 
-        private void SairFormCadastroBairro(object sender, EventArgs e)
+
+        private void CarregarGridBairros()
         {
-
-            this.Close();
-        }
-
-        private void CaregarGridBairros()
-        {
-
             try
             {
-                var bairros = dbConectionPdv.Bairro.
-                    Select(b => new
+                var bairros = dbConectionPdv.Bairro
+                    .Select(b => new
                     {
                         Codigo = b.Id,
                         Nome = b.Nome,
                         Cidade = b.Cidade.Nome,
+                    })
+                    .OrderBy(b => b.Nome)
+                    .ToList();
 
-                    }).ToList();
                 dataGridBairro.DataSource = bairros;
+
+                // ==== ESTILO DO CABEÇALHO ====
+                dataGridBairro.EnableHeadersVisualStyles = false;
+                dataGridBairro.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 66, 100);
+                dataGridBairro.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dataGridBairro.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
+                dataGridBairro.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dataGridBairro.ColumnHeadersHeight = 32;
+
+                // ==== ESTILO DAS LINHAS ====
+                dataGridBairro.DefaultCellStyle.BackColor = Color.White;
+                dataGridBairro.DefaultCellStyle.ForeColor = Color.Black;
+                dataGridBairro.DefaultCellStyle.Font = new Font("Segoe UI", 8F);
+                dataGridBairro.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 135);
+                dataGridBairro.DefaultCellStyle.SelectionForeColor = Color.White;
+                dataGridBairro.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+                dataGridBairro.RowHeadersVisible = false;
+
+                // ==== CONFIGURAÇÃO DAS COLUNAS ====
+                dataGridBairro.Columns["Codigo"].HeaderText = "Código";
+                dataGridBairro.Columns["Codigo"].Width = 80;
+                dataGridBairro.Columns["Codigo"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
                 dataGridBairro.Columns["Nome"].HeaderText = "Nome do Bairro";
-                dataGridBairro.Columns["Nome"].Width = 200;
+                dataGridBairro.Columns["Nome"].Width = 250;
+
+                dataGridBairro.Columns["Cidade"].HeaderText = "Cidade";
+                dataGridBairro.Columns["Cidade"].Width = 200;
+
+                // ==== COMPORTAMENTO ====
                 dataGridBairro.ReadOnly = true;
+                dataGridBairro.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Seleciona linha inteira
+                dataGridBairro.MultiSelect = false; // Só uma linha por vez
+                dataGridBairro.BorderStyle = BorderStyle.FixedSingle;
+                dataGridBairro.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+                dataGridBairro.GridColor = Color.FromArgb(220, 220, 220);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os bairros: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar os bairros: " + ex.Message,
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
         private void CarregarCidadesCombo()
@@ -120,7 +146,7 @@ namespace ServiTech.Forms.Cadastros
             comboCidades.ValueMember = "Id";
         }
 
-        private void btnGravar_Click(object sender, EventArgs e)
+        private void GravarBairro()
         {
             try
             {
@@ -130,66 +156,80 @@ namespace ServiTech.Forms.Cadastros
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
-                if (!string.IsNullOrEmpty(textCodigo.Text))
+                else
                 {
-                    // Atualização
-                    int bairroId = int.Parse(textCodigo.Text);
-                    var bairroExistente = dbConectionPdv.Bairro.Find(bairroId);
-
-                    if (bairroExistente != null)
+                    if (string.IsNullOrWhiteSpace(textCodigo.Text))
                     {
-                        bairroExistente.Nome = textBairro.Text.Trim();
-                        bairroExistente.CidadeId = (int)comboCidades.SelectedValue;
+                        // 🔹 Novo bairro
+                        bool existeBairro = dbConectionPdv.Bairro
+                            .Any(b => b.Nome.ToLower() == textBairro.Text.Trim().ToLower()
+                                   && b.CidadeId == (int)comboCidades.SelectedValue);
 
-                        dbConectionPdv.Bairro.Update(bairroExistente); // opcional, mas deixa explícito
-                        dbConectionPdv.SaveChanges();
+                        if (existeBairro)
+                        {
+                            MessageBox.Show("Já existe um bairro com esse nome na cidade selecionada.", "Atenção",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        else
+                        {
+                            var novoBairro = new Model.ModelLocalidade.Bairro
+                            {
+                                Nome = textBairro.Text.Trim(),
+                                CidadeId = (int)comboCidades.SelectedValue
+                            };
 
-                        MessageBox.Show("Bairro atualizado com sucesso!", "Sucesso",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            dbConectionPdv.Bairro.Add(novoBairro);
+                            dbConectionPdv.SaveChanges();
+
+                            textCodigo.Text = novoBairro.Id.ToString();
+
+                            MessageBox.Show("Bairro cadastrado com sucesso!", "Sucesso",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            CarregarGridBairros();
+                            return;
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Bairro não encontrado para atualização.", "Erro",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // 🔹 Atualizar bairro existente
+                        int bairroId = int.Parse(textCodigo.Text);
+                        var bairroParaEditar = dbConectionPdv.Bairro.Find(bairroId);
+
+                        if (bairroParaEditar != null)
+                        {
+                            bairroParaEditar.Nome = textBairro.Text.Trim();
+                            bairroParaEditar.CidadeId = (int)comboCidades.SelectedValue;
+
+                            dbConectionPdv.SaveChanges();
+
+                            MessageBox.Show("Bairro atualizado com sucesso!", "Sucesso",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            CarregarGridBairros();
+                            return;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bairro não encontrado para atualização.", "Atenção",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
                     }
                 }
-                else
-                {
-                    // Novo registro
-
-                    var bairroExistente = dbConectionPdv.Bairro
-                        .FirstOrDefault(b => b.Nome.ToLower() == textBairro.Text.Trim().ToLower()
-                                             && b.CidadeId == (int)comboCidades.SelectedValue);
-
-                    if (bairroExistente != null)
-                    {
-                        MessageBox.Show("Já existe um bairro com esse nome na cidade selecionada.", "Atenção",
- MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-                    var novoBairro = new Model.ModelLocalidade.Bairro
-                    {
-                        Nome = textBairro.Text.Trim(),
-                        CidadeId = (int)comboCidades.SelectedValue
-                    };
-
-                    dbConectionPdv.Bairro.Add(novoBairro);
-                    dbConectionPdv.SaveChanges();
-
-                    textCodigo.Text = novoBairro.Id.ToString();
-
-                    MessageBox.Show("Bairro cadastrado com sucesso!", "Sucesso",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
-                this.CaregarGridBairros();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao salvar o bairro: " + ex.Message, "Erro",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+            this.GravarBairro();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -211,7 +251,7 @@ namespace ServiTech.Forms.Cadastros
         private void AbrirAbaCadastro(int id, string nome, int cidadeId)
         {
             // Seleciona a aba de cadastro
-            tabControl1.SelectedTab = tabPage1;
+            tabControl1.SelectedTab = tabCadastro;
 
             // Preenche os campos do cadastro
             textCodigo.Text = id.ToString();
@@ -239,7 +279,7 @@ namespace ServiTech.Forms.Cadastros
                         dbConectionPdv.Bairro.Remove(bairroParaExcluir);
                         dbConectionPdv.SaveChanges();
                         MessageBox.Show("Bairro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.CaregarGridBairros();
+                        this.CarregarGridBairros();
                     }
                     catch (Exception ex)
                     {
@@ -258,7 +298,14 @@ namespace ServiTech.Forms.Cadastros
 
             string filtro = textDadosPesquisa.Text.Trim().ToLower();
             var bairros = dbConectionPdv.Bairro.AsQueryable();
-            if ( !string.IsNullOrWhiteSpace(filtro))
+
+
+            if (string.IsNullOrEmpty(filtro))
+            {
+                this.CarregarGridBairros();
+                return;
+            }
+            if (!string.IsNullOrWhiteSpace(filtro))
             {
                 if (comboFiltros.SelectedItem.ToString() == "Por Nome ")
                 {
@@ -273,14 +320,12 @@ namespace ServiTech.Forms.Cadastros
                         case "Contem":
                             bairros = bairros.Where(b => b.Nome.ToLower().Contains(filtro));
                             break;
-                        case "Exatamente":
-                            bairros = bairros.Where(b => b.Nome.ToLower() == filtro);
-                            break;
+
                     }
                 }
                 else if (comboFiltros.SelectedItem.ToString() == "Por Codigo ")
                 {
-                    if (int.TryParse(filtro, out int codigo))
+                    if (int.TryParse(textDadosPesquisa.Text, out int codigo))
                     {
                         bairros = bairros.Where(b => b.Id == codigo);
                     }
@@ -297,6 +342,24 @@ namespace ServiTech.Forms.Cadastros
                 Cidade = b.Cidade.Nome,
             }).ToList();
             dataGridBairro.DataSource = resultado;
+        }
+
+        private void CadastrarBairro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnEditar_Click(this, new EventArgs());
+            }
+        }
+
+        private void bntNovo_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabCadastro;
+            textBairro.ReadOnly = false;
+            textBairro.Focus();
+            comboCidades.Enabled = true;
+            textCodigo.Clear();
+            textBairro.Clear();
         }
     }
 }

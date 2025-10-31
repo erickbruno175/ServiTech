@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOrdemServico));
             btnNovaOs = new Button();
             btnGravar = new Button();
@@ -38,11 +37,6 @@
             btnImprimir = new Button();
             btnExcluir = new Button();
             groupBox2 = new GroupBox();
-            textValorPeca = new TextBox();
-            label10 = new Label();
-            button1 = new Button();
-            label11 = new Label();
-            textPeca = new TextBox();
             groupBox5 = new GroupBox();
             checkBox2 = new CheckBox();
             checkBox1 = new CheckBox();
@@ -52,8 +46,6 @@
             textDataGarantia = new MaskedTextBox();
             comboStatus = new ComboBox();
             comboPrioridade = new ComboBox();
-            textValor = new TextBox();
-            label33 = new Label();
             label27 = new Label();
             comboBoxResTecnico = new ComboBox();
             label26 = new Label();
@@ -64,13 +56,8 @@
             label23 = new Label();
             label22 = new Label();
             textTempoGasto = new MaskedTextBox();
-            label21 = new Label();
-            textPeçaTrocada = new TextBox();
             button5 = new Button();
-            button4 = new Button();
-            label20 = new Label();
             label19 = new Label();
-            textServico = new TextBox();
             label18 = new Label();
             textDiagnostico = new TextBox();
             textObservacao = new TextBox();
@@ -94,34 +81,10 @@
             label29 = new Label();
             textSubTotal = new TextBox();
             groupBox3 = new GroupBox();
-            labelContadorDados = new Label();
-            textBuscarOs = new TextBox();
             panel3 = new Panel();
+            label13 = new Label();
+            label12 = new Label();
             labelNumeroOS = new Label();
-            dataGridView1 = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            CodigoOs = new DataGridViewTextBoxColumn();
-            NomeCliente = new DataGridViewTextBoxColumn();
-            CpfCnpj = new DataGridViewTextBoxColumn();
-            Telefone = new DataGridViewTextBoxColumn();
-            Garantia = new DataGridViewCheckBoxColumn();
-            Numero = new DataGridViewTextBoxColumn();
-            Servico = new DataGridViewTextBoxColumn();
-            Diagnostico = new DataGridViewTextBoxColumn();
-            Tecnico = new DataGridViewTextBoxColumn();
-            Peça = new DataGridViewTextBoxColumn();
-            Defeito = new DataGridViewTextBoxColumn();
-            TempoGasto = new DataGridViewTextBoxColumn();
-            DataAbertura = new DataGridViewTextBoxColumn();
-            PrevisaoEntrega = new DataGridViewTextBoxColumn();
-            DataEntrada = new DataGridViewTextBoxColumn();
-            Prioridade = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            WhatasApp = new DataGridViewTextBoxColumn();
-            ValorTotalPagar = new DataGridViewTextBoxColumn();
-            FormaPagamento = new DataGridViewTextBoxColumn();
-            Atendente = new DataGridViewTextBoxColumn();
-            ValorPeca = new DataGridViewTextBoxColumn();
             label1InfoOperador = new Label();
             labelDataHora = new Label();
             label6 = new Label();
@@ -141,8 +104,8 @@
             textCpfCnpl = new MaskedTextBox();
             groupBox1 = new GroupBox();
             label1 = new Label();
-            label12 = new Label();
-            label13 = new Label();
+            label21 = new Label();
+            textPeçaTrocada = new TextBox();
             panel1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox5.SuspendLayout();
@@ -150,7 +113,6 @@
             groupBox4.SuspendLayout();
             groupBox3.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -304,11 +266,6 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textValorPeca);
-            groupBox2.Controls.Add(label10);
-            groupBox2.Controls.Add(button1);
-            groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(textPeca);
             groupBox2.Controls.Add(groupBox5);
             groupBox2.Controls.Add(label32);
             groupBox2.Controls.Add(textDataEntrada);
@@ -316,8 +273,6 @@
             groupBox2.Controls.Add(textDataGarantia);
             groupBox2.Controls.Add(comboStatus);
             groupBox2.Controls.Add(comboPrioridade);
-            groupBox2.Controls.Add(textValor);
-            groupBox2.Controls.Add(label33);
             groupBox2.Controls.Add(label27);
             groupBox2.Controls.Add(comboBoxResTecnico);
             groupBox2.Controls.Add(label26);
@@ -331,10 +286,7 @@
             groupBox2.Controls.Add(label21);
             groupBox2.Controls.Add(textPeçaTrocada);
             groupBox2.Controls.Add(button5);
-            groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(label20);
             groupBox2.Controls.Add(label19);
-            groupBox2.Controls.Add(textServico);
             groupBox2.Controls.Add(label18);
             groupBox2.Controls.Add(textDiagnostico);
             groupBox2.Controls.Add(textObservacao);
@@ -357,67 +309,11 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Equipamento / Serviço";
             // 
-            // textValorPeca
-            // 
-            textValorPeca.Location = new Point(722, 101);
-            textValorPeca.Multiline = true;
-            textValorPeca.Name = "textValorPeca";
-            textValorPeca.PlaceholderText = "0,00";
-            textValorPeca.ReadOnly = true;
-            textValorPeca.Size = new Size(106, 29);
-            textValorPeca.TabIndex = 190;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Arial", 9.75F);
-            label10.ForeColor = Color.FromArgb(44, 62, 80);
-            label10.Location = new Point(722, 83);
-            label10.Name = "label10";
-            label10.Size = new Size(70, 16);
-            label10.TabIndex = 189;
-            label10.Text = "Valor Peça";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Transparent;
-            button1.Enabled = false;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Image = Properties.Resources.lupa;
-            button1.Location = new Point(690, 99);
-            button1.Name = "button1";
-            button1.Size = new Size(26, 23);
-            button1.TabIndex = 188;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Arial", 9.75F);
-            label11.ForeColor = Color.FromArgb(44, 62, 80);
-            label11.Location = new Point(423, 82);
-            label11.Name = "label11";
-            label11.Size = new Size(41, 16);
-            label11.TabIndex = 187;
-            label11.Text = "Peça ";
-            // 
-            // textPeca
-            // 
-            textPeca.Location = new Point(423, 101);
-            textPeca.Multiline = true;
-            textPeca.Name = "textPeca";
-            textPeca.ReadOnly = true;
-            textPeca.Size = new Size(261, 29);
-            textPeca.TabIndex = 186;
-            // 
             // groupBox5
             // 
             groupBox5.Controls.Add(checkBox2);
             groupBox5.Controls.Add(checkBox1);
-            groupBox5.Location = new Point(1352, 136);
+            groupBox5.Location = new Point(1352, 93);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(120, 67);
             groupBox5.TabIndex = 185;
@@ -449,7 +345,7 @@
             label32.AutoSize = true;
             label32.Font = new Font("Arial", 9.75F);
             label32.ForeColor = Color.FromArgb(44, 62, 80);
-            label32.Location = new Point(13, 191);
+            label32.Location = new Point(12, 155);
             label32.Name = "label32";
             label32.Size = new Size(101, 16);
             label32.TabIndex = 184;
@@ -457,7 +353,7 @@
             // 
             // textDataEntrada
             // 
-            textDataEntrada.Location = new Point(13, 210);
+            textDataEntrada.Location = new Point(12, 174);
             textDataEntrada.Mask = "00/00/0000 ";
             textDataEntrada.Name = "textDataEntrada";
             textDataEntrada.Size = new Size(145, 29);
@@ -470,7 +366,7 @@
             label34.AutoSize = true;
             label34.Font = new Font("Arial", 9.75F);
             label34.ForeColor = Color.FromArgb(44, 62, 80);
-            label34.Location = new Point(504, 191);
+            label34.Location = new Point(503, 155);
             label34.Name = "label34";
             label34.Size = new Size(56, 16);
             label34.TabIndex = 182;
@@ -478,7 +374,7 @@
             // 
             // textDataGarantia
             // 
-            textDataGarantia.Location = new Point(504, 210);
+            textDataGarantia.Location = new Point(503, 174);
             textDataGarantia.Mask = "00/00/0000 ";
             textDataGarantia.Name = "textDataGarantia";
             textDataGarantia.Size = new Size(164, 29);
@@ -490,7 +386,7 @@
             // 
             comboStatus.FormattingEnabled = true;
             comboStatus.Items.AddRange(new object[] { "Aberta", "Em andamento", "Aguardando peças", "Aguardando aprovação", "Concluída", "Cancelada" });
-            comboStatus.Location = new Point(834, 155);
+            comboStatus.Location = new Point(834, 111);
             comboStatus.Name = "comboStatus";
             comboStatus.Size = new Size(156, 29);
             comboStatus.TabIndex = 180;
@@ -499,38 +395,17 @@
             // 
             comboPrioridade.FormattingEnabled = true;
             comboPrioridade.Items.AddRange(new object[] { "Baixa", "Normal", "Alta", "Urgente", "Crítica" });
-            comboPrioridade.Location = new Point(669, 155);
+            comboPrioridade.Location = new Point(669, 111);
             comboPrioridade.Name = "comboPrioridade";
             comboPrioridade.Size = new Size(159, 29);
             comboPrioridade.TabIndex = 179;
-            // 
-            // textValor
-            // 
-            textValor.Location = new Point(311, 101);
-            textValor.Multiline = true;
-            textValor.Name = "textValor";
-            textValor.PlaceholderText = "0,00";
-            textValor.ReadOnly = true;
-            textValor.Size = new Size(106, 29);
-            textValor.TabIndex = 178;
-            // 
-            // label33
-            // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Arial", 9.75F);
-            label33.ForeColor = Color.FromArgb(44, 62, 80);
-            label33.Location = new Point(311, 83);
-            label33.Name = "label33";
-            label33.Size = new Size(103, 16);
-            label33.TabIndex = 177;
-            label33.Text = "Valor M.De Obra";
             // 
             // label27
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Arial", 9.75F);
             label27.ForeColor = Color.FromArgb(44, 62, 80);
-            label27.Location = new Point(996, 136);
+            label27.Location = new Point(996, 92);
             label27.Name = "label27";
             label27.Size = new Size(135, 16);
             label27.TabIndex = 176;
@@ -540,7 +415,7 @@
             // 
             comboBoxResTecnico.FormattingEnabled = true;
             comboBoxResTecnico.ItemHeight = 21;
-            comboBoxResTecnico.Location = new Point(996, 155);
+            comboBoxResTecnico.Location = new Point(996, 111);
             comboBoxResTecnico.Name = "comboBoxResTecnico";
             comboBoxResTecnico.Size = new Size(199, 29);
             comboBoxResTecnico.TabIndex = 175;
@@ -550,7 +425,7 @@
             label26.AutoSize = true;
             label26.Font = new Font("Arial", 9.75F);
             label26.ForeColor = Color.FromArgb(44, 62, 80);
-            label26.Location = new Point(334, 191);
+            label26.Location = new Point(333, 155);
             label26.Name = "label26";
             label26.Size = new Size(123, 16);
             label26.TabIndex = 174;
@@ -561,7 +436,7 @@
             label25.AutoSize = true;
             label25.Font = new Font("Arial", 9.75F);
             label25.ForeColor = Color.FromArgb(44, 62, 80);
-            label25.Location = new Point(164, 191);
+            label25.Location = new Point(163, 155);
             label25.Name = "label25";
             label25.Size = new Size(104, 16);
             label25.TabIndex = 173;
@@ -569,7 +444,7 @@
             // 
             // textDataPrevista
             // 
-            textDataPrevista.Location = new Point(334, 210);
+            textDataPrevista.Location = new Point(333, 174);
             textDataPrevista.Mask = "00/00/0000 ";
             textDataPrevista.Name = "textDataPrevista";
             textDataPrevista.Size = new Size(164, 29);
@@ -579,7 +454,7 @@
             // 
             // textDataAtual
             // 
-            textDataAtual.Location = new Point(164, 210);
+            textDataAtual.Location = new Point(163, 174);
             textDataAtual.Mask = "00/00/0000 ";
             textDataAtual.Name = "textDataAtual";
             textDataAtual.Size = new Size(164, 29);
@@ -592,7 +467,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Arial", 9.75F);
             label24.ForeColor = Color.FromArgb(44, 62, 80);
-            label24.Location = new Point(831, 137);
+            label24.Location = new Point(831, 93);
             label24.Name = "label24";
             label24.Size = new Size(45, 16);
             label24.TabIndex = 169;
@@ -603,7 +478,7 @@
             label23.AutoSize = true;
             label23.Font = new Font("Arial", 9.75F);
             label23.ForeColor = Color.FromArgb(44, 62, 80);
-            label23.Location = new Point(669, 136);
+            label23.Location = new Point(669, 92);
             label23.Name = "label23";
             label23.Size = new Size(65, 16);
             label23.TabIndex = 168;
@@ -614,7 +489,7 @@
             label22.AutoSize = true;
             label22.Font = new Font("Arial", 9.75F);
             label22.ForeColor = Color.FromArgb(44, 62, 80);
-            label22.Location = new Point(1201, 136);
+            label22.Location = new Point(1201, 92);
             label22.Name = "label22";
             label22.Size = new Size(84, 16);
             label22.TabIndex = 165;
@@ -622,32 +497,12 @@
             // 
             // textTempoGasto
             // 
-            textTempoGasto.Location = new Point(1201, 155);
+            textTempoGasto.Location = new Point(1201, 111);
             textTempoGasto.Mask = "90:00";
             textTempoGasto.Name = "textTempoGasto";
             textTempoGasto.Size = new Size(145, 29);
             textTempoGasto.TabIndex = 164;
             textTempoGasto.ValidatingType = typeof(DateTime);
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Font = new Font("Arial", 9.75F);
-            label21.ForeColor = Color.FromArgb(44, 62, 80);
-            label21.Location = new Point(12, 136);
-            label21.Name = "label21";
-            label21.Size = new Size(101, 16);
-            label21.TabIndex = 163;
-            label21.Text = "Peças Trocadas";
-            // 
-            // textPeçaTrocada
-            // 
-            textPeçaTrocada.Location = new Point(12, 155);
-            textPeçaTrocada.Multiline = true;
-            textPeçaTrocada.Name = "textPeçaTrocada";
-            textPeçaTrocada.ReadOnly = true;
-            textPeçaTrocada.Size = new Size(302, 29);
-            textPeçaTrocada.TabIndex = 162;
             // 
             // button5
             // 
@@ -664,51 +519,16 @@
             button5.TabIndex = 161;
             button5.UseVisualStyleBackColor = false;
             // 
-            // button4
-            // 
-            button4.BackColor = Color.Transparent;
-            button4.Enabled = false;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button4.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Image = Properties.Resources.lupa;
-            button4.Location = new Point(279, 99);
-            button4.Name = "button4";
-            button4.Size = new Size(26, 23);
-            button4.TabIndex = 160;
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Arial", 9.75F);
-            label20.ForeColor = Color.FromArgb(44, 62, 80);
-            label20.Location = new Point(12, 82);
-            label20.Name = "label20";
-            label20.Size = new Size(134, 16);
-            label20.TabIndex = 67;
-            label20.Text = "Serviço Executado F2";
-            // 
             // label19
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Arial", 9.75F);
             label19.ForeColor = Color.FromArgb(44, 62, 80);
-            label19.Location = new Point(834, 83);
+            label19.Location = new Point(1211, 31);
             label19.Name = "label19";
             label19.Size = new Size(75, 16);
             label19.TabIndex = 65;
             label19.Text = "Diagnóstico";
-            // 
-            // textServico
-            // 
-            textServico.Location = new Point(12, 101);
-            textServico.Multiline = true;
-            textServico.Name = "textServico";
-            textServico.ReadOnly = true;
-            textServico.Size = new Size(261, 29);
-            textServico.TabIndex = 66;
             // 
             // label18
             // 
@@ -724,11 +544,11 @@
             // textDiagnostico
             // 
             textDiagnostico.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textDiagnostico.Location = new Point(834, 101);
+            textDiagnostico.Location = new Point(1211, 49);
             textDiagnostico.Multiline = true;
             textDiagnostico.Name = "textDiagnostico";
             textDiagnostico.ReadOnly = true;
-            textDiagnostico.Size = new Size(371, 29);
+            textDiagnostico.Size = new Size(313, 29);
             textDiagnostico.TabIndex = 64;
             // 
             // textObservacao
@@ -746,7 +566,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Arial", 9.75F);
             label17.ForeColor = Color.FromArgb(44, 62, 80);
-            label17.Location = new Point(320, 136);
+            label17.Location = new Point(320, 92);
             label17.Name = "label17";
             label17.Size = new Size(47, 16);
             label17.TabIndex = 61;
@@ -754,7 +574,7 @@
             // 
             // textDefeito
             // 
-            textDefeito.Location = new Point(320, 155);
+            textDefeito.Location = new Point(320, 111);
             textDefeito.Multiline = true;
             textDefeito.Name = "textDefeito";
             textDefeito.ReadOnly = true;
@@ -806,7 +626,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Arial", 9.75F);
             label9.ForeColor = Color.FromArgb(44, 62, 80);
-            label9.Location = new Point(230, 30);
+            label9.Location = new Point(242, 30);
             label9.Name = "label9";
             label9.Size = new Size(43, 16);
             label9.TabIndex = 55;
@@ -960,10 +780,7 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(labelContadorDados);
-            groupBox3.Controls.Add(textBuscarOs);
             groupBox3.Controls.Add(panel3);
-            groupBox3.Controls.Add(dataGridView1);
             groupBox3.Dock = DockStyle.Left;
             groupBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox3.Location = new Point(0, 0);
@@ -971,28 +788,7 @@
             groupBox3.Size = new Size(1117, 357);
             groupBox3.TabIndex = 0;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Ordemse de Serviços";
-            // 
-            // labelContadorDados
-            // 
-            labelContadorDados.Dock = DockStyle.Right;
-            labelContadorDados.ForeColor = Color.FromArgb(0, 66, 100);
-            labelContadorDados.Location = new Point(922, 201);
-            labelContadorDados.Name = "labelContadorDados";
-            labelContadorDados.Size = new Size(192, 53);
-            labelContadorDados.TabIndex = 5;
-            labelContadorDados.Text = "Total Encontrado:";
-            labelContadorDados.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBuscarOs
-            // 
-            textBuscarOs.BackColor = Color.FromArgb(255, 255, 192);
-            textBuscarOs.Location = new Point(6, 216);
-            textBuscarOs.Multiline = true;
-            textBuscarOs.Name = "textBuscarOs";
-            textBuscarOs.PlaceholderText = "Cod/Cpf/N.OS";
-            textBuscarOs.Size = new Size(471, 32);
-            textBuscarOs.TabIndex = 4;
+            groupBox3.Text = "Itens de Ordem de Serviços";
             // 
             // panel3
             // 
@@ -1007,6 +803,30 @@
             panel3.Size = new Size(1111, 100);
             panel3.TabIndex = 3;
             // 
+            // label13
+            // 
+            label13.Dock = DockStyle.Left;
+            label13.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.ForeColor = Color.White;
+            label13.Location = new Point(0, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(287, 100);
+            label13.TabIndex = 2;
+            label13.Text = "Status :";
+            label13.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            label12.Dock = DockStyle.Fill;
+            label12.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(0, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(1111, 100);
+            label12.TabIndex = 1;
+            label12.Text = "Numero OS";
+            label12.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // labelNumeroOS
             // 
             labelNumeroOS.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -1017,187 +837,6 @@
             labelNumeroOS.TabIndex = 0;
             labelNumeroOS.Text = "Numero OS";
             labelNumeroOS.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.AllowUserToResizeColumns = false;
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridView1.ColumnHeadersHeight = 30;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, CodigoOs, NomeCliente, CpfCnpj, Telefone, Garantia, Numero, Servico, Diagnostico, Tecnico, Peça, Defeito, TempoGasto, DataAbertura, PrevisaoEntrega, DataEntrada, Prioridade, Status, WhatasApp, ValorTotalPagar, FormaPagamento, Atendente, ValorPeca });
-            dataGridView1.Dock = DockStyle.Top;
-            dataGridView1.Location = new Point(3, 25);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(1111, 176);
-            dataGridView1.TabIndex = 2;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            // 
-            // CodigoOs
-            // 
-            CodigoOs.HeaderText = "Codigo Os";
-            CodigoOs.Name = "CodigoOs";
-            CodigoOs.ReadOnly = true;
-            CodigoOs.Width = 150;
-            // 
-            // NomeCliente
-            // 
-            NomeCliente.HeaderText = "Nome do Cliente";
-            NomeCliente.Name = "NomeCliente";
-            NomeCliente.ReadOnly = true;
-            NomeCliente.Width = 350;
-            // 
-            // CpfCnpj
-            // 
-            CpfCnpj.HeaderText = "Cpf/Cnpj";
-            CpfCnpj.Name = "CpfCnpj";
-            CpfCnpj.ReadOnly = true;
-            CpfCnpj.Width = 150;
-            // 
-            // Telefone
-            // 
-            Telefone.HeaderText = "Telefone";
-            Telefone.Name = "Telefone";
-            Telefone.ReadOnly = true;
-            Telefone.Width = 150;
-            // 
-            // Garantia
-            // 
-            Garantia.HeaderText = "Garantia";
-            Garantia.Name = "Garantia";
-            Garantia.ReadOnly = true;
-            // 
-            // Numero
-            // 
-            Numero.HeaderText = "Numero";
-            Numero.Name = "Numero";
-            Numero.ReadOnly = true;
-            Numero.Width = 120;
-            // 
-            // Servico
-            // 
-            Servico.HeaderText = "Serviço";
-            Servico.Name = "Servico";
-            Servico.ReadOnly = true;
-            Servico.Width = 300;
-            // 
-            // Diagnostico
-            // 
-            Diagnostico.HeaderText = "Diagnostico";
-            Diagnostico.Name = "Diagnostico";
-            Diagnostico.ReadOnly = true;
-            Diagnostico.Width = 400;
-            // 
-            // Tecnico
-            // 
-            Tecnico.HeaderText = "Tecnico";
-            Tecnico.Name = "Tecnico";
-            Tecnico.ReadOnly = true;
-            Tecnico.Width = 250;
-            // 
-            // Peça
-            // 
-            Peça.HeaderText = "Peça";
-            Peça.Name = "Peça";
-            Peça.ReadOnly = true;
-            Peça.Width = 200;
-            // 
-            // Defeito
-            // 
-            Defeito.HeaderText = "Defeito";
-            Defeito.Name = "Defeito";
-            Defeito.ReadOnly = true;
-            Defeito.Width = 300;
-            // 
-            // TempoGasto
-            // 
-            TempoGasto.HeaderText = "Tempo Gasto";
-            TempoGasto.Name = "TempoGasto";
-            TempoGasto.ReadOnly = true;
-            TempoGasto.Width = 150;
-            // 
-            // DataAbertura
-            // 
-            DataAbertura.HeaderText = "Data Abertura";
-            DataAbertura.Name = "DataAbertura";
-            DataAbertura.ReadOnly = true;
-            DataAbertura.Width = 150;
-            // 
-            // PrevisaoEntrega
-            // 
-            PrevisaoEntrega.HeaderText = "Previsão de Entrega";
-            PrevisaoEntrega.Name = "PrevisaoEntrega";
-            PrevisaoEntrega.ReadOnly = true;
-            PrevisaoEntrega.Width = 150;
-            // 
-            // DataEntrada
-            // 
-            DataEntrada.HeaderText = "Data Entrada";
-            DataEntrada.Name = "DataEntrada";
-            DataEntrada.ReadOnly = true;
-            // 
-            // Prioridade
-            // 
-            Prioridade.HeaderText = "Prioridade";
-            Prioridade.Name = "Prioridade";
-            Prioridade.ReadOnly = true;
-            Prioridade.Width = 150;
-            // 
-            // Status
-            // 
-            Status.HeaderText = "Status";
-            Status.Name = "Status";
-            Status.ReadOnly = true;
-            Status.Width = 150;
-            // 
-            // WhatasApp
-            // 
-            WhatasApp.HeaderText = "WhatasApp";
-            WhatasApp.Name = "WhatasApp";
-            WhatasApp.ReadOnly = true;
-            WhatasApp.Width = 150;
-            // 
-            // ValorTotalPagar
-            // 
-            ValorTotalPagar.HeaderText = "Valor Total Pagar";
-            ValorTotalPagar.Name = "ValorTotalPagar";
-            ValorTotalPagar.ReadOnly = true;
-            ValorTotalPagar.Width = 150;
-            // 
-            // FormaPagamento
-            // 
-            FormaPagamento.HeaderText = "Forma  de Pagamento";
-            FormaPagamento.Name = "FormaPagamento";
-            FormaPagamento.ReadOnly = true;
-            FormaPagamento.Width = 200;
-            // 
-            // Atendente
-            // 
-            Atendente.HeaderText = "Atendente";
-            Atendente.Name = "Atendente";
-            Atendente.ReadOnly = true;
-            Atendente.Width = 250;
-            // 
-            // ValorPeca
-            // 
-            ValorPeca.HeaderText = "Valor da Peça";
-            ValorPeca.Name = "ValorPeca";
-            ValorPeca.ReadOnly = true;
             // 
             // label1InfoOperador
             // 
@@ -1417,29 +1056,25 @@
             label1.Text = "Ordem de Serviço";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // label21
             // 
-            label12.Dock = DockStyle.Fill;
-            label12.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(0, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(1111, 100);
-            label12.TabIndex = 1;
-            label12.Text = "Numero OS";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
+            label21.AutoSize = true;
+            label21.Font = new Font("Arial", 9.75F);
+            label21.ForeColor = Color.FromArgb(44, 62, 80);
+            label21.Location = new Point(12, 92);
+            label21.Name = "label21";
+            label21.Size = new Size(101, 16);
+            label21.TabIndex = 163;
+            label21.Text = "Peças Trocadas";
             // 
-            // label13
+            // textPeçaTrocada
             // 
-            label13.Dock = DockStyle.Left;
-            label13.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.White;
-            label13.Location = new Point(0, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(287, 100);
-            label13.TabIndex = 2;
-            label13.Text = "Status :";
-            label13.TextAlign = ContentAlignment.MiddleLeft;
+            textPeçaTrocada.Location = new Point(12, 111);
+            textPeçaTrocada.Multiline = true;
+            textPeçaTrocada.Name = "textPeçaTrocada";
+            textPeçaTrocada.ReadOnly = true;
+            textPeçaTrocada.Size = new Size(302, 29);
+            textPeçaTrocada.TabIndex = 162;
             // 
             // FormOrdemServico
             // 
@@ -1468,9 +1103,7 @@
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
             groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -1493,18 +1126,13 @@
         private TextBox textMarca;
         private TextBox textEquipamento;
         private Label label14;
-        private Label label20;
-        private TextBox textServico;
         private Label label19;
         private TextBox textDiagnostico;
         private Label label18;
         private TextBox textObservacao;
         private Label label17;
         private TextBox textDefeito;
-        private Button button4;
         private Button button5;
-        private Label label21;
-        private TextBox textPeçaTrocada;
         private Label label22;
         private MaskedTextBox textTempoGasto;
         private Label label26;
@@ -1517,7 +1145,6 @@
         private ComboBox comboBoxResTecnico;
         private Panel panel2;
         private GroupBox groupBox3;
-        private DataGridView dataGridView1;
         private GroupBox groupBox4;
         private Label label28;
         private TextBox texteDesconto;
@@ -1527,10 +1154,6 @@
         private Label label30;
         private Panel panel3;
         private Label labelNumeroOS;
-        private TextBox textBuscarOs;
-        private Label labelContadorDados;
-        private TextBox textValor;
-        private Label label33;
         private Label label1InfoOperador;
         private Button button6;
         private ComboBox comboStatus;
@@ -1560,36 +1183,10 @@
         private MaskedTextBox textWhatsApp;
         private MaskedTextBox textCpfCnpl;
         private GroupBox groupBox1;
-        private TextBox textValorPeca;
-        private Label label10;
-        private Button button1;
-        private Label label11;
-        private TextBox textPeca;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn CodigoOs;
-        private DataGridViewTextBoxColumn NomeCliente;
-        private DataGridViewTextBoxColumn CpfCnpj;
-        private DataGridViewTextBoxColumn Telefone;
-        private DataGridViewCheckBoxColumn Garantia;
-        private DataGridViewTextBoxColumn Numero;
-        private DataGridViewTextBoxColumn Servico;
-        private DataGridViewTextBoxColumn Diagnostico;
-        private DataGridViewTextBoxColumn Tecnico;
-        private DataGridViewTextBoxColumn Peça;
-        private DataGridViewTextBoxColumn Defeito;
-        private DataGridViewTextBoxColumn TempoGasto;
-        private DataGridViewTextBoxColumn DataAbertura;
-        private DataGridViewTextBoxColumn PrevisaoEntrega;
-        private DataGridViewTextBoxColumn DataEntrada;
-        private DataGridViewTextBoxColumn Prioridade;
-        private DataGridViewTextBoxColumn Status;
-        private DataGridViewTextBoxColumn WhatasApp;
-        private DataGridViewTextBoxColumn ValorTotalPagar;
-        private DataGridViewTextBoxColumn FormaPagamento;
-        private DataGridViewTextBoxColumn Atendente;
-        private DataGridViewTextBoxColumn ValorPeca;
         private Label label1;
         private Label label12;
         private Label label13;
+        private Label label21;
+        private TextBox textPeçaTrocada;
     }
 }

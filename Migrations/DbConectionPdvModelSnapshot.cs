@@ -22,6 +22,77 @@ namespace ServiTech.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ServiTech.Model.AtividadeEconomica", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AtividadeEconomicas");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.Cargo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cargos");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.CondicaoPagamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Desconto")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("FormaPagamentoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Intervalo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumeroParcela")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TaxaJuros")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FormaPagamentoId");
+
+                    b.ToTable("CondicaoPagamentos");
+                });
+
             modelBuilder.Entity("ServiTech.Model.FormaPagamento", b =>
                 {
                     b.Property<int>("Id")
@@ -91,7 +162,11 @@ namespace ServiTech.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CnpjcPF")
+                    b.Property<string>("CnpjCpf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CodigoBanco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -99,10 +174,10 @@ namespace ServiTech.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DataAtualizacao")
+                    b.Property<DateTime?>("DataAtualizacao")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DataCadastro")
+                    b.Property<DateTime?>("DataCadastro")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -169,7 +244,19 @@ namespace ServiTech.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TipoPessoa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Uf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Whatsapp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WhatsappContato")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -178,7 +265,27 @@ namespace ServiTech.Migrations
                     b.ToTable("Fornecedores");
                 });
 
-            modelBuilder.Entity("ServiTech.Model.Grupo", b =>
+            modelBuilder.Entity("ServiTech.Model.Marca", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Marcas");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelGrupo.Grupo", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -196,6 +303,31 @@ namespace ServiTech.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Grupos");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelGrupo.SubGrupo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("GrupoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GrupoId");
+
+                    b.ToTable("SubGrupos");
                 });
 
             modelBuilder.Entity("ServiTech.Model.ModelLocalidade.Bairro", b =>
@@ -259,6 +391,212 @@ namespace ServiTech.Migrations
                     b.ToTable("Paises");
                 });
 
+            modelBuilder.Entity("ServiTech.Model.ModelTransportadora.Transportadora", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Bairro")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CnpjCpf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CpfMotorista")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataUltimaAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Endereco")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InscricaoEstadual")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InscricaoMunicipal")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Motorista")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomeFantasia")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Observacao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pais")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PlacaVeiculo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RNTRC")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RazaoSocial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Segmento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TelefoneFixo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TipoInscricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TipoModalidadeFrete")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TipoPessoa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TipoTransportadora")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TipoVeiculo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Uf")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UfVeiculo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WhatsApp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Transportadoras");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelTributacao.CFOP", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Codigo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CFOPs");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelTributacao.CSTCSOSN", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Codigo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CSTCSOSNs");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelTributacao.NCM", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Codigo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ncms");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelTributacao.OrigemMercadoria", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Codigo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OrigemMercadorias");
+                });
+
             modelBuilder.Entity("ServiTech.Model.Produto", b =>
                 {
                     b.Property<int>("Id")
@@ -270,46 +608,51 @@ namespace ServiTech.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
-                    b.Property<int>("CEST")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CFOP")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<decimal>("COFINS")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("CSOSN")
+                    b.Property<int?>("CfopId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CodigoBalanca")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CodigoDeBarras")
+                    b.Property<string>("CodigoBarraAlternativo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CodigoInterno")
+                    b.Property<string>("CodigoBarraEAN")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("CodigoInterno")
+                        .HasColumnType("int");
 
                     b.Property<string>("Cor")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("Desconto")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("FornecedorId")
+                    b.Property<int?>("CstId")
                         .HasColumnType("int");
 
-                    b.Property<string>("FotoProduto")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime?>("DataAtualizacao")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int>("GrupoId")
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataValidade")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("FornecedorId")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("FotoProduto")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<int?>("GrupoId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("ICMS")
@@ -318,17 +661,16 @@ namespace ServiTech.Migrations
                     b.Property<decimal>("IPI")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal>("MVA")
+                    b.Property<decimal>("Lucro")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("Marca")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("MarcaFabricanteId")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("MargemLucro")
+                    b.Property<decimal>("Margem")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("NCM")
+                    b.Property<int?>("NcmId")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
@@ -339,11 +681,16 @@ namespace ServiTech.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OrigemMercadoria")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("OrigemMercadoriaId")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("PIS")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("PermitidoDesconto")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("PontoReposicao")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("PrecoCusto")
@@ -352,29 +699,62 @@ namespace ServiTech.Migrations
                     b.Property<decimal>("PrecoVenda")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("SubGrupoId")
+                    b.Property<bool>("ProdutoBalanca")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("QuantidadeEstoque")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("QuantidadeMaxima")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int?>("SubGrupoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Tamanho")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UnidadeMedida")
+                    b.Property<string>("TipoProduto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UltimaCompra")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UnidadeMedidaEntrada")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UnidadeMedidaSaida")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CfopId");
+
+                    b.HasIndex("CodigoBarraEAN")
+                        .IsUnique();
+
+                    b.HasIndex("CstId");
+
                     b.HasIndex("FornecedorId");
 
                     b.HasIndex("GrupoId");
 
+                    b.HasIndex("MarcaFabricanteId");
+
+                    b.HasIndex("NcmId");
+
+                    b.HasIndex("OrigemMercadoriaId");
+
                     b.HasIndex("SubGrupoId");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Produto");
                 });
 
-            modelBuilder.Entity("ServiTech.Model.SubGrupo", b =>
+            modelBuilder.Entity("ServiTech.Model.Servico", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -385,8 +765,25 @@ namespace ServiTech.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
-                    b.Property<int>("GrupoId")
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Preco")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Servicos");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.UnidadeMedida", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -394,9 +791,29 @@ namespace ServiTech.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GrupoId");
+                    b.ToTable("UnidadeMedidas");
+                });
 
-                    b.ToTable("SubGrupos");
+            modelBuilder.Entity("ServiTech.Model.CondicaoPagamento", b =>
+                {
+                    b.HasOne("ServiTech.Model.FormaPagamento", "FormaPagamento")
+                        .WithMany()
+                        .HasForeignKey("FormaPagamentoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("FormaPagamento");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelGrupo.SubGrupo", b =>
+                {
+                    b.HasOne("ServiTech.Model.ModelGrupo.Grupo", "Grupo")
+                        .WithMany("subgrupo")
+                        .HasForeignKey("GrupoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Grupo");
                 });
 
             modelBuilder.Entity("ServiTech.Model.ModelLocalidade.Bairro", b =>
@@ -423,40 +840,56 @@ namespace ServiTech.Migrations
 
             modelBuilder.Entity("ServiTech.Model.Produto", b =>
                 {
+                    b.HasOne("ServiTech.Model.ModelTributacao.CFOP", "CFOP")
+                        .WithMany()
+                        .HasForeignKey("CfopId");
+
+                    b.HasOne("ServiTech.Model.ModelTributacao.CSTCSOSN", "CSTCSOSN")
+                        .WithMany()
+                        .HasForeignKey("CstId");
+
                     b.HasOne("ServiTech.Model.Fornecedor", "Fornecedor")
                         .WithMany("Produtos")
                         .HasForeignKey("FornecedorId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("ServiTech.Model.Grupo", "Grupo")
-                        .WithMany("Produtos")
+                    b.HasOne("ServiTech.Model.ModelGrupo.Grupo", "Grupo")
+                        .WithMany("produto")
                         .HasForeignKey("GrupoId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("ServiTech.Model.SubGrupo", "SubGrupo")
+                    b.HasOne("ServiTech.Model.Marca", "Marca")
+                        .WithMany()
+                        .HasForeignKey("MarcaFabricanteId");
+
+                    b.HasOne("ServiTech.Model.ModelTributacao.NCM", "Ncm")
+                        .WithMany()
+                        .HasForeignKey("NcmId");
+
+                    b.HasOne("ServiTech.Model.ModelTributacao.OrigemMercadoria", "OrigemMercadoria")
+                        .WithMany()
+                        .HasForeignKey("OrigemMercadoriaId");
+
+                    b.HasOne("ServiTech.Model.ModelGrupo.SubGrupo", "SubGrupo")
                         .WithMany("Produtos")
                         .HasForeignKey("SubGrupoId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("CFOP");
+
+                    b.Navigation("CSTCSOSN");
 
                     b.Navigation("Fornecedor");
 
                     b.Navigation("Grupo");
 
+                    b.Navigation("Marca");
+
+                    b.Navigation("Ncm");
+
+                    b.Navigation("OrigemMercadoria");
+
                     b.Navigation("SubGrupo");
-                });
-
-            modelBuilder.Entity("ServiTech.Model.SubGrupo", b =>
-                {
-                    b.HasOne("ServiTech.Model.Grupo", "Grupo")
-                        .WithMany("SubGrupos")
-                        .HasForeignKey("GrupoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Grupo");
                 });
 
             modelBuilder.Entity("ServiTech.Model.Fornecedor", b =>
@@ -464,21 +897,21 @@ namespace ServiTech.Migrations
                     b.Navigation("Produtos");
                 });
 
-            modelBuilder.Entity("ServiTech.Model.Grupo", b =>
+            modelBuilder.Entity("ServiTech.Model.ModelGrupo.Grupo", b =>
+                {
+                    b.Navigation("produto");
+
+                    b.Navigation("subgrupo");
+                });
+
+            modelBuilder.Entity("ServiTech.Model.ModelGrupo.SubGrupo", b =>
                 {
                     b.Navigation("Produtos");
-
-                    b.Navigation("SubGrupos");
                 });
 
             modelBuilder.Entity("ServiTech.Model.ModelLocalidade.Cidade", b =>
                 {
                     b.Navigation("Bairros");
-                });
-
-            modelBuilder.Entity("ServiTech.Model.SubGrupo", b =>
-                {
-                    b.Navigation("Produtos");
                 });
 #pragma warning restore 612, 618
         }

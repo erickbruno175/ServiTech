@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarCliente));
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            tabCadastro = new TabPage();
             groupBox6 = new GroupBox();
             textBox4 = new TextBox();
             label21 = new Label();
@@ -47,7 +47,6 @@
             label27 = new Label();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnCancelar = new Button();
             btnGravar = new Button();
             groupBox4 = new GroupBox();
             textMotivo = new TextBox();
@@ -109,28 +108,12 @@
             radioButtonPessoaFisica = new RadioButton();
             textCod = new TextBox();
             label1 = new Label();
-            tabPage2 = new TabPage();
+            tabConsultas = new TabPage();
             panel3 = new Panel();
+            bntNovo = new Button();
             btnEditar = new Button();
             btnExcluir = new Button();
             panel2 = new Panel();
-            tabelaCliente = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            Nome = new DataGridViewTextBoxColumn();
-            CpfCnpj = new DataGridViewTextBoxColumn();
-            TelCliente = new DataGridViewTextBoxColumn();
-            Whatsapp = new DataGridViewTextBoxColumn();
-            Uf = new DataGridViewTextBoxColumn();
-            Cidade = new DataGridViewTextBoxColumn();
-            Bairro = new DataGridViewTextBoxColumn();
-            Ativo = new DataGridViewCheckBoxColumn();
-            DataCriacao = new DataGridViewTextBoxColumn();
-            UltimaAtualizacao = new DataGridViewTextBoxColumn();
-            NomeFantasia = new DataGridViewTextBoxColumn();
-            LimiteCredito = new DataGridViewTextBoxColumn();
-            ContatoComercial = new DataGridViewTextBoxColumn();
-            ObservacaoGeral = new DataGridViewTextBoxColumn();
-            Bloqueado = new DataGridViewCheckBoxColumn();
             groupBox5 = new GroupBox();
             btnPesquisar = new Button();
             label17 = new Label();
@@ -141,7 +124,7 @@
             label2 = new Label();
             comboFiltros = new ComboBox();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabCadastro.SuspendLayout();
             groupBox6.SuspendLayout();
             panel1.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -149,17 +132,15 @@
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
-            tabPage2.SuspendLayout();
+            tabConsultas.SuspendLayout();
             panel3.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)tabelaCliente).BeginInit();
             groupBox5.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabCadastro);
+            tabControl1.Controls.Add(tabConsultas);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
@@ -167,20 +148,20 @@
             tabControl1.Size = new Size(1192, 767);
             tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabCadastro
             // 
-            tabPage1.BorderStyle = BorderStyle.Fixed3D;
-            tabPage1.Controls.Add(groupBox6);
-            tabPage1.Controls.Add(panel1);
-            tabPage1.Controls.Add(groupBox4);
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1184, 739);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Cadastro";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabCadastro.BorderStyle = BorderStyle.Fixed3D;
+            tabCadastro.Controls.Add(groupBox6);
+            tabCadastro.Controls.Add(panel1);
+            tabCadastro.Controls.Add(groupBox4);
+            tabCadastro.Controls.Add(groupBox1);
+            tabCadastro.Location = new Point(4, 24);
+            tabCadastro.Name = "tabCadastro";
+            tabCadastro.Padding = new Padding(3);
+            tabCadastro.Size = new Size(1184, 739);
+            tabCadastro.TabIndex = 0;
+            tabCadastro.Text = "Cadastro";
+            tabCadastro.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -346,7 +327,6 @@
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(3, 681);
@@ -365,17 +345,6 @@
             btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNovo.UseVisualStyleBackColor = true;
             btnNovo.Click += LiberararCamposParaNovoCadastro_Click;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(189, 8);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 17;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnGravar
             // 
@@ -1069,46 +1038,58 @@
             label1.TabIndex = 0;
             label1.Text = "Codigo";
             // 
-            // tabPage2
+            // tabConsultas
             // 
-            tabPage2.BorderStyle = BorderStyle.Fixed3D;
-            tabPage2.Controls.Add(panel3);
-            tabPage2.Controls.Add(panel2);
-            tabPage2.Controls.Add(groupBox5);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1184, 739);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Consultas";
-            tabPage2.UseVisualStyleBackColor = true;
+            tabConsultas.BorderStyle = BorderStyle.Fixed3D;
+            tabConsultas.Controls.Add(panel3);
+            tabConsultas.Controls.Add(panel2);
+            tabConsultas.Controls.Add(groupBox5);
+            tabConsultas.Location = new Point(4, 24);
+            tabConsultas.Name = "tabConsultas";
+            tabConsultas.Padding = new Padding(3);
+            tabConsultas.Size = new Size(1184, 739);
+            tabConsultas.TabIndex = 1;
+            tabConsultas.Text = "Consultas";
+            tabConsultas.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
             panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(bntNovo);
             panel3.Controls.Add(btnEditar);
             panel3.Controls.Add(btnExcluir);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(3, 664);
+            panel3.Location = new Point(3, 681);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1174, 68);
+            panel3.Size = new Size(1174, 51);
             panel3.TabIndex = 11;
+            // 
+            // bntNovo
+            // 
+            bntNovo.Image = Properties.Resources.plus;
+            bntNovo.Location = new Point(265, 6);
+            bntNovo.Name = "bntNovo";
+            bntNovo.Size = new Size(101, 40);
+            bntNovo.TabIndex = 27;
+            bntNovo.Text = " Novo";
+            bntNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            bntNovo.UseVisualStyleBackColor = true;
             // 
             // btnEditar
             // 
-            btnEditar.Image = Properties.Resources.novo;
-            btnEditar.Location = new Point(4, 14);
+            btnEditar.Image = Properties.Resources.marca_de_verificacao;
+            btnEditar.Location = new Point(139, 6);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(128, 40);
-            btnEditar.TabIndex = 8;
-            btnEditar.Text = "Editar";
+            btnEditar.Size = new Size(120, 40);
+            btnEditar.TabIndex = 18;
+            btnEditar.Text = "Selecionar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
             // 
             // btnExcluir
             // 
             btnExcluir.Image = Properties.Resources.lixeira;
-            btnExcluir.Location = new Point(138, 14);
+            btnExcluir.Location = new Point(4, 6);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(129, 40);
             btnExcluir.TabIndex = 8;
@@ -1118,134 +1099,13 @@
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.AutoScroll = true;
             panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(tabelaCliente);
-            panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(3, 105);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1174, 627);
+            panel2.Size = new Size(1174, 554);
             panel2.TabIndex = 1;
-            // 
-            // tabelaCliente
-            // 
-            tabelaCliente.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            tabelaCliente.BackgroundColor = Color.White;
-            tabelaCliente.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            tabelaCliente.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nome, CpfCnpj, TelCliente, Whatsapp, Uf, Cidade, Bairro, Ativo, DataCriacao, UltimaAtualizacao, NomeFantasia, LimiteCredito, ContatoComercial, ObservacaoGeral, Bloqueado });
-            tabelaCliente.EditMode = DataGridViewEditMode.EditOnF2;
-            tabelaCliente.Location = new Point(2, 0);
-            tabelaCliente.Name = "tabelaCliente";
-            tabelaCliente.ReadOnly = true;
-            tabelaCliente.Size = new Size(1170, 551);
-            tabelaCliente.TabIndex = 3;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            Codigo.Width = 80;
-            // 
-            // Nome
-            // 
-            Nome.HeaderText = "Nome";
-            Nome.Name = "Nome";
-            Nome.ReadOnly = true;
-            Nome.Width = 400;
-            // 
-            // CpfCnpj
-            // 
-            CpfCnpj.HeaderText = "Cpf/Cnpj";
-            CpfCnpj.Name = "CpfCnpj";
-            CpfCnpj.ReadOnly = true;
-            CpfCnpj.Width = 200;
-            // 
-            // TelCliente
-            // 
-            TelCliente.HeaderText = "Tel";
-            TelCliente.Name = "TelCliente";
-            TelCliente.ReadOnly = true;
-            TelCliente.Width = 200;
-            // 
-            // Whatsapp
-            // 
-            Whatsapp.HeaderText = "Whatsapp";
-            Whatsapp.Name = "Whatsapp";
-            Whatsapp.ReadOnly = true;
-            Whatsapp.Width = 200;
-            // 
-            // Uf
-            // 
-            Uf.HeaderText = "Uf";
-            Uf.Name = "Uf";
-            Uf.ReadOnly = true;
-            Uf.Width = 200;
-            // 
-            // Cidade
-            // 
-            Cidade.HeaderText = "Cidade";
-            Cidade.Name = "Cidade";
-            Cidade.ReadOnly = true;
-            Cidade.Width = 200;
-            // 
-            // Bairro
-            // 
-            Bairro.HeaderText = "Bairro";
-            Bairro.Name = "Bairro";
-            Bairro.ReadOnly = true;
-            Bairro.Width = 250;
-            // 
-            // Ativo
-            // 
-            Ativo.HeaderText = "Ativo";
-            Ativo.Name = "Ativo";
-            Ativo.ReadOnly = true;
-            Ativo.Width = 50;
-            // 
-            // DataCriacao
-            // 
-            DataCriacao.HeaderText = "Data de Criação";
-            DataCriacao.Name = "DataCriacao";
-            DataCriacao.ReadOnly = true;
-            DataCriacao.Width = 250;
-            // 
-            // UltimaAtualizacao
-            // 
-            UltimaAtualizacao.HeaderText = "Ultima Atulização";
-            UltimaAtualizacao.Name = "UltimaAtualizacao";
-            UltimaAtualizacao.ReadOnly = true;
-            UltimaAtualizacao.Width = 250;
-            // 
-            // NomeFantasia
-            // 
-            NomeFantasia.HeaderText = "Nome Fantasia";
-            NomeFantasia.Name = "NomeFantasia";
-            NomeFantasia.ReadOnly = true;
-            // 
-            // LimiteCredito
-            // 
-            LimiteCredito.HeaderText = "Limite de Credito";
-            LimiteCredito.Name = "LimiteCredito";
-            LimiteCredito.ReadOnly = true;
-            // 
-            // ContatoComercial
-            // 
-            ContatoComercial.HeaderText = "Contato Comercial";
-            ContatoComercial.Name = "ContatoComercial";
-            ContatoComercial.ReadOnly = true;
-            // 
-            // ObservacaoGeral
-            // 
-            ObservacaoGeral.HeaderText = "Observação Geral";
-            ObservacaoGeral.Name = "ObservacaoGeral";
-            ObservacaoGeral.ReadOnly = true;
-            // 
-            // Bloqueado
-            // 
-            Bloqueado.HeaderText = "Bloqueado ";
-            Bloqueado.Name = "Bloqueado";
-            Bloqueado.ReadOnly = true;
             // 
             // groupBox5
             // 
@@ -1360,7 +1220,7 @@
             Load += CadastrarCliente_Load;
             KeyDown += LiberararCamposParaNovoCadastro_KeyDown;
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
+            tabCadastro.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
             panel1.ResumeLayout(false);
@@ -1371,10 +1231,8 @@
             groupBox1.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
+            tabConsultas.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)tabelaCliente).EndInit();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             ResumeLayout(false);
@@ -1383,8 +1241,8 @@
         #endregion
 
         private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
+        private TabPage tabCadastro;
+        private TabPage tabConsultas;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private RadioButton radioButtonPessaoJuridica;
@@ -1433,23 +1291,9 @@
         private Button btnPesquisar;
         private Label label19;
         private MaskedTextBox textDataCadastro;
-        private Button btnEditar;
         private Panel panel1;
         private Panel panel3;
-        private DataGridView tabelaCliente;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn Nome;
-        private DataGridViewTextBoxColumn CpfCnpj;
-        private DataGridViewTextBoxColumn TelCliente;
-        private DataGridViewTextBoxColumn Whatsapp;
-        private DataGridViewTextBoxColumn Uf;
-        private DataGridViewTextBoxColumn Cidade;
-        private DataGridViewTextBoxColumn Bairro;
-        private DataGridViewCheckBoxColumn Ativo;
-        private DataGridViewTextBoxColumn DataCriacao;
-        private DataGridViewTextBoxColumn UltimaAtualizacao;
         private Button btnNovo;
-        private Button btnCancelar;
         private Button btnGravar;
         private GroupBox groupBox6;
         private Label label14;
@@ -1480,11 +1324,6 @@
         private MaskedTextBox textRgContato;
         private Label label29;
         private MaskedTextBox textCpfContato;
-        private DataGridViewTextBoxColumn NomeFantasia;
-        private DataGridViewTextBoxColumn LimiteCredito;
-        private DataGridViewTextBoxColumn ContatoComercial;
-        private DataGridViewTextBoxColumn ObservacaoGeral;
-        private DataGridViewCheckBoxColumn Bloqueado;
         private GroupBox groupBox7;
         private RadioButton radioBloqueadoNao;
         private RadioButton radioBloqueadoSim;
@@ -1493,5 +1332,7 @@
         private TextBox textCod;
         private Label label1;
         private ComboBox comboBoxUf;
+        private Button btnEditar;
+        private Button bntNovo;
     }
 }

@@ -29,9 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarFornecedor));
-            tabControl1 = new TabControl();
-            tabPage2 = new TabPage();
+            tabControl = new TabControl();
+            tabCadastro = new TabPage();
             groupBox1 = new GroupBox();
+            comboBoxCargoContato = new ComboBox();
+            comboBoxAtividade = new ComboBox();
+            label35 = new Label();
+            textTipoPessoa = new TextBox();
+            textConta = new TextBox();
+            label34 = new Label();
+            label30 = new Label();
+            textUltimaAtualizacao = new MaskedTextBox();
             comboPaises = new ComboBox();
             comboCidades = new ComboBox();
             comboBairros = new ComboBox();
@@ -64,12 +72,9 @@
             textWhatsAppContato = new MaskedTextBox();
             label14 = new Label();
             textTelContato = new MaskedTextBox();
-            btnBuscaBairro = new Button();
-            textBox2 = new TextBox();
             label11 = new Label();
-            textBox1 = new TextBox();
+            textNomeContato = new TextBox();
             label10 = new Label();
-            textRamoAtividade = new TextBox();
             label18 = new Label();
             comboTipoFornecedor = new ComboBox();
             label16 = new Label();
@@ -80,8 +85,7 @@
             label7 = new Label();
             textTelefoneFixo = new MaskedTextBox();
             groupBox3 = new GroupBox();
-            radioButtonAtivoNao = new RadioButton();
-            radioButtonAtivoSim = new RadioButton();
+            checkedAtivo = new CheckBox();
             label5 = new Label();
             comboTipoInscricao = new ComboBox();
             label4 = new Label();
@@ -101,91 +105,94 @@
             label1 = new Label();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnCancelar = new Button();
             btnGravar = new Button();
-            btnSair = new Button();
-            tabPage3 = new TabPage();
+            tabConsultas = new TabPage();
             panel2 = new Panel();
-            dataGridView1 = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            CnpjCpf = new DataGridViewTextBoxColumn();
-            RazaoSocial = new DataGridViewTextBoxColumn();
-            NomeFantasia = new DataGridViewTextBoxColumn();
-            IncriMunicipal = new DataGridViewTextBoxColumn();
-            InscrEstadual = new DataGridViewTextBoxColumn();
-            TipoIncri = new DataGridViewTextBoxColumn();
-            TelFixo = new DataGridViewTextBoxColumn();
-            Whatssap = new DataGridViewTextBoxColumn();
-            Email = new DataGridViewTextBoxColumn();
-            TipoFornecedor = new DataGridViewTextBoxColumn();
-            Ativo = new DataGridViewCheckBoxColumn();
-            NomeContato = new DataGridViewTextBoxColumn();
-            TelContato = new DataGridViewTextBoxColumn();
-            EmailContato = new DataGridViewTextBoxColumn();
-            WhatsSapContato = new DataGridViewTextBoxColumn();
-            Endreco = new DataGridViewTextBoxColumn();
-            Bairro = new DataGridViewTextBoxColumn();
-            Uf = new DataGridViewTextBoxColumn();
-            Cidade = new DataGridViewTextBoxColumn();
-            Pais = new DataGridViewTextBoxColumn();
-            NomeBanco = new DataGridViewTextBoxColumn();
-            CodigoBanco = new DataGridViewTextBoxColumn();
-            CodigoAgencia = new DataGridViewTextBoxColumn();
-            TipoConta = new DataGridViewTextBoxColumn();
-            TitularConta = new DataGridViewTextBoxColumn();
-            Pix = new DataGridViewTextBoxColumn();
-            Obeservacao = new DataGridViewTextBoxColumn();
+            labelTotalRegistro = new Label();
+            gridFornecedores = new DataGridView();
             panel3 = new Panel();
+            bntNovo = new Button();
             btnEditar = new Button();
             btnExcluir = new Button();
             btnImprimir = new Button();
             groupBox7 = new GroupBox();
-            checkBoxCarregarTodos = new CheckBox();
-            btnBuscar = new Button();
+            labelTotalRegitros = new Label();
+            textDadoPesquisa = new TextBox();
             label24 = new Label();
             comboModelo = new ComboBox();
-            textDadoPesquisa = new TextBox();
             label25 = new Label();
             label27 = new Label();
             comboFiltros = new ComboBox();
-            tabControl1.SuspendLayout();
-            tabPage2.SuspendLayout();
+            label45 = new Label();
+            label36 = new Label();
+            label37 = new Label();
+            label38 = new Label();
+            label39 = new Label();
+            label40 = new Label();
+            label41 = new Label();
+            label42 = new Label();
+            label43 = new Label();
+            label44 = new Label();
+            label46 = new Label();
+            label47 = new Label();
+            tabControl.SuspendLayout();
+            tabCadastro.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
-            tabPage3.SuspendLayout();
+            tabConsultas.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gridFornecedores).BeginInit();
             panel3.SuspendLayout();
             groupBox7.SuspendLayout();
             SuspendLayout();
             // 
-            // tabControl1
+            // tabControl
             // 
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage3);
-            tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(0, 0);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1403, 688);
-            tabControl1.TabIndex = 0;
+            tabControl.Controls.Add(tabCadastro);
+            tabControl.Controls.Add(tabConsultas);
+            tabControl.Dock = DockStyle.Fill;
+            tabControl.Location = new Point(0, 0);
+            tabControl.Name = "tabControl";
+            tabControl.SelectedIndex = 0;
+            tabControl.Size = new Size(1597, 688);
+            tabControl.TabIndex = 0;
             // 
-            // tabPage2
+            // tabCadastro
             // 
-            tabPage2.Controls.Add(groupBox1);
-            tabPage2.Controls.Add(panel1);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1395, 660);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Cadastrar";
-            tabPage2.UseVisualStyleBackColor = true;
+            tabCadastro.Controls.Add(groupBox1);
+            tabCadastro.Controls.Add(panel1);
+            tabCadastro.Location = new Point(4, 24);
+            tabCadastro.Name = "tabCadastro";
+            tabCadastro.Padding = new Padding(3);
+            tabCadastro.Size = new Size(1589, 660);
+            tabCadastro.TabIndex = 1;
+            tabCadastro.Text = "Cadastrar";
+            tabCadastro.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label47);
+            groupBox1.Controls.Add(label46);
+            groupBox1.Controls.Add(label44);
+            groupBox1.Controls.Add(label43);
+            groupBox1.Controls.Add(label42);
+            groupBox1.Controls.Add(label41);
+            groupBox1.Controls.Add(label40);
+            groupBox1.Controls.Add(label39);
+            groupBox1.Controls.Add(label38);
+            groupBox1.Controls.Add(label37);
+            groupBox1.Controls.Add(label36);
+            groupBox1.Controls.Add(label45);
+            groupBox1.Controls.Add(comboBoxCargoContato);
+            groupBox1.Controls.Add(comboBoxAtividade);
+            groupBox1.Controls.Add(label35);
+            groupBox1.Controls.Add(textTipoPessoa);
+            groupBox1.Controls.Add(textConta);
+            groupBox1.Controls.Add(label34);
+            groupBox1.Controls.Add(label30);
+            groupBox1.Controls.Add(textUltimaAtualizacao);
             groupBox1.Controls.Add(comboPaises);
             groupBox1.Controls.Add(comboCidades);
             groupBox1.Controls.Add(comboBairros);
@@ -218,12 +225,9 @@
             groupBox1.Controls.Add(textWhatsAppContato);
             groupBox1.Controls.Add(label14);
             groupBox1.Controls.Add(textTelContato);
-            groupBox1.Controls.Add(btnBuscaBairro);
-            groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label11);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(textNomeContato);
             groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(textRamoAtividade);
             groupBox1.Controls.Add(label18);
             groupBox1.Controls.Add(comboTipoFornecedor);
             groupBox1.Controls.Add(label16);
@@ -252,13 +256,91 @@
             groupBox1.Dock = DockStyle.Top;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1389, 592);
+            groupBox1.Size = new Size(1583, 486);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
             // 
+            // comboBoxCargoContato
+            // 
+            comboBoxCargoContato.Enabled = false;
+            comboBoxCargoContato.FormattingEnabled = true;
+            comboBoxCargoContato.Location = new Point(370, 166);
+            comboBoxCargoContato.Name = "comboBoxCargoContato";
+            comboBoxCargoContato.Size = new Size(250, 23);
+            comboBoxCargoContato.TabIndex = 207;
+            // 
+            // comboBoxAtividade
+            // 
+            comboBoxAtividade.Enabled = false;
+            comboBoxAtividade.FormattingEnabled = true;
+            comboBoxAtividade.Location = new Point(113, 107);
+            comboBoxAtividade.Name = "comboBoxAtividade";
+            comboBoxAtividade.Size = new Size(193, 23);
+            comboBoxAtividade.TabIndex = 206;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Arial", 9.75F);
+            label35.ForeColor = Color.FromArgb(44, 62, 80);
+            label35.Location = new Point(466, 33);
+            label35.Name = "label35";
+            label35.Size = new Size(97, 16);
+            label35.TabIndex = 205;
+            label35.Text = "Tipo de Pessoa";
+            // 
+            // textTipoPessoa
+            // 
+            textTipoPessoa.Location = new Point(466, 53);
+            textTipoPessoa.Name = "textTipoPessoa";
+            textTipoPessoa.ReadOnly = true;
+            textTipoPessoa.Size = new Size(177, 23);
+            textTipoPessoa.TabIndex = 204;
+            // 
+            // textConta
+            // 
+            textConta.Location = new Point(501, 277);
+            textConta.Name = "textConta";
+            textConta.ReadOnly = true;
+            textConta.Size = new Size(145, 23);
+            textConta.TabIndex = 203;
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Font = new Font("Arial", 9.75F);
+            label34.ForeColor = Color.FromArgb(44, 62, 80);
+            label34.Location = new Point(501, 257);
+            label34.Name = "label34";
+            label34.Size = new Size(41, 16);
+            label34.TabIndex = 202;
+            label34.Text = "Conta";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Arial", 9.75F);
+            label30.ForeColor = Color.FromArgb(44, 62, 80);
+            label30.Location = new Point(594, 310);
+            label30.Name = "label30";
+            label30.Size = new Size(115, 16);
+            label30.TabIndex = 201;
+            label30.Text = "Ultima Atualização";
+            // 
+            // textUltimaAtualizacao
+            // 
+            textUltimaAtualizacao.Location = new Point(594, 329);
+            textUltimaAtualizacao.Mask = "00/00/0000";
+            textUltimaAtualizacao.Name = "textUltimaAtualizacao";
+            textUltimaAtualizacao.ReadOnly = true;
+            textUltimaAtualizacao.Size = new Size(168, 23);
+            textUltimaAtualizacao.TabIndex = 200;
+            textUltimaAtualizacao.ValidatingType = typeof(DateTime);
+            // 
             // comboPaises
             // 
+            comboPaises.Enabled = false;
             comboPaises.FormattingEnabled = true;
             comboPaises.Location = new Point(935, 218);
             comboPaises.Name = "comboPaises";
@@ -268,14 +350,17 @@
             // 
             // comboCidades
             // 
+            comboCidades.Enabled = false;
             comboCidades.FormattingEnabled = true;
             comboCidades.Location = new Point(651, 218);
             comboCidades.Name = "comboCidades";
             comboCidades.Size = new Size(278, 23);
             comboCidades.TabIndex = 198;
+            comboCidades.SelectedIndexChanged += comboCidades_SelectedIndexChanged;
             // 
             // comboBairros
             // 
+            comboBairros.Enabled = false;
             comboBairros.FormattingEnabled = true;
             comboBairros.Location = new Point(310, 218);
             comboBairros.Name = "comboBairros";
@@ -308,7 +393,7 @@
             label32.AutoSize = true;
             label32.Font = new Font("Arial", 9.75F);
             label32.ForeColor = Color.FromArgb(44, 62, 80);
-            label32.Location = new Point(7, 374);
+            label32.Location = new Point(6, 366);
             label32.Name = "label32";
             label32.Size = new Size(75, 16);
             label32.TabIndex = 194;
@@ -316,11 +401,11 @@
             // 
             // textObservacao
             // 
-            textObservacao.Location = new Point(7, 408);
+            textObservacao.Location = new Point(6, 385);
             textObservacao.Multiline = true;
             textObservacao.Name = "textObservacao";
             textObservacao.ReadOnly = true;
-            textObservacao.Size = new Size(767, 178);
+            textObservacao.Size = new Size(407, 24);
             textObservacao.TabIndex = 193;
             // 
             // label31
@@ -347,7 +432,7 @@
             label29.AutoSize = true;
             label29.Font = new Font("Arial", 9.75F);
             label29.ForeColor = Color.FromArgb(44, 62, 80);
-            label29.Location = new Point(501, 258);
+            label29.Location = new Point(652, 258);
             label29.Name = "label29";
             label29.Size = new Size(87, 16);
             label29.TabIndex = 188;
@@ -358,7 +443,7 @@
             comboBoxTipoConta.Enabled = false;
             comboBoxTipoConta.FormattingEnabled = true;
             comboBoxTipoConta.Items.AddRange(new object[] { "Conta Corrente", "Conta Poupança", "Conta Salário", "Conta Pagamento (contas digitais/fintechs)", "Conta Conjunta", "Conta Universitária", "Conta Investimento" });
-            comboBoxTipoConta.Location = new Point(501, 277);
+            comboBoxTipoConta.Location = new Point(652, 277);
             comboBoxTipoConta.Name = "comboBoxTipoConta";
             comboBoxTipoConta.Size = new Size(238, 23);
             comboBoxTipoConta.TabIndex = 187;
@@ -574,47 +659,24 @@
             textTelContato.Size = new Size(148, 23);
             textTelContato.TabIndex = 160;
             // 
-            // btnBuscaBairro
-            // 
-            btnBuscaBairro.BackColor = Color.Transparent;
-            btnBuscaBairro.Enabled = false;
-            btnBuscaBairro.FlatAppearance.BorderSize = 0;
-            btnBuscaBairro.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaBairro.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaBairro.FlatStyle = FlatStyle.Flat;
-            btnBuscaBairro.Image = Properties.Resources.lupa;
-            btnBuscaBairro.Location = new Point(594, 166);
-            btnBuscaBairro.Name = "btnBuscaBairro";
-            btnBuscaBairro.Size = new Size(26, 23);
-            btnBuscaBairro.TabIndex = 159;
-            btnBuscaBairro.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(297, 166);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(291, 23);
-            textBox2.TabIndex = 158;
-            // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Arial", 9.75F);
             label11.ForeColor = Color.FromArgb(44, 62, 80);
-            label11.Location = new Point(297, 146);
+            label11.Location = new Point(370, 148);
             label11.Name = "label11";
             label11.Size = new Size(108, 16);
             label11.TabIndex = 157;
             label11.Text = "Cargo do Contato";
             // 
-            // textBox1
+            // textNomeContato
             // 
-            textBox1.Location = new Point(6, 166);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(276, 23);
-            textBox1.TabIndex = 156;
+            textNomeContato.Location = new Point(6, 166);
+            textNomeContato.Name = "textNomeContato";
+            textNomeContato.ReadOnly = true;
+            textNomeContato.Size = new Size(358, 23);
+            textNomeContato.TabIndex = 156;
             // 
             // label10
             // 
@@ -627,24 +689,16 @@
             label10.TabIndex = 155;
             label10.Text = "Nome do Contato";
             // 
-            // textRamoAtividade
-            // 
-            textRamoAtividade.Location = new Point(120, 106);
-            textRamoAtividade.Name = "textRamoAtividade";
-            textRamoAtividade.ReadOnly = true;
-            textRamoAtividade.Size = new Size(186, 23);
-            textRamoAtividade.TabIndex = 154;
-            // 
             // label18
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Arial", 9.75F);
             label18.ForeColor = Color.FromArgb(44, 62, 80);
-            label18.Location = new Point(120, 86);
+            label18.Location = new Point(113, 86);
             label18.Name = "label18";
-            label18.Size = new Size(118, 16);
+            label18.Size = new Size(59, 16);
             label18.TabIndex = 153;
-            label18.Text = "[Ramo de Atividade";
+            label18.Text = "Atividade";
             // 
             // comboTipoFornecedor
             // 
@@ -661,7 +715,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Arial", 9.75F);
             label16.ForeColor = Color.FromArgb(44, 62, 80);
-            label16.Location = new Point(935, 84);
+            label16.Location = new Point(935, 83);
             label16.Name = "label16";
             label16.Size = new Size(118, 16);
             label16.TabIndex = 150;
@@ -720,7 +774,7 @@
             // textTelefoneFixo
             // 
             textTelefoneFixo.Location = new Point(312, 106);
-            textTelefoneFixo.Mask = "(00) 00000-0000";
+            textTelefoneFixo.Mask = "(00) 0000-0000";
             textTelefoneFixo.Name = "textTelefoneFixo";
             textTelefoneFixo.ReadOnly = true;
             textTelefoneFixo.Size = new Size(148, 23);
@@ -729,38 +783,28 @@
             // groupBox3
             // 
             groupBox3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            groupBox3.Controls.Add(radioButtonAtivoNao);
-            groupBox3.Controls.Add(radioButtonAtivoSim);
+            groupBox3.Controls.Add(checkedAtivo);
             groupBox3.Font = new Font("Arial", 9.75F);
             groupBox3.ForeColor = Color.FromArgb(44, 62, 80);
             groupBox3.Location = new Point(1143, 87);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(156, 44);
+            groupBox3.Size = new Size(70, 57);
             groupBox3.TabIndex = 129;
             groupBox3.TabStop = false;
             groupBox3.Text = "Ativo ?";
             // 
-            // radioButtonAtivoNao
+            // checkedAtivo
             // 
-            radioButtonAtivoNao.Enabled = false;
-            radioButtonAtivoNao.Location = new Point(91, 22);
-            radioButtonAtivoNao.Name = "radioButtonAtivoNao";
-            radioButtonAtivoNao.Size = new Size(53, 22);
-            radioButtonAtivoNao.TabIndex = 4;
-            radioButtonAtivoNao.TabStop = true;
-            radioButtonAtivoNao.Text = "Não";
-            radioButtonAtivoNao.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonAtivoSim
-            // 
-            radioButtonAtivoSim.Enabled = false;
-            radioButtonAtivoSim.Location = new Point(31, 21);
-            radioButtonAtivoSim.Name = "radioButtonAtivoSim";
-            radioButtonAtivoSim.Size = new Size(54, 24);
-            radioButtonAtivoSim.TabIndex = 3;
-            radioButtonAtivoSim.TabStop = true;
-            radioButtonAtivoSim.Text = "Sim";
-            radioButtonAtivoSim.UseVisualStyleBackColor = true;
+            checkedAtivo.AutoSize = true;
+            checkedAtivo.Checked = true;
+            checkedAtivo.CheckState = CheckState.Checked;
+            checkedAtivo.Enabled = false;
+            checkedAtivo.Location = new Point(8, 21);
+            checkedAtivo.Name = "checkedAtivo";
+            checkedAtivo.Size = new Size(49, 20);
+            checkedAtivo.TabIndex = 204;
+            checkedAtivo.Text = "Sim";
+            checkedAtivo.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -788,7 +832,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9.75F);
             label4.ForeColor = Color.FromArgb(44, 62, 80);
-            label4.Location = new Point(1245, 33);
+            label4.Location = new Point(1388, 37);
             label4.Name = "label4";
             label4.Size = new Size(101, 16);
             label4.TabIndex = 126;
@@ -799,7 +843,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9.75F);
             label3.ForeColor = Color.FromArgb(44, 62, 80);
-            label3.Location = new Point(1103, 33);
+            label3.Location = new Point(1208, 34);
             label3.Name = "label3";
             label3.Size = new Size(97, 16);
             label3.TabIndex = 125;
@@ -807,23 +851,23 @@
             // 
             // textInscriMunicipal
             // 
-            textInscriMunicipal.Location = new Point(1245, 52);
+            textInscriMunicipal.Location = new Point(1388, 53);
             textInscriMunicipal.Name = "textInscriMunicipal";
             textInscriMunicipal.ReadOnly = true;
-            textInscriMunicipal.Size = new Size(135, 23);
+            textInscriMunicipal.Size = new Size(174, 23);
             textInscriMunicipal.TabIndex = 124;
             // 
             // textInscriEstadual
             // 
-            textInscriEstadual.Location = new Point(1103, 52);
+            textInscriEstadual.Location = new Point(1208, 53);
             textInscriEstadual.Name = "textInscriEstadual";
             textInscriEstadual.ReadOnly = true;
-            textInscriEstadual.Size = new Size(136, 23);
+            textInscriEstadual.Size = new Size(174, 23);
             textInscriEstadual.TabIndex = 123;
             // 
             // textNomeFantasia
             // 
-            textNomeFantasia.Location = new Point(854, 52);
+            textNomeFantasia.Location = new Point(959, 53);
             textNomeFantasia.Name = "textNomeFantasia";
             textNomeFantasia.ReadOnly = true;
             textNomeFantasia.Size = new Size(243, 23);
@@ -834,7 +878,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 9.75F);
             label2.ForeColor = Color.FromArgb(44, 62, 80);
-            label2.Location = new Point(854, 34);
+            label2.Location = new Point(959, 35);
             label2.Name = "label2";
             label2.Size = new Size(95, 16);
             label2.TabIndex = 121;
@@ -842,10 +886,10 @@
             // 
             // textRazaoSocial
             // 
-            textRazaoSocial.Location = new Point(466, 52);
+            textRazaoSocial.Location = new Point(649, 53);
             textRazaoSocial.Name = "textRazaoSocial";
             textRazaoSocial.ReadOnly = true;
-            textRazaoSocial.Size = new Size(382, 23);
+            textRazaoSocial.Size = new Size(304, 23);
             textRazaoSocial.TabIndex = 120;
             // 
             // label6
@@ -853,7 +897,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 9.75F);
             label6.ForeColor = Color.FromArgb(44, 62, 80);
-            label6.Location = new Point(466, 34);
+            label6.Location = new Point(651, 35);
             label6.Name = "label6";
             label6.Size = new Size(84, 16);
             label6.TabIndex = 119;
@@ -939,13 +983,11 @@
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
-            panel1.Controls.Add(btnSair);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(3, 604);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1389, 53);
+            panel1.Size = new Size(1583, 53);
             panel1.TabIndex = 1;
             // 
             // btnNovo
@@ -960,17 +1002,6 @@
             btnNovo.UseVisualStyleBackColor = true;
             btnNovo.Click += LiberarCampos_Click;
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(192, 6);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 17;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // btnGravar
             // 
             btnGravar.Image = Properties.Resources.salvar;
@@ -981,288 +1012,86 @@
             btnGravar.Text = "Gravar F5";
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
+            btnGravar.Click += btnGravar_Click;
             // 
-            // btnSair
+            // tabConsultas
             // 
-            btnSair.Image = Properties.Resources.sair;
-            btnSair.Location = new Point(1270, 6);
-            btnSair.Name = "btnSair";
-            btnSair.Size = new Size(107, 40);
-            btnSair.TabIndex = 11;
-            btnSair.Text = "Sair";
-            btnSair.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnSair.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            tabPage3.Controls.Add(panel2);
-            tabPage3.Controls.Add(panel3);
-            tabPage3.Controls.Add(groupBox7);
-            tabPage3.Location = new Point(4, 24);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1395, 660);
-            tabPage3.TabIndex = 3;
-            tabPage3.Text = "Consultas";
-            tabPage3.UseVisualStyleBackColor = true;
+            tabConsultas.Controls.Add(panel2);
+            tabConsultas.Controls.Add(panel3);
+            tabConsultas.Controls.Add(groupBox7);
+            tabConsultas.Location = new Point(4, 24);
+            tabConsultas.Name = "tabConsultas";
+            tabConsultas.Padding = new Padding(3);
+            tabConsultas.Size = new Size(1501, 660);
+            tabConsultas.TabIndex = 3;
+            tabConsultas.Text = "Consultas";
+            tabConsultas.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
-            panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(labelTotalRegistro);
+            panel2.Controls.Add(gridFornecedores);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(3, 111);
+            panel2.Location = new Point(3, 93);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1389, 495);
+            panel2.Size = new Size(1495, 511);
             panel2.TabIndex = 5;
             // 
-            // dataGridView1
+            // labelTotalRegistro
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, CnpjCpf, RazaoSocial, NomeFantasia, IncriMunicipal, InscrEstadual, TipoIncri, TelFixo, Whatssap, Email, TipoFornecedor, Ativo, NomeContato, TelContato, EmailContato, WhatsSapContato, Endreco, Bairro, Uf, Cidade, Pais, NomeBanco, CodigoBanco, CodigoAgencia, TipoConta, TitularConta, Pix, Obeservacao });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(1385, 491);
-            dataGridView1.TabIndex = 0;
+            labelTotalRegistro.Dock = DockStyle.Bottom;
+            labelTotalRegistro.ForeColor = Color.Blue;
+            labelTotalRegistro.Location = new Point(0, 496);
+            labelTotalRegistro.Name = "labelTotalRegistro";
+            labelTotalRegistro.Size = new Size(1495, 15);
+            labelTotalRegistro.TabIndex = 6;
             // 
-            // Codigo
+            // gridFornecedores
             // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            Codigo.Width = 200;
-            // 
-            // CnpjCpf
-            // 
-            CnpjCpf.HeaderText = "Cnpj/Cpf";
-            CnpjCpf.Name = "CnpjCpf";
-            CnpjCpf.ReadOnly = true;
-            CnpjCpf.Width = 200;
-            // 
-            // RazaoSocial
-            // 
-            RazaoSocial.HeaderText = "Razão Social";
-            RazaoSocial.Name = "RazaoSocial";
-            RazaoSocial.ReadOnly = true;
-            RazaoSocial.Width = 300;
-            // 
-            // NomeFantasia
-            // 
-            NomeFantasia.HeaderText = "Nome Fantasia";
-            NomeFantasia.Name = "NomeFantasia";
-            NomeFantasia.ReadOnly = true;
-            NomeFantasia.Width = 300;
-            // 
-            // IncriMunicipal
-            // 
-            IncriMunicipal.HeaderText = "Inscr Municipal";
-            IncriMunicipal.Name = "IncriMunicipal";
-            IncriMunicipal.ReadOnly = true;
-            IncriMunicipal.Width = 200;
-            // 
-            // InscrEstadual
-            // 
-            InscrEstadual.HeaderText = "Inscr Estadual";
-            InscrEstadual.Name = "InscrEstadual";
-            InscrEstadual.ReadOnly = true;
-            InscrEstadual.Width = 200;
-            // 
-            // TipoIncri
-            // 
-            TipoIncri.HeaderText = "Tipo de Incrição";
-            TipoIncri.Name = "TipoIncri";
-            TipoIncri.ReadOnly = true;
-            TipoIncri.Width = 200;
-            // 
-            // TelFixo
-            // 
-            TelFixo.HeaderText = "Tel Fixo";
-            TelFixo.Name = "TelFixo";
-            TelFixo.ReadOnly = true;
-            TelFixo.Width = 200;
-            // 
-            // Whatssap
-            // 
-            Whatssap.HeaderText = "WhatsSap";
-            Whatssap.Name = "Whatssap";
-            Whatssap.ReadOnly = true;
-            Whatssap.Width = 200;
-            // 
-            // Email
-            // 
-            Email.HeaderText = "Email";
-            Email.Name = "Email";
-            Email.ReadOnly = true;
-            Email.Width = 200;
-            // 
-            // TipoFornecedor
-            // 
-            TipoFornecedor.HeaderText = "Tipo de Fornecedor";
-            TipoFornecedor.Name = "TipoFornecedor";
-            TipoFornecedor.ReadOnly = true;
-            TipoFornecedor.Width = 200;
-            // 
-            // Ativo
-            // 
-            Ativo.HeaderText = "Ativo";
-            Ativo.Name = "Ativo";
-            Ativo.ReadOnly = true;
-            // 
-            // NomeContato
-            // 
-            NomeContato.HeaderText = "Nome do Contato";
-            NomeContato.Name = "NomeContato";
-            NomeContato.ReadOnly = true;
-            NomeContato.Resizable = DataGridViewTriState.True;
-            NomeContato.SortMode = DataGridViewColumnSortMode.NotSortable;
-            NomeContato.Width = 300;
-            // 
-            // TelContato
-            // 
-            TelContato.HeaderText = "Tel Contato";
-            TelContato.Name = "TelContato";
-            TelContato.ReadOnly = true;
-            TelContato.Resizable = DataGridViewTriState.True;
-            TelContato.SortMode = DataGridViewColumnSortMode.NotSortable;
-            TelContato.Width = 200;
-            // 
-            // EmailContato
-            // 
-            EmailContato.HeaderText = "Email Contato";
-            EmailContato.Name = "EmailContato";
-            EmailContato.ReadOnly = true;
-            EmailContato.Resizable = DataGridViewTriState.True;
-            EmailContato.SortMode = DataGridViewColumnSortMode.NotSortable;
-            EmailContato.Width = 300;
-            // 
-            // WhatsSapContato
-            // 
-            WhatsSapContato.HeaderText = "WhatsSap Contato";
-            WhatsSapContato.Name = "WhatsSapContato";
-            WhatsSapContato.ReadOnly = true;
-            WhatsSapContato.Resizable = DataGridViewTriState.True;
-            WhatsSapContato.SortMode = DataGridViewColumnSortMode.NotSortable;
-            WhatsSapContato.Width = 200;
-            // 
-            // Endreco
-            // 
-            Endreco.HeaderText = "Endereço";
-            Endreco.Name = "Endreco";
-            Endreco.ReadOnly = true;
-            Endreco.Resizable = DataGridViewTriState.True;
-            Endreco.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Endreco.Width = 300;
-            // 
-            // Bairro
-            // 
-            Bairro.HeaderText = "Bairro";
-            Bairro.Name = "Bairro";
-            Bairro.ReadOnly = true;
-            Bairro.Resizable = DataGridViewTriState.True;
-            Bairro.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Bairro.Width = 300;
-            // 
-            // Uf
-            // 
-            Uf.HeaderText = "Uf";
-            Uf.Name = "Uf";
-            Uf.ReadOnly = true;
-            Uf.Resizable = DataGridViewTriState.True;
-            Uf.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Uf.Width = 150;
-            // 
-            // Cidade
-            // 
-            Cidade.HeaderText = "Cidade";
-            Cidade.Name = "Cidade";
-            Cidade.ReadOnly = true;
-            Cidade.Resizable = DataGridViewTriState.True;
-            Cidade.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Cidade.Width = 200;
-            // 
-            // Pais
-            // 
-            Pais.HeaderText = "Pais";
-            Pais.Name = "Pais";
-            Pais.ReadOnly = true;
-            Pais.Width = 200;
-            // 
-            // NomeBanco
-            // 
-            NomeBanco.HeaderText = "Nome do Banco";
-            NomeBanco.Name = "NomeBanco";
-            NomeBanco.ReadOnly = true;
-            NomeBanco.Width = 250;
-            // 
-            // CodigoBanco
-            // 
-            CodigoBanco.HeaderText = "Codigo do Banco";
-            CodigoBanco.Name = "CodigoBanco";
-            CodigoBanco.ReadOnly = true;
-            CodigoBanco.Width = 150;
-            // 
-            // CodigoAgencia
-            // 
-            CodigoAgencia.HeaderText = "Codigo Agência";
-            CodigoAgencia.Name = "CodigoAgencia";
-            CodigoAgencia.ReadOnly = true;
-            CodigoAgencia.Width = 150;
-            // 
-            // TipoConta
-            // 
-            TipoConta.HeaderText = "Tipo de Conta";
-            TipoConta.Name = "TipoConta";
-            TipoConta.ReadOnly = true;
-            TipoConta.Width = 150;
-            // 
-            // TitularConta
-            // 
-            TitularConta.HeaderText = "Titular Conta";
-            TitularConta.Name = "TitularConta";
-            TitularConta.ReadOnly = true;
-            TitularConta.Width = 200;
-            // 
-            // Pix
-            // 
-            Pix.HeaderText = "Pix";
-            Pix.Name = "Pix";
-            Pix.ReadOnly = true;
-            Pix.Width = 250;
-            // 
-            // Obeservacao
-            // 
-            Obeservacao.HeaderText = "Observação";
-            Obeservacao.Name = "Obeservacao";
-            Obeservacao.ReadOnly = true;
-            Obeservacao.Width = 400;
+            gridFornecedores.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            gridFornecedores.BackgroundColor = Color.White;
+            gridFornecedores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gridFornecedores.Location = new Point(0, 3);
+            gridFornecedores.Name = "gridFornecedores";
+            gridFornecedores.Size = new Size(1495, 473);
+            gridFornecedores.TabIndex = 0;
             // 
             // panel3
             // 
             panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(bntNovo);
             panel3.Controls.Add(btnEditar);
             panel3.Controls.Add(btnExcluir);
             panel3.Controls.Add(btnImprimir);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(3, 606);
+            panel3.Location = new Point(3, 604);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1389, 51);
+            panel3.Size = new Size(1495, 53);
             panel3.TabIndex = 4;
+            // 
+            // bntNovo
+            // 
+            bntNovo.Image = Properties.Resources.plus;
+            bntNovo.Location = new Point(265, 6);
+            bntNovo.Name = "bntNovo";
+            bntNovo.Size = new Size(101, 40);
+            bntNovo.TabIndex = 26;
+            bntNovo.Text = " Novo";
+            bntNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            bntNovo.UseVisualStyleBackColor = true;
+            bntNovo.Click += bntNovo_Click;
             // 
             // btnEditar
             // 
-            btnEditar.Image = Properties.Resources.novo;
+            btnEditar.Image = Properties.Resources.marca_de_verificacao;
             btnEditar.Location = new Point(139, 6);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(120, 40);
-            btnEditar.TabIndex = 23;
-            btnEditar.Text = "Editar";
+            btnEditar.TabIndex = 25;
+            btnEditar.Text = "Selecionar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnExcluir
             // 
@@ -1274,57 +1103,54 @@
             btnExcluir.Text = "Excluir F7";
             btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // btnImprimir
             // 
             btnImprimir.Image = Properties.Resources.impressora1;
-            btnImprimir.Location = new Point(265, 6);
+            btnImprimir.Location = new Point(372, 6);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(101, 40);
             btnImprimir.TabIndex = 22;
-            btnImprimir.Text = "Imprimir";
+            btnImprimir.Text = "Relatorio";
             btnImprimir.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnImprimir.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
-            groupBox7.Controls.Add(checkBoxCarregarTodos);
-            groupBox7.Controls.Add(btnBuscar);
+            groupBox7.Controls.Add(labelTotalRegitros);
+            groupBox7.Controls.Add(textDadoPesquisa);
             groupBox7.Controls.Add(label24);
             groupBox7.Controls.Add(comboModelo);
-            groupBox7.Controls.Add(textDadoPesquisa);
             groupBox7.Controls.Add(label25);
             groupBox7.Controls.Add(label27);
             groupBox7.Controls.Add(comboFiltros);
             groupBox7.Dock = DockStyle.Top;
             groupBox7.Location = new Point(3, 3);
             groupBox7.Name = "groupBox7";
-            groupBox7.Size = new Size(1389, 108);
+            groupBox7.Size = new Size(1495, 90);
             groupBox7.TabIndex = 1;
             groupBox7.TabStop = false;
             groupBox7.Text = "Campos de Pesquisa";
-            groupBox7.Resize += groupBox7_Resize;
             // 
-            // checkBoxCarregarTodos
+            // labelTotalRegitros
             // 
-            checkBoxCarregarTodos.AutoSize = true;
-            checkBoxCarregarTodos.Location = new Point(1325, 22);
-            checkBoxCarregarTodos.Name = "checkBoxCarregarTodos";
-            checkBoxCarregarTodos.Size = new Size(58, 19);
-            checkBoxCarregarTodos.TabIndex = 26;
-            checkBoxCarregarTodos.Text = "Todos";
-            checkBoxCarregarTodos.UseVisualStyleBackColor = true;
+            labelTotalRegitros.AutoSize = true;
+            labelTotalRegitros.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelTotalRegitros.ForeColor = Color.FromArgb(0, 66, 100);
+            labelTotalRegitros.Location = new Point(6, 88);
+            labelTotalRegitros.Name = "labelTotalRegitros";
+            labelTotalRegitros.Size = new Size(0, 17);
+            labelTotalRegitros.TabIndex = 26;
             // 
-            // btnBuscar
+            // textDadoPesquisa
             // 
-            btnBuscar.Image = Properties.Resources.lupa;
-            btnBuscar.Location = new Point(1276, 72);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(107, 29);
-            btnBuscar.TabIndex = 25;
-            btnBuscar.Text = "Pesquisar";
-            btnBuscar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnBuscar.UseVisualStyleBackColor = true;
+            textDadoPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textDadoPesquisa.Location = new Point(374, 43);
+            textDadoPesquisa.Name = "textDadoPesquisa";
+            textDadoPesquisa.Size = new Size(1115, 23);
+            textDadoPesquisa.TabIndex = 25;
+            textDadoPesquisa.TextChanged += textDadoPesquisa_TextChanged;
             // 
             // label24
             // 
@@ -1345,20 +1171,12 @@
             comboModelo.Size = new Size(178, 23);
             comboModelo.TabIndex = 23;
             // 
-            // textDadoPesquisa
-            // 
-            textDadoPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textDadoPesquisa.Location = new Point(374, 43);
-            textDadoPesquisa.Name = "textDadoPesquisa";
-            textDadoPesquisa.Size = new Size(1009, 23);
-            textDadoPesquisa.TabIndex = 22;
-            // 
             // label25
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Arial", 9.75F);
             label25.ForeColor = Color.FromArgb(44, 62, 80);
-            label25.Location = new Point(374, 22);
+            label25.Location = new Point(374, 23);
             label25.Name = "label25";
             label25.Size = new Size(117, 16);
             label25.TabIndex = 21;
@@ -1383,12 +1201,144 @@
             comboFiltros.Size = new Size(178, 23);
             comboFiltros.TabIndex = 19;
             // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label45.ForeColor = Color.FromArgb(192, 0, 0);
+            label45.Location = new Point(392, 35);
+            label45.Name = "label45";
+            label45.Size = new Size(74, 13);
+            label45.TabIndex = 275;
+            label45.Text = "[Obrigatorio]";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label36.ForeColor = Color.FromArgb(192, 0, 0);
+            label36.Location = new Point(741, 36);
+            label36.Name = "label36";
+            label36.Size = new Size(74, 13);
+            label36.TabIndex = 276;
+            label36.Text = "[Obrigatorio]";
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label37.ForeColor = Color.FromArgb(192, 0, 0);
+            label37.Location = new Point(1060, 38);
+            label37.Name = "label37";
+            label37.Size = new Size(74, 13);
+            label37.TabIndex = 277;
+            label37.Text = "[Obrigatorio]";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label38.ForeColor = Color.FromArgb(192, 0, 0);
+            label38.Location = new Point(1491, 37);
+            label38.Name = "label38";
+            label38.Size = new Size(74, 13);
+            label38.TabIndex = 278;
+            label38.Text = "[Obrigatorio]";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label39.ForeColor = Color.FromArgb(192, 0, 0);
+            label39.Location = new Point(1311, 36);
+            label39.Name = "label39";
+            label39.Size = new Size(74, 13);
+            label39.TabIndex = 279;
+            label39.Text = "[Obrigatorio]";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label40.ForeColor = Color.FromArgb(192, 0, 0);
+            label40.Location = new Point(75, 201);
+            label40.Name = "label40";
+            label40.Size = new Size(74, 13);
+            label40.TabIndex = 280;
+            label40.Text = "[Obrigatorio]";
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label41.ForeColor = Color.FromArgb(192, 0, 0);
+            label41.Location = new Point(120, 149);
+            label41.Name = "label41";
+            label41.Size = new Size(74, 13);
+            label41.TabIndex = 281;
+            label41.Text = "[Obrigatorio]";
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label42.ForeColor = Color.FromArgb(192, 0, 0);
+            label42.Location = new Point(392, 90);
+            label42.Name = "label42";
+            label42.Size = new Size(74, 13);
+            label42.TabIndex = 282;
+            label42.Text = "[Obrigatorio]";
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label43.ForeColor = Color.FromArgb(192, 0, 0);
+            label43.Location = new Point(539, 90);
+            label43.Name = "label43";
+            label43.Size = new Size(74, 13);
+            label43.TabIndex = 283;
+            label43.Text = "[Obrigatorio]";
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label44.ForeColor = Color.FromArgb(192, 0, 0);
+            label44.Location = new Point(702, 201);
+            label44.Name = "label44";
+            label44.Size = new Size(74, 13);
+            label44.TabIndex = 284;
+            label44.Text = "[Obrigatorio]";
+            // 
+            // label46
+            // 
+            label46.AutoSize = true;
+            label46.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label46.ForeColor = Color.FromArgb(192, 0, 0);
+            label46.Location = new Point(974, 201);
+            label46.Name = "label46";
+            label46.Size = new Size(74, 13);
+            label46.TabIndex = 285;
+            label46.Text = "[Obrigatorio]";
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label47.ForeColor = Color.FromArgb(192, 0, 0);
+            label47.Location = new Point(360, 202);
+            label47.Name = "label47";
+            label47.Size = new Size(74, 13);
+            label47.TabIndex = 286;
+            label47.Text = "[Obrigatorio]";
+            // 
             // CadastrarFornecedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1403, 688);
-            Controls.Add(tabControl1);
+            ClientSize = new Size(1597, 688);
+            Controls.Add(tabControl);
             Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             Name = "CadastrarFornecedor";
@@ -1396,16 +1346,17 @@
             Text = "Cadastrar Fornecedores";
             Load += CadastrarFornecedor_Load;
             KeyDown += LiberarCamposParaCadastro_KeyDown;
-            tabControl1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
+            tabControl.ResumeLayout(false);
+            tabCadastro.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            tabPage3.ResumeLayout(false);
+            tabConsultas.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gridFornecedores).EndInit();
             panel3.ResumeLayout(false);
             groupBox7.ResumeLayout(false);
             groupBox7.PerformLayout();
@@ -1414,12 +1365,10 @@
 
         #endregion
 
-        private TabControl tabControl1;
-        private TabPage tabPage2;
+        private TabControl tabControl;
+        private TabPage tabCadastro;
         private Panel panel1;
-        private Button btnSair;
         private Button btnNovo;
-        private Button btnCancelar;
         private Button btnGravar;
         private GroupBox groupBox1;
         private ComboBox comboTipoFornecedor;
@@ -1431,8 +1380,6 @@
         private Label label7;
         private MaskedTextBox textTelefoneFixo;
         private GroupBox groupBox3;
-        private RadioButton radioButtonAtivoNao;
-        private RadioButton radioButtonAtivoSim;
         private Label label5;
         private ComboBox comboTipoInscricao;
         private Label label4;
@@ -1450,17 +1397,13 @@
         private RadioButton radioButtonPessoaFisica;
         private TextBox textCod;
         private Label label1;
-        private TabPage tabPage3;
+        private TabPage tabConsultas;
         private GroupBox groupBox7;
-        private CheckBox checkBoxCarregarTodos;
-        private Button btnBuscar;
         private Label label24;
         private ComboBox comboModelo;
-        private TextBox textDadoPesquisa;
         private Label label25;
         private Label label27;
         private ComboBox comboFiltros;
-        private TextBox textRamoAtividade;
         private Label label18;
         private Label label32;
         private TextBox textObservacao;
@@ -1489,49 +1432,44 @@
         private MaskedTextBox textWhatsAppContato;
         private Label label14;
         private MaskedTextBox textTelContato;
-        private Button btnBuscaBairro;
-        private TextBox textBox2;
         private Label label11;
-        private TextBox textBox1;
+        private TextBox textNomeContato;
         private Label label10;
         private Label label33;
         private MaskedTextBox textDataCadastro;
         private Panel panel3;
-        private Button btnEditar;
         private Button btnExcluir;
         private Button btnImprimir;
-        private Panel panel2;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn CnpjCpf;
-        private DataGridViewTextBoxColumn RazaoSocial;
-        private DataGridViewTextBoxColumn NomeFantasia;
-        private DataGridViewTextBoxColumn IncriMunicipal;
-        private DataGridViewTextBoxColumn InscrEstadual;
-        private DataGridViewTextBoxColumn TipoIncri;
-        private DataGridViewTextBoxColumn TelFixo;
-        private DataGridViewTextBoxColumn Whatssap;
-        private DataGridViewTextBoxColumn Email;
-        private DataGridViewTextBoxColumn TipoFornecedor;
-        private DataGridViewCheckBoxColumn Ativo;
-        private DataGridViewTextBoxColumn NomeContato;
-        private DataGridViewTextBoxColumn TelContato;
-        private DataGridViewTextBoxColumn EmailContato;
-        private DataGridViewTextBoxColumn WhatsSapContato;
-        private DataGridViewTextBoxColumn Endreco;
-        private DataGridViewTextBoxColumn Bairro;
-        private DataGridViewTextBoxColumn Uf;
-        private DataGridViewTextBoxColumn Cidade;
-        private DataGridViewTextBoxColumn Pais;
-        private DataGridViewTextBoxColumn NomeBanco;
-        private DataGridViewTextBoxColumn CodigoBanco;
-        private DataGridViewTextBoxColumn CodigoAgencia;
-        private DataGridViewTextBoxColumn TipoConta;
-        private DataGridViewTextBoxColumn TitularConta;
-        private DataGridViewTextBoxColumn Pix;
-        private DataGridViewTextBoxColumn Obeservacao;
         private ComboBox comboPaises;
         private ComboBox comboCidades;
         private ComboBox comboBairros;
+        private TextBox textDadoPesquisa;
+        private Label label30;
+        private MaskedTextBox textUltimaAtualizacao;
+        private TextBox textConta;
+        private Label label34;
+        private CheckBox checkedAtivo;
+        private Label labelTotalRegitros;
+        private Button btnEditar;
+        private TextBox textTipoPessoa;
+        private Label label35;
+        private Button bntNovo;
+        private ComboBox comboBoxAtividade;
+        private Panel panel2;
+        private DataGridView gridFornecedores;
+        private Label labelTotalRegistro;
+        private ComboBox comboBoxCargoContato;
+        private Label label47;
+        private Label label46;
+        private Label label44;
+        private Label label43;
+        private Label label42;
+        private Label label41;
+        private Label label40;
+        private Label label39;
+        private Label label38;
+        private Label label37;
+        private Label label36;
+        private Label label45;
     }
 }

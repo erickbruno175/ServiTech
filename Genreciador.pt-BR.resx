@@ -1,0 +1,1127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fornecedorToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="fornecedorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="fornecedorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fornecedores                 </value>
+  </data>
+  <data name="usuarioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="usuarioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Funcionarios</value>
+  </data>
+  <data name="cargoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="cargoToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="clienteToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="clienteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="clienteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clientes </value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 6</value>
+  </data>
+  <data name="formaPagamentoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="formaPagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="formaPagamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Formas de  Pagamento</value>
+  </data>
+  <data name="condiçãoDePagamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Condição de Pagamento</value>
+  </data>
+  <data name="paisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="paisToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pais</value>
+  </data>
+  <data name="cidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="cidadeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="bairroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="bairroToolStripMenuItem.Text" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="localidadeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Localidade</value>
+  </data>
+  <data name="caixaTerminalToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="caixaTerminalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="caixaTerminalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Caixa/Balcão</value>
+  </data>
+  <data name="cFOPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="cFOPToolStripMenuItem.Text" xml:space="preserve">
+    <value>CFOP</value>
+  </data>
+  <data name="cSTCSOSNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="cSTCSOSNToolStripMenuItem.Text" xml:space="preserve">
+    <value>CST/CSOSN </value>
+  </data>
+  <data name="origemMercadoriaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Origem Mercadoria</value>
+  </data>
+  <data name="nCMToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="nCMToolStripMenuItem.Text" xml:space="preserve">
+    <value>NCM</value>
+  </data>
+  <data name="tabelasFiscaistributáriasToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="tabelasFiscaistributáriasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="tabelasFiscaistributáriasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tributação</value>
+  </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="unidadeDeMedidaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Unidade De Medida</value>
+  </data>
+  <data name="grupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="grupoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grupos</value>
+  </data>
+  <data name="subGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="subGrupoToolStripMenuItem.Text" xml:space="preserve">
+    <value>SubGrupos</value>
+  </data>
+  <data name="gruposSubGrupoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="gruposSubGrupoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grupos/SubGrupos</value>
+  </data>
+  <data name="marcasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Marcas</value>
+  </data>
+  <data name="seguimentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Atividade Economica</value>
+  </data>
+  <data name="transportadoraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="transportadoraToolStripMenuItem.Text" xml:space="preserve">
+    <value>Transportadoras</value>
+  </data>
+  <data name="produtosToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="serviçosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Serviços</value>
+  </data>
+  <data name="produtosServiçosPeçasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos/Serviços</value>
+  </data>
+  <data name="cadastrosToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="cadastrosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 21</value>
+  </data>
+  <data name="cadastrosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cadastros</value>
+  </data>
+  <data name="entradasaídaManualToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
+  </data>
+  <data name="entradasaídaManualToolStripMenuItem.Text" xml:space="preserve">
+    <value>Entrada de Produtos</value>
+  </data>
+  <data name="controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
+  </data>
+  <data name="controlePorLoteserialserialDeAparelhosOuPeçasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Saída de Produtos</value>
+  </data>
+  <data name="produtoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
+  </data>
+  <data name="produtoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consultar Movimentações</value>
+  </data>
+  <data name="peçasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 22</value>
+  </data>
+  <data name="peçasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Inventário / Contagem</value>
+  </data>
+  <data name="relatóriosDeEstoqueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatórios de Estoque</value>
+  </data>
+  <data name="estoqueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Estoque</value>
+  </data>
+  <data name="lançamentoDeContasAPagarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="lançamentoDeContasAPagarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento de Contas a Pagar</value>
+  </data>
+  <data name="lançamentoDeContasAReceberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="lançamentoDeContasAReceberToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lançamento de Contas a Receber</value>
+  </data>
+  <data name="despesasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Movimentações </value>
+  </data>
+  <data name="fluxoDeCaixaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fluxo de Caixa</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="finaceiroToolStripMenuItem.Text" xml:space="preserve">
+    <value>Finaceiro</value>
+  </data>
+  <data name="novaOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nova OS</value>
+  </data>
+  <data name="consultarOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consultar OS</value>
+  </data>
+  <data name="agendamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 22</value>
+  </data>
+  <data name="agendamentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Orçamentos</value>
+  </data>
+  <data name="impressãoDeOSReciboToolStripMenuItem.Text" xml:space="preserve">
+    <value>Impressão de OS / Recibo</value>
+  </data>
+  <data name="relatóriosDeOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 22</value>
+  </data>
+  <data name="relatóriosDeOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatórios de OS</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 21</value>
+  </data>
+  <data name="ordemDeServiçoOSToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ordem de Serviço (OS)</value>
+  </data>
+  <data name="entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 22</value>
+  </data>
+  <data name="entradaDeNotasFiscaismanualOuXMLToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nova Compra</value>
+  </data>
+  <data name="entradaAutomaticaXMLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 22</value>
+  </data>
+  <data name="entradaAutomaticaXMLToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consultar Compras</value>
+  </data>
+  <data name="pedidoDeCompraToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 22</value>
+  </data>
+  <data name="pedidoDeCompraToolStripMenuItem.Text" xml:space="preserve">
+    <value>Devolução a Fornecedor</value>
+  </data>
+  <data name="consultaDeNotasRecebidasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 22</value>
+  </data>
+  <data name="consultaDeNotasRecebidasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatórios de Compras</value>
+  </data>
+  <data name="comprasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 21</value>
+  </data>
+  <data name="comprasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Compras</value>
+  </data>
+  <data name="pedidoDeVendaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="pedidoDeVendaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Abrir Caixa</value>
+  </data>
+  <data name="consultaDeVendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="consultaDeVendasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Realizar Venda (Tela Principal do PDV)</value>
+  </data>
+  <data name="valorDeSuprimentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="valorDeSuprimentoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Consultar Vendas</value>
+  </data>
+  <data name="reimpressãoDeCupomFiscalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="reimpressãoDeCupomFiscalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cancelar Venda</value>
+  </data>
+  <data name="cancelamentoDeCupomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="cancelamentoDeCupomToolStripMenuItem.Text" xml:space="preserve">
+    <value>Devolução de Produto</value>
+  </data>
+  <data name="pdvCaixaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="pdvCaixaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Reimprimir Cupom / Comprovante</value>
+  </data>
+  <data name="devoluçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="devoluçãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fechar Caixa</value>
+  </data>
+  <data name="vendasSaidasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 21</value>
+  </data>
+  <data name="vendasSaidasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vendas</value>
+  </data>
+  <data name="vendasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="vendasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vendas</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="fornecedoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="fornecedoresToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fornecedores</value>
+  </data>
+  <data name="oSToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="oSToolStripMenuItem.Text" xml:space="preserve">
+    <value>OS</value>
+  </data>
+  <data name="financeiroToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="financeiroToolStripMenuItem.Text" xml:space="preserve">
+    <value>Financeiro</value>
+  </data>
+  <data name="estoqueToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="estoqueToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Estoque</value>
+  </data>
+  <data name="fluxoDeCaixaToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="fluxoDeCaixaToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Fluxo de Caixa</value>
+  </data>
+  <data name="comprasToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="comprasToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Compras</value>
+  </data>
+  <data name="relatoriosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relatorios</value>
+  </data>
+  <data name="empresaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="empresaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Empresa (dados fiscais, logotipo)</value>
+  </data>
+  <data name="impressorastérmicasFiscaisToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="impressorastérmicasFiscaisToolStripMenuItem.Text" xml:space="preserve">
+    <value>Parâmetros do Sistema</value>
+  </data>
+  <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="leitoresDeCódigoDeBarrasToolStripMenuItem.Text" xml:space="preserve">
+    <value>Impressoras e Dispositivos</value>
+  </data>
+  <data name="balançaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="balançaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Backup e Restauração</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 6</value>
+  </data>
+  <data name="trocarSenhaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="trocarSenhaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Usuários e Permissões</value>
+  </data>
+  <data name="suaLogoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 22</value>
+  </data>
+  <data name="suaLogoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Logs e Auditorias</value>
+  </data>
+  <data name="integraçõesToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="integraçõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 21</value>
+  </data>
+  <data name="integraçõesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="sobreOSistemaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="sobreOSistemaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Manual do Sistema</value>
+  </data>
+  <data name="documentaçãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="documentaçãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Atalhos de Teclado</value>
+  </data>
+  <data name="suporteTécnicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="suporteTécnicoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Contato com Suporte</value>
+  </data>
+  <data name="sobreOSistemaToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Sobre o Sistema</value>
+  </data>
+  <data name="ajudarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ajudar</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 21</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 25</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAgendamento.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnAgendamento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnAgendamento.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnAgendamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 81</value>
+  </data>
+  <data name="btnAgendamento.Text" xml:space="preserve">
+    <value>Agendamento</value>
+  </data>
+  <data name="btnAgendamento.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnSair.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnSair.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnSair.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSair.Location" type="System.Drawing.Point, System.Drawing">
+    <value>907, 3</value>
+  </data>
+  <data name="btnSair.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 81</value>
+  </data>
+  <data name="btnSair.Text" xml:space="preserve">
+    <value>Sair  - Esc</value>
+  </data>
+  <data name="btnSair.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnPdvCaixa.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnPdvCaixa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnPdvCaixa.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnPdvCaixa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 1</value>
+  </data>
+  <data name="btnPdvCaixa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 83</value>
+  </data>
+  <data name="btnPdvCaixa.Text" xml:space="preserve">
+    <value>Pdv/Caixa- F7</value>
+  </data>
+  <data name="btnPdvCaixa.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 1</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 83</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Ordem de Serviço- F6</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnVenda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnVenda.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnVenda.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnVenda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 1</value>
+  </data>
+  <data name="btnVenda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 83</value>
+  </data>
+  <data name="btnVenda.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnVenda.Text" xml:space="preserve">
+    <value>Vendas- F5</value>
+  </data>
+  <data name="btnVenda.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnFornecedor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnFornecedor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnFornecedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnFornecedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 1</value>
+  </data>
+  <data name="btnFornecedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 83</value>
+  </data>
+  <data name="btnFornecedor.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnFornecedor.Text" xml:space="preserve">
+    <value>Fornecedor-  F4</value>
+  </data>
+  <data name="btnFornecedor.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnCliente.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnCliente.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnCliente.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 1</value>
+  </data>
+  <data name="btnCliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 83</value>
+  </data>
+  <data name="btnCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnCliente.Text" xml:space="preserve">
+    <value>Clientes- F3</value>
+  </data>
+  <data name="btnCliente.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnProdu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnProdu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnProdu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProdu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 1</value>
+  </data>
+  <data name="btnProdu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 83</value>
+  </data>
+  <data name="btnProdu.Text" xml:space="preserve">
+    <value>Produtos- F2</value>
+  </data>
+  <data name="btnProdu.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="btnServiço.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnServiço.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="btnServiço.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnServiço.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 1</value>
+  </data>
+  <data name="btnServiço.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 83</value>
+  </data>
+  <data name="btnServiço.Text" xml:space="preserve">
+    <value>Serviços- F1</value>
+  </data>
+  <data name="btnServiço.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 86</value>
+  </data>
+  <data name="labelDataHora.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="labelDataHora.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="labelDataHora.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelDataHora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 579</value>
+  </data>
+  <data name="labelDataHora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 49</value>
+  </data>
+  <data name="labelDataHora.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="pictureBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pictureBox1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 111</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 517</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1120, 628</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAANgBAADYAQAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAs4hMTbKJSsCyiUvusolL7rKKTL2xikpIAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACzikxKs4lLvrKJS+6yiUvvsolLvLKISk8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4lKf7KJS/+yiUv/solL/7KJS/+yiUv/solL/rKJ
+        S3cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUt7solL/7KJS/+yiUv/solL/7KJS/+yiUv/s4lLjAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsItLRLKJS/6yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv9tIpLPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACzh0xAsolL/rKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+zikxKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        TLayiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS60AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsopKsrKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solMtgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiEvxsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUvnAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        S+2yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS+cAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsolL9rKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL7gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUvzsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUvoAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJS8OyiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7OIS7sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsolLwbKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solLtwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACzikxKsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+wi0tEAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALSIS0eyiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KKSkwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYlIJ7KJ
+        S62yiUvnsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS48AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAtYZKJrOJS/CyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+ziUvwsopMvbGJS1IAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAALOJS6qyiUv/solLrbGJThoAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyiUvqsolL/62FRxkAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsolL6LKJ
+        S/+1jEofAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAALKJSp6yiUv/solLybOITTz//wABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2hkkVsolL3bKJS/+yiUv/solK4rKIS46zi0w5//8AAQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKqAVQyziUp/solL4bKJ
+        S/+yiUv/solL/7KJS+GyiEuOtIpLPaqqVQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP//AAGyiUk4sYlKjbKJS+GyiUv/solL/7KJS/+yiUvssopLo7GIS1ixiU4aAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wABs4pNRrKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS+GziUuns4lKf7KKSmCyh0lCsYlIJ7WMSh+0h0sRtIdLEQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKK
+        SkyyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/rKJSuKyiUuVsYlOGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUyRsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS+qwiEotAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsohL1bKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sopL17+A
+        QAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs45MG7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yikpMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALGJ
+        S1+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sopMhwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACxiUuksolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJSqgAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wABs4lL5rKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUvJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYtOLrKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solM6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALGJ
+        S3OyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+qgFUMAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACxiUu4solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sohNKwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2kkkHsolL9bKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv9solLvLGJS3Owi0o3sYVOFwAAAAAAAAAAqoBVDLKH
+        TTWziUxosolMtrGJSkUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYlLQbKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/iziEqQtYxKHwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALOJ
+        SoayiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KKS7+yi00hAAAAAAAA
+        AADJqEomzKZJbc2mSazMpknMzKZI48ymSOPLpkjLzKZIq82nR2vPpUUlAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyikrKsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KI
+        S4GAgIACAAAAAMqmST/Mpki4zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/s2l
+        R7bMpkg8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC4jkcSsolL/bKJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/rKISmcAAAAAv59ACMylSJHMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/82lSKLMs00KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsYpLVbKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7OKSnwAAAAAzKZNFMymSNLMpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI0MmhQxMAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALGJ
+        S5qyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KISrn//wABzLNNCs2mSMXMpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/MpkjJ0aJGCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACyiUvesolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KIS/GthUcZAAAAAMyn
+        SJ/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSJsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACxh04ksolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiEuBAAAAAM2kSTjMpkj+zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZIPM2n
+        Rz3Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj9yqRINQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4lMaLKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv4uI5HEgAAAADNpkjAzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/wAAAAAAAAAAzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SL0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        S62yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/sYhLrgAAAADIpEkczKZI/cymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP8AAAAAAAAAAMymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj9zqdFGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAKqqVQOyiUvusolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7OKSmQAAAAAy6dIccym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/AAAAAAAAAADMpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSW0AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwi0o3solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+1ikowAAAAAM2mSazMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/wAA
+        AAAAAAAAzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/MpkipAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4pKfLKJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/qohEDwAAAADMpkjOzKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP8AAAAAAAAAAMymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/y6ZIywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        SsCyiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/f//AAEAAAAAzKZI7symSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZIPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM6n
+        SEPMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSO4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAALmLRguyiUv4solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/6/gEAEAAAAAMym
+        SPLMpkj/zKZI/8ymSP/Mpkj/zKZI/8qnRjoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADNpklCzKZI/8ymSP/Mpkj/zKZI/8ymSP/MpkjyAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACzikxKsolL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUv/tYpKGAAAAADMpknazKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP8AAAAAAAAAAMymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI2AAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsolLj7KJS/+ziUuCAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzaZIu8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/AAAAAAAAAADMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSboAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKJ
+        S9SyiUv/tIpLPQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMymSHjMpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/wAAAAAAAAAAzKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Npkh1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAALWKShiyiUv+solL9KqAVQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADMpkYozKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP8AAAAAAAAAAMym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/yahKJgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACziExesolL/7KJTLMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMymSL3Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/AAAAAAAAAADMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zaZIuwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACqgFUMs4lLvrKJS/+ziUpuAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADOp0o0zKZI/symSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8qnRjrMpkg8zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/cyoRzIAAAAAAAAAAAAAAAAAAAAAAAAAALKKTL2yiUv/solL/7KJS/+yiUv/solL/7KJ
+        S/+yiUvuroZREwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMul
+        SJTMpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSJIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyiku/solL/7KJ
+        S/+yiUv/solL/7KJS/myiUvEtIdLMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAADMmTMFzKZIvcymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSMLVqlUGAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANKlSxHMpki+zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSL3SpUsRAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzJkzBcul
+        SJTMpkj+zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/s2n
+        SZO/v0AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAzqdKNMymSL3Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ymSP/Mpkj/zKZI/8ym
+        SP/Mpkj/zaZIxcqnRjoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAy6NIJ8ylSXfLpUi8zKZI18ym
+        SPTMpkj0zKZI182mSLvLpkd2y6NIJwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////////////////////////8D///A/////gH//4B////8AP//A
+        D////wA//8AP////AD//wA////8AP//AD////wA//8AP////AD//wA///8AAAAAAH///gAAAAAA///+H
+        /////////4//////////j/////////+D/////////4B/////////wA/////////wAf////////4AAP//
+        /////wAAAAAP////AAAAAAf///8AAAAAA////gAAAAAD///+AAAAAAP///4AAAAAA////AAAAAAD///8
+        AAAAAAP///wAAAAAAf///AAAAAAB///4AAAAAMH///gAAAAP////+AAAADAD///4AAAAQAD///AAAAEA
+        AD//8AAAAgAAH//wAAAAAAAP//AAAAQAAA//4AAACAAAB//gAAAIAMAH/+AAABAAwAP/wAAAEADAA//A
+        AAAQAMAD/8AAABAAwAP/wAAAEB/+A/+AAAAQH/4D/4AAABAAwAP/j///8ADAA/+P///wAMAD/w////AA
+        wAP/H///+ADAB/4f///4AAAHwB////wAAA/AP////AAAD//////+AAAf//////8AAD///////8AA////
+        ////8AP///////////////////////////////////////////8=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>UniPDV  - Vendas+Serviços</value>
+  </data>
+</root>
