@@ -30,16 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarFuncionario));
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            tabCadastro = new TabPage();
             groupBox1 = new GroupBox();
             textTel = new MaskedTextBox();
             textCod = new TextBox();
             label18 = new Label();
             groupBox3 = new GroupBox();
-            radioButtonVendasExternasNao = new RadioButton();
             radioButtonVendasExternasSim = new RadioButton();
             groupBox2 = new GroupBox();
-            radioButtonAtivoNao = new RadioButton();
             radioButtonAtivoSim = new RadioButton();
             groupBox5 = new GroupBox();
             button2 = new Button();
@@ -74,30 +72,11 @@
             label3 = new Label();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnCancelar = new Button();
             btnGravar = new Button();
-            tabPage2 = new TabPage();
+            tabConsultas = new TabPage();
             panel3 = new Panel();
-            dataGridView1 = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            Nome = new DataGridViewTextBoxColumn();
-            Cargo = new DataGridViewTextBoxColumn();
-            Cpf = new DataGridViewTextBoxColumn();
-            Rg = new DataGridViewTextBoxColumn();
-            Tel = new DataGridViewTextBoxColumn();
-            Bairro = new DataGridViewTextBoxColumn();
-            Endereco = new DataGridViewTextBoxColumn();
-            Cidade = new DataGridViewTextBoxColumn();
-            Uf = new DataGridViewTextBoxColumn();
-            Salario = new DataGridViewTextBoxColumn();
-            Comissao = new DataGridViewTextBoxColumn();
-            Admissao = new DataGridViewTextBoxColumn();
-            Ativo = new DataGridViewCheckBoxColumn();
-            VendaExterna = new DataGridViewCheckBoxColumn();
-            Foto = new DataGridViewImageColumn();
-            FormaPagamento = new DataGridViewTextBoxColumn();
-            CondicaoPagamento = new DataGridViewTextBoxColumn();
             panel2 = new Panel();
+            bntNovo = new Button();
             btnEditar = new Button();
             btnExcluir = new Button();
             groupBox4 = new GroupBox();
@@ -111,43 +90,41 @@
             comboFiltros = new ComboBox();
             openFileDialog1 = new OpenFileDialog();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabCadastro.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
-            tabPage2.SuspendLayout();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tabConsultas.SuspendLayout();
             panel2.SuspendLayout();
             groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabCadastro);
+            tabControl1.Controls.Add(tabConsultas);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(889, 560);
+            tabControl1.Size = new Size(1016, 560);
             tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabCadastro
             // 
-            tabPage1.BorderStyle = BorderStyle.Fixed3D;
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Controls.Add(panel1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(881, 532);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Cadastrar";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabCadastro.BorderStyle = BorderStyle.Fixed3D;
+            tabCadastro.Controls.Add(groupBox1);
+            tabCadastro.Controls.Add(panel1);
+            tabCadastro.Location = new Point(4, 24);
+            tabCadastro.Name = "tabCadastro";
+            tabCadastro.Padding = new Padding(3);
+            tabCadastro.Size = new Size(1008, 532);
+            tabCadastro.TabIndex = 0;
+            tabCadastro.Text = "Cadastrar";
+            tabCadastro.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -187,7 +164,7 @@
             groupBox1.Dock = DockStyle.Top;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(871, 474);
+            groupBox1.Size = new Size(998, 468);
             groupBox1.TabIndex = 126;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
@@ -222,7 +199,6 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(radioButtonVendasExternasNao);
             groupBox3.Controls.Add(radioButtonVendasExternasSim);
             groupBox3.Font = new Font("Arial", 9.75F);
             groupBox3.ForeColor = Color.FromArgb(38, 52, 75);
@@ -233,23 +209,11 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Vendas Externas ?";
             // 
-            // radioButtonVendasExternasNao
-            // 
-            radioButtonVendasExternasNao.AutoSize = true;
-            radioButtonVendasExternasNao.Enabled = false;
-            radioButtonVendasExternasNao.Location = new Point(73, 20);
-            radioButtonVendasExternasNao.Name = "radioButtonVendasExternasNao";
-            radioButtonVendasExternasNao.Size = new Size(48, 20);
-            radioButtonVendasExternasNao.TabIndex = 1;
-            radioButtonVendasExternasNao.TabStop = true;
-            radioButtonVendasExternasNao.Text = "Não";
-            radioButtonVendasExternasNao.UseVisualStyleBackColor = true;
-            // 
             // radioButtonVendasExternasSim
             // 
             radioButtonVendasExternasSim.AutoSize = true;
             radioButtonVendasExternasSim.Enabled = false;
-            radioButtonVendasExternasSim.Location = new Point(22, 20);
+            radioButtonVendasExternasSim.Location = new Point(41, 20);
             radioButtonVendasExternasSim.Name = "radioButtonVendasExternasSim";
             radioButtonVendasExternasSim.Size = new Size(48, 20);
             radioButtonVendasExternasSim.TabIndex = 0;
@@ -259,28 +223,15 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(radioButtonAtivoNao);
             groupBox2.Controls.Add(radioButtonAtivoSim);
             groupBox2.Font = new Font("Arial", 9.75F);
             groupBox2.ForeColor = Color.FromArgb(38, 52, 75);
             groupBox2.Location = new Point(4, 290);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(133, 55);
+            groupBox2.Size = new Size(89, 55);
             groupBox2.TabIndex = 158;
             groupBox2.TabStop = false;
             groupBox2.Text = "Ativo?";
-            // 
-            // radioButtonAtivoNao
-            // 
-            radioButtonAtivoNao.AutoSize = true;
-            radioButtonAtivoNao.Enabled = false;
-            radioButtonAtivoNao.Location = new Point(69, 19);
-            radioButtonAtivoNao.Name = "radioButtonAtivoNao";
-            radioButtonAtivoNao.Size = new Size(48, 20);
-            radioButtonAtivoNao.TabIndex = 1;
-            radioButtonAtivoNao.TabStop = true;
-            radioButtonAtivoNao.Text = "Não";
-            radioButtonAtivoNao.UseVisualStyleBackColor = true;
             // 
             // radioButtonAtivoSim
             // 
@@ -345,7 +296,7 @@
             textInfoAdcionais.Location = new Point(4, 261);
             textInfoAdcionais.Name = "textInfoAdcionais";
             textInfoAdcionais.ReadOnly = true;
-            textInfoAdcionais.Size = new Size(626, 23);
+            textInfoAdcionais.Size = new Size(753, 23);
             textInfoAdcionais.TabIndex = 156;
             // 
             // label15
@@ -385,7 +336,7 @@
             textSalario.Location = new Point(208, 212);
             textSalario.Name = "textSalario";
             textSalario.ReadOnly = true;
-            textSalario.Size = new Size(170, 23);
+            textSalario.Size = new Size(297, 23);
             textSalario.TabIndex = 152;
             textSalario.Text = "0,00";
             // 
@@ -427,7 +378,7 @@
             textComissao.Location = new Point(407, 164);
             textComissao.Name = "textComissao";
             textComissao.ReadOnly = true;
-            textComissao.Size = new Size(128, 23);
+            textComissao.Size = new Size(255, 23);
             textComissao.TabIndex = 148;
             textComissao.Text = "0,00";
             // 
@@ -479,7 +430,7 @@
             textCidade.Location = new Point(4, 164);
             textCidade.Name = "textCidade";
             textCidade.ReadOnly = true;
-            textCidade.Size = new Size(198, 23);
+            textCidade.Size = new Size(325, 23);
             textCidade.TabIndex = 142;
             // 
             // label7
@@ -499,7 +450,7 @@
             textBairro.Location = new Point(541, 109);
             textBairro.Name = "textBairro";
             textBairro.ReadOnly = true;
-            textBairro.Size = new Size(304, 23);
+            textBairro.Size = new Size(431, 23);
             textBairro.TabIndex = 140;
             // 
             // label6
@@ -519,7 +470,7 @@
             textEndereco.Location = new Point(208, 109);
             textEndereco.Name = "textEndereco";
             textEndereco.ReadOnly = true;
-            textEndereco.Size = new Size(327, 23);
+            textEndereco.Size = new Size(454, 23);
             textEndereco.TabIndex = 138;
             // 
             // label5
@@ -560,7 +511,7 @@
             textRg.Mask = "00.000.000-0";
             textRg.Name = "textRg";
             textRg.ReadOnly = true;
-            textRg.Size = new Size(234, 23);
+            textRg.Size = new Size(174, 23);
             textRg.TabIndex = 134;
             // 
             // label2
@@ -600,7 +551,7 @@
             textNome.Location = new Point(76, 58);
             textNome.Name = "textNome";
             textNome.ReadOnly = true;
-            textNome.Size = new Size(325, 23);
+            textNome.Size = new Size(452, 23);
             textNome.TabIndex = 130;
             // 
             // label3
@@ -618,12 +569,11 @@
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(3, 477);
             panel1.Name = "panel1";
-            panel1.Size = new Size(871, 48);
+            panel1.Size = new Size(998, 48);
             panel1.TabIndex = 125;
             // 
             // btnNovo
@@ -638,17 +588,6 @@
             btnNovo.UseVisualStyleBackColor = true;
             btnNovo.Click += btnNovo_Click;
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(191, 6);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 17;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // btnGravar
             // 
             btnGravar.Image = Properties.Resources.salvar;
@@ -660,166 +599,32 @@
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabConsultas
             // 
-            tabPage2.Controls.Add(panel3);
-            tabPage2.Controls.Add(panel2);
-            tabPage2.Controls.Add(groupBox4);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(881, 532);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Consultas";
-            tabPage2.UseVisualStyleBackColor = true;
+            tabConsultas.Controls.Add(panel3);
+            tabConsultas.Controls.Add(panel2);
+            tabConsultas.Controls.Add(groupBox4);
+            tabConsultas.Location = new Point(4, 24);
+            tabConsultas.Name = "tabConsultas";
+            tabConsultas.Padding = new Padding(3);
+            tabConsultas.Size = new Size(881, 532);
+            tabConsultas.TabIndex = 1;
+            tabConsultas.Text = "Consultas";
+            tabConsultas.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
             panel3.BorderStyle = BorderStyle.Fixed3D;
-            panel3.Controls.Add(dataGridView1);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(3, 106);
             panel3.Name = "panel3";
             panel3.Size = new Size(875, 367);
             panel3.TabIndex = 4;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nome, Cargo, Cpf, Rg, Tel, Bairro, Endereco, Cidade, Uf, Salario, Comissao, Admissao, Ativo, VendaExterna, Foto, FormaPagamento, CondicaoPagamento });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(871, 363);
-            dataGridView1.TabIndex = 0;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            Codigo.Width = 180;
-            // 
-            // Nome
-            // 
-            Nome.HeaderText = "Nome";
-            Nome.Name = "Nome";
-            Nome.ReadOnly = true;
-            Nome.Width = 350;
-            // 
-            // Cargo
-            // 
-            Cargo.HeaderText = "Cargo";
-            Cargo.Name = "Cargo";
-            Cargo.ReadOnly = true;
-            Cargo.Width = 350;
-            // 
-            // Cpf
-            // 
-            Cpf.HeaderText = "Cpf";
-            Cpf.Name = "Cpf";
-            Cpf.ReadOnly = true;
-            Cpf.Width = 250;
-            // 
-            // Rg
-            // 
-            Rg.HeaderText = "Rg";
-            Rg.Name = "Rg";
-            Rg.ReadOnly = true;
-            Rg.Width = 250;
-            // 
-            // Tel
-            // 
-            Tel.HeaderText = "Tel";
-            Tel.Name = "Tel";
-            Tel.ReadOnly = true;
-            Tel.Width = 250;
-            // 
-            // Bairro
-            // 
-            Bairro.HeaderText = "Bairro";
-            Bairro.Name = "Bairro";
-            Bairro.ReadOnly = true;
-            Bairro.Width = 350;
-            // 
-            // Endereco
-            // 
-            Endereco.HeaderText = "Endereço";
-            Endereco.Name = "Endereco";
-            Endereco.ReadOnly = true;
-            Endereco.Width = 350;
-            // 
-            // Cidade
-            // 
-            Cidade.HeaderText = "Cidade";
-            Cidade.Name = "Cidade";
-            Cidade.ReadOnly = true;
-            Cidade.Width = 300;
-            // 
-            // Uf
-            // 
-            Uf.HeaderText = "Uf";
-            Uf.Name = "Uf";
-            Uf.ReadOnly = true;
-            Uf.Width = 80;
-            // 
-            // Salario
-            // 
-            Salario.HeaderText = "Salario";
-            Salario.Name = "Salario";
-            Salario.ReadOnly = true;
-            Salario.Width = 150;
-            // 
-            // Comissao
-            // 
-            Comissao.HeaderText = "Comissão";
-            Comissao.Name = "Comissao";
-            Comissao.ReadOnly = true;
-            Comissao.Width = 150;
-            // 
-            // Admissao
-            // 
-            Admissao.HeaderText = "Admissão";
-            Admissao.Name = "Admissao";
-            Admissao.ReadOnly = true;
-            // 
-            // Ativo
-            // 
-            Ativo.HeaderText = "Ativo?";
-            Ativo.Name = "Ativo";
-            Ativo.ReadOnly = true;
-            // 
-            // VendaExterna
-            // 
-            VendaExterna.HeaderText = "Venda Externa ?";
-            VendaExterna.Name = "VendaExterna";
-            VendaExterna.ReadOnly = true;
-            // 
-            // Foto
-            // 
-            Foto.HeaderText = "Foto";
-            Foto.Name = "Foto";
-            Foto.ReadOnly = true;
-            Foto.Width = 200;
-            // 
-            // FormaPagamento
-            // 
-            FormaPagamento.HeaderText = "Forma de Pagamento";
-            FormaPagamento.Name = "FormaPagamento";
-            FormaPagamento.ReadOnly = true;
-            // 
-            // CondicaoPagamento
-            // 
-            CondicaoPagamento.HeaderText = "Condição de Pagamento";
-            CondicaoPagamento.Name = "CondicaoPagamento";
-            CondicaoPagamento.ReadOnly = true;
-            // 
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(bntNovo);
             panel2.Controls.Add(btnEditar);
             panel2.Controls.Add(btnExcluir);
             panel2.Dock = DockStyle.Bottom;
@@ -828,14 +633,25 @@
             panel2.Size = new Size(875, 56);
             panel2.TabIndex = 3;
             // 
+            // bntNovo
+            // 
+            bntNovo.Image = Properties.Resources.plus;
+            bntNovo.Location = new Point(267, 7);
+            bntNovo.Name = "bntNovo";
+            bntNovo.Size = new Size(101, 40);
+            bntNovo.TabIndex = 27;
+            bntNovo.Text = " Novo";
+            bntNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            bntNovo.UseVisualStyleBackColor = true;
+            // 
             // btnEditar
             // 
-            btnEditar.Image = Properties.Resources.novo;
+            btnEditar.Image = Properties.Resources.marca_de_verificacao;
             btnEditar.Location = new Point(141, 7);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(120, 40);
-            btnEditar.TabIndex = 15;
-            btnEditar.Text = "Editar";
+            btnEditar.TabIndex = 18;
+            btnEditar.Text = "Selecionar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
             // 
@@ -954,7 +770,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(889, 560);
+            ClientSize = new Size(1016, 560);
             Controls.Add(tabControl1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
@@ -965,7 +781,7 @@
             Load += CadastrarFuncionario_Load;
             KeyDown += LiberarCamposParaNovoCadastro_KeyDown;
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
+            tabCadastro.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox3.ResumeLayout(false);
@@ -975,9 +791,7 @@
             groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            tabConsultas.ResumeLayout(false);
             panel2.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
@@ -987,12 +801,11 @@
         #endregion
 
         private TabControl tabControl1;
-        private TabPage tabPage1;
+        private TabPage tabCadastro;
         private Panel panel1;
         private Button btnNovo;
-        private Button btnCancelar;
         private Button btnGravar;
-        private TabPage tabPage2;
+        private TabPage tabConsultas;
         private OpenFileDialog openFileDialog1;
         private GroupBox groupBox4;
         private CheckBox checkBoxTodos;
@@ -1005,15 +818,11 @@
         private ComboBox comboFiltros;
         private Panel panel3;
         private Panel panel2;
-        private Button btnEditar;
         private Button btnExcluir;
-        private DataGridView dataGridView1;
         private GroupBox groupBox1;
         private GroupBox groupBox3;
-        private RadioButton radioButtonVendasExternasNao;
         private RadioButton radioButtonVendasExternasSim;
         private GroupBox groupBox2;
-        private RadioButton radioButtonAtivoNao;
         private RadioButton radioButtonAtivoSim;
         private GroupBox groupBox5;
         private Button button2;
@@ -1048,24 +857,8 @@
         private Label label3;
         private TextBox textCod;
         private Label label18;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn Nome;
-        private DataGridViewTextBoxColumn Cargo;
-        private DataGridViewTextBoxColumn Cpf;
-        private DataGridViewTextBoxColumn Rg;
-        private DataGridViewTextBoxColumn Tel;
-        private DataGridViewTextBoxColumn Bairro;
-        private DataGridViewTextBoxColumn Endereco;
-        private DataGridViewTextBoxColumn Cidade;
-        private DataGridViewTextBoxColumn Uf;
-        private DataGridViewTextBoxColumn Salario;
-        private DataGridViewTextBoxColumn Comissao;
-        private DataGridViewTextBoxColumn Admissao;
-        private DataGridViewCheckBoxColumn Ativo;
-        private DataGridViewCheckBoxColumn VendaExterna;
-        private DataGridViewImageColumn Foto;
-        private DataGridViewTextBoxColumn FormaPagamento;
-        private DataGridViewTextBoxColumn CondicaoPagamento;
         private MaskedTextBox textTel;
+        private Button btnEditar;
+        private Button bntNovo;
     }
 }

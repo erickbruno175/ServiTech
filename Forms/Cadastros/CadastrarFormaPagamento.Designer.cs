@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarFormaPagamento));
-            tabPage1 = new TabPage();
+            tabCadastro = new TabPage();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnCancelar = new Button();
             btnGravar = new Button();
             groupBox1 = new GroupBox();
             textTaxa = new TextBox();
@@ -40,75 +39,66 @@
             textOperadora = new TextBox();
             label1 = new Label();
             groupBox3 = new GroupBox();
-            radioButtonAceitaNao = new RadioButton();
-            radioButtonAceitaSim = new RadioButton();
+            checkedAceita = new CheckBox();
             textCod = new TextBox();
             label4 = new Label();
             groupBox2 = new GroupBox();
-            radioAtivoNao = new RadioButton();
-            radioAtivoSim = new RadioButton();
+            checkAtivo = new CheckBox();
             textTipo = new TextBox();
             label3 = new Label();
             textNome = new TextBox();
             label2 = new Label();
-            tabControl1 = new TabControl();
-            tabPage2 = new TabPage();
+            tabControl = new TabControl();
+            tabConsultas = new TabPage();
             panel3 = new Panel();
+            bntNovo = new Button();
             btnEditar = new Button();
             btnExcluir = new Button();
             panel2 = new Panel();
-            dataGridView1 = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            Nome = new DataGridViewTextBoxColumn();
-            Tipo = new DataGridViewTextBoxColumn();
-            Taxa = new DataGridViewTextBoxColumn();
-            Operadora = new DataGridViewTextBoxColumn();
-            AceitaParcelamento = new DataGridViewCheckBoxColumn();
-            Ativo = new DataGridViewCheckBoxColumn();
+            dataFormasPagamento = new DataGridView();
             groupBox4 = new GroupBox();
-            checkBoxTodos = new CheckBox();
-            btnPesquisarDados = new Button();
             textDadosPesquisa = new TextBox();
             label16 = new Label();
             label17 = new Label();
             comboModelo = new ComboBox();
             label6 = new Label();
             comboFiltros = new ComboBox();
-            tabPage1.SuspendLayout();
+            label45 = new Label();
+            label7 = new Label();
+            tabCadastro.SuspendLayout();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
-            tabControl1.SuspendLayout();
-            tabPage2.SuspendLayout();
+            tabControl.SuspendLayout();
+            tabConsultas.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataFormasPagamento).BeginInit();
             groupBox4.SuspendLayout();
             SuspendLayout();
             // 
-            // tabPage1
+            // tabCadastro
             // 
-            tabPage1.Controls.Add(panel1);
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(823, 399);
-            tabPage1.TabIndex = 2;
-            tabPage1.Text = "Cadastrar";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabCadastro.Controls.Add(panel1);
+            tabCadastro.Controls.Add(groupBox1);
+            tabCadastro.Location = new Point(4, 24);
+            tabCadastro.Name = "tabCadastro";
+            tabCadastro.Padding = new Padding(3);
+            tabCadastro.Size = new Size(876, 518);
+            tabCadastro.TabIndex = 2;
+            tabCadastro.Text = "Cadastrar";
+            tabCadastro.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 338);
+            panel1.Location = new Point(3, 457);
             panel1.Name = "panel1";
-            panel1.Size = new Size(817, 58);
+            panel1.Size = new Size(870, 58);
             panel1.TabIndex = 1;
             // 
             // btnNovo
@@ -121,17 +111,7 @@
             btnNovo.Text = "Incluir F4";
             btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNovo.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(191, 8);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 17;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnNovo.Click += btnNovo_Click;
             // 
             // btnGravar
             // 
@@ -143,9 +123,12 @@
             btnGravar.Text = "Gravar F5";
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
+            btnGravar.Click += btnGravar_Click;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label45);
             groupBox1.Controls.Add(textTaxa);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(textOperadora);
@@ -161,7 +144,7 @@
             groupBox1.Dock = DockStyle.Top;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(817, 158);
+            groupBox1.Size = new Size(870, 143);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
@@ -170,9 +153,11 @@
             // 
             textTaxa.Location = new Point(434, 89);
             textTaxa.Name = "textTaxa";
+            textTaxa.PlaceholderText = "0,00";
             textTaxa.ReadOnly = true;
             textTaxa.Size = new Size(123, 23);
             textTaxa.TabIndex = 56;
+            textTaxa.TextChanged += MskararCampoMoeda_Changed;
             // 
             // label5
             // 
@@ -187,10 +172,10 @@
             // 
             // textOperadora
             // 
-            textOperadora.Location = new Point(168, 87);
+            textOperadora.Location = new Point(123, 87);
             textOperadora.Name = "textOperadora";
             textOperadora.ReadOnly = true;
-            textOperadora.Size = new Size(260, 23);
+            textOperadora.Size = new Size(305, 23);
             textOperadora.TabIndex = 54;
             // 
             // label1
@@ -198,7 +183,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 9.75F);
             label1.ForeColor = Color.FromArgb(44, 62, 80);
-            label1.Location = new Point(168, 67);
+            label1.Location = new Point(123, 69);
             label1.Name = "label1";
             label1.Size = new Size(108, 16);
             label1.TabIndex = 53;
@@ -207,38 +192,26 @@
             // groupBox3
             // 
             groupBox3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            groupBox3.Controls.Add(radioButtonAceitaNao);
-            groupBox3.Controls.Add(radioButtonAceitaSim);
+            groupBox3.Controls.Add(checkedAceita);
             groupBox3.Font = new Font("Arial", 9.75F);
             groupBox3.ForeColor = Color.FromArgb(44, 62, 80);
             groupBox3.Location = new Point(6, 67);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(156, 57);
+            groupBox3.Size = new Size(111, 57);
             groupBox3.TabIndex = 52;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Aceita Parcelamento? ";
+            groupBox3.Text = "Aceita Parcel? ";
             // 
-            // radioButtonAceitaNao
+            // checkedAceita
             // 
-            radioButtonAceitaNao.Enabled = false;
-            radioButtonAceitaNao.Location = new Point(66, 21);
-            radioButtonAceitaNao.Name = "radioButtonAceitaNao";
-            radioButtonAceitaNao.Size = new Size(53, 22);
-            radioButtonAceitaNao.TabIndex = 4;
-            radioButtonAceitaNao.TabStop = true;
-            radioButtonAceitaNao.Text = "Não";
-            radioButtonAceitaNao.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonAceitaSim
-            // 
-            radioButtonAceitaSim.Enabled = false;
-            radioButtonAceitaSim.Location = new Point(6, 20);
-            radioButtonAceitaSim.Name = "radioButtonAceitaSim";
-            radioButtonAceitaSim.Size = new Size(54, 24);
-            radioButtonAceitaSim.TabIndex = 3;
-            radioButtonAceitaSim.TabStop = true;
-            radioButtonAceitaSim.Text = "Sim";
-            radioButtonAceitaSim.UseVisualStyleBackColor = true;
+            checkedAceita.AutoSize = true;
+            checkedAceita.Enabled = false;
+            checkedAceita.Location = new Point(15, 22);
+            checkedAceita.Name = "checkedAceita";
+            checkedAceita.Size = new Size(49, 20);
+            checkedAceita.TabIndex = 0;
+            checkedAceita.Text = "Sim";
+            checkedAceita.UseVisualStyleBackColor = true;
             // 
             // textCod
             // 
@@ -262,38 +235,26 @@
             // groupBox2
             // 
             groupBox2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            groupBox2.Controls.Add(radioAtivoNao);
-            groupBox2.Controls.Add(radioAtivoSim);
+            groupBox2.Controls.Add(checkAtivo);
             groupBox2.Font = new Font("Arial", 9.75F);
             groupBox2.ForeColor = Color.FromArgb(44, 62, 80);
             groupBox2.Location = new Point(567, 69);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(133, 55);
+            groupBox2.Size = new Size(82, 55);
             groupBox2.TabIndex = 45;
             groupBox2.TabStop = false;
             groupBox2.Text = "Ativo ?";
             // 
-            // radioAtivoNao
+            // checkAtivo
             // 
-            radioAtivoNao.Enabled = false;
-            radioAtivoNao.Location = new Point(66, 19);
-            radioAtivoNao.Name = "radioAtivoNao";
-            radioAtivoNao.Size = new Size(53, 22);
-            radioAtivoNao.TabIndex = 4;
-            radioAtivoNao.TabStop = true;
-            radioAtivoNao.Text = "Não";
-            radioAtivoNao.UseVisualStyleBackColor = true;
-            // 
-            // radioAtivoSim
-            // 
-            radioAtivoSim.Enabled = false;
-            radioAtivoSim.Location = new Point(6, 18);
-            radioAtivoSim.Name = "radioAtivoSim";
-            radioAtivoSim.Size = new Size(54, 24);
-            radioAtivoSim.TabIndex = 3;
-            radioAtivoSim.TabStop = true;
-            radioAtivoSim.Text = "Sim";
-            radioAtivoSim.UseVisualStyleBackColor = true;
+            checkAtivo.AutoSize = true;
+            checkAtivo.Enabled = false;
+            checkAtivo.Location = new Point(6, 19);
+            checkAtivo.Name = "checkAtivo";
+            checkAtivo.Size = new Size(54, 20);
+            checkAtivo.TabIndex = 0;
+            checkAtivo.Text = "Ativo";
+            checkAtivo.UseVisualStyleBackColor = true;
             // 
             // textTipo
             // 
@@ -301,7 +262,7 @@
             textTipo.Location = new Point(434, 38);
             textTipo.Name = "textTipo";
             textTipo.ReadOnly = true;
-            textTipo.Size = new Size(352, 23);
+            textTipo.Size = new Size(405, 23);
             textTipo.TabIndex = 9;
             // 
             // label3
@@ -334,135 +295,100 @@
             label2.TabIndex = 6;
             label2.Text = "Nome";
             // 
-            // tabControl1
+            // tabControl
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(0, 0);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(831, 427);
-            tabControl1.TabIndex = 0;
+            tabControl.Controls.Add(tabCadastro);
+            tabControl.Controls.Add(tabConsultas);
+            tabControl.Dock = DockStyle.Fill;
+            tabControl.Location = new Point(0, 0);
+            tabControl.Name = "tabControl";
+            tabControl.SelectedIndex = 0;
+            tabControl.Size = new Size(884, 546);
+            tabControl.TabIndex = 0;
             // 
-            // tabPage2
+            // tabConsultas
             // 
-            tabPage2.Controls.Add(panel3);
-            tabPage2.Controls.Add(panel2);
-            tabPage2.Controls.Add(groupBox4);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(823, 399);
-            tabPage2.TabIndex = 3;
-            tabPage2.Text = "Consultas";
-            tabPage2.UseVisualStyleBackColor = true;
+            tabConsultas.Controls.Add(panel3);
+            tabConsultas.Controls.Add(panel2);
+            tabConsultas.Controls.Add(groupBox4);
+            tabConsultas.Location = new Point(4, 24);
+            tabConsultas.Name = "tabConsultas";
+            tabConsultas.Padding = new Padding(3);
+            tabConsultas.Size = new Size(876, 518);
+            tabConsultas.TabIndex = 3;
+            tabConsultas.Text = "Consultas";
+            tabConsultas.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(bntNovo);
             panel3.Controls.Add(btnEditar);
             panel3.Controls.Add(btnExcluir);
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(3, 340);
+            panel3.Location = new Point(3, 463);
             panel3.Name = "panel3";
-            panel3.Size = new Size(817, 56);
+            panel3.Size = new Size(870, 52);
             panel3.TabIndex = 4;
+            // 
+            // bntNovo
+            // 
+            bntNovo.Image = Properties.Resources.plus;
+            bntNovo.Location = new Point(265, 7);
+            bntNovo.Name = "bntNovo";
+            bntNovo.Size = new Size(101, 40);
+            bntNovo.TabIndex = 27;
+            bntNovo.Text = " Novo";
+            bntNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            bntNovo.UseVisualStyleBackColor = true;
+            bntNovo.Click += bntNovo_Click;
             // 
             // btnEditar
             // 
-            btnEditar.Image = Properties.Resources.novo;
-            btnEditar.Location = new Point(4, 8);
+            btnEditar.Image = Properties.Resources.marca_de_verificacao;
+            btnEditar.Location = new Point(139, 6);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(128, 40);
-            btnEditar.TabIndex = 11;
-            btnEditar.Text = "Editar";
+            btnEditar.Size = new Size(120, 40);
+            btnEditar.TabIndex = 18;
+            btnEditar.Text = "Selecionar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnExcluir
             // 
             btnExcluir.Image = Properties.Resources.lixeira;
-            btnExcluir.Location = new Point(138, 8);
+            btnExcluir.Location = new Point(4, 6);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(129, 40);
             btnExcluir.TabIndex = 12;
             btnExcluir.Text = "Excluir F7";
             btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(dataGridView1);
-            panel2.Dock = DockStyle.Fill;
+            panel2.Controls.Add(dataFormasPagamento);
             panel2.Location = new Point(3, 98);
             panel2.Name = "panel2";
-            panel2.Size = new Size(817, 298);
+            panel2.Size = new Size(870, 346);
             panel2.TabIndex = 3;
             // 
-            // dataGridView1
+            // dataFormasPagamento
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nome, Tipo, Taxa, Operadora, AceitaParcelamento, Ativo });
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(813, 234);
-            dataGridView1.TabIndex = 1;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            // 
-            // Nome
-            // 
-            Nome.HeaderText = "Nome";
-            Nome.Name = "Nome";
-            Nome.ReadOnly = true;
-            // 
-            // Tipo
-            // 
-            Tipo.HeaderText = "Tipo";
-            Tipo.Name = "Tipo";
-            Tipo.ReadOnly = true;
-            // 
-            // Taxa
-            // 
-            Taxa.HeaderText = "Taxa";
-            Taxa.Name = "Taxa";
-            Taxa.ReadOnly = true;
-            // 
-            // Operadora
-            // 
-            Operadora.HeaderText = "Operadora";
-            Operadora.Name = "Operadora";
-            Operadora.ReadOnly = true;
-            // 
-            // AceitaParcelamento
-            // 
-            AceitaParcelamento.HeaderText = "Aceita Parcelamento?";
-            AceitaParcelamento.Name = "AceitaParcelamento";
-            AceitaParcelamento.ReadOnly = true;
-            AceitaParcelamento.Width = 200;
-            // 
-            // Ativo
-            // 
-            Ativo.HeaderText = "Ativo?";
-            Ativo.Name = "Ativo";
-            Ativo.ReadOnly = true;
-            Ativo.Resizable = DataGridViewTriState.True;
-            Ativo.SortMode = DataGridViewColumnSortMode.Automatic;
+            dataFormasPagamento.BackgroundColor = Color.White;
+            dataFormasPagamento.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataFormasPagamento.Dock = DockStyle.Fill;
+            dataFormasPagamento.Location = new Point(0, 0);
+            dataFormasPagamento.Name = "dataFormasPagamento";
+            dataFormasPagamento.Size = new Size(866, 342);
+            dataFormasPagamento.TabIndex = 0;
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(checkBoxTodos);
-            groupBox4.Controls.Add(btnPesquisarDados);
             groupBox4.Controls.Add(textDadosPesquisa);
             groupBox4.Controls.Add(label16);
             groupBox4.Controls.Add(label17);
@@ -472,40 +398,19 @@
             groupBox4.Dock = DockStyle.Top;
             groupBox4.Location = new Point(3, 3);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(817, 95);
+            groupBox4.Size = new Size(870, 95);
             groupBox4.TabIndex = 2;
             groupBox4.TabStop = false;
             groupBox4.Text = "Campos de Pesquisa";
-            groupBox4.Resize += groupBox4_Resize;
-            // 
-            // checkBoxTodos
-            // 
-            checkBoxTodos.AutoSize = true;
-            checkBoxTodos.Location = new Point(753, 19);
-            checkBoxTodos.Name = "checkBoxTodos";
-            checkBoxTodos.Size = new Size(58, 19);
-            checkBoxTodos.TabIndex = 27;
-            checkBoxTodos.Text = "Todos";
-            checkBoxTodos.UseVisualStyleBackColor = true;
-            // 
-            // btnPesquisarDados
-            // 
-            btnPesquisarDados.Image = Properties.Resources.lupa;
-            btnPesquisarDados.Location = new Point(702, 62);
-            btnPesquisarDados.Name = "btnPesquisarDados";
-            btnPesquisarDados.Size = new Size(109, 29);
-            btnPesquisarDados.TabIndex = 26;
-            btnPesquisarDados.Text = "Pesquisar";
-            btnPesquisarDados.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnPesquisarDados.UseVisualStyleBackColor = true;
             // 
             // textDadosPesquisa
             // 
             textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textDadosPesquisa.Location = new Point(291, 35);
             textDadosPesquisa.Name = "textDadosPesquisa";
-            textDadosPesquisa.Size = new Size(520, 23);
+            textDadosPesquisa.Size = new Size(573, 23);
             textDadosPesquisa.TabIndex = 24;
+            textDadosPesquisa.TextChanged += textDadosPesquisa_TextChanged;
             // 
             // label16
             // 
@@ -556,38 +461,61 @@
             comboFiltros.Size = new Size(145, 23);
             comboFiltros.TabIndex = 19;
             // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label45.ForeColor = Color.FromArgb(192, 0, 0);
+            label45.Location = new Point(123, 22);
+            label45.Name = "label45";
+            label45.Size = new Size(74, 13);
+            label45.TabIndex = 276;
+            label45.Text = "[Obrigatorio]";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.FromArgb(192, 0, 0);
+            label7.Location = new Point(616, 22);
+            label7.Name = "label7";
+            label7.Size = new Size(74, 13);
+            label7.TabIndex = 277;
+            label7.Text = "[Obrigatorio]";
+            // 
             // CadastrarFormaPagamento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(831, 427);
-            Controls.Add(tabControl1);
+            ClientSize = new Size(884, 546);
+            Controls.Add(tabControl);
             Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
-            MaximizeBox = false;
             Name = "CadastrarFormaPagamento";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Cadastrar Formas Pagamento";
+            Text = "Cadastrar Formas de  Pagamento";
             Load += CadastrarFormaPagamento_Load;
             KeyDown += LiberarCamposParaCadastro_KeyDown;
-            tabPage1.ResumeLayout(false);
+            tabCadastro.ResumeLayout(false);
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
-            tabControl1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            tabControl.ResumeLayout(false);
+            tabConsultas.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataFormasPagamento).EndInit();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-        private TabPage tabPage1;
+        private TabPage tabCadastro;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private RadioButton radioAtivoNao;
@@ -595,12 +523,10 @@
         private Label label3;
         private TextBox textNome;
         private Label label2;
-        private TabControl tabControl1;
+        private TabControl tabControl;
         private TextBox textTipo;
-        private TabPage tabPage2;
+        private TabPage tabConsultas;
         private GroupBox groupBox4;
-        private CheckBox checkBoxTodos;
-        private Button btnPesquisarDados;
         private TextBox textDadosPesquisa;
         private Label label16;
         private Label label17;
@@ -610,27 +536,23 @@
         private Panel panel1;
         private Panel panel3;
         private Panel panel2;
-        private Button btnEditar;
         private Button btnExcluir;
         private Button btnNovo;
-        private Button btnCancelar;
         private Button btnGravar;
-        private DataGridView dataGridView1;
         private TextBox textCod;
         private Label label4;
         private GroupBox groupBox3;
         private RadioButton radioButtonAceitaNao;
-        private RadioButton radioButtonAceitaSim;
         private TextBox textTaxa;
         private Label label5;
         private TextBox textOperadora;
         private Label label1;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn Nome;
-        private DataGridViewTextBoxColumn Tipo;
-        private DataGridViewTextBoxColumn Taxa;
-        private DataGridViewTextBoxColumn Operadora;
-        private DataGridViewCheckBoxColumn AceitaParcelamento;
-        private DataGridViewCheckBoxColumn Ativo;
+        private DataGridView dataFormasPagamento;
+        private CheckBox checkAtivo;
+        private CheckBox checkedAceita;
+        private Button btnEditar;
+        private Button bntNovo;
+        private Label label45;
+        private Label label7;
     }
 }

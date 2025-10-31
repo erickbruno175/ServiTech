@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ServiTech.Forms.Cadastros
 {
@@ -40,12 +41,7 @@ namespace ServiTech.Forms.Cadastros
 
         }
 
-        private void groupBox2_Resize(object sender, EventArgs e)
-        {
-            btnPesquisarPais.Location = new Point(this.groupBox2.Width - btnPesquisarPais.Width - 9, btnPesquisarPais.Location.Y);
-            checkBoxTodos.Location = new Point(this.groupBox2.Width - checkBoxTodos.Width - 9, checkBoxTodos.Location.Y);
 
-        }
 
         private void LiberarCamposParaNovoCadastro_Click(object sender, EventArgs e)
         {
@@ -64,6 +60,9 @@ namespace ServiTech.Forms.Cadastros
                 textCodigoPais.Text = "";
                 textNome.Text = "";
                 textNome.Focus();
+            }else if (e.KeyCode == Keys.F5)
+            {
+                this.GravarPais();
             }
         }
 
@@ -83,25 +82,57 @@ namespace ServiTech.Forms.Cadastros
             {
                 // Obtém todos os países do banco
                 var paises = dbConectionPdv.Paises
-                               .OrderBy(p => p.Id)
-                               .ToList();
+                    .OrderBy(p => p.Id)
+                    .Select(p => new
+                    {
+                        Codigo = p.Id,
+                        Nome = p.Nome
+                    })
+                    .ToList();
 
                 dataGridPais.DataSource = paises;
 
-                dataGridPais.Columns["Nome"].HeaderText = "Nome do  Pais";
-                dataGridPais.Columns["Nome"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                // ==== ESTILO DO CABEÇALHO ====
+                dataGridPais.EnableHeadersVisualStyles = false;
+                dataGridPais.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 66, 100);
+                dataGridPais.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dataGridPais.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
+                dataGridPais.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dataGridPais.ColumnHeadersHeight = 32;
+
+                // ==== ESTILO DAS LINHAS ====
+                dataGridPais.DefaultCellStyle.BackColor = Color.White;
+                dataGridPais.DefaultCellStyle.ForeColor = Color.Black;
+                dataGridPais.DefaultCellStyle.Font = new Font("Segoe UI", 8F);
+                dataGridPais.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 135);
+                dataGridPais.DefaultCellStyle.SelectionForeColor = Color.White;
+                dataGridPais.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+                dataGridPais.RowHeadersVisible = false;
+
+                // ==== CONFIGURAÇÃO DAS COLUNAS ====
+                dataGridPais.Columns["Codigo"].HeaderText = "Código";
+                dataGridPais.Columns["Codigo"].Width = 80;
+                dataGridPais.Columns["Codigo"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+                dataGridPais.Columns["Nome"].HeaderText = "Nome do País";
                 dataGridPais.Columns["Nome"].Width = 250;
-                dataGridPais.Columns["Id"].HeaderText = "Codigo";
 
-
+                // ==== COMPORTAMENTO ====
+                dataGridPais.ReadOnly = true;
+                dataGridPais.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dataGridPais.MultiSelect = false;
+                dataGridPais.BorderStyle = BorderStyle.FixedSingle;
+                dataGridPais.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+                dataGridPais.GridColor = Color.FromArgb(220, 220, 220);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar os países: " + ex.Message);
+                MessageBox.Show("Erro ao carregar os países: " + ex.Message,
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void btnGravar_Click(object sender, EventArgs e)
+        private void GravarPais()
         {
 
             try
@@ -116,7 +147,6 @@ namespace ServiTech.Forms.Cadastros
                 {
                     if (string.IsNullOrWhiteSpace(textCodigoPais.Text))
                     {
-                        // novo pais
 
                         if (dbConectionPdv.Paises.Any(p => p.Nome == textNome.Text))
                         {
@@ -134,9 +164,10 @@ namespace ServiTech.Forms.Cadastros
                             };
                             dbConectionPdv.Paises.Add(novoPais);
                             dbConectionPdv.SaveChanges();
+                            MessageBox.Show("País cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK);
                             textCodigoPais.Text = novoPais.Id.ToString();
                             CarregarDataGrid();
-                            MessageBox.Show("País cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK);
+                            return;
                         }
                     }
                     else
@@ -156,8 +187,9 @@ namespace ServiTech.Forms.Cadastros
                             {
                                 paisExistente.Nome = textNome.Text;
                                 dbConectionPdv.SaveChanges();
-                                CarregarDataGrid();
                                 MessageBox.Show("País atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK);
+                                CarregarDataGrid();
+                                return;
                             }
                         }
                         else
@@ -173,6 +205,10 @@ namespace ServiTech.Forms.Cadastros
                 MessageBox.Show("Erro ao salvar o país: " + ex.Message);
             }
         }
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+            this.GravarPais();
+        }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
@@ -180,7 +216,7 @@ namespace ServiTech.Forms.Cadastros
             if (dataGridPais.SelectedRows.Count > 0)
             {
                 var linhaSelecionada = dataGridPais.SelectedRows[0];
-                var paisId = (int)linhaSelecionada.Cells["Id"].Value;
+                var paisId = (int)linhaSelecionada.Cells["Codigo"].Value;
                 var paisEditar = dbConectionPdv.Paises.Find(paisId);
                 this.AbrirAbaCadastro(paisEditar.Id, paisEditar.Nome);
             }
@@ -192,7 +228,7 @@ namespace ServiTech.Forms.Cadastros
 
         private void AbrirAbaCadastro(int id, string nome)
         {
-            tabContro.SelectedTab = tabPage1;
+            tabControl.SelectedTab = tabCadastro;
             textCodigoPais.Text = id.ToString();
             textNome.Text = nome;
             textNome.ReadOnly = false;
@@ -216,7 +252,7 @@ namespace ServiTech.Forms.Cadastros
                     if (dataGridPais.SelectedRows.Count > 0)
                     {
                         var linhaSelecionada = dataGridPais.SelectedRows[0];
-                        var paisId = (int)linhaSelecionada.Cells["Id"].Value;
+                        var paisId = (int)linhaSelecionada.Cells["Codigo"].Value;
                         var paisParaExclusao = dbConectionPdv.Paises.FirstOrDefault(p => p.Id == paisId);
 
                         if (paisParaExclusao != null)
@@ -267,7 +303,7 @@ namespace ServiTech.Forms.Cadastros
                     }
                     else if (comboFiltros.SelectedItem.ToString() == "Por Codigo ")
                     {
-                        if (int.TryParse(filtro, out int codigo))
+                        if (int.TryParse(textDadosPesquisa.Text, out int codigo))
                         {
                             query = query.Where(p => p.Id == codigo);
                         }
@@ -286,6 +322,23 @@ namespace ServiTech.Forms.Cadastros
             }
 
 
+        }
+
+        private void CadastrarPais_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnEditar_Click(this, new EventArgs());
+            }
+        }
+
+        private void bntNovo_Click(object sender, EventArgs e)
+        {
+
+            tabControl.SelectedTab = tabCadastro;
+            textNome.ReadOnly = false;
+            textNome.Focus();
+            textCodigoPais.Clear();
         }
     }
 }

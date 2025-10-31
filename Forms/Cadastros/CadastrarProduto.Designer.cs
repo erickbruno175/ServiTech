@@ -28,14 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarProduto));
-            tabPage3 = new TabPage();
-            panel3 = new Panel();
-            btnEditar = new Button();
-            btnExcluir = new Button();
-            btnImprimir = new Button();
-            panel2 = new Panel();
+            tabConsultas = new TabPage();
             groupBox6 = new GroupBox();
             label21 = new Label();
             label18 = new Label();
@@ -45,46 +39,87 @@
             textBox4 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            NomeProduto = new DataGridViewTextBoxColumn();
-            CodigoBarra = new DataGridViewTextBoxColumn();
-            CodigoInterno = new DataGridViewTextBoxColumn();
-            UniMedida = new DataGridViewTextBoxColumn();
-            MarcaFabricante = new DataGridViewTextBoxColumn();
-            Fornecedor = new DataGridViewTextBoxColumn();
-            Grupo = new DataGridViewTextBoxColumn();
-            SubGrupo = new DataGridViewTextBoxColumn();
-            Ativo = new DataGridViewCheckBoxColumn();
-            Desconto = new DataGridViewCheckBoxColumn();
-            Origem = new DataGridViewTextBoxColumn();
-            Ncm = new DataGridViewTextBoxColumn();
-            Cfop = new DataGridViewTextBoxColumn();
-            Cest = new DataGridViewTextBoxColumn();
-            Cst = new DataGridViewTextBoxColumn();
-            Icms = new DataGridViewTextBoxColumn();
-            Mva = new DataGridViewTextBoxColumn();
-            Ipi = new DataGridViewTextBoxColumn();
-            Pis = new DataGridViewTextBoxColumn();
-            Confins = new DataGridViewTextBoxColumn();
-            Margem = new DataGridViewTextBoxColumn();
-            ValorCusto = new DataGridViewTextBoxColumn();
-            ValorVenda = new DataGridViewTextBoxColumn();
-            PontoReposicao = new DataGridViewTextBoxColumn();
-            UltimaEntrada = new DataGridViewTextBoxColumn();
-            UltimaSaida = new DataGridViewTextBoxColumn();
-            Observacao = new DataGridViewTextBoxColumn();
+            panel3 = new Panel();
+            btnDuplicar = new Button();
+            bntNovo = new Button();
+            btnEditar = new Button();
+            btnExcluir = new Button();
+            btnImprimir = new Button();
+            panel2 = new Panel();
+            dataGridProdutos = new DataGridView();
             groupBox5 = new GroupBox();
-            checkBoxCarregarTodos = new CheckBox();
             textDadosPesquisa = new TextBox();
-            btnPesquisar = new Button();
             label7 = new Label();
             comboModelo = new ComboBox();
             label8 = new Label();
             label9 = new Label();
             comboFiltros = new ComboBox();
-            tabPage1 = new TabPage();
+            tabCadastro = new TabPage();
             groupBox1 = new GroupBox();
+            groupBox8 = new GroupBox();
+            checkdProdBalança = new CheckBox();
+            groupBox2 = new GroupBox();
+            pictureFotoProduto = new PictureBox();
+            panel4 = new Panel();
+            btnRemoverFoto = new Button();
+            btnAddFoto = new Button();
+            label54 = new Label();
+            label53 = new Label();
+            label52 = new Label();
+            label51 = new Label();
+            label50 = new Label();
+            label49 = new Label();
+            label48 = new Label();
+            label47 = new Label();
+            label45 = new Label();
+            textCodigoBalanca = new TextBox();
+            label44 = new Label();
+            label43 = new Label();
+            label42 = new Label();
+            textDataValidade = new MaskedTextBox();
+            comboUnidadeMedidaSaida = new ComboBox();
+            label28 = new Label();
+            textCodBarraEAN = new TextBox();
+            label41 = new Label();
+            textConfins = new GroupBox();
+            label58 = new Label();
+            label57 = new Label();
+            label56 = new Label();
+            label55 = new Label();
+            textCOFINS = new TextBox();
+            label37 = new Label();
+            textIPI = new TextBox();
+            label24 = new Label();
+            textICMS = new TextBox();
+            label22 = new Label();
+            textPIS = new TextBox();
+            label20 = new Label();
+            label19 = new Label();
+            comboBoxCst = new ComboBox();
+            label17 = new Label();
+            comboBoxCfop = new ComboBox();
+            label13 = new Label();
+            comboBoxNcm = new ComboBox();
+            label12 = new Label();
+            comboBoxOrigemProd = new ComboBox();
+            groupBox7 = new GroupBox();
+            label32 = new Label();
+            textQuantMaxima = new TextBox();
+            label27 = new Label();
+            label26 = new Label();
+            textQuatidade = new TextBox();
+            textPontoReposicao = new TextBox();
+            label25 = new Label();
+            comboBoxTipoProduto = new ComboBox();
+            textIdFornecedor = new TextBox();
+            label23 = new Label();
+            textNomeFornecedor = new TextBox();
+            label40 = new Label();
+            textDataAtualizacao = new MaskedTextBox();
+            textLucro = new TextBox();
+            label38 = new Label();
+            comboBoxMarcaFabricante = new ComboBox();
+            comboUnidadeMedidaEntrada = new ComboBox();
             label39 = new Label();
             textDataCadastro = new MaskedTextBox();
             comboBoxTamanho = new ComboBox();
@@ -93,69 +128,27 @@
             label33 = new Label();
             textCor = new TextBox();
             label15 = new Label();
-            btnBuscaMarca = new Button();
-            textCest = new NumericUpDown();
-            textNcm = new NumericUpDown();
             label5 = new Label();
             label4 = new Label();
             comboSubGrupo = new ComboBox();
             comboGrupo = new ComboBox();
-            btnBuscaOriProduto = new Button();
-            btnBuscaForn = new Button();
             label36 = new Label();
-            textUltimaEntrada = new MaskedTextBox();
-            textQuantMinima = new NumericUpDown();
-            label35 = new Label();
+            textUltimaCompra = new MaskedTextBox();
             textMargemCalc = new TextBox();
             label34 = new Label();
-            textQuantMaxima = new NumericUpDown();
-            label32 = new Label();
             textObservacao = new TextBox();
             label31 = new Label();
             textPrecoVenda = new TextBox();
             label29 = new Label();
             textPrecoCusto = new TextBox();
             label30 = new Label();
-            textCofinsAliquota = new TextBox();
-            label27 = new Label();
-            textPis = new TextBox();
-            label28 = new Label();
-            textIpiAliquota = new TextBox();
-            label26 = new Label();
-            textIcms = new TextBox();
-            label25 = new Label();
-            textMvaAliquota = new TextBox();
-            label24 = new Label();
-            textIcmsAliquota = new TextBox();
-            label23 = new Label();
-            groupBox2 = new GroupBox();
-            button4 = new Button();
-            btnUpload = new Button();
-            pictureFotoProduto = new PictureBox();
-            btnBuscaCst = new Button();
-            textCst = new TextBox();
-            label22 = new Label();
-            btnBuscaCfop = new Button();
-            textCfop = new TextBox();
-            label20 = new Label();
-            label17 = new Label();
-            label19 = new Label();
-            textCodForn = new TextBox();
-            textNomeOrigem = new TextBox();
-            textNomeForn = new TextBox();
-            textMarca = new TextBox();
-            textUniMedida = new TextBox();
             textNomeProd = new TextBox();
-            textCodBarra = new TextBox();
-            textCodProd = new TextBox();
+            textCodBarraAlternativo = new TextBox();
+            textCodInterno = new TextBox();
             groupBox3 = new GroupBox();
-            radioDescontoNao = new RadioButton();
-            radioDescontoSim = new RadioButton();
-            label13 = new Label();
-            label12 = new Label();
+            checkDescontoSim = new CheckBox();
             groupBox4 = new GroupBox();
-            radioAtivoNao = new RadioButton();
-            radioAtivoSim = new RadioButton();
+            checkAtivo = new CheckBox();
             label11 = new Label();
             label10 = new Label();
             label6 = new Label();
@@ -164,102 +157,42 @@
             label1 = new Label();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnCancelar = new Button();
             btnGravar = new Button();
-            btnImportaExcel = new Button();
             tabControl1 = new TabControl();
             openFileDialog1 = new OpenFileDialog();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            label37 = new Label();
-            textUltimaSaida = new MaskedTextBox();
-            tabPage3.SuspendLayout();
+            tabConsultas.SuspendLayout();
+            groupBox6.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
-            groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridProdutos).BeginInit();
             groupBox5.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabCadastro.SuspendLayout();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textCest).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textNcm).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textQuantMinima).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textQuantMaxima).BeginInit();
+            groupBox8.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureFotoProduto).BeginInit();
+            panel4.SuspendLayout();
+            textConfins.SuspendLayout();
+            groupBox7.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
             panel1.SuspendLayout();
             tabControl1.SuspendLayout();
             SuspendLayout();
             // 
-            // tabPage3
+            // tabConsultas
             // 
-            tabPage3.Controls.Add(panel3);
-            tabPage3.Controls.Add(panel2);
-            tabPage3.Controls.Add(groupBox5);
-            tabPage3.Location = new Point(4, 24);
-            tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1281, 691);
-            tabPage3.TabIndex = 2;
-            tabPage3.Text = "Consultas";
-            tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            panel3.BorderStyle = BorderStyle.Fixed3D;
-            panel3.Controls.Add(btnEditar);
-            panel3.Controls.Add(btnExcluir);
-            panel3.Controls.Add(btnImprimir);
-            panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(3, 637);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1275, 51);
-            panel3.TabIndex = 3;
-            // 
-            // btnEditar
-            // 
-            btnEditar.Image = Properties.Resources.novo;
-            btnEditar.Location = new Point(139, 6);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(120, 40);
-            btnEditar.TabIndex = 23;
-            btnEditar.Text = "Editar";
-            btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluir
-            // 
-            btnExcluir.Image = Properties.Resources.lixeira;
-            btnExcluir.Location = new Point(4, 6);
-            btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(129, 40);
-            btnExcluir.TabIndex = 24;
-            btnExcluir.Text = "Excluir F7";
-            btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimir
-            // 
-            btnImprimir.Image = Properties.Resources.impressora1;
-            btnImprimir.Location = new Point(265, 6);
-            btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new Size(101, 40);
-            btnImprimir.TabIndex = 22;
-            btnImprimir.Text = "Imprimir";
-            btnImprimir.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnImprimir.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(groupBox6);
-            panel2.Controls.Add(dataGridView1);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(3, 111);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1275, 577);
-            panel2.TabIndex = 2;
+            tabConsultas.Controls.Add(groupBox6);
+            tabConsultas.Controls.Add(panel3);
+            tabConsultas.Controls.Add(panel2);
+            tabConsultas.Controls.Add(groupBox5);
+            tabConsultas.Location = new Point(4, 24);
+            tabConsultas.Name = "tabConsultas";
+            tabConsultas.Padding = new Padding(3);
+            tabConsultas.Size = new Size(1543, 691);
+            tabConsultas.TabIndex = 2;
+            tabConsultas.Text = "Consultas";
+            tabConsultas.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -272,10 +205,10 @@
             groupBox6.Controls.Add(textBox4);
             groupBox6.Controls.Add(textBox2);
             groupBox6.Controls.Add(textBox1);
-            groupBox6.Location = new Point(0, 450);
+            groupBox6.Location = new Point(2, 555);
             groupBox6.Name = "groupBox6";
-            groupBox6.Size = new Size(1273, 76);
-            groupBox6.TabIndex = 1;
+            groupBox6.Size = new Size(1538, 84);
+            groupBox6.TabIndex = 4;
             groupBox6.TabStop = false;
             groupBox6.Text = "Ultimas Compras";
             // 
@@ -306,7 +239,7 @@
             label16.AutoSize = true;
             label16.Font = new Font("Arial", 9.75F);
             label16.ForeColor = Color.FromArgb(44, 62, 80);
-            label16.Location = new Point(112, 19);
+            label16.Location = new Point(122, 19);
             label16.Name = "label16";
             label16.Size = new Size(55, 16);
             label16.TabIndex = 26;
@@ -319,18 +252,19 @@
             label14.ForeColor = Color.FromArgb(44, 62, 80);
             label14.Location = new Point(6, 21);
             label14.Name = "label14";
-            label14.Size = new Size(34, 16);
+            label14.Size = new Size(113, 16);
             label14.TabIndex = 25;
-            label14.Text = "Data";
+            label14.Text = "Data Ultima Comp";
             // 
             // textBox3
             // 
+            textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textBox3.Location = new Point(324, 40);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(931, 30);
+            textBox3.Size = new Size(2269, 30);
             textBox3.TabIndex = 3;
-            textBox3.KeyPress += textBox3_KeyPress;
+            textBox3.KeyPress += textBox3_KeyPress_1;
             // 
             // textBox4
             // 
@@ -339,257 +273,122 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(100, 30);
             textBox4.TabIndex = 2;
-            textBox4.KeyPress += textBox3_KeyPress;
+            textBox4.KeyPress += textBox3_KeyPress_1;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(112, 40);
+            textBox2.Location = new Point(122, 40);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 30);
+            textBox2.Size = new Size(90, 30);
             textBox2.TabIndex = 1;
-            textBox2.KeyPress += textBox3_KeyPress;
+            textBox2.KeyPress += textBox3_KeyPress_1;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(6, 40);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 30);
+            textBox1.Size = new Size(110, 30);
             textBox1.TabIndex = 0;
-            textBox1.KeyPress += textBox3_KeyPress;
+            textBox1.KeyPress += textBox3_KeyPress_1;
             // 
-            // dataGridView1
+            // panel3
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.ActiveBorder;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, NomeProduto, CodigoBarra, CodigoInterno, UniMedida, MarcaFabricante, Fornecedor, Grupo, SubGrupo, Ativo, Desconto, Origem, Ncm, Cfop, Cest, Cst, Icms, Mva, Ipi, Pis, Confins, Margem, ValorCusto, ValorVenda, PontoReposicao, UltimaEntrada, UltimaSaida, Observacao });
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(1271, 444);
-            dataGridView1.TabIndex = 0;
+            panel3.BorderStyle = BorderStyle.Fixed3D;
+            panel3.Controls.Add(btnDuplicar);
+            panel3.Controls.Add(bntNovo);
+            panel3.Controls.Add(btnEditar);
+            panel3.Controls.Add(btnExcluir);
+            panel3.Controls.Add(btnImprimir);
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(3, 637);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1537, 51);
+            panel3.TabIndex = 3;
             // 
-            // Codigo
+            // btnDuplicar
             // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            Codigo.Width = 150;
+            btnDuplicar.Image = Properties.Resources.duplicado;
+            btnDuplicar.Location = new Point(372, 6);
+            btnDuplicar.Name = "btnDuplicar";
+            btnDuplicar.Size = new Size(108, 40);
+            btnDuplicar.TabIndex = 28;
+            btnDuplicar.Text = "Duplicar F6";
+            btnDuplicar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDuplicar.UseVisualStyleBackColor = true;
+            btnDuplicar.Click += btnDuplicar_Click;
             // 
-            // NomeProduto
+            // bntNovo
             // 
-            NomeProduto.HeaderText = "Nome Produto";
-            NomeProduto.Name = "NomeProduto";
-            NomeProduto.ReadOnly = true;
-            NomeProduto.Width = 350;
+            bntNovo.Image = Properties.Resources.plus;
+            bntNovo.Location = new Point(265, 6);
+            bntNovo.Name = "bntNovo";
+            bntNovo.Size = new Size(101, 40);
+            bntNovo.TabIndex = 27;
+            bntNovo.Text = " Novo";
+            bntNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            bntNovo.UseVisualStyleBackColor = true;
+            bntNovo.Click += bntNovo_Click;
             // 
-            // CodigoBarra
+            // btnEditar
             // 
-            CodigoBarra.HeaderText = "Codigo de Barra";
-            CodigoBarra.Name = "CodigoBarra";
-            CodigoBarra.ReadOnly = true;
-            CodigoBarra.Width = 300;
+            btnEditar.Image = Properties.Resources.marca_de_verificacao;
+            btnEditar.Location = new Point(139, 6);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(120, 40);
+            btnEditar.TabIndex = 25;
+            btnEditar.Text = "Selecionar";
+            btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
-            // CodigoInterno
+            // btnExcluir
             // 
-            CodigoInterno.HeaderText = "Codigo Interno";
-            CodigoInterno.Name = "CodigoInterno";
-            CodigoInterno.ReadOnly = true;
-            CodigoInterno.Width = 200;
+            btnExcluir.Image = Properties.Resources.lixeira;
+            btnExcluir.Location = new Point(4, 6);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Size = new Size(129, 40);
+            btnExcluir.TabIndex = 24;
+            btnExcluir.Text = "Excluir F7";
+            btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
-            // UniMedida
+            // btnImprimir
             // 
-            UniMedida.HeaderText = "Unid";
-            UniMedida.Name = "UniMedida";
-            UniMedida.ReadOnly = true;
-            UniMedida.Width = 50;
+            btnImprimir.Image = Properties.Resources.impressora1;
+            btnImprimir.Location = new Point(486, 6);
+            btnImprimir.Name = "btnImprimir";
+            btnImprimir.Size = new Size(101, 40);
+            btnImprimir.TabIndex = 22;
+            btnImprimir.Text = "Imprimir";
+            btnImprimir.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnImprimir.UseVisualStyleBackColor = true;
             // 
-            // MarcaFabricante
+            // panel2
             // 
-            MarcaFabricante.HeaderText = "Marca/Fabricante";
-            MarcaFabricante.Name = "MarcaFabricante";
-            MarcaFabricante.ReadOnly = true;
-            MarcaFabricante.Width = 300;
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(dataGridProdutos);
+            panel2.Location = new Point(3, 111);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1540, 438);
+            panel2.TabIndex = 2;
             // 
-            // Fornecedor
+            // dataGridProdutos
             // 
-            Fornecedor.HeaderText = "Fornecedor";
-            Fornecedor.Name = "Fornecedor";
-            Fornecedor.ReadOnly = true;
-            Fornecedor.Width = 300;
-            // 
-            // Grupo
-            // 
-            Grupo.HeaderText = "Grupo";
-            Grupo.Name = "Grupo";
-            Grupo.ReadOnly = true;
-            Grupo.Width = 350;
-            // 
-            // SubGrupo
-            // 
-            SubGrupo.HeaderText = "SubGrupo";
-            SubGrupo.Name = "SubGrupo";
-            SubGrupo.ReadOnly = true;
-            SubGrupo.Width = 350;
-            // 
-            // Ativo
-            // 
-            Ativo.HeaderText = "Ativo?";
-            Ativo.Name = "Ativo";
-            Ativo.ReadOnly = true;
-            Ativo.Width = 50;
-            // 
-            // Desconto
-            // 
-            Desconto.HeaderText = "Desconto";
-            Desconto.Name = "Desconto";
-            Desconto.ReadOnly = true;
-            Desconto.Width = 150;
-            // 
-            // Origem
-            // 
-            Origem.HeaderText = "Origem";
-            Origem.Name = "Origem";
-            Origem.ReadOnly = true;
-            Origem.Resizable = DataGridViewTriState.True;
-            Origem.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Origem.Width = 300;
-            // 
-            // Ncm
-            // 
-            Ncm.HeaderText = "Ncm";
-            Ncm.Name = "Ncm";
-            Ncm.ReadOnly = true;
-            Ncm.Resizable = DataGridViewTriState.True;
-            Ncm.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Ncm.Width = 300;
-            // 
-            // Cfop
-            // 
-            Cfop.HeaderText = "Cfop";
-            Cfop.Name = "Cfop";
-            Cfop.ReadOnly = true;
-            Cfop.Resizable = DataGridViewTriState.True;
-            Cfop.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Cfop.Width = 300;
-            // 
-            // Cest
-            // 
-            Cest.HeaderText = "Cest";
-            Cest.Name = "Cest";
-            Cest.ReadOnly = true;
-            Cest.Resizable = DataGridViewTriState.True;
-            Cest.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Cest.Width = 300;
-            // 
-            // Cst
-            // 
-            Cst.HeaderText = "Cst";
-            Cst.Name = "Cst";
-            Cst.ReadOnly = true;
-            Cst.Width = 300;
-            // 
-            // Icms
-            // 
-            Icms.HeaderText = "Icms";
-            Icms.Name = "Icms";
-            Icms.ReadOnly = true;
-            Icms.Width = 60;
-            // 
-            // Mva
-            // 
-            Mva.HeaderText = "Mva";
-            Mva.Name = "Mva";
-            Mva.ReadOnly = true;
-            Mva.Width = 60;
-            // 
-            // Ipi
-            // 
-            Ipi.HeaderText = "Ipi";
-            Ipi.Name = "Ipi";
-            Ipi.ReadOnly = true;
-            Ipi.Width = 60;
-            // 
-            // Pis
-            // 
-            Pis.HeaderText = "Pis";
-            Pis.Name = "Pis";
-            Pis.ReadOnly = true;
-            Pis.Width = 60;
-            // 
-            // Confins
-            // 
-            Confins.HeaderText = "Confins";
-            Confins.Name = "Confins";
-            Confins.ReadOnly = true;
-            Confins.Width = 60;
-            // 
-            // Margem
-            // 
-            Margem.HeaderText = "Margem";
-            Margem.Name = "Margem";
-            Margem.ReadOnly = true;
-            Margem.Width = 60;
-            // 
-            // ValorCusto
-            // 
-            ValorCusto.HeaderText = "Valor de Custo";
-            ValorCusto.Name = "ValorCusto";
-            ValorCusto.ReadOnly = true;
-            ValorCusto.Width = 150;
-            // 
-            // ValorVenda
-            // 
-            ValorVenda.HeaderText = "Valor de Venda";
-            ValorVenda.Name = "ValorVenda";
-            ValorVenda.ReadOnly = true;
-            ValorVenda.Width = 150;
-            // 
-            // PontoReposicao
-            // 
-            PontoReposicao.HeaderText = "Ponto de Reposição";
-            PontoReposicao.Name = "PontoReposicao";
-            PontoReposicao.ReadOnly = true;
-            PontoReposicao.Width = 150;
-            // 
-            // UltimaEntrada
-            // 
-            UltimaEntrada.HeaderText = "Ultima Entrada";
-            UltimaEntrada.Name = "UltimaEntrada";
-            UltimaEntrada.ReadOnly = true;
-            UltimaEntrada.Width = 150;
-            // 
-            // UltimaSaida
-            // 
-            UltimaSaida.HeaderText = "Ultima Saida";
-            UltimaSaida.Name = "UltimaSaida";
-            UltimaSaida.ReadOnly = true;
-            UltimaSaida.Width = 150;
-            // 
-            // Observacao
-            // 
-            Observacao.HeaderText = "Observação";
-            Observacao.Name = "Observacao";
-            Observacao.ReadOnly = true;
-            Observacao.Width = 500;
+            dataGridProdutos.BackgroundColor = Color.White;
+            dataGridProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridProdutos.Dock = DockStyle.Fill;
+            dataGridProdutos.Location = new Point(0, 0);
+            dataGridProdutos.Name = "dataGridProdutos";
+            dataGridProdutos.Size = new Size(1536, 434);
+            dataGridProdutos.TabIndex = 0;
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(checkBoxCarregarTodos);
             groupBox5.Controls.Add(textDadosPesquisa);
-            groupBox5.Controls.Add(btnPesquisar);
             groupBox5.Controls.Add(label7);
             groupBox5.Controls.Add(comboModelo);
             groupBox5.Controls.Add(label8);
@@ -598,39 +397,19 @@
             groupBox5.Dock = DockStyle.Top;
             groupBox5.Location = new Point(3, 3);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(1275, 108);
+            groupBox5.Size = new Size(1537, 108);
             groupBox5.TabIndex = 1;
             groupBox5.TabStop = false;
             groupBox5.Text = "Campos de Pesquisa";
-            // 
-            // checkBoxCarregarTodos
-            // 
-            checkBoxCarregarTodos.AutoSize = true;
-            checkBoxCarregarTodos.Location = new Point(1199, 18);
-            checkBoxCarregarTodos.Name = "checkBoxCarregarTodos";
-            checkBoxCarregarTodos.Size = new Size(58, 19);
-            checkBoxCarregarTodos.TabIndex = 26;
-            checkBoxCarregarTodos.Text = "Todos";
-            checkBoxCarregarTodos.UseVisualStyleBackColor = true;
             // 
             // textDadosPesquisa
             // 
             textDadosPesquisa.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             textDadosPesquisa.Location = new Point(374, 43);
             textDadosPesquisa.Name = "textDadosPesquisa";
-            textDadosPesquisa.Size = new Size(895, 23);
+            textDadosPesquisa.Size = new Size(1157, 23);
             textDadosPesquisa.TabIndex = 22;
-            // 
-            // btnPesquisar
-            // 
-            btnPesquisar.Image = Properties.Resources.lupa;
-            btnPesquisar.Location = new Point(1150, 72);
-            btnPesquisar.Name = "btnPesquisar";
-            btnPesquisar.Size = new Size(107, 29);
-            btnPesquisar.TabIndex = 25;
-            btnPesquisar.Text = "Pesquisar";
-            btnPesquisar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnPesquisar.UseVisualStyleBackColor = true;
+            textDadosPesquisa.TextChanged += textDadosPesquisa_TextChanged;
             // 
             // label7
             // 
@@ -681,20 +460,54 @@
             comboFiltros.Size = new Size(178, 23);
             comboFiltros.TabIndex = 19;
             // 
-            // tabPage1
+            // tabCadastro
             // 
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Controls.Add(panel1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1281, 691);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Cadastrar";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabCadastro.Controls.Add(groupBox1);
+            tabCadastro.Controls.Add(panel1);
+            tabCadastro.Location = new Point(4, 24);
+            tabCadastro.Name = "tabCadastro";
+            tabCadastro.Padding = new Padding(3);
+            tabCadastro.Size = new Size(1543, 691);
+            tabCadastro.TabIndex = 0;
+            tabCadastro.Text = "Cadastrar";
+            tabCadastro.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(groupBox8);
+            groupBox1.Controls.Add(groupBox2);
+            groupBox1.Controls.Add(label54);
+            groupBox1.Controls.Add(label53);
+            groupBox1.Controls.Add(label52);
+            groupBox1.Controls.Add(label51);
+            groupBox1.Controls.Add(label50);
+            groupBox1.Controls.Add(label49);
+            groupBox1.Controls.Add(label48);
+            groupBox1.Controls.Add(label47);
+            groupBox1.Controls.Add(label45);
+            groupBox1.Controls.Add(textCodigoBalanca);
+            groupBox1.Controls.Add(label44);
+            groupBox1.Controls.Add(label43);
+            groupBox1.Controls.Add(label42);
+            groupBox1.Controls.Add(textDataValidade);
+            groupBox1.Controls.Add(comboUnidadeMedidaSaida);
+            groupBox1.Controls.Add(label28);
+            groupBox1.Controls.Add(textCodBarraEAN);
+            groupBox1.Controls.Add(label41);
+            groupBox1.Controls.Add(textConfins);
+            groupBox1.Controls.Add(groupBox7);
+            groupBox1.Controls.Add(label25);
+            groupBox1.Controls.Add(comboBoxTipoProduto);
+            groupBox1.Controls.Add(textIdFornecedor);
+            groupBox1.Controls.Add(label23);
+            groupBox1.Controls.Add(textNomeFornecedor);
+            groupBox1.Controls.Add(label40);
+            groupBox1.Controls.Add(textDataAtualizacao);
+            groupBox1.Controls.Add(textLucro);
+            groupBox1.Controls.Add(label38);
+            groupBox1.Controls.Add(comboBoxMarcaFabricante);
+            groupBox1.Controls.Add(comboUnidadeMedidaEntrada);
             groupBox1.Controls.Add(label39);
             groupBox1.Controls.Add(textDataCadastro);
             groupBox1.Controls.Add(comboBoxTamanho);
@@ -703,63 +516,24 @@
             groupBox1.Controls.Add(label33);
             groupBox1.Controls.Add(textCor);
             groupBox1.Controls.Add(label15);
-            groupBox1.Controls.Add(btnBuscaMarca);
-            groupBox1.Controls.Add(textCest);
-            groupBox1.Controls.Add(textNcm);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(comboSubGrupo);
             groupBox1.Controls.Add(comboGrupo);
-            groupBox1.Controls.Add(btnBuscaOriProduto);
-            groupBox1.Controls.Add(btnBuscaForn);
-            groupBox1.Controls.Add(label37);
             groupBox1.Controls.Add(label36);
-            groupBox1.Controls.Add(textUltimaSaida);
-            groupBox1.Controls.Add(textUltimaEntrada);
-            groupBox1.Controls.Add(textQuantMinima);
-            groupBox1.Controls.Add(label35);
+            groupBox1.Controls.Add(textUltimaCompra);
             groupBox1.Controls.Add(textMargemCalc);
             groupBox1.Controls.Add(label34);
-            groupBox1.Controls.Add(textQuantMaxima);
-            groupBox1.Controls.Add(label32);
             groupBox1.Controls.Add(textObservacao);
             groupBox1.Controls.Add(label31);
             groupBox1.Controls.Add(textPrecoVenda);
             groupBox1.Controls.Add(label29);
             groupBox1.Controls.Add(textPrecoCusto);
             groupBox1.Controls.Add(label30);
-            groupBox1.Controls.Add(textCofinsAliquota);
-            groupBox1.Controls.Add(label27);
-            groupBox1.Controls.Add(textPis);
-            groupBox1.Controls.Add(label28);
-            groupBox1.Controls.Add(textIpiAliquota);
-            groupBox1.Controls.Add(label26);
-            groupBox1.Controls.Add(textIcms);
-            groupBox1.Controls.Add(label25);
-            groupBox1.Controls.Add(textMvaAliquota);
-            groupBox1.Controls.Add(label24);
-            groupBox1.Controls.Add(textIcmsAliquota);
-            groupBox1.Controls.Add(label23);
-            groupBox1.Controls.Add(groupBox2);
-            groupBox1.Controls.Add(btnBuscaCst);
-            groupBox1.Controls.Add(textCst);
-            groupBox1.Controls.Add(label22);
-            groupBox1.Controls.Add(btnBuscaCfop);
-            groupBox1.Controls.Add(textCfop);
-            groupBox1.Controls.Add(label20);
-            groupBox1.Controls.Add(label17);
-            groupBox1.Controls.Add(label19);
-            groupBox1.Controls.Add(textCodForn);
-            groupBox1.Controls.Add(textNomeOrigem);
-            groupBox1.Controls.Add(textNomeForn);
-            groupBox1.Controls.Add(textMarca);
-            groupBox1.Controls.Add(textUniMedida);
             groupBox1.Controls.Add(textNomeProd);
-            groupBox1.Controls.Add(textCodBarra);
-            groupBox1.Controls.Add(textCodProd);
+            groupBox1.Controls.Add(textCodBarraAlternativo);
+            groupBox1.Controls.Add(textCodInterno);
             groupBox1.Controls.Add(groupBox3);
-            groupBox1.Controls.Add(label13);
-            groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(groupBox4);
             groupBox1.Controls.Add(label11);
             groupBox1.Controls.Add(label10);
@@ -767,20 +541,721 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Dock = DockStyle.Top;
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1275, 634);
+            groupBox1.Size = new Size(1537, 627);
             groupBox1.TabIndex = 83;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
+            // 
+            // groupBox8
+            // 
+            groupBox8.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            groupBox8.Controls.Add(checkdProdBalança);
+            groupBox8.Font = new Font("Arial", 9.75F);
+            groupBox8.ForeColor = Color.FromArgb(44, 62, 80);
+            groupBox8.Location = new Point(990, 146);
+            groupBox8.Name = "groupBox8";
+            groupBox8.Size = new Size(147, 67);
+            groupBox8.TabIndex = 286;
+            groupBox8.TabStop = false;
+            groupBox8.Text = "Produto de Balança?";
+            // 
+            // checkdProdBalança
+            // 
+            checkdProdBalança.AutoSize = true;
+            checkdProdBalança.Enabled = false;
+            checkdProdBalança.Location = new Point(6, 21);
+            checkdProdBalança.Name = "checkdProdBalança";
+            checkdProdBalança.Size = new Size(49, 20);
+            checkdProdBalança.TabIndex = 284;
+            checkdProdBalança.Text = "Sim";
+            checkdProdBalança.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(pictureFotoProduto);
+            groupBox2.Controls.Add(panel4);
+            groupBox2.Location = new Point(1340, 76);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(197, 254);
+            groupBox2.TabIndex = 285;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Foto do Produto";
+            // 
+            // pictureFotoProduto
+            // 
+            pictureFotoProduto.BorderStyle = BorderStyle.Fixed3D;
+            pictureFotoProduto.Dock = DockStyle.Fill;
+            pictureFotoProduto.InitialImage = null;
+            pictureFotoProduto.Location = new Point(3, 19);
+            pictureFotoProduto.Name = "pictureFotoProduto";
+            pictureFotoProduto.Size = new Size(191, 198);
+            pictureFotoProduto.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureFotoProduto.TabIndex = 1;
+            pictureFotoProduto.TabStop = false;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(btnRemoverFoto);
+            panel4.Controls.Add(btnAddFoto);
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(3, 217);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(191, 34);
+            panel4.TabIndex = 0;
+            // 
+            // btnRemoverFoto
+            // 
+            btnRemoverFoto.BackColor = Color.Transparent;
+            btnRemoverFoto.FlatAppearance.BorderSize = 0;
+            btnRemoverFoto.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnRemoverFoto.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnRemoverFoto.FlatStyle = FlatStyle.Flat;
+            btnRemoverFoto.Image = Properties.Resources.delete__1_;
+            btnRemoverFoto.Location = new Point(37, 3);
+            btnRemoverFoto.Name = "btnRemoverFoto";
+            btnRemoverFoto.Size = new Size(28, 27);
+            btnRemoverFoto.TabIndex = 1;
+            btnRemoverFoto.UseVisualStyleBackColor = false;
+            btnRemoverFoto.Click += btnRemoverFoto_Click;
+            // 
+            // btnAddFoto
+            // 
+            btnAddFoto.BackColor = Color.Transparent;
+            btnAddFoto.FlatAppearance.BorderSize = 0;
+            btnAddFoto.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnAddFoto.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnAddFoto.FlatStyle = FlatStyle.Flat;
+            btnAddFoto.Image = Properties.Resources.upload;
+            btnAddFoto.Location = new Point(3, 3);
+            btnAddFoto.Name = "btnAddFoto";
+            btnAddFoto.Size = new Size(33, 27);
+            btnAddFoto.TabIndex = 0;
+            btnAddFoto.UseVisualStyleBackColor = false;
+            btnAddFoto.Click += btnAddFoto_Click;
+            // 
+            // label54
+            // 
+            label54.AutoSize = true;
+            label54.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label54.ForeColor = Color.FromArgb(192, 0, 0);
+            label54.Location = new Point(266, 88);
+            label54.Name = "label54";
+            label54.Size = new Size(74, 13);
+            label54.TabIndex = 283;
+            label54.Text = "[Obrigatorio]";
+            // 
+            // label53
+            // 
+            label53.AutoSize = true;
+            label53.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label53.ForeColor = Color.FromArgb(192, 0, 0);
+            label53.Location = new Point(97, 89);
+            label53.Name = "label53";
+            label53.Size = new Size(74, 13);
+            label53.TabIndex = 282;
+            label53.Text = "[Obrigatorio]";
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label52.ForeColor = Color.FromArgb(192, 0, 0);
+            label52.Location = new Point(458, 89);
+            label52.Name = "label52";
+            label52.Size = new Size(74, 13);
+            label52.TabIndex = 281;
+            label52.Text = "[Obrigatorio]";
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label51.ForeColor = Color.FromArgb(192, 0, 0);
+            label51.Location = new Point(739, 88);
+            label51.Name = "label51";
+            label51.Size = new Size(74, 13);
+            label51.TabIndex = 280;
+            label51.Text = "[Obrigatorio]";
+            // 
+            // label50
+            // 
+            label50.AutoSize = true;
+            label50.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label50.ForeColor = Color.FromArgb(192, 0, 0);
+            label50.Location = new Point(1010, 89);
+            label50.Name = "label50";
+            label50.Size = new Size(74, 13);
+            label50.TabIndex = 279;
+            label50.Text = "[Obrigatorio]";
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label49.ForeColor = Color.FromArgb(192, 0, 0);
+            label49.Location = new Point(1334, 31);
+            label49.Name = "label49";
+            label49.Size = new Size(74, 13);
+            label49.TabIndex = 278;
+            label49.Text = "[Obrigatorio]";
+            // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label48.ForeColor = Color.FromArgb(192, 0, 0);
+            label48.Location = new Point(1260, 89);
+            label48.Name = "label48";
+            label48.Size = new Size(74, 13);
+            label48.TabIndex = 277;
+            label48.Text = "[Obrigatorio]";
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label47.ForeColor = Color.FromArgb(192, 0, 0);
+            label47.Location = new Point(910, 28);
+            label47.Name = "label47";
+            label47.Size = new Size(74, 13);
+            label47.TabIndex = 276;
+            label47.Text = "[Obrigatorio]";
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label45.ForeColor = Color.FromArgb(192, 0, 0);
+            label45.Location = new Point(526, 29);
+            label45.Name = "label45";
+            label45.Size = new Size(74, 13);
+            label45.TabIndex = 274;
+            label45.Text = "[Obrigatorio]";
+            // 
+            // textCodigoBalanca
+            // 
+            textCodigoBalanca.Location = new Point(631, 47);
+            textCodigoBalanca.Name = "textCodigoBalanca";
+            textCodigoBalanca.ReadOnly = true;
+            textCodigoBalanca.Size = new Size(170, 23);
+            textCodigoBalanca.TabIndex = 273;
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.Font = new Font("Arial", 9.75F);
+            label44.ForeColor = Color.FromArgb(44, 62, 80);
+            label44.Location = new Point(631, 29);
+            label44.Name = "label44";
+            label44.Size = new Size(116, 16);
+            label44.TabIndex = 272;
+            label44.Text = "Código da Balança";
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label43.ForeColor = Color.FromArgb(192, 0, 0);
+            label43.Location = new Point(1040, 84);
+            label43.Name = "label43";
+            label43.Size = new Size(0, 13);
+            label43.TabIndex = 271;
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.Font = new Font("Arial", 9.75F);
+            label42.ForeColor = Color.FromArgb(44, 62, 80);
+            label42.Location = new Point(407, 216);
+            label42.Name = "label42";
+            label42.Size = new Size(87, 16);
+            label42.TabIndex = 270;
+            label42.Text = "Data Validade";
+            // 
+            // textDataValidade
+            // 
+            textDataValidade.Location = new Point(407, 235);
+            textDataValidade.Mask = "00/00/0000";
+            textDataValidade.Name = "textDataValidade";
+            textDataValidade.ReadOnly = true;
+            textDataValidade.Size = new Size(128, 23);
+            textDataValidade.TabIndex = 269;
+            textDataValidade.ValidatingType = typeof(DateTime);
+            // 
+            // comboUnidadeMedidaSaida
+            // 
+            comboUnidadeMedidaSaida.Enabled = false;
+            comboUnidadeMedidaSaida.FormattingEnabled = true;
+            comboUnidadeMedidaSaida.Location = new Point(177, 105);
+            comboUnidadeMedidaSaida.Name = "comboUnidadeMedidaSaida";
+            comboUnidadeMedidaSaida.Size = new Size(164, 23);
+            comboUnidadeMedidaSaida.TabIndex = 268;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Arial", 9.75F);
+            label28.ForeColor = Color.FromArgb(44, 62, 80);
+            label28.Location = new Point(175, 86);
+            label28.Name = "label28";
+            label28.Size = new Size(85, 16);
+            label28.TabIndex = 267;
+            label28.Text = "Uni.Med Said";
+            // 
+            // textCodBarraEAN
+            // 
+            textCodBarraEAN.Location = new Point(407, 47);
+            textCodBarraEAN.Name = "textCodBarraEAN";
+            textCodBarraEAN.ReadOnly = true;
+            textCodBarraEAN.Size = new Size(218, 23);
+            textCodBarraEAN.TabIndex = 266;
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.Font = new Font("Arial", 9.75F);
+            label41.ForeColor = Color.FromArgb(44, 62, 80);
+            label41.Location = new Point(407, 28);
+            label41.Name = "label41";
+            label41.Size = new Size(125, 16);
+            label41.TabIndex = 265;
+            label41.Text = "Cód de Barras/EAN ";
+            // 
+            // textConfins
+            // 
+            textConfins.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textConfins.Controls.Add(label58);
+            textConfins.Controls.Add(label57);
+            textConfins.Controls.Add(label56);
+            textConfins.Controls.Add(label55);
+            textConfins.Controls.Add(textCOFINS);
+            textConfins.Controls.Add(label37);
+            textConfins.Controls.Add(textIPI);
+            textConfins.Controls.Add(label24);
+            textConfins.Controls.Add(textICMS);
+            textConfins.Controls.Add(label22);
+            textConfins.Controls.Add(textPIS);
+            textConfins.Controls.Add(label20);
+            textConfins.Controls.Add(label19);
+            textConfins.Controls.Add(comboBoxCst);
+            textConfins.Controls.Add(label17);
+            textConfins.Controls.Add(comboBoxCfop);
+            textConfins.Controls.Add(label13);
+            textConfins.Controls.Add(comboBoxNcm);
+            textConfins.Controls.Add(label12);
+            textConfins.Controls.Add(comboBoxOrigemProd);
+            textConfins.Location = new Point(5, 328);
+            textConfins.Name = "textConfins";
+            textConfins.Size = new Size(1529, 140);
+            textConfins.TabIndex = 260;
+            textConfins.TabStop = false;
+            textConfins.Text = "Fiscal";
+            // 
+            // label58
+            // 
+            label58.AutoSize = true;
+            label58.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label58.ForeColor = Color.FromArgb(192, 0, 0);
+            label58.Location = new Point(739, 22);
+            label58.Name = "label58";
+            label58.Size = new Size(74, 13);
+            label58.TabIndex = 278;
+            label58.Text = "[Obrigatorio]";
+            // 
+            // label57
+            // 
+            label57.AutoSize = true;
+            label57.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label57.ForeColor = Color.FromArgb(192, 0, 0);
+            label57.Location = new Point(392, 19);
+            label57.Name = "label57";
+            label57.Size = new Size(74, 13);
+            label57.TabIndex = 277;
+            label57.Text = "[Obrigatorio]";
+            // 
+            // label56
+            // 
+            label56.AutoSize = true;
+            label56.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label56.ForeColor = Color.FromArgb(192, 0, 0);
+            label56.Location = new Point(35, 79);
+            label56.Name = "label56";
+            label56.Size = new Size(74, 13);
+            label56.TabIndex = 276;
+            label56.Text = "[Obrigatorio]";
+            // 
+            // label55
+            // 
+            label55.AutoSize = true;
+            label55.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label55.ForeColor = Color.FromArgb(192, 0, 0);
+            label55.Location = new Point(61, 19);
+            label55.Name = "label55";
+            label55.Size = new Size(74, 13);
+            label55.TabIndex = 275;
+            label55.Text = "[Obrigatorio]";
+            // 
+            // textCOFINS
+            // 
+            textCOFINS.Location = new Point(733, 93);
+            textCOFINS.Name = "textCOFINS";
+            textCOFINS.PlaceholderText = "0,00";
+            textCOFINS.ReadOnly = true;
+            textCOFINS.Size = new Size(110, 23);
+            textCOFINS.TabIndex = 273;
+            textCOFINS.TextChanged += MskararCampoMoeda_Changed;
+            // 
+            // label37
+            // 
+            label37.AutoSize = true;
+            label37.Font = new Font("Arial", 9.75F);
+            label37.ForeColor = Color.FromArgb(44, 62, 80);
+            label37.Location = new Point(733, 74);
+            label37.Name = "label37";
+            label37.Size = new Size(55, 16);
+            label37.TabIndex = 274;
+            label37.Text = "COFINS";
+            // 
+            // textIPI
+            // 
+            textIPI.Location = new Point(617, 93);
+            textIPI.Name = "textIPI";
+            textIPI.PlaceholderText = "0,00";
+            textIPI.ReadOnly = true;
+            textIPI.Size = new Size(110, 23);
+            textIPI.TabIndex = 271;
+            textIPI.TextChanged += MskararCampoMoeda_Changed;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Arial", 9.75F);
+            label24.ForeColor = Color.FromArgb(44, 62, 80);
+            label24.Location = new Point(617, 74);
+            label24.Name = "label24";
+            label24.Size = new Size(22, 16);
+            label24.TabIndex = 272;
+            label24.Text = "IPI";
+            // 
+            // textICMS
+            // 
+            textICMS.Location = new Point(501, 93);
+            textICMS.Name = "textICMS";
+            textICMS.PlaceholderText = "0,00";
+            textICMS.ReadOnly = true;
+            textICMS.Size = new Size(110, 23);
+            textICMS.TabIndex = 269;
+            textICMS.TextChanged += MskararCampoMoeda_Changed;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Arial", 9.75F);
+            label22.ForeColor = Color.FromArgb(44, 62, 80);
+            label22.Location = new Point(501, 74);
+            label22.Name = "label22";
+            label22.Size = new Size(39, 16);
+            label22.TabIndex = 270;
+            label22.Text = "ICMS";
+            // 
+            // textPIS
+            // 
+            textPIS.Location = new Point(385, 93);
+            textPIS.Name = "textPIS";
+            textPIS.PlaceholderText = "0,00";
+            textPIS.ReadOnly = true;
+            textPIS.Size = new Size(110, 23);
+            textPIS.TabIndex = 267;
+            textPIS.TextChanged += MskararCampoMoeda_Changed;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Arial", 9.75F);
+            label20.ForeColor = Color.FromArgb(44, 62, 80);
+            label20.Location = new Point(385, 74);
+            label20.Name = "label20";
+            label20.Size = new Size(28, 16);
+            label20.TabIndex = 268;
+            label20.Text = "PIS";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Arial", 9.75F);
+            label19.ForeColor = Color.FromArgb(44, 62, 80);
+            label19.Location = new Point(6, 77);
+            label19.Name = "label19";
+            label19.Size = new Size(32, 16);
+            label19.TabIndex = 266;
+            label19.Text = "CST";
+            // 
+            // comboBoxCst
+            // 
+            comboBoxCst.Enabled = false;
+            comboBoxCst.FormattingEnabled = true;
+            comboBoxCst.Location = new Point(6, 93);
+            comboBoxCst.Name = "comboBoxCst";
+            comboBoxCst.Size = new Size(342, 23);
+            comboBoxCst.TabIndex = 265;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Arial", 9.75F);
+            label17.ForeColor = Color.FromArgb(44, 62, 80);
+            label17.Location = new Point(690, 19);
+            label17.Name = "label17";
+            label17.Size = new Size(43, 16);
+            label17.TabIndex = 264;
+            label17.Text = "CFOP";
+            // 
+            // comboBoxCfop
+            // 
+            comboBoxCfop.Enabled = false;
+            comboBoxCfop.FormattingEnabled = true;
+            comboBoxCfop.Location = new Point(690, 36);
+            comboBoxCfop.Name = "comboBoxCfop";
+            comboBoxCfop.Size = new Size(331, 23);
+            comboBoxCfop.TabIndex = 263;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Arial", 9.75F);
+            label13.ForeColor = Color.FromArgb(44, 62, 80);
+            label13.Location = new Point(354, 17);
+            label13.Name = "label13";
+            label13.Size = new Size(40, 16);
+            label13.TabIndex = 262;
+            label13.Text = "NCM ";
+            // 
+            // comboBoxNcm
+            // 
+            comboBoxNcm.Enabled = false;
+            comboBoxNcm.FormattingEnabled = true;
+            comboBoxNcm.Location = new Point(354, 36);
+            comboBoxNcm.Name = "comboBoxNcm";
+            comboBoxNcm.Size = new Size(330, 23);
+            comboBoxNcm.TabIndex = 261;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Arial", 9.75F);
+            label12.ForeColor = Color.FromArgb(44, 62, 80);
+            label12.Location = new Point(6, 17);
+            label12.Name = "label12";
+            label12.Size = new Size(49, 16);
+            label12.TabIndex = 260;
+            label12.Text = "Origem";
+            // 
+            // comboBoxOrigemProd
+            // 
+            comboBoxOrigemProd.Enabled = false;
+            comboBoxOrigemProd.FormattingEnabled = true;
+            comboBoxOrigemProd.Location = new Point(6, 36);
+            comboBoxOrigemProd.Name = "comboBoxOrigemProd";
+            comboBoxOrigemProd.Size = new Size(342, 23);
+            comboBoxOrigemProd.TabIndex = 259;
+            // 
+            // groupBox7
+            // 
+            groupBox7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox7.Controls.Add(label32);
+            groupBox7.Controls.Add(textQuantMaxima);
+            groupBox7.Controls.Add(label27);
+            groupBox7.Controls.Add(label26);
+            groupBox7.Controls.Add(textQuatidade);
+            groupBox7.Controls.Add(textPontoReposicao);
+            groupBox7.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox7.ForeColor = Color.FromArgb(0, 66, 100);
+            groupBox7.Location = new Point(5, 474);
+            groupBox7.Name = "groupBox7";
+            groupBox7.Size = new Size(1526, 153);
+            groupBox7.TabIndex = 259;
+            groupBox7.TabStop = false;
+            groupBox7.Text = "Estoque";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Arial", 14.25F);
+            label32.ForeColor = Color.FromArgb(44, 62, 80);
+            label32.Location = new Point(489, 45);
+            label32.Name = "label32";
+            label32.Size = new Size(176, 22);
+            label32.TabIndex = 203;
+            label32.Text = "Quantidade Maxima";
+            // 
+            // textQuantMaxima
+            // 
+            textQuantMaxima.Location = new Point(489, 80);
+            textQuantMaxima.Name = "textQuantMaxima";
+            textQuantMaxima.PlaceholderText = "0,00";
+            textQuantMaxima.ReadOnly = true;
+            textQuantMaxima.Size = new Size(232, 46);
+            textQuantMaxima.TabIndex = 202;
+            textQuantMaxima.TextChanged += MskararCampoMoeda_Changed;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Arial", 14.25F);
+            label27.ForeColor = Color.FromArgb(44, 62, 80);
+            label27.Location = new Point(251, 45);
+            label27.Name = "label27";
+            label27.Size = new Size(215, 22);
+            label27.TabIndex = 201;
+            label27.Text = "Quantidade em Estoque";
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Font = new Font("Arial", 14.25F);
+            label26.ForeColor = Color.FromArgb(44, 62, 80);
+            label26.Location = new Point(11, 45);
+            label26.Name = "label26";
+            label26.Size = new Size(184, 22);
+            label26.TabIndex = 200;
+            label26.Text = "Ponto de Reposição";
+            // 
+            // textQuatidade
+            // 
+            textQuatidade.Location = new Point(251, 80);
+            textQuatidade.Name = "textQuatidade";
+            textQuatidade.PlaceholderText = "0,00";
+            textQuatidade.ReadOnly = true;
+            textQuatidade.Size = new Size(232, 46);
+            textQuatidade.TabIndex = 2;
+            textQuatidade.TextChanged += MskararCampoMoeda_Changed;
+            // 
+            // textPontoReposicao
+            // 
+            textPontoReposicao.Location = new Point(13, 80);
+            textPontoReposicao.Name = "textPontoReposicao";
+            textPontoReposicao.PlaceholderText = "0,00";
+            textPontoReposicao.ReadOnly = true;
+            textPontoReposicao.Size = new Size(232, 46);
+            textPontoReposicao.TabIndex = 1;
+            textPontoReposicao.TextChanged += MskararCampoMoeda_Changed;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Arial", 9.75F);
+            label25.ForeColor = Color.FromArgb(44, 62, 80);
+            label25.Location = new Point(1156, 86);
+            label25.Name = "label25";
+            label25.Size = new Size(98, 16);
+            label25.TabIndex = 258;
+            label25.Text = "Tipo de Produto";
+            // 
+            // comboBoxTipoProduto
+            // 
+            comboBoxTipoProduto.Enabled = false;
+            comboBoxTipoProduto.FormattingEnabled = true;
+            comboBoxTipoProduto.Location = new Point(1156, 105);
+            comboBoxTipoProduto.Name = "comboBoxTipoProduto";
+            comboBoxTipoProduto.Size = new Size(178, 23);
+            comboBoxTipoProduto.TabIndex = 257;
+            // 
+            // textIdFornecedor
+            // 
+            textIdFornecedor.Location = new Point(1202, 47);
+            textIdFornecedor.Name = "textIdFornecedor";
+            textIdFornecedor.ReadOnly = true;
+            textIdFornecedor.Size = new Size(46, 23);
+            textIdFornecedor.TabIndex = 252;
+            textIdFornecedor.TextChanged += textIdFornecedor_TextChanged;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Arial", 9.75F);
+            label23.ForeColor = Color.FromArgb(44, 62, 80);
+            label23.Location = new Point(1201, 27);
+            label23.Name = "label23";
+            label23.Size = new Size(47, 16);
+            label23.TabIndex = 251;
+            label23.Text = "Codigo";
+            // 
+            // textNomeFornecedor
+            // 
+            textNomeFornecedor.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textNomeFornecedor.Location = new Point(1256, 47);
+            textNomeFornecedor.Name = "textNomeFornecedor";
+            textNomeFornecedor.ReadOnly = true;
+            textNomeFornecedor.Size = new Size(232, 23);
+            textNomeFornecedor.TabIndex = 249;
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new Font("Arial", 9.75F);
+            label40.ForeColor = Color.FromArgb(44, 62, 80);
+            label40.Location = new Point(273, 216);
+            label40.Name = "label40";
+            label40.Size = new Size(123, 16);
+            label40.TabIndex = 244;
+            label40.Text = "Data de Atualização";
+            // 
+            // textDataAtualizacao
+            // 
+            textDataAtualizacao.Location = new Point(273, 235);
+            textDataAtualizacao.Mask = "00/00/0000";
+            textDataAtualizacao.Name = "textDataAtualizacao";
+            textDataAtualizacao.ReadOnly = true;
+            textDataAtualizacao.Size = new Size(128, 23);
+            textDataAtualizacao.TabIndex = 243;
+            textDataAtualizacao.ValidatingType = typeof(DateTime);
+            // 
+            // textLucro
+            // 
+            textLucro.Location = new Point(874, 164);
+            textLucro.Name = "textLucro";
+            textLucro.PlaceholderText = "0,00";
+            textLucro.ReadOnly = true;
+            textLucro.Size = new Size(110, 23);
+            textLucro.TabIndex = 241;
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Arial", 9.75F);
+            label38.ForeColor = Color.FromArgb(44, 62, 80);
+            label38.Location = new Point(874, 145);
+            label38.Name = "label38";
+            label38.Size = new Size(39, 16);
+            label38.TabIndex = 242;
+            label38.Text = "Lucro";
+            // 
+            // comboBoxMarcaFabricante
+            // 
+            comboBoxMarcaFabricante.Enabled = false;
+            comboBoxMarcaFabricante.FormattingEnabled = true;
+            comboBoxMarcaFabricante.Location = new Point(347, 105);
+            comboBoxMarcaFabricante.Name = "comboBoxMarcaFabricante";
+            comboBoxMarcaFabricante.Size = new Size(338, 23);
+            comboBoxMarcaFabricante.TabIndex = 238;
+            // 
+            // comboUnidadeMedidaEntrada
+            // 
+            comboUnidadeMedidaEntrada.Enabled = false;
+            comboUnidadeMedidaEntrada.FormattingEnabled = true;
+            comboUnidadeMedidaEntrada.Location = new Point(11, 105);
+            comboUnidadeMedidaEntrada.Name = "comboUnidadeMedidaEntrada";
+            comboUnidadeMedidaEntrada.Size = new Size(160, 23);
+            comboUnidadeMedidaEntrada.TabIndex = 237;
             // 
             // label39
             // 
             label39.AutoSize = true;
             label39.Font = new Font("Arial", 9.75F);
             label39.ForeColor = Color.FromArgb(44, 62, 80);
-            label39.Location = new Point(432, 351);
+            label39.Location = new Point(133, 216);
             label39.Name = "label39";
             label39.Size = new Size(108, 16);
             label39.TabIndex = 234;
@@ -788,7 +1263,7 @@
             // 
             // textDataCadastro
             // 
-            textDataCadastro.Location = new Point(432, 370);
+            textDataCadastro.Location = new Point(133, 235);
             textDataCadastro.Mask = "00/00/0000";
             textDataCadastro.Name = "textDataCadastro";
             textDataCadastro.ReadOnly = true;
@@ -800,8 +1275,7 @@
             // 
             comboBoxTamanho.Enabled = false;
             comboBoxTamanho.FormattingEnabled = true;
-            comboBoxTamanho.Items.AddRange(new object[] { "GG", "G", "M", "P" });
-            comboBoxTamanho.Location = new Point(442, 153);
+            comboBoxTamanho.Location = new Point(390, 164);
             comboBoxTamanho.Name = "comboBoxTamanho";
             comboBoxTamanho.Size = new Size(131, 23);
             comboBoxTamanho.TabIndex = 231;
@@ -811,7 +1285,7 @@
             Tamanho.AutoSize = true;
             Tamanho.Font = new Font("Arial", 9.75F);
             Tamanho.ForeColor = Color.FromArgb(44, 62, 80);
-            Tamanho.Location = new Point(442, 134);
+            Tamanho.Location = new Point(390, 145);
             Tamanho.Name = "Tamanho";
             Tamanho.Size = new Size(59, 16);
             Tamanho.TabIndex = 230;
@@ -838,10 +1312,10 @@
             // 
             // textCor
             // 
-            textCor.Location = new Point(309, 153);
+            textCor.Location = new Point(209, 164);
             textCor.Name = "textCor";
             textCor.ReadOnly = true;
-            textCor.Size = new Size(127, 23);
+            textCor.Size = new Size(175, 23);
             textCor.TabIndex = 222;
             // 
             // label15
@@ -849,49 +1323,18 @@
             label15.AutoSize = true;
             label15.Font = new Font("Arial", 9.75F);
             label15.ForeColor = Color.FromArgb(44, 62, 80);
-            label15.Location = new Point(309, 134);
+            label15.Location = new Point(209, 146);
             label15.Name = "label15";
             label15.Size = new Size(27, 16);
             label15.TabIndex = 223;
             label15.Text = "Cor";
-            // 
-            // btnBuscaMarca
-            // 
-            btnBuscaMarca.BackColor = Color.Transparent;
-            btnBuscaMarca.Enabled = false;
-            btnBuscaMarca.FlatAppearance.BorderSize = 0;
-            btnBuscaMarca.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaMarca.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaMarca.FlatStyle = FlatStyle.Flat;
-            btnBuscaMarca.Image = Properties.Resources.lupa;
-            btnBuscaMarca.Location = new Point(432, 94);
-            btnBuscaMarca.Name = "btnBuscaMarca";
-            btnBuscaMarca.Size = new Size(20, 23);
-            btnBuscaMarca.TabIndex = 221;
-            btnBuscaMarca.UseVisualStyleBackColor = false;
-            // 
-            // textCest
-            // 
-            textCest.Location = new Point(156, 205);
-            textCest.Name = "textCest";
-            textCest.ReadOnly = true;
-            textCest.Size = new Size(130, 23);
-            textCest.TabIndex = 220;
-            // 
-            // textNcm
-            // 
-            textNcm.Location = new Point(20, 205);
-            textNcm.Name = "textNcm";
-            textNcm.ReadOnly = true;
-            textNcm.Size = new Size(130, 23);
-            textNcm.TabIndex = 219;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 9.75F);
             label5.ForeColor = Color.FromArgb(44, 62, 80);
-            label5.Location = new Point(708, 75);
+            label5.Location = new Point(935, 86);
             label5.Name = "label5";
             label5.Size = new Size(69, 16);
             label5.TabIndex = 218;
@@ -902,7 +1345,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9.75F);
             label4.ForeColor = Color.FromArgb(44, 62, 80);
-            label4.Location = new Point(458, 75);
+            label4.Location = new Point(691, 86);
             label4.Name = "label4";
             label4.Size = new Size(42, 16);
             label4.TabIndex = 217;
@@ -912,93 +1355,45 @@
             // 
             comboSubGrupo.Enabled = false;
             comboSubGrupo.FormattingEnabled = true;
-            comboSubGrupo.Location = new Point(708, 94);
+            comboSubGrupo.Location = new Point(935, 105);
             comboSubGrupo.Name = "comboSubGrupo";
-            comboSubGrupo.Size = new Size(244, 23);
+            comboSubGrupo.Size = new Size(215, 23);
             comboSubGrupo.TabIndex = 216;
             // 
             // comboGrupo
             // 
             comboGrupo.Enabled = false;
             comboGrupo.FormattingEnabled = true;
-            comboGrupo.Location = new Point(458, 94);
+            comboGrupo.Location = new Point(691, 105);
             comboGrupo.Name = "comboGrupo";
-            comboGrupo.Size = new Size(244, 23);
+            comboGrupo.Size = new Size(238, 23);
             comboGrupo.TabIndex = 215;
-            // 
-            // btnBuscaOriProduto
-            // 
-            btnBuscaOriProduto.BackColor = Color.Transparent;
-            btnBuscaOriProduto.Enabled = false;
-            btnBuscaOriProduto.FlatAppearance.BorderSize = 0;
-            btnBuscaOriProduto.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaOriProduto.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaOriProduto.FlatStyle = FlatStyle.Flat;
-            btnBuscaOriProduto.Image = Properties.Resources.lupa;
-            btnBuscaOriProduto.Location = new Point(925, 151);
-            btnBuscaOriProduto.Name = "btnBuscaOriProduto";
-            btnBuscaOriProduto.Size = new Size(20, 23);
-            btnBuscaOriProduto.TabIndex = 214;
-            btnBuscaOriProduto.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscaForn
-            // 
-            btnBuscaForn.BackColor = Color.Transparent;
-            btnBuscaForn.Enabled = false;
-            btnBuscaForn.FlatAppearance.BorderSize = 0;
-            btnBuscaForn.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaForn.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaForn.FlatStyle = FlatStyle.Flat;
-            btnBuscaForn.Image = Properties.Resources.lupa;
-            btnBuscaForn.Location = new Point(1246, 47);
-            btnBuscaForn.Name = "btnBuscaForn";
-            btnBuscaForn.Size = new Size(20, 23);
-            btnBuscaForn.TabIndex = 213;
-            btnBuscaForn.UseVisualStyleBackColor = false;
+            comboGrupo.SelectedIndexChanged += comboGrupo_SelectedIndexChanged;
             // 
             // label36
             // 
             label36.AutoSize = true;
             label36.Font = new Font("Arial", 9.75F);
             label36.ForeColor = Color.FromArgb(44, 62, 80);
-            label36.Location = new Point(594, 294);
+            label36.Location = new Point(9, 216);
             label36.Name = "label36";
             label36.Size = new Size(93, 16);
             label36.TabIndex = 211;
-            label36.Text = "Ultima Entrada";
+            label36.Text = "Ultima Compra";
             // 
-            // textUltimaEntrada
+            // textUltimaCompra
             // 
-            textUltimaEntrada.Location = new Point(594, 313);
-            textUltimaEntrada.Mask = "00/00/0000";
-            textUltimaEntrada.Name = "textUltimaEntrada";
-            textUltimaEntrada.ReadOnly = true;
-            textUltimaEntrada.Size = new Size(134, 23);
-            textUltimaEntrada.TabIndex = 209;
-            textUltimaEntrada.ValidatingType = typeof(DateTime);
-            // 
-            // textQuantMinima
-            // 
-            textQuantMinima.Location = new Point(478, 314);
-            textQuantMinima.Name = "textQuantMinima";
-            textQuantMinima.ReadOnly = true;
-            textQuantMinima.Size = new Size(110, 23);
-            textQuantMinima.TabIndex = 208;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Arial", 9.75F);
-            label35.ForeColor = Color.FromArgb(44, 62, 80);
-            label35.Location = new Point(478, 293);
-            label35.Name = "label35";
-            label35.Size = new Size(88, 16);
-            label35.TabIndex = 207;
-            label35.Text = "Quant.Minima";
+            textUltimaCompra.Location = new Point(9, 235);
+            textUltimaCompra.Mask = "00/00/0000";
+            textUltimaCompra.Name = "textUltimaCompra";
+            textUltimaCompra.ReadOnly = true;
+            textUltimaCompra.Size = new Size(118, 23);
+            textUltimaCompra.TabIndex = 209;
+            textUltimaCompra.ValidatingType = typeof(DateTime);
             // 
             // textMargemCalc
             // 
-            textMargemCalc.Location = new Point(16, 313);
+            textMargemCalc.Location = new Point(526, 164);
             textMargemCalc.Name = "textMargemCalc";
             textMargemCalc.PlaceholderText = "0,00";
             textMargemCalc.ReadOnly = true;
@@ -1011,37 +1406,18 @@
             label34.AutoSize = true;
             label34.Font = new Font("Arial", 9.75F);
             label34.ForeColor = Color.FromArgb(44, 62, 80);
-            label34.Location = new Point(16, 294);
+            label34.Location = new Point(526, 145);
             label34.Name = "label34";
             label34.Size = new Size(54, 16);
             label34.TabIndex = 206;
             label34.Text = "Margem";
             // 
-            // textQuantMaxima
-            // 
-            textQuantMaxima.Location = new Point(364, 314);
-            textQuantMaxima.Name = "textQuantMaxima";
-            textQuantMaxima.ReadOnly = true;
-            textQuantMaxima.Size = new Size(108, 23);
-            textQuantMaxima.TabIndex = 204;
-            // 
-            // label32
-            // 
-            label32.AutoSize = true;
-            label32.Font = new Font("Arial", 9.75F);
-            label32.ForeColor = Color.FromArgb(44, 62, 80);
-            label32.Location = new Point(364, 293);
-            label32.Name = "label32";
-            label32.Size = new Size(89, 16);
-            label32.TabIndex = 203;
-            label32.Text = "Quat. Maxima";
-            // 
             // textObservacao
             // 
-            textObservacao.Location = new Point(20, 370);
+            textObservacao.Location = new Point(541, 235);
             textObservacao.Name = "textObservacao";
             textObservacao.ReadOnly = true;
-            textObservacao.Size = new Size(401, 23);
+            textObservacao.Size = new Size(568, 23);
             textObservacao.TabIndex = 201;
             // 
             // label31
@@ -1049,7 +1425,7 @@
             label31.AutoSize = true;
             label31.Font = new Font("Arial", 9.75F);
             label31.ForeColor = Color.FromArgb(44, 62, 80);
-            label31.Location = new Point(20, 351);
+            label31.Location = new Point(541, 216);
             label31.Name = "label31";
             label31.Size = new Size(75, 16);
             label31.TabIndex = 202;
@@ -1057,7 +1433,7 @@
             // 
             // textPrecoVenda
             // 
-            textPrecoVenda.Location = new Point(248, 313);
+            textPrecoVenda.Location = new Point(758, 164);
             textPrecoVenda.Name = "textPrecoVenda";
             textPrecoVenda.PlaceholderText = "0,00";
             textPrecoVenda.ReadOnly = true;
@@ -1070,7 +1446,7 @@
             label29.AutoSize = true;
             label29.Font = new Font("Arial", 9.75F);
             label29.ForeColor = Color.FromArgb(44, 62, 80);
-            label29.Location = new Point(248, 294);
+            label29.Location = new Point(758, 145);
             label29.Name = "label29";
             label29.Size = new Size(99, 16);
             label29.TabIndex = 200;
@@ -1078,7 +1454,7 @@
             // 
             // textPrecoCusto
             // 
-            textPrecoCusto.Location = new Point(132, 313);
+            textPrecoCusto.Location = new Point(642, 164);
             textPrecoCusto.Name = "textPrecoCusto";
             textPrecoCusto.PlaceholderText = "0,00";
             textPrecoCusto.ReadOnly = true;
@@ -1092,452 +1468,101 @@
             label30.AutoSize = true;
             label30.Font = new Font("Arial", 9.75F);
             label30.ForeColor = Color.FromArgb(44, 62, 80);
-            label30.Location = new Point(132, 294);
+            label30.Location = new Point(642, 145);
             label30.Name = "label30";
             label30.Size = new Size(101, 16);
             label30.TabIndex = 198;
             label30.Text = " Preço de Custo";
             // 
-            // textCofinsAliquota
-            // 
-            textCofinsAliquota.Location = new Point(594, 261);
-            textCofinsAliquota.Name = "textCofinsAliquota";
-            textCofinsAliquota.PlaceholderText = "0,00";
-            textCofinsAliquota.ReadOnly = true;
-            textCofinsAliquota.Size = new Size(110, 23);
-            textCofinsAliquota.TabIndex = 195;
-            textCofinsAliquota.TextChanged += MskararCampoMoeda_Changed;
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Arial", 9.75F);
-            label27.ForeColor = Color.FromArgb(44, 62, 80);
-            label27.Location = new Point(594, 242);
-            label27.Name = "label27";
-            label27.Size = new Size(55, 16);
-            label27.TabIndex = 196;
-            label27.Text = "COFINS";
-            // 
-            // textPis
-            // 
-            textPis.Location = new Point(478, 261);
-            textPis.Name = "textPis";
-            textPis.PlaceholderText = "0,00";
-            textPis.ReadOnly = true;
-            textPis.Size = new Size(110, 23);
-            textPis.TabIndex = 193;
-            textPis.TextChanged += MskararCampoMoeda_Changed;
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Arial", 9.75F);
-            label28.ForeColor = Color.FromArgb(44, 62, 80);
-            label28.Location = new Point(478, 242);
-            label28.Name = "label28";
-            label28.Size = new Size(28, 16);
-            label28.TabIndex = 194;
-            label28.Text = "PIS";
-            // 
-            // textIpiAliquota
-            // 
-            textIpiAliquota.Location = new Point(362, 261);
-            textIpiAliquota.Name = "textIpiAliquota";
-            textIpiAliquota.PlaceholderText = "0,00";
-            textIpiAliquota.ReadOnly = true;
-            textIpiAliquota.Size = new Size(110, 23);
-            textIpiAliquota.TabIndex = 191;
-            textIpiAliquota.TextChanged += MskararCampoMoeda_Changed;
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Arial", 9.75F);
-            label26.ForeColor = Color.FromArgb(44, 62, 80);
-            label26.Location = new Point(362, 242);
-            label26.Name = "label26";
-            label26.Size = new Size(22, 16);
-            label26.TabIndex = 192;
-            label26.Text = "IPI";
-            // 
-            // textIcms
-            // 
-            textIcms.Location = new Point(246, 261);
-            textIcms.Name = "textIcms";
-            textIcms.PlaceholderText = "0,00";
-            textIcms.ReadOnly = true;
-            textIcms.Size = new Size(110, 23);
-            textIcms.TabIndex = 189;
-            textIcms.TextChanged += MskararCampoMoeda_Changed;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Arial", 9.75F);
-            label25.ForeColor = Color.FromArgb(44, 62, 80);
-            label25.Location = new Point(246, 242);
-            label25.Name = "label25";
-            label25.Size = new Size(59, 16);
-            label25.TabIndex = 190;
-            label25.Text = "ICMS ST";
-            // 
-            // textMvaAliquota
-            // 
-            textMvaAliquota.Location = new Point(130, 261);
-            textMvaAliquota.Name = "textMvaAliquota";
-            textMvaAliquota.PlaceholderText = "0,00";
-            textMvaAliquota.ReadOnly = true;
-            textMvaAliquota.Size = new Size(110, 23);
-            textMvaAliquota.TabIndex = 187;
-            textMvaAliquota.TextChanged += MskararCampoMoeda_Changed;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Font = new Font("Arial", 9.75F);
-            label24.ForeColor = Color.FromArgb(44, 62, 80);
-            label24.Location = new Point(130, 242);
-            label24.Name = "label24";
-            label24.Size = new Size(35, 16);
-            label24.TabIndex = 188;
-            label24.Text = "MVA";
-            // 
-            // textIcmsAliquota
-            // 
-            textIcmsAliquota.Location = new Point(14, 261);
-            textIcmsAliquota.Name = "textIcmsAliquota";
-            textIcmsAliquota.PlaceholderText = "0,00";
-            textIcmsAliquota.ReadOnly = true;
-            textIcmsAliquota.Size = new Size(110, 23);
-            textIcmsAliquota.TabIndex = 185;
-            textIcmsAliquota.TextChanged += MskararCampoMoeda_Changed;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Arial", 9.75F);
-            label23.ForeColor = Color.FromArgb(44, 62, 80);
-            label23.Location = new Point(14, 242);
-            label23.Name = "label23";
-            label23.Size = new Size(39, 16);
-            label23.TabIndex = 186;
-            label23.Text = "ICMS";
-            // 
-            // groupBox2
-            // 
-            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(btnUpload);
-            groupBox2.Controls.Add(pictureFotoProduto);
-            groupBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.ForeColor = Color.FromArgb(44, 62, 80);
-            groupBox2.Location = new Point(968, 94);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(298, 299);
-            groupBox2.TabIndex = 184;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Foto do Produto";
-            // 
-            // button4
-            // 
-            button4.Image = Properties.Resources.bin;
-            button4.Location = new Point(149, 249);
-            button4.Name = "button4";
-            button4.Size = new Size(127, 40);
-            button4.TabIndex = 23;
-            button4.Text = "Remover";
-            button4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // btnUpload
-            // 
-            btnUpload.Image = Properties.Resources.plus;
-            btnUpload.Location = new Point(17, 249);
-            btnUpload.Name = "btnUpload";
-            btnUpload.Size = new Size(126, 40);
-            btnUpload.TabIndex = 22;
-            btnUpload.Text = "Adicionar";
-            btnUpload.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnUpload.UseVisualStyleBackColor = true;
-            // 
-            // pictureFotoProduto
-            // 
-            pictureFotoProduto.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureFotoProduto.BorderStyle = BorderStyle.Fixed3D;
-            pictureFotoProduto.Location = new Point(17, 21);
-            pictureFotoProduto.Name = "pictureFotoProduto";
-            pictureFotoProduto.Size = new Size(275, 221);
-            pictureFotoProduto.TabIndex = 0;
-            pictureFotoProduto.TabStop = false;
-            // 
-            // btnBuscaCst
-            // 
-            btnBuscaCst.BackColor = Color.Transparent;
-            btnBuscaCst.Enabled = false;
-            btnBuscaCst.FlatAppearance.BorderSize = 0;
-            btnBuscaCst.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaCst.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaCst.FlatStyle = FlatStyle.Flat;
-            btnBuscaCst.Image = Properties.Resources.lupa;
-            btnBuscaCst.Location = new Point(925, 206);
-            btnBuscaCst.Name = "btnBuscaCst";
-            btnBuscaCst.Size = new Size(20, 23);
-            btnBuscaCst.TabIndex = 183;
-            btnBuscaCst.UseVisualStyleBackColor = false;
-            // 
-            // textCst
-            // 
-            textCst.Location = new Point(618, 206);
-            textCst.Name = "textCst";
-            textCst.ReadOnly = true;
-            textCst.Size = new Size(302, 23);
-            textCst.TabIndex = 179;
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Arial", 9.75F);
-            label22.ForeColor = Color.FromArgb(44, 62, 80);
-            label22.Location = new Point(618, 187);
-            label22.Name = "label22";
-            label22.Size = new Size(82, 16);
-            label22.TabIndex = 180;
-            label22.Text = "CST/CSOSN";
-            // 
-            // btnBuscaCfop
-            // 
-            btnBuscaCfop.BackColor = Color.Transparent;
-            btnBuscaCfop.Enabled = false;
-            btnBuscaCfop.FlatAppearance.BorderSize = 0;
-            btnBuscaCfop.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaCfop.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaCfop.FlatStyle = FlatStyle.Flat;
-            btnBuscaCfop.Image = Properties.Resources.lupa;
-            btnBuscaCfop.Location = new Point(592, 205);
-            btnBuscaCfop.Name = "btnBuscaCfop";
-            btnBuscaCfop.Size = new Size(20, 23);
-            btnBuscaCfop.TabIndex = 178;
-            btnBuscaCfop.UseVisualStyleBackColor = false;
-            // 
-            // textCfop
-            // 
-            textCfop.Location = new Point(292, 205);
-            textCfop.Name = "textCfop";
-            textCfop.ReadOnly = true;
-            textCfop.Size = new Size(294, 23);
-            textCfop.TabIndex = 174;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Arial", 9.75F);
-            label20.ForeColor = Color.FromArgb(44, 62, 80);
-            label20.Location = new Point(293, 187);
-            label20.Name = "label20";
-            label20.Size = new Size(43, 16);
-            label20.TabIndex = 175;
-            label20.Text = "CFOP";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Arial", 9.75F);
-            label17.ForeColor = Color.FromArgb(44, 62, 80);
-            label17.Location = new Point(154, 185);
-            label17.Name = "label17";
-            label17.Size = new Size(41, 16);
-            label17.TabIndex = 173;
-            label17.Text = "CEST";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Arial", 9.75F);
-            label19.ForeColor = Color.FromArgb(44, 62, 80);
-            label19.Location = new Point(825, 29);
-            label19.Name = "label19";
-            label19.Size = new Size(81, 16);
-            label19.TabIndex = 170;
-            label19.Text = "Codigo  Forn";
-            // 
-            // textCodForn
-            // 
-            textCodForn.Location = new Point(825, 47);
-            textCodForn.Name = "textCodForn";
-            textCodForn.ReadOnly = true;
-            textCodForn.Size = new Size(79, 23);
-            textCodForn.TabIndex = 169;
-            // 
-            // textNomeOrigem
-            // 
-            textNomeOrigem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textNomeOrigem.Location = new Point(579, 153);
-            textNomeOrigem.Name = "textNomeOrigem";
-            textNomeOrigem.ReadOnly = true;
-            textNomeOrigem.Size = new Size(347, 23);
-            textNomeOrigem.TabIndex = 166;
-            // 
-            // textNomeForn
-            // 
-            textNomeForn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textNomeForn.Location = new Point(910, 47);
-            textNomeForn.Name = "textNomeForn";
-            textNomeForn.ReadOnly = true;
-            textNomeForn.Size = new Size(334, 23);
-            textNomeForn.TabIndex = 162;
-            // 
-            // textMarca
-            // 
-            textMarca.Location = new Point(85, 94);
-            textMarca.Name = "textMarca";
-            textMarca.ReadOnly = true;
-            textMarca.Size = new Size(341, 23);
-            textMarca.TabIndex = 160;
-            // 
-            // textUniMedida
-            // 
-            textUniMedida.Location = new Point(12, 94);
-            textUniMedida.Name = "textUniMedida";
-            textUniMedida.ReadOnly = true;
-            textUniMedida.Size = new Size(67, 23);
-            textUniMedida.TabIndex = 158;
-            // 
             // textNomeProd
             // 
-            textNomeProd.Location = new Point(390, 47);
+            textNomeProd.Location = new Point(807, 47);
             textNomeProd.Name = "textNomeProd";
             textNomeProd.ReadOnly = true;
-            textNomeProd.Size = new Size(429, 23);
+            textNomeProd.Size = new Size(389, 23);
             textNomeProd.TabIndex = 156;
             // 
-            // textCodBarra
+            // textCodBarraAlternativo
             // 
-            textCodBarra.Location = new Point(210, 47);
-            textCodBarra.Name = "textCodBarra";
-            textCodBarra.ReadOnly = true;
-            textCodBarra.Size = new Size(174, 23);
-            textCodBarra.TabIndex = 155;
+            textCodBarraAlternativo.Location = new Point(210, 47);
+            textCodBarraAlternativo.Name = "textCodBarraAlternativo";
+            textCodBarraAlternativo.ReadOnly = true;
+            textCodBarraAlternativo.Size = new Size(189, 23);
+            textCodBarraAlternativo.TabIndex = 155;
             // 
-            // textCodProd
+            // textCodInterno
             // 
-            textCodProd.Location = new Point(85, 47);
-            textCodProd.Name = "textCodProd";
-            textCodProd.ReadOnly = true;
-            textCodProd.Size = new Size(118, 23);
-            textCodProd.TabIndex = 153;
+            textCodInterno.Location = new Point(85, 47);
+            textCodInterno.Name = "textCodInterno";
+            textCodInterno.ReadOnly = true;
+            textCodInterno.Size = new Size(119, 23);
+            textCodInterno.TabIndex = 153;
             // 
             // groupBox3
             // 
             groupBox3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            groupBox3.Controls.Add(radioDescontoNao);
-            groupBox3.Controls.Add(radioDescontoSim);
+            groupBox3.Controls.Add(checkDescontoSim);
             groupBox3.Font = new Font("Arial", 9.75F);
             groupBox3.ForeColor = Color.FromArgb(44, 62, 80);
-            groupBox3.Location = new Point(154, 133);
+            groupBox3.Location = new Point(102, 151);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(149, 42);
+            groupBox3.Size = new Size(98, 62);
             groupBox3.TabIndex = 168;
             groupBox3.TabStop = false;
-            groupBox3.Text = "Desconto Permitido?";
+            groupBox3.Text = "Des. Perm?";
             // 
-            // radioDescontoNao
+            // checkDescontoSim
             // 
-            radioDescontoNao.Enabled = false;
-            radioDescontoNao.Location = new Point(85, 19);
-            radioDescontoNao.Name = "radioDescontoNao";
-            radioDescontoNao.Size = new Size(58, 22);
-            radioDescontoNao.TabIndex = 4;
-            radioDescontoNao.TabStop = true;
-            radioDescontoNao.Text = "Não";
-            radioDescontoNao.UseVisualStyleBackColor = true;
-            // 
-            // radioDescontoSim
-            // 
-            radioDescontoSim.Enabled = false;
-            radioDescontoSim.Location = new Point(6, 18);
-            radioDescontoSim.Name = "radioDescontoSim";
-            radioDescontoSim.Size = new Size(54, 24);
-            radioDescontoSim.TabIndex = 3;
-            radioDescontoSim.TabStop = true;
-            radioDescontoSim.Text = "Sim";
-            radioDescontoSim.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Arial", 9.75F);
-            label13.ForeColor = Color.FromArgb(44, 62, 80);
-            label13.Location = new Point(578, 134);
-            label13.Name = "label13";
-            label13.Size = new Size(135, 16);
-            label13.TabIndex = 167;
-            label13.Text = "Origem da Mercadoria";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Arial", 9.75F);
-            label12.ForeColor = Color.FromArgb(44, 62, 80);
-            label12.Location = new Point(15, 185);
-            label12.Name = "label12";
-            label12.Size = new Size(36, 16);
-            label12.TabIndex = 165;
-            label12.Text = "NCM";
+            checkDescontoSim.AutoSize = true;
+            checkDescontoSim.Enabled = false;
+            checkDescontoSim.Location = new Point(6, 21);
+            checkDescontoSim.Name = "checkDescontoSim";
+            checkDescontoSim.Size = new Size(49, 20);
+            checkDescontoSim.TabIndex = 0;
+            checkDescontoSim.Text = "Sim";
+            checkDescontoSim.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             groupBox4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            groupBox4.Controls.Add(radioAtivoNao);
-            groupBox4.Controls.Add(radioAtivoSim);
+            groupBox4.Controls.Add(checkAtivo);
             groupBox4.Font = new Font("Arial", 9.75F);
             groupBox4.ForeColor = Color.FromArgb(44, 62, 80);
-            groupBox4.Location = new Point(12, 133);
+            groupBox4.Location = new Point(12, 151);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(136, 42);
+            groupBox4.Size = new Size(84, 62);
             groupBox4.TabIndex = 164;
             groupBox4.TabStop = false;
             groupBox4.Text = "Ativo ?";
             // 
-            // radioAtivoNao
+            // checkAtivo
             // 
-            radioAtivoNao.Enabled = false;
-            radioAtivoNao.Location = new Point(66, 19);
-            radioAtivoNao.Name = "radioAtivoNao";
-            radioAtivoNao.Size = new Size(58, 22);
-            radioAtivoNao.TabIndex = 4;
-            radioAtivoNao.TabStop = true;
-            radioAtivoNao.Text = "Não";
-            radioAtivoNao.UseVisualStyleBackColor = true;
-            // 
-            // radioAtivoSim
-            // 
-            radioAtivoSim.Enabled = false;
-            radioAtivoSim.Location = new Point(6, 18);
-            radioAtivoSim.Name = "radioAtivoSim";
-            radioAtivoSim.Size = new Size(54, 24);
-            radioAtivoSim.TabIndex = 3;
-            radioAtivoSim.TabStop = true;
-            radioAtivoSim.Text = "Sim";
-            radioAtivoSim.UseVisualStyleBackColor = true;
+            checkAtivo.AutoSize = true;
+            checkAtivo.Enabled = false;
+            checkAtivo.Location = new Point(6, 21);
+            checkAtivo.Name = "checkAtivo";
+            checkAtivo.Size = new Size(49, 20);
+            checkAtivo.TabIndex = 284;
+            checkAtivo.Text = "Sim";
+            checkAtivo.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Arial", 9.75F);
             label11.ForeColor = Color.FromArgb(44, 62, 80);
-            label11.Location = new Point(910, 27);
+            label11.Location = new Point(1256, 29);
             label11.Name = "label11";
-            label11.Size = new Size(91, 16);
+            label11.Size = new Size(72, 16);
             label11.TabIndex = 163;
-            label11.Text = "Fornecedor F1";
+            label11.Text = "Fornecedor";
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Arial", 9.75F);
             label10.ForeColor = Color.FromArgb(44, 62, 80);
-            label10.Location = new Point(83, 73);
+            label10.Location = new Point(347, 86);
             label10.Name = "label10";
             label10.Size = new Size(108, 16);
             label10.TabIndex = 161;
@@ -1548,18 +1573,18 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 9.75F);
             label6.ForeColor = Color.FromArgb(44, 62, 80);
-            label6.Location = new Point(9, 75);
+            label6.Location = new Point(9, 86);
             label6.Name = "label6";
-            label6.Size = new Size(58, 16);
+            label6.Size = new Size(83, 16);
             label6.TabIndex = 159;
-            label6.Text = "Uni.Medi";
+            label6.Text = "Uni.Med Entr";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9.75F);
             label3.ForeColor = Color.FromArgb(44, 62, 80);
-            label3.Location = new Point(390, 27);
+            label3.Location = new Point(807, 27);
             label3.Name = "label3";
             label3.Size = new Size(103, 16);
             label3.TabIndex = 157;
@@ -1572,9 +1597,9 @@
             label2.ForeColor = Color.FromArgb(44, 62, 80);
             label2.Location = new Point(209, 27);
             label2.Name = "label2";
-            label2.Size = new Size(145, 16);
+            label2.Size = new Size(182, 16);
             label2.TabIndex = 154;
-            label2.Text = "Cod Barra ou Gerar F12";
+            label2.Text = "Codigo Barras  Alternativo F12";
             // 
             // label1
             // 
@@ -1583,21 +1608,19 @@
             label1.ForeColor = Color.FromArgb(44, 62, 80);
             label1.Location = new Point(85, 29);
             label1.Name = "label1";
-            label1.Size = new Size(83, 16);
+            label1.Size = new Size(90, 16);
             label1.TabIndex = 152;
-            label1.Text = "Codigo Intern";
+            label1.Text = "Codigo Interno";
             // 
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
-            panel1.Controls.Add(btnImportaExcel);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(3, 636);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1275, 52);
+            panel1.Size = new Size(1537, 52);
             panel1.TabIndex = 82;
             // 
             // btnNovo
@@ -1611,17 +1634,6 @@
             btnNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNovo.UseVisualStyleBackColor = true;
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(194, 5);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 20;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // btnGravar
             // 
             btnGravar.Image = Properties.Resources.salvar;
@@ -1632,87 +1644,60 @@
             btnGravar.Text = "Gravar F5";
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
-            // 
-            // btnImportaExcel
-            // 
-            btnImportaExcel.Image = Properties.Resources.xls;
-            btnImportaExcel.Location = new Point(301, 5);
-            btnImportaExcel.Name = "btnImportaExcel";
-            btnImportaExcel.Size = new Size(118, 40);
-            btnImportaExcel.TabIndex = 224;
-            btnImportaExcel.Text = "Importar Excel";
-            btnImportaExcel.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnImportaExcel.UseVisualStyleBackColor = true;
+            btnGravar.Click += btnGravar_Click;
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabCadastro);
+            tabControl1.Controls.Add(tabConsultas);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1289, 719);
+            tabControl1.Size = new Size(1551, 719);
             tabControl1.TabIndex = 0;
             // 
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Font = new Font("Arial", 9.75F);
-            label37.ForeColor = Color.FromArgb(44, 62, 80);
-            label37.Location = new Point(734, 294);
-            label37.Name = "label37";
-            label37.Size = new Size(81, 16);
-            label37.TabIndex = 212;
-            label37.Text = "Ultima Saida";
-            // 
-            // textUltimaSaida
-            // 
-            textUltimaSaida.Location = new Point(734, 313);
-            textUltimaSaida.Mask = "00/00/0000";
-            textUltimaSaida.Name = "textUltimaSaida";
-            textUltimaSaida.ReadOnly = true;
-            textUltimaSaida.Size = new Size(134, 23);
-            textUltimaSaida.TabIndex = 210;
-            textUltimaSaida.ValidatingType = typeof(DateTime);
-            // 
             // CadastrarProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1289, 719);
+            ClientSize = new Size(1551, 719);
             Controls.Add(tabControl1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
-            MaximizeBox = false;
             Name = "CadastrarProduto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastrar Produtos";
             Load += CadastrarProduto_Load;
             KeyDown += LiberaCamposParaCadastro_KeyDown;
-            tabPage3.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel2.ResumeLayout(false);
+            tabConsultas.ResumeLayout(false);
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel3.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridProdutos).EndInit();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
-            tabPage1.ResumeLayout(false);
+            tabCadastro.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textCest).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textNcm).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textQuantMinima).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textQuantMaxima).EndInit();
+            groupBox8.ResumeLayout(false);
+            groupBox8.PerformLayout();
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureFotoProduto).EndInit();
+            panel4.ResumeLayout(false);
+            textConfins.ResumeLayout(false);
+            textConfins.PerformLayout();
+            groupBox7.ResumeLayout(false);
+            groupBox7.PerformLayout();
             groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
             panel1.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             ResumeLayout(false);
@@ -1720,19 +1705,15 @@
 
         #endregion
 
-        private TabPage tabPage3;
-        private TabPage tabPage1;
+        private TabPage tabConsultas;
+        private TabPage tabCadastro;
         private Panel panel1;
         private Button btnNovo;
-        private Button btnCancelar;
         private Button btnGravar;
         private TabControl tabControl1;
         private OpenFileDialog openFileDialog1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private GroupBox groupBox5;
-        private CheckBox checkBoxCarregarTodos;
         private TextBox textDadosPesquisa;
-        private Button btnPesquisar;
         private Label label7;
         private ComboBox comboModelo;
         private Label label8;
@@ -1741,115 +1722,108 @@
         private Panel panel2;
         private Panel panel3;
         private Button btnImprimir;
-        private DataGridView dataGridView1;
-        private Button btnEditar;
         private Button btnExcluir;
         private GroupBox groupBox1;
-        private Button btnImportaExcel;
+        private Label label39;
+        private MaskedTextBox textDataCadastro;
+        private ComboBox comboBoxTamanho;
+        private Label Tamanho;
+        private TextBox textCod;
+        private Label label33;
         private TextBox textCor;
         private Label label15;
-        private Button btnBuscaMarca;
-        private NumericUpDown textCest;
-        private NumericUpDown textNcm;
         private Label label5;
         private Label label4;
         private ComboBox comboSubGrupo;
         private ComboBox comboGrupo;
-        private Button btnBuscaOriProduto;
-        private Button btnBuscaForn;
         private Label label36;
-        private MaskedTextBox textUltimaEntrada;
-        private NumericUpDown textQuantMinima;
-        private Label label35;
+        private MaskedTextBox textUltimaSaida;
+        private MaskedTextBox textUltimaCompra;
         private TextBox textMargemCalc;
         private Label label34;
-        private NumericUpDown textQuantMaxima;
-        private Label label32;
         private TextBox textObservacao;
         private Label label31;
         private TextBox textPrecoVenda;
         private Label label29;
         private TextBox textPrecoCusto;
         private Label label30;
-        private TextBox textCofinsAliquota;
-        private Label label27;
-        private TextBox textPis;
-        private Label label28;
-        private TextBox textIpiAliquota;
-        private Label label26;
-        private TextBox textIcms;
-        private Label label25;
-        private TextBox textMvaAliquota;
-        private Label label24;
-        private TextBox textIcmsAliquota;
-        private Label label23;
-        private GroupBox groupBox2;
-        private Button button4;
-        private Button btnUpload;
-        private PictureBox pictureFotoProduto;
-        private Button btnBuscaCst;
-        private TextBox textCst;
-        private Label label22;
-        private Button btnBuscaCfop;
-        private TextBox textCfop;
-        private Label label20;
-        private Label label17;
-        private Label label19;
-        private TextBox textCodForn;
-        private TextBox textNomeOrigem;
-        private TextBox textNomeForn;
-        private TextBox textMarca;
-        private TextBox textUniMedida;
         private TextBox textNomeProd;
-        private TextBox textCodBarra;
-        private TextBox textCodProd;
+        private TextBox textCodBarraAlternativo;
+        private TextBox textCodInterno;
         private GroupBox groupBox3;
-        private RadioButton radioDescontoNao;
-        private RadioButton radioDescontoSim;
-        private Label label13;
-        private Label label12;
         private GroupBox groupBox4;
-        private RadioButton radioAtivoNao;
-        private RadioButton radioAtivoSim;
         private Label label11;
         private Label label10;
         private Label label6;
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox textCod;
-        private Label label33;
-        private Label Tamanho;
-        private ComboBox comboBoxTamanho;
+        private ComboBox comboBoxMarcaFabricante;
+        private ComboBox comboUnidadeMedidaEntrada;
+        private TextBox textLucro;
+        private Label label38;
+        private Button btnBuscaCst;
+        private Button btnBuscaCfop;
+        private Label label40;
+        private MaskedTextBox textDataAtualizacao;
+        private Button btnEditar;
+        private TextBox textICMS;
+        private TextBox textPIS;
+        private TextBox textBox9;
+        private TextBox textIdFornecedor;
+        private Label label23;
+        private TextBox textNomeFornecedor;
+        private Label label25;
+        private ComboBox comboBoxTipoProduto;
+        private GroupBox groupBox7;
+        private Label label27;
+        private Label label26;
+        private TextBox textQuatidade;
+        private TextBox textPontoReposicao;
+        private Button bntNovo;
+        private GroupBox textConfins;
+        private TextBox textIPI;
+        private Label label24;
+        private Label label22;
+        private Label label20;
+        private Label label19;
+        private ComboBox comboBoxCst;
+        private Label label17;
+        private ComboBox comboBoxCfop;
+        private Label label13;
+        private ComboBox comboBoxNcm;
+        private Label label12;
+        private ComboBox comboBoxOrigemProd;
+        private Label label32;
+        private TextBox textQuantMaxima;
+        private TextBox textCodBarraEAN;
+        private Label label41;
+        private TextBox textCOFINS;
+        private Label label37;
+        private ComboBox comboUnidadeMedidaSaida;
+        private Label label28;
+        private Label label42;
+        private MaskedTextBox textDataValidade;
+        private Label label43;
+        private TextBox textCodigoBalanca;
+        private Label label44;
+        private Label label45;
+        private Label label54;
+        private Label label53;
+        private Label label52;
+        private Label label51;
+        private Label label50;
+        private Label label49;
+        private Label label48;
+        private Label label47;
+        private Label label58;
+        private Label label57;
+        private Label label56;
+        private Label label55;
+        private CheckBox checkAtivo;
+        private CheckBox checkDescontoSim;
         private GroupBox groupBox6;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn NomeProduto;
-        private DataGridViewTextBoxColumn CodigoBarra;
-        private DataGridViewTextBoxColumn CodigoInterno;
-        private DataGridViewTextBoxColumn UniMedida;
-        private DataGridViewTextBoxColumn MarcaFabricante;
-        private DataGridViewTextBoxColumn Fornecedor;
-        private DataGridViewTextBoxColumn Grupo;
-        private DataGridViewTextBoxColumn SubGrupo;
-        private DataGridViewCheckBoxColumn Ativo;
-        private DataGridViewCheckBoxColumn Desconto;
-        private DataGridViewTextBoxColumn Origem;
-        private DataGridViewTextBoxColumn Ncm;
-        private DataGridViewTextBoxColumn Cfop;
-        private DataGridViewTextBoxColumn Cest;
-        private DataGridViewTextBoxColumn Cst;
-        private DataGridViewTextBoxColumn Icms;
-        private DataGridViewTextBoxColumn Mva;
-        private DataGridViewTextBoxColumn Ipi;
-        private DataGridViewTextBoxColumn Pis;
-        private DataGridViewTextBoxColumn Confins;
-        private DataGridViewTextBoxColumn Margem;
-        private DataGridViewTextBoxColumn ValorCusto;
-        private DataGridViewTextBoxColumn ValorVenda;
-        private DataGridViewTextBoxColumn PontoReposicao;
-        private DataGridViewTextBoxColumn UltimaEntrada;
-        private DataGridViewTextBoxColumn UltimaSaida;
-        private DataGridViewTextBoxColumn Observacao;
+        private Label label21;
         private Label label18;
         private Label label16;
         private Label label14;
@@ -1857,10 +1831,14 @@
         private TextBox textBox4;
         private TextBox textBox2;
         private TextBox textBox1;
-        private Label label21;
-        private Label label39;
-        private MaskedTextBox textDataCadastro;
-        private Label label37;
-        private MaskedTextBox textUltimaSaida;
+        private DataGridView dataGridProdutos;
+        private Button btnDuplicar;
+        private GroupBox groupBox2;
+        private PictureBox pictureFotoProduto;
+        private Panel panel4;
+        private Button btnRemoverFoto;
+        private Button btnAddFoto;
+        private GroupBox groupBox8;
+        private CheckBox checkdProdBalança;
     }
 }

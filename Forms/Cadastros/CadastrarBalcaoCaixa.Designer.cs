@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarBalcaoCaixa));
             tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
+            tabCadastro = new TabPage();
             groupBox1 = new GroupBox();
+            btnBuscaBairro = new Button();
             textCod = new TextBox();
             label4 = new Label();
             textNome = new TextBox();
@@ -39,38 +40,38 @@
             panel1 = new Panel();
             btnNovo = new Button();
             btnGravar = new Button();
-            btnCancelar = new Button();
-            btnBuscaBairro = new Button();
+            label45 = new Label();
             tabControl1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabCadastro.SuspendLayout();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabCadastro);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(741, 194);
+            tabControl1.Size = new Size(741, 266);
             tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabCadastro
             // 
-            tabPage1.Controls.Add(groupBox1);
-            tabPage1.Controls.Add(panel1);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(733, 166);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "Cadastrar";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabCadastro.Controls.Add(groupBox1);
+            tabCadastro.Controls.Add(panel1);
+            tabCadastro.Location = new Point(4, 24);
+            tabCadastro.Name = "tabCadastro";
+            tabCadastro.Padding = new Padding(3);
+            tabCadastro.Size = new Size(733, 238);
+            tabCadastro.TabIndex = 0;
+            tabCadastro.Text = "Cadastrar";
+            tabCadastro.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label45);
             groupBox1.Controls.Add(btnBuscaBairro);
             groupBox1.Controls.Add(textCod);
             groupBox1.Controls.Add(label4);
@@ -83,6 +84,21 @@
             groupBox1.TabIndex = 45;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
+            // 
+            // btnBuscaBairro
+            // 
+            btnBuscaBairro.BackColor = Color.Transparent;
+            btnBuscaBairro.Enabled = false;
+            btnBuscaBairro.FlatAppearance.BorderSize = 0;
+            btnBuscaBairro.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnBuscaBairro.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnBuscaBairro.FlatStyle = FlatStyle.Flat;
+            btnBuscaBairro.Image = Properties.Resources.lupa;
+            btnBuscaBairro.Location = new Point(689, 39);
+            btnBuscaBairro.Name = "btnBuscaBairro";
+            btnBuscaBairro.Size = new Size(26, 23);
+            btnBuscaBairro.TabIndex = 160;
+            btnBuscaBairro.UseVisualStyleBackColor = false;
             // 
             // textCod
             // 
@@ -128,9 +144,8 @@
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
             panel1.Controls.Add(btnGravar);
-            panel1.Controls.Add(btnCancelar);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(3, 111);
+            panel1.Location = new Point(3, 183);
             panel1.Name = "panel1";
             panel1.Size = new Size(727, 52);
             panel1.TabIndex = 44;
@@ -158,37 +173,22 @@
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
             // 
-            // btnCancelar
+            // label45
             // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(181, 7);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(91, 40);
-            btnCancelar.TabIndex = 17;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscaBairro
-            // 
-            btnBuscaBairro.BackColor = Color.Transparent;
-            btnBuscaBairro.Enabled = false;
-            btnBuscaBairro.FlatAppearance.BorderSize = 0;
-            btnBuscaBairro.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            btnBuscaBairro.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            btnBuscaBairro.FlatStyle = FlatStyle.Flat;
-            btnBuscaBairro.Image = Properties.Resources.lupa;
-            btnBuscaBairro.Location = new Point(689, 39);
-            btnBuscaBairro.Name = "btnBuscaBairro";
-            btnBuscaBairro.Size = new Size(26, 23);
-            btnBuscaBairro.TabIndex = 160;
-            btnBuscaBairro.UseVisualStyleBackColor = false;
+            label45.AutoSize = true;
+            label45.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label45.ForeColor = Color.FromArgb(192, 0, 0);
+            label45.Location = new Point(243, 23);
+            label45.Name = "label45";
+            label45.Size = new Size(74, 13);
+            label45.TabIndex = 276;
+            label45.Text = "[Obrigatorio]";
             // 
             // CadastrarBalcaoCaixa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(741, 194);
+            ClientSize = new Size(741, 266);
             Controls.Add(tabControl1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
@@ -199,7 +199,7 @@
             Text = "Cadastrar Caixa/Balcão";
             KeyDown += CadastrarBalcao_KeyDown;
             tabControl1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
+            tabCadastro.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             panel1.ResumeLayout(false);
@@ -209,16 +209,16 @@
         #endregion
 
         private TabControl tabControl1;
-        private TabPage tabPage1;
+        private TabPage tabCadastro;
         private Panel panel1;
         private Button btnNovo;
         private Button btnGravar;
-        private Button btnCancelar;
         private GroupBox groupBox1;
         private TextBox textNome;
         private Label label10;
         private TextBox textCod;
         private Label label4;
         private Button btnBuscaBairro;
+        private Label label45;
     }
 }

@@ -34,36 +34,72 @@ namespace ServiTech.Forms.Cadastros
             comboModelo.Items.Add("Contem");
             comboModelo.SelectedIndex = 0;
 
-            this.CaregarGridCidades();
+            this.CarregarGridCidades();
             this.CarregarPaisesCombo();
 
         }
 
 
 
-        private void CaregarGridCidades()
+        private void CarregarGridCidades()
         {
             try
             {
-                var cidades = dbConectionPdv.Cidades.
-                    OrderBy(c => c.Id).Select(c => new
+                var cidades = dbConectionPdv.Cidades
+                    .OrderBy(c => c.Id)
+                    .Select(c => new
                     {
                         Codigo = c.Id,
                         NomeCidade = c.Nome,
                         Pais = c.Pais.Nome
+                    })
+                    .ToList();
 
-                    }).ToList();
                 dataGridCidade.DataSource = cidades;
+
+                // ==== ESTILO DO CABEÇALHO ====
+                dataGridCidade.EnableHeadersVisualStyles = false;
+                dataGridCidade.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(0, 66, 100);
+                dataGridCidade.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dataGridCidade.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
+                dataGridCidade.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dataGridCidade.ColumnHeadersHeight = 32;
+
+                // ==== ESTILO DAS LINHAS ====
+                dataGridCidade.DefaultCellStyle.BackColor = Color.White;
+                dataGridCidade.DefaultCellStyle.ForeColor = Color.Black;
+                dataGridCidade.DefaultCellStyle.Font = new Font("Segoe UI", 8F);
+                dataGridCidade.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 90, 135);
+                dataGridCidade.DefaultCellStyle.SelectionForeColor = Color.White;
+                dataGridCidade.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+                dataGridCidade.RowHeadersVisible = false;
+
+                // ==== CONFIGURAÇÃO DAS COLUNAS ====
+                dataGridCidade.Columns["Codigo"].HeaderText = "Código";
+                dataGridCidade.Columns["Codigo"].Width = 80;
+                dataGridCidade.Columns["Codigo"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
                 dataGridCidade.Columns["NomeCidade"].HeaderText = "Nome da Cidade";
                 dataGridCidade.Columns["NomeCidade"].Width = 300;
-                dataGridCidade.ReadOnly = true;
 
+                dataGridCidade.Columns["Pais"].HeaderText = "País";
+                dataGridCidade.Columns["Pais"].Width = 250;
+
+                // ==== COMPORTAMENTO ====
+                dataGridCidade.ReadOnly = true;
+                dataGridCidade.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dataGridCidade.MultiSelect = false;
+                dataGridCidade.BorderStyle = BorderStyle.FixedSingle;
+                dataGridCidade.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+                dataGridCidade.GridColor = Color.FromArgb(220, 220, 220);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao carregar cidades: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao carregar cidades: " + ex.Message,
+                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void CarregarPaisesCombo()
         {
@@ -73,12 +109,6 @@ namespace ServiTech.Forms.Cadastros
             comboPaises.ValueMember = "Id";
         }
 
-        private void groupBox2_Resize(object sender, EventArgs e)
-        {
-            btnPesquisar.Location = new Point(this.groupBox2.Width - btnPesquisar.Width - 9, btnPesquisar.Location.Y);
-            checkBoxTodos.Location = new Point(this.groupBox2.Width - checkBoxTodos.Width - 9, checkBoxTodos.Location.Y);
-
-        }
 
 
 
@@ -105,12 +135,15 @@ namespace ServiTech.Forms.Cadastros
                 textNome.Clear();
                 textNome.Focus();
 
+            }else if(e.KeyCode == Keys.F5)
+            {
+                this.GravarCidade();
             }
         }
 
-        private void btnGravar_Click(object sender, EventArgs e)
-        {
 
+        private void GravarCidade()
+        {
 
             try
             {
@@ -138,9 +171,10 @@ namespace ServiTech.Forms.Cadastros
                         };
                         dbConectionPdv.Cidades.Add(novaCidade);
                         dbConectionPdv.SaveChanges();
-                        textCodigoCidade.Text = novaCidade.Id.ToString();
-                        this.CaregarGridCidades();
                         MessageBox.Show("Cidade cadastrada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        textCodigoCidade.Text = novaCidade.Id.ToString();
+                        this.CarregarGridCidades();
+                        return;
 
                     }
                     else
@@ -150,17 +184,13 @@ namespace ServiTech.Forms.Cadastros
                         var cidadeExistente = dbConectionPdv.Cidades.Find(cidadeId);
                         if (cidadeExistente != null)
                         {
-                            if (dbConectionPdv.Cidades.Any(c => c.Nome == textNome.Text && c.PaisId == (int)comboPaises.SelectedValue && c.Id != cidadeId))
-                            {
-                                MessageBox.Show("Já existe uma cidade com esse nome para o país selecionado.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                textNome.Focus();
-                                return;
-                            }
+
                             cidadeExistente.Nome = textNome.Text;
                             cidadeExistente.PaisId = (int)comboPaises.SelectedValue;
                             dbConectionPdv.SaveChanges();
-                            this.CaregarGridCidades();
                             MessageBox.Show("Cidade atualizada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.CarregarGridCidades();
+                            return;
                         }
                         else
                         {
@@ -173,14 +203,16 @@ namespace ServiTech.Forms.Cadastros
                 }
 
 
-
-
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao gravar a cidade: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void btnGravar_Click(object sender, EventArgs e)
+        {
+            this.GravarCidade();
+
         }
 
 
@@ -213,7 +245,7 @@ namespace ServiTech.Forms.Cadastros
 
         private void AbrirAbaCadastro(int id, string nome, int pais)
         {
-            tabControl1.SelectedTab = tabPage1;
+            tabControl.SelectedTab = tabCadastro;
             textCodigoCidade.Text = id.ToString();
             textNome.Text = nome;
             textNome.ReadOnly = false;
@@ -241,7 +273,7 @@ namespace ServiTech.Forms.Cadastros
                             dbConectionPdv.Cidades.Remove(cidadeParaExcluir);
                             dbConectionPdv.SaveChanges();
                             MessageBox.Show("Cidade excluída com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            this.CaregarGridCidades();
+                            this.CarregarGridCidades();
                         }
                     }
                     else
@@ -266,11 +298,18 @@ namespace ServiTech.Forms.Cadastros
         {
             var opcaoFiltro = comboFiltros.SelectedItem.ToString();
 
-            if(opcaoFiltro == "Por Nome ")
+            if (opcaoFiltro == "Por Nome ")
             {
                 var modelo = comboModelo.SelectedItem.ToString();
                 var textoPesquisa = textDadosPesquisa.Text;
                 IQueryable<Model.ModelLocalidade.Cidade> query = dbConectionPdv.Cidades;
+
+                if (string.IsNullOrWhiteSpace(textoPesquisa))
+                {
+                    this.CarregarGridCidades();
+                    return;
+                }
+
                 if (!string.IsNullOrWhiteSpace(textoPesquisa))
                 {
                     switch (modelo)
@@ -284,7 +323,7 @@ namespace ServiTech.Forms.Cadastros
                         case "Contem":
                             query = query.Where(c => c.Nome.Contains(textoPesquisa));
                             break;
-                       
+
                     }
                 }
                 var resultados = query.OrderBy(c => c.Id).Select(c => new
@@ -295,9 +334,9 @@ namespace ServiTech.Forms.Cadastros
                 }).ToList();
                 dataGridCidade.DataSource = resultados;
             }
-            else if(opcaoFiltro == "Por Codigo ")
+            else if (opcaoFiltro == "Por Codigo ")
             {
-                if(int.TryParse( textDadosPesquisa.Text, out int codigo))
+                if (int.TryParse(textDadosPesquisa.Text, out int codigo))
                 {
                     var resultados = dbConectionPdv.Cidades
                         .Where(c => c.Id == codigo)
@@ -315,6 +354,24 @@ namespace ServiTech.Forms.Cadastros
                     dataGridCidade.DataSource = null;
                 }
             }
+        }
+
+        private void CadastrarCidade_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                BtnEditar_Click(this, new EventArgs());
+            }
+        }
+
+        private void bntNovo_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectedTab = tabCadastro;
+            comboPaises.Enabled = true;
+            textNome.ReadOnly = false;
+            textCodigoCidade.Clear();
+            textNome.Clear();
+            textNome.Focus();
         }
     }
 }

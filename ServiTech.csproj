@@ -36,7 +36,7 @@
     <Compile Update="Forms\Cadastros\CadastrarSubGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Cadastros\CadastrarMaoObra.cs">
+    <Compile Update="Forms\Cadastros\CadastrarServico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Cadastros\CadastrarCidade.cs">
@@ -60,6 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Componentes\" />
     <Folder Include="Configuracoes\" />
   </ItemGroup>
 

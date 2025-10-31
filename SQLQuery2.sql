@@ -1,1 +1,2 @@
-﻿select * from Cidades;
+﻿UPDATE [dbo].[Produto]
+SET [TipoProduto] = N'Roupa';

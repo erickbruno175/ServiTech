@@ -30,30 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarGrupo));
             tabControl1 = new TabControl();
-            tabPage2 = new TabPage();
+            tabCadastro = new TabPage();
             groupBox1 = new GroupBox();
+            label45 = new Label();
             textCod = new TextBox();
             label4 = new Label();
             groupBox3 = new GroupBox();
-            radioAtivoNao = new RadioButton();
-            radioAtivoSim = new RadioButton();
+            checkAtivo = new CheckBox();
             textNome = new TextBox();
             label10 = new Label();
             panel1 = new Panel();
             btnNovo = new Button();
-            btnCancelar = new Button();
             btnGravar = new Button();
-            tabPage1 = new TabPage();
+            tabConsultas = new TabPage();
             panel3 = new Panel();
-            dataGridView1 = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            Nome = new DataGridViewTextBoxColumn();
+            dataGridGrupo = new DataGridView();
             panel2 = new Panel();
+            bntNovo = new Button();
             btnEditar = new Button();
             btnExcluir = new Button();
             groupBox2 = new GroupBox();
-            checkBoxTodos = new CheckBox();
-            btnPesquisar = new Button();
             textDadosPesquisa = new TextBox();
             label16 = new Label();
             label17 = new Label();
@@ -61,21 +57,21 @@
             label3 = new Label();
             comboFiltros = new ComboBox();
             tabControl1.SuspendLayout();
-            tabPage2.SuspendLayout();
+            tabCadastro.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             panel1.SuspendLayout();
-            tabPage1.SuspendLayout();
+            tabConsultas.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridGrupo).BeginInit();
             panel2.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabCadastro);
+            tabControl1.Controls.Add(tabConsultas);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
@@ -83,20 +79,21 @@
             tabControl1.Size = new Size(900, 499);
             tabControl1.TabIndex = 0;
             // 
-            // tabPage2
+            // tabCadastro
             // 
-            tabPage2.Controls.Add(groupBox1);
-            tabPage2.Controls.Add(panel1);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(892, 471);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Cadastrar";
-            tabPage2.UseVisualStyleBackColor = true;
+            tabCadastro.Controls.Add(groupBox1);
+            tabCadastro.Controls.Add(panel1);
+            tabCadastro.Location = new Point(4, 24);
+            tabCadastro.Name = "tabCadastro";
+            tabCadastro.Padding = new Padding(3);
+            tabCadastro.Size = new Size(892, 471);
+            tabCadastro.TabIndex = 1;
+            tabCadastro.Text = "Cadastrar";
+            tabCadastro.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label45);
             groupBox1.Controls.Add(textCod);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(groupBox3);
@@ -109,6 +106,17 @@
             groupBox1.TabIndex = 78;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados";
+            // 
+            // label45
+            // 
+            label45.AutoSize = true;
+            label45.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label45.ForeColor = Color.FromArgb(192, 0, 0);
+            label45.Location = new Point(122, 22);
+            label45.Name = "label45";
+            label45.Size = new Size(74, 13);
+            label45.TabIndex = 276;
+            label45.Text = "[Obrigatorio]";
             // 
             // textCod
             // 
@@ -132,38 +140,26 @@
             // groupBox3
             // 
             groupBox3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            groupBox3.Controls.Add(radioAtivoNao);
-            groupBox3.Controls.Add(radioAtivoSim);
+            groupBox3.Controls.Add(checkAtivo);
             groupBox3.Font = new Font("Arial", 9.75F);
             groupBox3.ForeColor = Color.FromArgb(44, 62, 80);
             groupBox3.Location = new Point(5, 77);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(130, 57);
+            groupBox3.Size = new Size(64, 57);
             groupBox3.TabIndex = 82;
             groupBox3.TabStop = false;
             groupBox3.Text = "Ativo ?";
             // 
-            // radioAtivoNao
+            // checkAtivo
             // 
-            radioAtivoNao.Enabled = false;
-            radioAtivoNao.Location = new Point(66, 19);
-            radioAtivoNao.Name = "radioAtivoNao";
-            radioAtivoNao.Size = new Size(58, 22);
-            radioAtivoNao.TabIndex = 4;
-            radioAtivoNao.TabStop = true;
-            radioAtivoNao.Text = "Não";
-            radioAtivoNao.UseVisualStyleBackColor = true;
-            // 
-            // radioAtivoSim
-            // 
-            radioAtivoSim.Enabled = false;
-            radioAtivoSim.Location = new Point(6, 18);
-            radioAtivoSim.Name = "radioAtivoSim";
-            radioAtivoSim.Size = new Size(54, 24);
-            radioAtivoSim.TabIndex = 3;
-            radioAtivoSim.TabStop = true;
-            radioAtivoSim.Text = "Sim";
-            radioAtivoSim.UseVisualStyleBackColor = true;
+            checkAtivo.AutoSize = true;
+            checkAtivo.Enabled = false;
+            checkAtivo.Location = new Point(6, 21);
+            checkAtivo.Name = "checkAtivo";
+            checkAtivo.Size = new Size(49, 20);
+            checkAtivo.TabIndex = 85;
+            checkAtivo.Text = "Sim";
+            checkAtivo.UseVisualStyleBackColor = true;
             // 
             // textNome
             // 
@@ -171,7 +167,7 @@
             textNome.Location = new Point(75, 40);
             textNome.Name = "textNome";
             textNome.ReadOnly = true;
-            textNome.Size = new Size(763, 23);
+            textNome.Size = new Size(721, 23);
             textNome.TabIndex = 81;
             // 
             // label10
@@ -189,7 +185,6 @@
             // 
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(btnNovo);
-            panel1.Controls.Add(btnCancelar);
             panel1.Controls.Add(btnGravar);
             panel1.Dock = DockStyle.Bottom;
             panel1.Location = new Point(3, 410);
@@ -209,17 +204,6 @@
             btnNovo.UseVisualStyleBackColor = true;
             btnNovo.Click += btnNovo_Click;
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Image = Properties.Resources.cancelar;
-            btnCancelar.Location = new Point(191, 8);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(101, 40);
-            btnCancelar.TabIndex = 17;
-            btnCancelar.Text = "Cancelar F6";
-            btnCancelar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // btnGravar
             // 
             btnGravar.Image = Properties.Resources.salvar;
@@ -230,59 +214,45 @@
             btnGravar.Text = "Gravar F5";
             btnGravar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnGravar.UseVisualStyleBackColor = true;
+            btnGravar.Click += btnGravar_Click;
             // 
-            // tabPage1
+            // tabConsultas
             // 
-            tabPage1.Controls.Add(panel3);
-            tabPage1.Controls.Add(panel2);
-            tabPage1.Controls.Add(groupBox2);
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(892, 471);
-            tabPage1.TabIndex = 2;
-            tabPage1.Text = "Consultas";
-            tabPage1.UseVisualStyleBackColor = true;
+            tabConsultas.Controls.Add(panel3);
+            tabConsultas.Controls.Add(panel2);
+            tabConsultas.Controls.Add(groupBox2);
+            tabConsultas.Location = new Point(4, 24);
+            tabConsultas.Name = "tabConsultas";
+            tabConsultas.Padding = new Padding(3);
+            tabConsultas.Size = new Size(892, 471);
+            tabConsultas.TabIndex = 2;
+            tabConsultas.Text = "Consultas";
+            tabConsultas.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BorderStyle = BorderStyle.Fixed3D;
-            panel3.Controls.Add(dataGridView1);
-            panel3.Dock = DockStyle.Fill;
+            panel3.Controls.Add(dataGridGrupo);
             panel3.Location = new Point(3, 100);
             panel3.Name = "panel3";
-            panel3.Size = new Size(886, 312);
+            panel3.Size = new Size(886, 296);
             panel3.TabIndex = 4;
             // 
-            // dataGridView1
+            // dataGridGrupo
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nome });
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(882, 308);
-            dataGridView1.TabIndex = 0;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            // 
-            // Nome
-            // 
-            Nome.HeaderText = "Nome";
-            Nome.Name = "Nome";
-            Nome.ReadOnly = true;
-            Nome.Width = 400;
+            dataGridGrupo.BackgroundColor = Color.White;
+            dataGridGrupo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridGrupo.Dock = DockStyle.Fill;
+            dataGridGrupo.Location = new Point(0, 0);
+            dataGridGrupo.Name = "dataGridGrupo";
+            dataGridGrupo.Size = new Size(882, 292);
+            dataGridGrupo.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(bntNovo);
             panel2.Controls.Add(btnEditar);
             panel2.Controls.Add(btnExcluir);
             panel2.Dock = DockStyle.Bottom;
@@ -291,16 +261,29 @@
             panel2.Size = new Size(886, 56);
             panel2.TabIndex = 3;
             // 
+            // bntNovo
+            // 
+            bntNovo.Image = Properties.Resources.plus;
+            bntNovo.Location = new Point(267, 7);
+            bntNovo.Name = "bntNovo";
+            bntNovo.Size = new Size(101, 40);
+            bntNovo.TabIndex = 27;
+            bntNovo.Text = " Novo";
+            bntNovo.TextImageRelation = TextImageRelation.ImageBeforeText;
+            bntNovo.UseVisualStyleBackColor = true;
+            bntNovo.Click += bntNovo_Click;
+            // 
             // btnEditar
             // 
-            btnEditar.Image = Properties.Resources.novo;
+            btnEditar.Image = Properties.Resources.marca_de_verificacao;
             btnEditar.Location = new Point(141, 7);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(120, 40);
-            btnEditar.TabIndex = 15;
-            btnEditar.Text = "Editar";
+            btnEditar.TabIndex = 18;
+            btnEditar.Text = "Selecionar";
             btnEditar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnExcluir
             // 
@@ -312,11 +295,10 @@
             btnExcluir.Text = "Excluir F7";
             btnExcluir.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(checkBoxTodos);
-            groupBox2.Controls.Add(btnPesquisar);
             groupBox2.Controls.Add(textDadosPesquisa);
             groupBox2.Controls.Add(label16);
             groupBox2.Controls.Add(label17);
@@ -330,28 +312,6 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Campos de Pesquisa";
-            groupBox2.Resize += groupBox2_Resize;
-            // 
-            // checkBoxTodos
-            // 
-            checkBoxTodos.AutoSize = true;
-            checkBoxTodos.Location = new Point(819, 16);
-            checkBoxTodos.Name = "checkBoxTodos";
-            checkBoxTodos.Size = new Size(58, 19);
-            checkBoxTodos.TabIndex = 27;
-            checkBoxTodos.Text = "Todos";
-            checkBoxTodos.UseVisualStyleBackColor = true;
-            // 
-            // btnPesquisar
-            // 
-            btnPesquisar.Image = Properties.Resources.lupa;
-            btnPesquisar.Location = new Point(764, 62);
-            btnPesquisar.Name = "btnPesquisar";
-            btnPesquisar.Size = new Size(113, 29);
-            btnPesquisar.TabIndex = 26;
-            btnPesquisar.Text = "Pesquisar";
-            btnPesquisar.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnPesquisar.UseVisualStyleBackColor = true;
             // 
             // textDadosPesquisa
             // 
@@ -360,6 +320,7 @@
             textDadosPesquisa.Name = "textDadosPesquisa";
             textDadosPesquisa.Size = new Size(503, 23);
             textDadosPesquisa.TabIndex = 24;
+            textDadosPesquisa.TextChanged += textDadosPesquisa_TextChanged;
             // 
             // label16
             // 
@@ -424,14 +385,15 @@
             Load += CadastrarGrupo_Load;
             KeyDown += CadastrarGrupo_KeyDown;
             tabControl1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
+            tabCadastro.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
             panel1.ResumeLayout(false);
-            tabPage1.ResumeLayout(false);
+            tabConsultas.ResumeLayout(false);
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridGrupo).EndInit();
             panel2.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
@@ -441,15 +403,12 @@
         #endregion
 
         private TabControl tabControl1;
-        private TabPage tabPage2;
+        private TabPage tabCadastro;
         private Panel panel1;
         private Button btnNovo;
-        private Button btnCancelar;
         private Button btnGravar;
-        private TabPage tabPage1;
+        private TabPage tabConsultas;
         private GroupBox groupBox2;
-        private CheckBox checkBoxTodos;
-        private Button btnPesquisar;
         private TextBox textDadosPesquisa;
         private Label label16;
         private Label label17;
@@ -457,19 +416,18 @@
         private Label label3;
         private ComboBox comboFiltros;
         private Panel panel2;
-        private Button btnEditar;
         private Button btnExcluir;
         private Panel panel3;
-        private DataGridView dataGridView1;
         private GroupBox groupBox1;
         private TextBox textCod;
         private Label label4;
         private GroupBox groupBox3;
-        private RadioButton radioAtivoNao;
-        private RadioButton radioAtivoSim;
         private TextBox textNome;
         private Label label10;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn Nome;
+        private Button btnEditar;
+        private DataGridView dataGridGrupo;
+        private CheckBox checkAtivo;
+        private Button bntNovo;
+        private Label label45;
     }
 }
